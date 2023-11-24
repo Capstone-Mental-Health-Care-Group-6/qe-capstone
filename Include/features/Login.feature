@@ -29,7 +29,7 @@ Feature: Login
     Examples: 
       | username         | password |
       | dokter@gmail.com | xxx      |
-      | lala             | pw123    |
+      | lalala           | pw123    |
       | la123            | xxx      |
 
   @Negative-input-blank

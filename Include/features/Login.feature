@@ -9,10 +9,10 @@ Feature: Login
     Then I click login button
 
     Examples: 
-      | username                    | password |
-      | larasatimaharanii@gmail.com | pw123    |
+      | username         | password |
+      | dokter@gmail.com | pw123    |
 
-@Positive-by-google
+  @Positive-by-google
   Scenario Outline: Login with Google account
     Given I navigate to login page
     When I click login by google button
@@ -27,10 +27,10 @@ Feature: Login
     Then Error message showed
 
     Examples: 
-      | username                    | password |
-      | larasatimaharanii@gmail.com | xxx      |
-      | lala                        | pw123    |
-      | la123                       | xxx      |
+      | username         | password |
+      | dokter@gmail.com | xxx      |
+      | lala             | pw123    |
+      | la123            | xxx      |
 
   @Negative-input-blank
   Scenario Outline: Login with blank data
@@ -41,7 +41,7 @@ Feature: Login
     Then Error message showed
 
     Examples: 
-      | username                    | password |
-      |                             | pw123    |
-      | larasatimaharanii@gmail.com |          |
-      |                             |          |
+      | username         | password |
+      |                  | pw123    |
+      | dokter@gmail.com |          |
+      |                  |          |

@@ -1,6 +1,8 @@
+@LoginPageDokter
 Feature: Login
   As a user
   I want to login with my registered account
+  So that I can manage my account
 
   @Positive
   Scenario Outline: Login with valid data

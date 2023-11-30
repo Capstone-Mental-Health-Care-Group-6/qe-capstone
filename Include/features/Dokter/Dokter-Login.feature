@@ -22,7 +22,7 @@ Feature: Login
 
   @Negative-input-invalid
   Scenario Outline: Login with invalid data
-    Given Navigate to altashop homepage
+    Given Navigate to EmphatiCare homepage
     When User navigate to login page
     And User input <username> and <password>
     And User click login button
@@ -36,7 +36,7 @@ Feature: Login
 
   @Negative-input-blank
   Scenario Outline: Login with blank data
-    Given Navigate to altashop homepage
+    Given Navigate to EmphatiCare homepage
     When User navigate to login page
     And User input <username> and <password>
     And User click login button

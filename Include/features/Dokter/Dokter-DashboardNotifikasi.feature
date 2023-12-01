@@ -1,5 +1,6 @@
 @DashboardNotifikasi
 Feature: Title of your feature
+  As a user
   I want to access my dashboard
   So that I can view menu dashboard
 

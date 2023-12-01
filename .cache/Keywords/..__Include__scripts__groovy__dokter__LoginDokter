@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "CD00CCDB271B0045D89CFD681CBE7E0F",
+  "keywordClasses": [
+    {
+      "name": "dokter.LoginDokter",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

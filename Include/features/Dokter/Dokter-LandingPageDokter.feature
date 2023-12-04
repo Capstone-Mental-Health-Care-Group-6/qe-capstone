@@ -4,37 +4,15 @@ Feature: Landing Page Dokter
   I want to access the landing page
   So that I can register to become a counselor
 
+  #Include Home, Service, About Us, Join Link as Counselor in Footer
   Scenario: Verify Home button on Navbar
     Given I navigate to EmphatiCare landing page
-    When I click the home button on the navbar
-    Then I should be redirected to the home page
+    When I verify button and scroll all the navigation hyperlinks
+    Then I should be redirected to the correct navigation hyperlinks
 
-  Scenario: Verify Service button on Navbar
+  #Include Register now button on the navbar, Register as Counselor button, Register Now button on Joining Requirements
+  Scenario: Verify Register Now button
     Given I navigate to EmphatiCare landing page
-    When I click the service button on the navbar
-    Then I should be redirected to the service page
-
-  Scenario: Verify About Us button on Navbar
-    Given I navigate to EmphatiCare landing page
-    When I click the about us button on the navbar
-    Then I should be redirected to the about us page
-
-  Scenario: Verify Register Now button on Navbar
-    Given I navigate to EmphatiCare landing page
-    When I click the register now button on the navbar
+    When I click the register now button
     Then I should be redirected to the registration page
-
-  Scenario: Verify Register as Counselor button on Navbar
-    Given I navigate to EmphatiCare landing page
-    When I click the register as counselor button on the navbar
-    Then I should be redirected to the counselor registration page
-
-  Scenario: Verify Register Now button on Joining Requirements
-    Given I navigate to EmphatiCare landing page
-    When I click the register now button on joining requirements
-    Then I should be redirected to the registration page for joining requirements
-
-  Scenario: Verify Join Link as Counselor in Footer
-    Given I navigate to EmphatiCare landing page
-    When I click the join link as a counselor in the footer
-    Then I should be redirected to the counselor registration page
+	#=====================FIX=====================

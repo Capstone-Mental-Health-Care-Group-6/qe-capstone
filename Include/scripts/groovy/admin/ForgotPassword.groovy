@@ -1,4 +1,4 @@
-package dokter
+package admin
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,29 +44,20 @@ import cucumber.api.java.en.When
 
 
 
-class LoginDokter {
-
-	@Given("I navigate to login page")
-	def navigateLogin() {
+class ForgotPassword {
+	@Given("I am on the login page")
+	def navigateLoginPage() {
 	}
 
-	@When("I input (.*) and (.*)")
-	def inputEmailPassword(String email, String password) {
+	@When("I click on the Forgot Password link")
+	def clickForgotPassword() {
 	}
 
-	@When("I click button login by Google")
-	def clickLoginGoogle() {
+	@And("I send email for verification")
+	def sendEmailVerification() {
 	}
-
-	@Then("I click login button")
-	def clickLoginButton() {
-	}
-
-	@Then("I navigate to dashboard")
-	def navigateDashboard() {
-	}
-
-	@And("Error message showed")
-	def errorMessage() {
+	
+	@Then("I should have changed a new password")
+	def newPassword() {
 	}
 }

@@ -1,5 +1,5 @@
-@ManagePaketKonsultasiPremium
-Feature: Manage Consultation Packages Premium
+@EditProfileLogout
+Feature: Edit Profile and Logout
   I want to use this template for my feature file
 
   @tag1

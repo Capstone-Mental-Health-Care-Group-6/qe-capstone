@@ -45,21 +45,24 @@ import cucumber.api.java.en.When
 
 
 class LandingPageDokter {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+
+	@Given("I navigate to EmphatiCare landing page")
+	def navigateLandingPage() {
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("I verify button and scroll all the navigation hyperlinks")
+	def verifyButtonHyprelinks() {
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@When("I click the register now button")
+	def clickRegister() {
+	}
+
+	@Then("I should be redirected to the correct navigation hyperlinks")
+	def redirectNavigationHyperlinks() {
+	}
+
+	@Then("I should be redirected to the registration page")
+	def redirectRegistration() {
 	}
 }

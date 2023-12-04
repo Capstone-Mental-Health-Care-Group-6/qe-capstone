@@ -15,18 +15,17 @@ Feature: Login
       | dokter@gmail.com | pw123    |
 
   @Positive-by-google
-  Scenario Outline: Login with Google account
+  Scenario: Login with Google account
     Given I navigate to login page
-    When I click login by google button
-    Then I redirect to dashboard
+    When I click button login by Google
+    Then I navigate to dashboard
 
   @Negative-input-invalid
   Scenario Outline: Login with invalid data
-    Given Navigate to EmphatiCare homepage
-    When User navigate to login page
-    And User input <username> and <password>
-    And User click login button
-    Then Error message showed
+    Given I navigate to login page
+    When I input <username> and <password>
+    Then I click login button
+    And Error message showed
 
     Examples: 
       | username         | password |
@@ -36,14 +35,14 @@ Feature: Login
 
   @Negative-input-blank
   Scenario Outline: Login with blank data
-    Given Navigate to EmphatiCare homepage
-    When User navigate to login page
-    And User input <username> and <password>
-    And User click login button
-    Then Error message showed
+    Given I navigate to login page
+    When I input <username> and <password>
+    Then I click login button
+    And Error message showed
 
     Examples: 
       | username         | password |
       |                  | pw123    |
       | dokter@gmail.com |          |
       |                  |          |
+	#=====================FIX=====================

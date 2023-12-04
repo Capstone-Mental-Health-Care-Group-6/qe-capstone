@@ -44,22 +44,69 @@ import cucumber.api.java.en.When
 
 
 
-class DashboardNotifikasi {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+class DashboardNotifikasiChatBot {
+
+	@Given("I logged in and was on the dashboard page")
+	def navigateDashboardPage() {
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("I click the sidebar menu")
+	def clickSidebarMenu() {
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@When("I check the icons in the navbar")
+	def clickIconNavbar() {
+	}
+
+	@When("I click the chatbot button")
+	def clickChatbotButton() {
+	}
+
+	@And("I click the send button")
+	def clickSendtButton() {
+	}
+
+	@And("I select and click the chat button")
+	def clickSelectChattButton() {
+	}
+
+	@And("I click the yet button")
+	def clickYetButton() {
+	}
+
+	@And("I click the Done button")
+	def clickDoneButton() {
+	}
+
+	@And("I click the return button")
+	def clickReturnDashboardButton() {
+	}
+
+	@And("I click the attachment button")
+	def clickAttachmentButton() {
+	}
+
+	@Then("I should verify the functionality and correctness of the links")
+	def redirectFunctionalityLinks() {
+	}
+
+	@Then("I should verify the visibility and correctness of the notification icons")
+	def verifyIconNotification() {
+	}
+
+	@Then("I should send message with the chatbot successfully")
+	def verifySendMessageChatbot() {
+	}
+
+	@Then("I should provide information for Chatbot")
+	def verifyInformationChatbot() {
+	}
+
+	@Then("I should be redirected to the dashboard page")
+	def redirectDashboard() {
+	}
+
+	@Then("I should provide options for attachments Chatbot")
+	def verifyoptionsAttachments() {
 	}
 }

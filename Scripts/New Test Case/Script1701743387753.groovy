@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
+
+Mobile.getText(findTestObject('null'), 0)
+
+Mobile.getText(findTestObject('null'), 0)
+
+Mobile.tap(findTestObject('null'), 0)
+
+Mobile.closeApplication()
+

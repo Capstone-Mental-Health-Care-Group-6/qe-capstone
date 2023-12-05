@@ -1,32 +1,58 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+@Login
+Feature: Login Functionality
+  As a user
+  I want to log in
+  So I can access my account
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  @ValidCredentials
+  Scenario Outline: User Login with Valid Credentials
+    Given I want to log in with valid email and password
+    When I enter the <email> and <password>
+    Then I should be logged in to the application
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+    Examples:
+      | email           | password |
+      | user@gmail.com  | user123  |
+
+  #@InvalidCredentials
+  #Scenario Outline: User Login with Invalid Credentials
+    #Given I want to log in with invalid email and password
+    #When I enter the <email> and <password>
+    #Then I should see an error message and stay on the login page
+#
+    #Examples:
+      #| email           | password        |
+      #| user@gmail.com  | $(invalid pass) |
+      #| user123         | user@gmail.com  |
+      #|               |               |
+#
+  #@RegisterLink
+  #Scenario: User Clicks Register Link
+    #Given I want to register for an account
+    #When I click the register link
+    #Then I should be directed to the registration page
+#
+  #@DirectToHomepage
+  #Scenario: User Clicks "Login" Button
+    #Given I want to log in
+    #When I click the "Login" button
+    #Then I should be directed to the Homepage
+#
+  #@GoogleLogin
+  #Scenario: User Uses "Google" Login
+    #Given I want to log in using Google account
+    #When I select the "Google" login option
+    #Then I should be directed to sign in with Google
+#
+  #@LoginWithGoogle
+  #Scenario: User Logs in Using Google Account
+    #Given I want to log in using Google account
+    #When I select and click an available Google account
+    #Then I should be directed to the Homepage
+#
+  #@EyeIconPassword
+  #Scenario: User Checks "eye icon" Functionality in Password Field
+    #Given I want to see the entered password
+    #When I click the "eye icon" in the password field
+    #Then I should be able to view the password
+#

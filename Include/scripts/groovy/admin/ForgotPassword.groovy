@@ -45,7 +45,7 @@ import cucumber.api.java.en.When
 
 
 class ForgotPassword {
-	
+
 	@Given("I am on the login page")
 	def navigateLoginPage() {
 	}

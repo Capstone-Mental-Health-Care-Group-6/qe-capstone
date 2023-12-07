@@ -45,21 +45,52 @@ import cucumber.api.java.en.When
 
 
 class EditProfileLogout {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
-	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
-	}
+    @Given("I am logged in")
+    def navigateLoginPage() {
+    }
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
-	}
+    @When("I edit my profile with valid information and close the success pop-up")
+    def editProfileWithValidInfo() {
+    }
+
+    @Then("I should see a success message")
+    def successMessage() {
+    }
+
+    @When("I edit my profile with a blank name")
+    def editProfileWithBlankName() {
+    }
+
+    @Then("I should see an error message")
+    def errorMessage() {
+    }
+
+    @When("I edit my profile with a blank email")
+    def editProfileWithBlankEmail() {
+    }
+
+    @When("I edit my profile with a blank old password")
+    def editProfileWithBlankOldPassword() {
+    }
+
+    @When("I edit my profile with a blank new password")
+    def editProfileWithBlankNewPassword() {
+    }
+
+    @When("I log out and confirm")
+    def logOutAndConfirm() {
+    }
+
+    @Then("I should be successfully logged out")
+    def successfullyLoggedOut() {
+    }
+
+    @When("I log out and cancel")
+    def logOutAndCancel() {
+    }
+
+    @Then("I should remain logged in")
+    def remainLoggedIn() {
+    }
 }

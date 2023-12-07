@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "0B43B17C43A9CF70E3C77B5E157B479A",
+  "keywordClasses": [
+    {
+      "name": "admin.ManageDoctor",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

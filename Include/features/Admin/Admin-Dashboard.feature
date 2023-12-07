@@ -10,6 +10,7 @@ Feature: Dashboard
     When I log in with valid credentials
     Then I should be redirected to the dashboard
 
+# COMMENT : Kalau verify redirect link lebih baik gak gunaain examples, ini biasanya untuk inputan aja
   @DashboardLinksNavbar
   Scenario Outline: User Verify Sidebar Menu Links on the Dashboard
     Given I am logged in and on the dashboard page

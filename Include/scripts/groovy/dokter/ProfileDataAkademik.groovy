@@ -1,4 +1,4 @@
-package admin
+package dokter
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,21 +44,49 @@ import cucumber.api.java.en.When
 
 
 
-class ForgotPassword {
-
-	@Given("I am on the login page")
-	def navigateLoginPage() {
+class ProfileDataAkademik {
+	@Given("the user is on the dashboard page")
+	def givenUserIsOnDashboardPage() {
+		// Add code to navigate to the dashboard page
 	}
 
-	@When("I click on the Forgot Password link")
-	def clickForgotPassword() {
+	@When("the user clicks academic data")
+	def whenUserClicksAcademicData() {
+		// Add code to simulate clicking the academic data link
 	}
 
-	@And("I send email for verification")
-	def sendEmailVerification() {
+	@Then("the user should be on the academic data page")
+	def thenUserShouldBeOnAcademicDataPage() {
+		// Add verification code to ensure the user is on the academic data page
 	}
 
-	@Then("I should have changed a new password")
-	def newPassword() {
+	@When("the user fills in the university field")
+	def whenUserFillsInUniversityField() {
+		// Add code to fill in the university field
+	}
+
+	@When("the user fills in the major and level of education")
+	def whenUserFillsInMajorAndLevel() {
+		// Add code to fill in the major and level of education fields
+	}
+
+	@When("the user fills in the doctor field")
+	def whenUserFillsInDoctorField() {
+		// Add code to fill in the doctor field
+	}
+
+	@When("the user fills in the year of entry and year of university graduation")
+	def whenUserFillsInYearOfEntryAndGraduation() {
+		// Add code to fill in the year of entry and year of university graduation fields
+	}
+
+	@When("the user clicks the save changes button")
+	def whenUserClicksSaveChangesButton() {
+		// Add code to simulate clicking the save changes button
+	}
+
+	@Then("the academic data should be successfully updated")
+	def thenAcademicDataShouldBeSuccessfullyUpdated() {
+		// Add verification code for successful update of academic data
 	}
 }

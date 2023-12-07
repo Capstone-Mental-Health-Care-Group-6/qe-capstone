@@ -1,4 +1,4 @@
-package admin
+package dokter
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,21 +44,44 @@ import cucumber.api.java.en.When
 
 
 
-class ForgotPassword {
-
-	@Given("I am on the login page")
-	def navigateLoginPage() {
+class LogoutDokter {
+	@Given("the user clicks profile")
+	def givenUserClicksProfile() {
+		// Add code to simulate clicking the profile link
 	}
 
-	@When("I click on the Forgot Password link")
-	def clickForgotPassword() {
+	@When("the user clicks the Logout button")
+	def whenUserClicksLogoutButton() {
+		// Add code to simulate clicking the Logout button
 	}
 
-	@And("I send email for verification")
-	def sendEmailVerification() {
+	@When("the user clicks the exit button on the pop-up permissions")
+	def whenUserClicksExitButton() {
+		// Add code to simulate clicking the exit button on the pop-up permissions
 	}
 
-	@Then("I should have changed a new password")
-	def newPassword() {
+	@Then("the user should be logged out and redirected to the home page")
+	def thenUserShouldBeLoggedOut() {
+		// Add verification code for successful logout and redirection to the home page
+	}
+
+	@When("the user clicks the cancel button on the pop-up permissions")
+	def whenUserClicksCancelButton() {
+		// Add code to simulate clicking the cancel button on the pop-up permissions
+	}
+
+	@Then("the user should remain on the profile page")
+	def thenUserShouldRemainOnProfilePage() {
+		// Add verification code to ensure the user remains on the profile page
+	}
+
+	@When("the user clicks the x button on the pop-up permissions")
+	def whenUserClicksXButton() {
+		// Add code to simulate clicking the "x" button on the pop-up permissions
+	}
+
+	@Then("the user should be canceling logout")
+	def thenUserShouldBeCancelingLogout() {
+		// Add verification code for the user canceling logout
 	}
 }

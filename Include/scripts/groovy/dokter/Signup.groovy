@@ -1,4 +1,4 @@
-package admin
+package dokter
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,21 +44,53 @@ import cucumber.api.java.en.When
 
 
 
-class ForgotPassword {
+class Signup {
+@Given("the user is on the Sign Up page for Doctor")
+	def givenUserIsOnDoctorSignUpPage() {}
 
-	@Given("I am on the login page")
-	def navigateLoginPage() {
+	@When("the user fills in the email")
+	def whenUserFillsInEmail(String email) {
+		println email
 	}
 
-	@When("I click on the Forgot Password link")
-	def clickForgotPassword() {
+	@Then("the email field should be populated with the provided email")
+	def thenEmailFieldShouldBePopulated() {}
+
+	@When("the user fills in the password")
+	def whenUserFillsInPassword(String password) {
+		println password
 	}
 
-	@And("I send email for verification")
-	def sendEmailVerification() {
+	@Then("the password field should be populated with the provided password")
+	def thenPasswordFieldShouldBePopulated() {}
+
+	@When("the user fills in the confirm password")
+	def whenUserFillsInConfirmPassword(String cpassword) {
+		println cpassword
 	}
 
-	@Then("I should have changed a new password")
-	def newPassword() {
+	@Then("the confirm password field should be populated with the provided confirm password")
+	def thenConfirmPasswordFieldShouldBePopulated() {}
+
+	@When("the user clicks the register button")
+	def whenUserClicksRegisterButton() {}
+
+	@Then("the registration process should be initiated")
+	def thenRegistrationProcessShouldBeInitiated() {
+	}
+
+	@When("the user empties the registration form")
+	def whenUseremptyregform() {}
+
+	@Then("the email field should be empty")
+	def theEmailEmpty() {
+	}
+
+	@And("the password field should be empty")
+	def passworempty() {
+	}
+
+	@And("the confirm password field should be empty")
+	def confirmpwempty() {
 	}
 }

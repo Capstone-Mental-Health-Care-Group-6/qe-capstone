@@ -1,4 +1,4 @@
-package admin
+package dokter
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,21 +44,44 @@ import cucumber.api.java.en.When
 
 
 
-class ForgotPassword {
-
-	@Given("I am on the login page")
-	def navigateLoginPage() {
+class ProfileDocumentDokter {
+	@When("the user clicks personal data")
+	def whenUserClicksPersonalData() {
+		// Add code to simulate clicking the personal data link
 	}
 
-	@When("I click on the Forgot Password link")
-	def clickForgotPassword() {
+	@Then("the user should be on the personal data page")
+	def thenUserShouldBeOnPersonalDataPage() {
+		// Add verification code to ensure the user is on the personal data page
 	}
 
-	@And("I send email for verification")
-	def sendEmailVerification() {
+	@When("the user fills in the full name")
+	def whenUserFillsInFullName() {
+		// Add code to fill in the full name field
 	}
 
-	@Then("I should have changed a new password")
-	def newPassword() {
+	@When("the user fills in the email")
+	def whenUserFillsInEmail() {
+		// Add code to fill in the email field
+	}
+
+	@When("the user fills in the NIK")
+	def whenUserFillsInNIK() {
+		// Add code to fill in the NIK field
+	}
+
+	@When("the user fills in the cellphone number, date of birth, city or district, and gender")
+	def whenUserFillsInPersonalDetails() {
+		// Add code to fill in the cellphone number, date of birth, city/district, and gender fields
+	}
+
+	@When("the user clicks the save changes button")
+	def whenUserClicksSaveChangesButtonForPersonalData() {
+		// Add code to simulate clicking the save changes button for personal data
+	}
+
+	@Then("the personal data should be successfully updated")
+	def thenPersonalDataShouldBeSuccessfullyUpdated() {
+		// Add verification code for successful update of personal data
 	}
 }

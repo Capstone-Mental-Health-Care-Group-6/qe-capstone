@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "392F26B55C87816B35C3229A9ECF8511",
+  "keywordClasses": [
+    {
+      "name": "admin.EditProfileLogout",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

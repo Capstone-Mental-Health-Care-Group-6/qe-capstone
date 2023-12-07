@@ -44,21 +44,39 @@ import cucumber.api.java.en.When
 
 
 
-class ForgotPassword {
+class ManagePencairanSaldoDoctor {
+	@Given("User is at the {Manage Pencairan Dana Dokter} page")
+def userIsAtPage(pageName) {
+    // Code to navigate to the specified page
+}
 
-	@Given("I am on the login page")
-	def navigateLoginPage() {
-	}
+@When("User clicks the {string} button")
+def userClicksButton(buttonName) {
+    // Code to click the specified button
+}
 
-	@When("I click on the Forgot Password link")
-	def clickForgotPassword() {
-	}
+@When("User clicks one of the lists at the table of Pencairan Dana Dokter")
+def userClicksListAtTable() {
+    // Code to click one of the lists at the table of Pencairan Dana Dokter
+}
 
-	@And("I send email for verification")
-	def sendEmailVerification() {
-	}
+@When("User clicks and chooses {string}")
+def userClicksAndChoosesStatus(status) {
+    // Code to click and choose the specified status
+}
 
-	@Then("I should have changed a new password")
-	def newPassword() {
-	}
+@Then("User should be navigated to the {string} page")
+def userShouldBeNavigatedToPage(pageName) {
+    // Code to verify the navigation to the specified page
+}
+
+@Then("User should see detailed information about the selected Pencairan Dana Dokter")
+def userShouldSeeDetailedInformation() {
+    // Code to verify the display of detailed information
+}
+
+@Then("User should see the status of the selected Pencairan Dana Dokter set to {string}")
+def userShouldSeeStatusSetTo(status) {
+    // Code to verify the status set to the specified value
+}
 }

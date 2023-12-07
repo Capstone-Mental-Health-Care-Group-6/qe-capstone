@@ -9,3 +9,4 @@ Feature: Forgot Password
     When I click on the Forgot Password link
     And I send email for verification
     Then I should have changed a new password
+	#=====================FIX=====================

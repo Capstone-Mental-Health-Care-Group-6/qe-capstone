@@ -45,21 +45,64 @@ import cucumber.api.java.en.When
 
 
 class ManageConsultationPackages {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
-	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
-	}
+    @Given("I am logged in and on the consultation packages page")
+    def navigateToConsultationPackagesPage() {
+    }
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
-	}
+    @When("I add a premium counseling package with valid data")
+    def addPremiumCounselingPackage() {
+    }
+
+    @Then("I should see a success message add premium counseling packages")
+    def successMessageAddPremiumCounselingPackages() {
+    }
+
+    @When("I attempt to add a premium counseling package and cancel")
+    def cancelAddPremiumCounselingPackage() {
+    }
+
+    @Then("the operation should be canceled successfully")
+    def operationCanceledSuccessfully() {
+    }
+
+    @When("I attempt to add a premium counseling package and close the pop-up")
+    def closePopupOnAddPremiumCounselingPackage() {
+    }
+
+    @Then("the pop-up should be closed successfully")
+    def popupClosedSuccessfullyOnAddPremiumCounselingPackage() {
+    }
+
+    @When("I edit a premium counseling package with valid data")
+    def editPremiumCounselingPackage() {
+    }
+
+    @Then("I should see a success message")
+    def successMessageEditPremiumCounselingPackage() {
+    }
+
+    @When("I attempt to edit a premium counseling package and cancel")
+    def cancelEditPremiumCounselingPackage() {
+    }
+
+    @When("I attempt to edit a premium counseling package and close the pop-up")
+    def closePopupOnEditPremiumCounselingPackage() {
+    }
+
+    @When("I delete a premium counseling package")
+    def deletePremiumCounselingPackage() {
+    }
+
+    @Then("I should see a success message add premium counseling packages")
+    def successMessageDeletePremiumCounselingPackage() {
+    }
+
+    @When("I attempt to delete a premium counseling package and cancel")
+    def cancelDeletePremiumCounselingPackage() {
+    }
+
+    @Then("the operation should be canceled successfully")
+    def operationCanceledSuccessfullyOnDeletePremiumCounselingPackage() {
+    }
 }

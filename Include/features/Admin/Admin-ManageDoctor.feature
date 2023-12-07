@@ -201,3 +201,5 @@ Feature: Manage Doctor Accounts
     #And I click on doctor's account details
     #And I input a keyword that doesn't exist in the practice application data
     Then I should successfully receive the appropriate results
+    
+    	#=====================FIX=====================

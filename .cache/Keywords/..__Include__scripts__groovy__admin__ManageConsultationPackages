@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "3E029F4C20DB9002F270E378E176A9B6",
+  "keywordFileContentHash": "0D7029E0CCAE65DA1E9F3B87B990373A",
   "keywordClasses": [
     {
       "name": "admin.ManageConsultationPackages",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

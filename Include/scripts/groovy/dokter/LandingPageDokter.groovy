@@ -48,21 +48,46 @@ class LandingPageDokter {
 
 	@Given("I navigate to EmphatiCare landing page")
 	def navigateLandingPage() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/')
+		WebUI.maximizeWindow()
 	}
 
 	@When("I verify button and scroll all the navigation hyperlinks")
 	def verifyButtonHyprelinks() {
+		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_Home'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_Service'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_About Us'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_Register'))
+		WebUI.delay(3)
+		WebUI.takeScreenshot()
+		
+		WebUI.scrollToPosition(0, 1000)
+		
+		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_Gabung Sebagai Konselor'))
 	}
 
 	@When("I click the register now button")
 	def clickRegister() {
+//		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/button_Download Sekarang'))
+//		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/button_Daftar Sebagai Konselor'))
 	}
 
 	@Then("I should be redirected to the correct navigation hyperlinks")
 	def redirectNavigationHyperlinks() {
+		WebUI.closeBrowser()
 	}
 
 	@Then("I should be redirected to the registration page")
 	def redirectRegistration() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/button_Daftar'), 30, FailureHandling.STOP_ON_FAILURE)
+		WebUI.delay(3)
+		WebUI.takeScreenshot()
+
+		WebUI.closeBrowser()
 	}
 }

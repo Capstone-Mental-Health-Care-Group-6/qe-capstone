@@ -46,63 +46,55 @@ import cucumber.api.java.en.When
 
 class ManageConsultationPackages {
 
-    @Given("I am logged in and on the consultation packages page")
-    def navigateToConsultationPackagesPage() {
-    }
+	@Given("I am logged in and on the consultation packages page")
+	def navigateToConsultationPackagesPage() {
+	}
 
-    @When("I add a premium counseling package with valid data")
-    def addPremiumCounselingPackage() {
-    }
+	@When("I add a premium counseling package with valid data")
+	def addPremiumCounselingPackage() {
+	}
 
-    @Then("I should see a success message add premium counseling packages")
-    def successMessageAddPremiumCounselingPackages() {
-    }
+	@When("I attempt to add a premium counseling package and cancel")
+	def cancelAddPremiumCounselingPackage() {
+	}
 
-    @When("I attempt to add a premium counseling package and cancel")
-    def cancelAddPremiumCounselingPackage() {
-    }
+	@When("I attempt to add a premium counseling package and close the pop-up")
+	def closePopupOnAddPremiumCounselingPackage() {
+	}
 
-    @Then("the operation should be canceled successfully")
-    def operationCanceledSuccessfully() {
-    }
+	@Then("the pop-up should be closed successfully")
+	def popupClosedSuccessfullyOnAddPremiumCounselingPackage() {
+	}
 
-    @When("I attempt to add a premium counseling package and close the pop-up")
-    def closePopupOnAddPremiumCounselingPackage() {
-    }
+	@When("I edit a premium counseling package with valid data")
+	def editPremiumCounselingPackage() {
+	}
 
-    @Then("the pop-up should be closed successfully")
-    def popupClosedSuccessfullyOnAddPremiumCounselingPackage() {
-    }
+	@Then("I should see a success message EditPremiumCounselingPackage")
+	def successMessageEditPremiumCounselingPackage() {
+	}
 
-    @When("I edit a premium counseling package with valid data")
-    def editPremiumCounselingPackage() {
-    }
+	@When("I attempt to edit a premium counseling package and cancel")
+	def cancelEditPremiumCounselingPackage() {
+	}
 
-    @Then("I should see a success message")
-    def successMessageEditPremiumCounselingPackage() {
-    }
+	@When("I attempt to edit a premium counseling package and close the pop-up")
+	def closePopupOnEditPremiumCounselingPackage() {
+	}
 
-    @When("I attempt to edit a premium counseling package and cancel")
-    def cancelEditPremiumCounselingPackage() {
-    }
+	@When("I delete a premium counseling package")
+	def deletePremiumCounselingPackage() {
+	}
 
-    @When("I attempt to edit a premium counseling package and close the pop-up")
-    def closePopupOnEditPremiumCounselingPackage() {
-    }
+	@Then("I should see a success message add premium counseling packages")
+	def successMessageDeletePremiumCounselingPackage() {
+	}
 
-    @When("I delete a premium counseling package")
-    def deletePremiumCounselingPackage() {
-    }
+	@When("I attempt to delete a premium counseling package and cancel")
+	def cancelDeletePremiumCounselingPackage() {
+	}
 
-    @Then("I should see a success message add premium counseling packages")
-    def successMessageDeletePremiumCounselingPackage() {
-    }
-
-    @When("I attempt to delete a premium counseling package and cancel")
-    def cancelDeletePremiumCounselingPackage() {
-    }
-
-    @Then("the operation should be canceled successfully")
-    def operationCanceledSuccessfullyOnDeletePremiumCounselingPackage() {
-    }
+	@Then("the operation should be canceled successfully")
+	def operationCanceledSuccessfullyOnDeletePremiumCounselingPackage() {
+	}
 }

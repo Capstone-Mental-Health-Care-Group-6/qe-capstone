@@ -45,11 +45,11 @@ import cucumber.api.java.en.When
 
 
 class ManageDoctor {
-	
+
 	@Given("I am on the manage doctor page")
 	def navigateManageDoctorPage() {
 	}
-	
+
 	@Given("I am on the dashboard doctor page")
 	def navigateDashboardforManageDoctorPage() {
 	}
@@ -57,23 +57,23 @@ class ManageDoctor {
 	@When("I click the doctor profile on the doctor list data")
 	def clickDoctorProfile() {
 	}
-	
+
 	@When("I click the doctor profile action button on the doctor list data")
 	def clickDoctorProfileListData() {
 	}
-	
+
 	@When("I click the Next button from the list data doctor")
 	def clickNextButtonManageDoctor() {
 	}
-	
+
 	@When("I click the Previous button from the list data doctor")
 	def clickPrevButtonManageDoctor() {
 	}
-	
+
 	@When("I input the keyword to search")
 	def clickKeySearch() {
 	}
-	
+
 	@When("I click the button filter")
 	def clickButtonFilterManageDoctor() {
 	}
@@ -85,39 +85,39 @@ class ManageDoctor {
 	@When("I click on the notification")
 	def clickNotificationManageDoctor() {
 	}
-	
+
 	@When("I input the keyword to search data doctor application")
 	def inputKeyDataDoctorApplication() {
 	}
-	
+
 	@When("I open the menu and click on Manage Doctor")
 	def openMenuonManageDoctor() {
 	}
-	
+
 	@When("I input a keyword that doesn't exist in the doctor data")
 	def inputKeyDoesntExist() {
 	}
-	
+
 	@And("I click the Deactivate Account button")
 	def clickDeactivateAccount() {
 	}
-	
+
 	@And("I click the cancel button to deactivate the account")
 	def clickCancelDeactivate() {
 	}
-	
+
 	@And("I click the detail information doctor")
 	def clickDetailInfo() {
 	}
-	
+
 	@And("I click the Tooltip Info button")
 	def clickTooltipInfo() {
 	}
-	
+
 	@And("I click the Deactivate Account button table")
 	def clickDeactiveAccountonTable() {
 	}
-	
+
 	@And("I click the View Account Details button")
 	def clickViewAccountDetails() {
 	}
@@ -125,25 +125,24 @@ class ManageDoctor {
 	@And("I click to accept the doctor's request")
 	def clickAcceptDoctorRequest() {
 	}
-	
+
 	@And("I click cancel in the alert to cancel the doctor's request")
 	def clickCancelAlertRequest() {
 	}
-	
+
 	@And("I click the filter data")
 	def clickFilterManageDoctorApplicationCard() {
 	}
-	
+
 	@And("I click the Reject Payment button")
 	def clickRejectPayment() {
 	}
-	
+
 	@And("I click the cancel button")
 	def clickCancelDoctorApplicationCard() {
 	}
-	
+
 	@Then("I should successfully receive the appropriate results")
 	def successManageDoctor() {
 	}
-	
 }

@@ -1,2 +1,14 @@
+<<<<<<< HEAD
 /dokter/
+=======
+/ProfileDataAkademik.class
+/dokter/
+/ProfileDocumentDokter.class
+/Signup.class
+>>>>>>> 536cef347fe9d7cfe1b1699c31d23ae65437a263
 /admin/
+/Login.class
+/ManageUser.class
+/ManageContent.class
+/ManagePencairanSaldo.class
+/ManagePencairanSaldoDokter.class

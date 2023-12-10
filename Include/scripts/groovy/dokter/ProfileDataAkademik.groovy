@@ -45,7 +45,7 @@ import cucumber.api.java.en.When
 
 
 class ProfileDataAkademik {
-	@Given("the user is on the dashboard page")
+	@Given("the user is on the dashboard Data Akademik page")
 	def givenUserIsOnDashboardPage() {
 		// Add code to navigate to the dashboard page
 	}
@@ -65,22 +65,22 @@ class ProfileDataAkademik {
 		// Add code to fill in the university field
 	}
 
-	@When("the user fills in the major and level of education")
+	@And("the user fills in the major and level of education")
 	def whenUserFillsInMajorAndLevel() {
 		// Add code to fill in the major and level of education fields
 	}
 
-	@When("the user fills in the doctor field")
+	@And("the user fills in the doctor field")
 	def whenUserFillsInDoctorField() {
 		// Add code to fill in the doctor field
 	}
 
-	@When("the user fills in the year of entry and year of university graduation")
+	@And("the user fills in the year of entry and year of university graduation")
 	def whenUserFillsInYearOfEntryAndGraduation() {
 		// Add code to fill in the year of entry and year of university graduation fields
 	}
 
-	@When("the user clicks the save changes button")
+	@And("the user clicks the save changes button data akademik")
 	def whenUserClicksSaveChangesButton() {
 		// Add code to simulate clicking the save changes button
 	}

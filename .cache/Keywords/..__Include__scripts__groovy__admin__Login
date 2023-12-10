@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "6842C811108C5678DAAF9D5D571AF74F",
+  "keywordFileContentHash": "414061B24666D36E63B1FFCDCE618790",
   "keywordClasses": [
     {
       "name": "admin.Login",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

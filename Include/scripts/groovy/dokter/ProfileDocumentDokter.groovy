@@ -45,6 +45,11 @@ import cucumber.api.java.en.When
 
 
 class ProfileDocumentDokter {
+	@Given("the user is on the dashboard page")
+	def givenUserIsOnDashboardPage() {
+		// Add code to navigate to the dashboard page
+	}
+
 	@When("the user clicks personal data")
 	def whenUserClicksPersonalData() {
 		// Add code to simulate clicking the personal data link

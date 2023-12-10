@@ -64,16 +64,16 @@ class LandingPageDokter {
 		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_Register'))
 		WebUI.delay(3)
 		WebUI.takeScreenshot()
-		
+
 		WebUI.scrollToPosition(0, 1000)
-		
+
 		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/a_Gabung Sebagai Konselor'))
 	}
 
 	@When("I click the register now button")
 	def clickRegister() {
-//		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/button_Download Sekarang'))
-//		WebUI.delay(3)
+		//		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/button_Download Sekarang'))
+		//		WebUI.delay(3)
 		WebUI.click(findTestObject('Object Repository/LandingPageDoctor/Page_EmphatiCare Doctor/button_Daftar Sebagai Konselor'))
 	}
 

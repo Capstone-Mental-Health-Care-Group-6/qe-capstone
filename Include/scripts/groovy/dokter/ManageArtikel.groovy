@@ -46,7 +46,7 @@ import cucumber.api.java.en.When
 
 class ManageArtikel {
 
-	@Given("the user is on the dashboard page")
+	@Given("the user is on the dashboard page manage artikel")
 	def givenUserIsOnDashboardPage() {
 		// Add code to navigate to the dashboard page
 	}

@@ -15,4 +15,3 @@ Feature: Landing Page Dokter
     Given I navigate to EmphatiCare landing page
     When I click the register now button
     Then I should be redirected to the registration page
-	#=====================FIX=====================

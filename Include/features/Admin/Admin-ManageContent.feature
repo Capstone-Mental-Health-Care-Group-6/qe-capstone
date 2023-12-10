@@ -1,6 +1,7 @@
 @Managecontent
 Feature: Manage content
-As a user i want to manage the content
+As a user 
+i want to manage the content
 
   Scenario: Search for Articles
     Given User opens the menu "Manage Articles"

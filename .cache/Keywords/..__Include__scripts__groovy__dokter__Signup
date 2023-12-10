@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "F6680A23D09E22BCAA39EC86849851B6",
+  "keywordFileContentHash": "31DE7EC902E532BE35BD9CC5F5DFBDE3",
   "keywordClasses": [
     {
       "name": "dokter.Signup",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

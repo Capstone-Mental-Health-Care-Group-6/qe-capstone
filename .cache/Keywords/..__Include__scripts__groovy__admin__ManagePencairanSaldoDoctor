@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "F53D22622ED277DCF51AE0D24F5D92B1",
+  "keywordFileContentHash": "D0A1DC84186FDD6FF74C458DF852660A",
   "keywordClasses": [
     {
       "name": "admin.ManagePencairanSaldoDoctor",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

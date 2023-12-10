@@ -56,7 +56,7 @@ class Login {
 		// Add code to ensure that an admin account exists
 	}
 
-	@When("User fills valid name and email")
+	@When("User input valid name and email")
 	def uservalidEmail() {
 		// Add code to fill valid name and email
 	}
@@ -131,7 +131,7 @@ class Login {
 		// Add code to fill valid name but leave the email field empty
 	}
 
-	@When("User fills valid password")
+	@When("User fills valid password for login")
 	def userFillsValidPassword() {
 		// Add code to fill valid password
 	}
@@ -141,7 +141,7 @@ class Login {
 		// Add assertions or verifications for the displayed error message
 	}
 
-	@When("User fills valid name and email")
+	@When("User fills valid name & email")
 	def userValidNameAndEmail() {
 		// Add code to fill valid name and email
 	}

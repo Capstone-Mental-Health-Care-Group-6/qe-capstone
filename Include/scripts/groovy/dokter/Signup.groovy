@@ -45,52 +45,52 @@ import cucumber.api.java.en.When
 
 
 class Signup {
-@Given("the user is on the Sign Up page for Doctor")
-	def givenUserIsOnDoctorSignUpPage() {}
-
-	@When("the user fills in the email")
-	def whenUserFillsInEmail(String email) {
-		println email
-	}
-
-	@Then("the email field should be populated with the provided email")
-	def thenEmailFieldShouldBePopulated() {}
-
-	@When("the user fills in the password")
-	def whenUserFillsInPassword(String password) {
-		println password
-	}
-
-	@Then("the password field should be populated with the provided password")
-	def thenPasswordFieldShouldBePopulated() {}
-
-	@When("the user fills in the confirm password")
-	def whenUserFillsInConfirmPassword(String cpassword) {
-		println cpassword
-	}
-
-	@Then("the confirm password field should be populated with the provided confirm password")
-	def thenConfirmPasswordFieldShouldBePopulated() {}
-
-	@When("the user clicks the register button")
-	def whenUserClicksRegisterButton() {}
-
-	@Then("the registration process should be initiated")
-	def thenRegistrationProcessShouldBeInitiated() {
-	}
-
-	@When("the user empties the registration form")
-	def whenUseremptyregform() {}
-
-	@Then("the email field should be empty")
-	def theEmailEmpty() {
-	}
-
-	@And("the password field should be empty")
-	def passworempty() {
-	}
-
-	@And("the confirm password field should be empty")
-	def confirmpwempty() {
-	}
+	//	@Given("the user is on the Sign Up page for Doctor")
+	//	def givenUserIsOnDoctorSignUpPage() {}
+	//
+	//	@When("the user fills in the email")
+	//	def whenUserFillsInEmail(String email) {
+	//		println email
+	//	}
+	//
+	//	@Then("the email field should be populated with the provided email")
+	//	def thenEmailFieldShouldBePopulated() {}
+	//
+	//	@When("the user fills in the password")
+	//	def whenUserFillsInPassword(String password) {
+	//		println password
+	//	}
+	//
+	//	@Then("the password field should be populated with the provided password")
+	//	def thenPasswordFieldShouldBePopulated() {}
+	//
+	//	@When("the user fills in the confirm password")
+	//	def whenUserFillsInConfirmPassword(String cpassword) {
+	//		println cpassword
+	//	}
+	//
+	//	@Then("the confirm password field should be populated with the provided confirm password")
+	//	def thenConfirmPasswordFieldShouldBePopulated() {}
+	//
+	//	@When("the user clicks the register button")
+	//	def whenUserClicksRegisterButton() {}
+	//
+	//	@Then("the registration process should be initiated")
+	//	def thenRegistrationProcessShouldBeInitiated() {
+	//	}
+	//
+	//	@When("the user empties the registration form")
+	//	def whenUseremptyregform() {}
+	//
+	//	@Then("the email field should be empty")
+	//	def theEmailEmpty() {
+	//	}
+	//
+	//	@And("the password field should be empty")
+	//	def passworempty() {
+	//	}
+	//
+	//	@And("the confirm password field should be empty")
+	//	def confirmpwempty() {
+	//	}
 }

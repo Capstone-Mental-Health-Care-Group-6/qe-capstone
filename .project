@@ -17,7 +17,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1700492960481</id>
+			<id>1701932086854</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +26,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1700492960496</id>
+			<id>1701932086867</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +35,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1700493222627</id>
+			<id>1701944518526</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,7 +44,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1700493222638</id>
+			<id>1701944518530</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -53,11 +53,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700659451240</id>
-=======
-			<id>1700829818839</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1701946154822</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -66,11 +62,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700659451253</id>
-=======
-			<id>1700829818850</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1701946154845</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -79,11 +71,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700831799873</id>
-=======
-			<id>1700834585092</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702018918560</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -92,11 +80,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700831799886</id>
-=======
-			<id>1700834585102</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702018918577</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -105,11 +89,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700906624296</id>
-=======
-			<id>1701087846801</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702022557741</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -118,11 +98,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700906624305</id>
-=======
-			<id>1701087846817</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702022557887</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -131,11 +107,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700907914541</id>
-=======
-			<id>1701268811702</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702040363280</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -144,11 +116,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1700907914551</id>
-=======
-			<id>1701268811723</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702040363296</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -157,11 +125,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1701087606807</id>
-=======
-			<id>1701737088429</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702041213213</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -170,99 +134,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1701087606828</id>
-=======
-			<id>1701737088445</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
-			<name></name>
-			<type>6</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
-			</matcher>
-		</filter>
-		<filter>
-<<<<<<< HEAD
-			<id>1701189177414</id>
-=======
-			<id>1701738253528</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
-			<name></name>
-			<type>10</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>.*\.svn$</arguments>
-			</matcher>
-		</filter>
-		<filter>
-<<<<<<< HEAD
-			<id>1701189177440</id>
-=======
-			<id>1701738253533</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
-			<name></name>
-			<type>6</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
-			</matcher>
-		</filter>
-		<filter>
-<<<<<<< HEAD
-			<id>1701193492726</id>
-=======
-			<id>1701784690718</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
-			<name></name>
-			<type>10</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>.*\.svn$</arguments>
-			</matcher>
-		</filter>
-		<filter>
-<<<<<<< HEAD
-			<id>1701193492745</id>
-			<name></name>
-			<type>6</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1701788348235</id>
-			<name></name>
-			<type>10</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>.*\.svn$</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1701788348262</id>
-			<name></name>
-			<type>6</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1701862553719</id>
-			<name></name>
-			<type>10</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>.*\.svn$</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1701862553736</id>
-=======
-			<id>1701784690734</id>
->>>>>>> 8a5bf9066d1750068e5017e5a3ef77709e938d92
+			<id>1702041213235</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

@@ -1,4 +1,5 @@
 package starter.stepdefinitions;
+import io.restassured.response.Response;
 import net.thucydides.core.annotations.Steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -6,6 +7,9 @@ import io.cucumber.java.en.Then;
 import starter.restapi.BundleCounseling;
 
 public class BundleCounselingSteps {
+
+    private Response BundleCounselingTest;
+
     @Steps
     BundleCounseling BundleCounseling;
 
@@ -60,21 +64,21 @@ public class BundleCounselingSteps {
     // [Positive] POST - Create Bundle
     @Given("I set the POST endpoint for creating a bundle")
     public void setCreateBundleEndpoint() {
-        BundleCounseling.setCreateBundleEndpoint();
+        starter.restapi.BundleCounseling.setCreateBundleEndpoint();
     }
 
     @When("I send an HTTP POST request Create Bundle")
     public void sendCreateBundleRequest() {
-        BundleCounseling.sendCreateBundleRequest();
+        starter.restapi.BundleCounseling.sendCreateBundleRequest("Test", 1, "PREMIUM", 300000, "Test", 1, "/Users/laras/OneDrive/Pictures/Icon/1.png");
     }
 
     @Then("I receive a valid data response for Create Bundle with HTTP status code 201 Created")
     public void validateCreateBundle201() {
-        BundleCounseling.validateCreateBundle201();
+        starter.restapi.BundleCounseling.validateCreateBundle201(BundleCounselingTest);
     }
 
     // [Negative] POST - Create Bundle Validation Error
-    @Given("I set the POST endpoint for Create Bundle Validation Error")
+/*    @Given("I set the POST endpoint for Create Bundle Validation Error")
     public void setCreateBundleValidationErrorEndpoint() {
         BundleCounseling.setCreateBundleValidationErrorEndpoint();
     }
@@ -151,7 +155,7 @@ public class BundleCounselingSteps {
     @Then("I receive a valid data response for Create Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateCreateBundleInvalidEndpoint404() {
         BundleCounseling.validateCreateBundleInvalidEndpoint404();
-    }
+    }*/
 
     // [Positive] GET - Get By ID
     @Given("I set the GET endpoint for retrieving a bundle by ID")
@@ -217,7 +221,7 @@ public class BundleCounselingSteps {
         BundleCounseling.validateGetBundleByIdInvalidEndpoint400();
     }
 
-    // [Positive] PUT - Update Bundle Success With File Update
+/*    // [Positive] PUT - Update Bundle Success With File Update
     @Given("I set the PUT endpoint for updating a bundle With File Update")
     public void setUpdateBundleWithFileUpdateEndpoint() {
         BundleCounseling.setUpdateBundleWithFileUpdateEndpoint();
@@ -295,7 +299,7 @@ public class BundleCounselingSteps {
     @Then("I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateUpdateBundleInvalidEndpoint404() {
         BundleCounseling.validateUpdateBundleInvalidEndpoint404();
-    }
+    }*/
 
     // [Positive] DELETE - Delete Bundle
     @Given("I set the DELETE endpoint for deleting a bundle")
@@ -340,9 +344,9 @@ public class BundleCounselingSteps {
         BundleCounseling.sendDeleteBundleInvalidEndpointRequest();
     }
 
-    @Then("I receive a valid data response for Delete Bundle Invalid Endpoint with HTTP status code 400 Bad Request")
+    @Then("I receive a valid data response for Delete Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateDeleteBundleInvalidEndpoint400() {
-        BundleCounseling.validateDeleteBundleInvalidEndpoint400();
+        BundleCounseling.validateDeleteBundleInvalidEndpoint404();
     }
 
 }

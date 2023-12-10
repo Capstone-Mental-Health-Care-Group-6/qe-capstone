@@ -4,7 +4,7 @@ Feature: Bundle Counseling
   I want to manage Bundle Counseling
   So that I can manage to Counseling
 
-# [Positive] GET - Get All Bundle
+  # [Positive] GET - Get All Bundle
   Scenario: User retrieves Get All Bundle successfully
     Given I set the GET endpoint for retrieving Get All Bundle
     When I send an HTTP GET request Get All Bundle Counseling
@@ -32,24 +32,24 @@ Feature: Bundle Counseling
   Scenario: User fails to create a bundle due to validation errors
     Given I set the POST endpoint for Create Bundle Validation Error
     When I send an HTTP POST request with invalid data for Create Bundle Validation Error
-    Then I receive a valid data response for Create Bundle Validation Errorwith HTTP status code 400 Bad Request
+    Then I receive a valid data response for Create Bundle Validation Error with HTTP status code 400 Bad Request
 
   # [Negative] POST - Create Bundle Validation File Error
   Scenario: User fails to create a bundle due to file validation error
     Given I set the POST endpoint for Create Bundle Validation File Error
     When I send an HTTP POST request with invalid file type for Create Bundle Validation File Error
-    Then I receive a valid data response for Create Bundle Validation File Errorwith HTTP status code 404 Not Found
+    Then I receive a valid data response for Create Bundle Validation File Error with HTTP status code 404 Not Found
 
     # [Negative] POST - Create Bundle Validation File Invalid Type
   Scenario: User fails to create a bundle due to invalid file type
     Given I set the POST endpoint for Create Bundle Validation File Invalid Type
-    When I send an HTTP POST request with file of invalid type
+    When I send an HTTP POST request with a file of invalid type for Create Bundle Validation File Invalid Type
     Then I receive a valid data response for Create Bundle Validation File Invalid Type with HTTP status code 400 Bad Request
 
 # [Negative] POST - Create Bundle Validation File Size Error
   Scenario: User fails to create a bundle due to file size error
     Given I set the POST endpoint for Create Bundle Validation File Size Error
-    When I send an HTTP POST request with file exceeding size limit
+    When I send an HTTP POST request with a file exceeding size limit for Create Bundle Validation File Size Error
     Then I receive a valid data response for Create Bundle Validation File Size Error with HTTP status code 400 Bad Request
 
 # [Negative] POST - Create Bundle Invalid Endpoint
@@ -112,19 +112,19 @@ Feature: Bundle Counseling
     When I send an HTTP PUT request for Update Bundle Invalid Endpoint
     Then I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found
 
-  # [Positive] DELTE - Delete Bundle
+  # [Positive] DELETE - Delete Bundle
   Scenario: User successfully deletes a bundle
     Given I set the DELETE endpoint for deleting a bundle
     When I send an HTTP DELETE request with a valid ID
     Then I receive a valid data response with HTTP status code 200 OK
 
-  # [Negative] DELTE - Delete Bundle Invalid ID
+  # [Negative] DELETE - Delete Bundle Invalid ID
   Scenario: User fails to delete a bundle with an invalid ID
     Given I set the DELETE endpoint for deleting a bundle with an invalid ID
     When I send an HTTP DELETE request with an invalid ID
     Then I receive a valid data response for Delete Bundle Invalid ID with HTTP status code 400 Bad Request
 
-  # [Negative] DELTE - Delete Bundle Invalid Endpoint
+  # [Negative] DELETE - Delete Bundle Invalid Endpoint
   Scenario: User fails to delete a bundle with an invalid endpoint
     Given I set the DELETE endpoint for deleting a bundle with an invalid endpoint
     When I send an HTTP DELETE request with an invalid endpoint

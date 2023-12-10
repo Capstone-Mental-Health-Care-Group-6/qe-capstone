@@ -1,8 +1,8 @@
 Feature: Chat Bot CS
 
   As a user
-  I want to manage Bundle Counseling
-  So that I can manage to Counseling
+  I want to use Chat Bot with CS
+  So that I can manage Chat Bot with CS
 
   # [Positive] GET - All Chatbot
   Scenario: User retrieves all chatbot messages successfully

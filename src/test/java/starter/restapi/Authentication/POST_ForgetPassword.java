@@ -1,0 +1,33 @@
+package starter.restapi.Authentication;
+
+import net.serenitybdd.rest.SerenityRest;
+import net.thucydides.core.annotations.Step;
+import org.json.simple.JSONObject;
+
+import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
+
+public class POST_ForgetPassword {
+
+    public String valid_url_ForgetPassword = "localhost:8000/forget-password ";
+
+    @Step("I sets a POST request to a valid endpoint for forget password endpoint")
+    public String RequestToAValidEndpointForForgetPasswordEndpoint() {
+        return valid_url_ForgetPassword;
+    }
+
+    @Step("I sends a POST request to the forget password endpoint with a valid email")
+    public void RequestToTheForgetPasswordEndpointWithAValidEmail() {
+        JSONObject reqBody = new JSONObject();
+        reqBody.put("email", "budiawanilham04@gmail.com"); // Menghapus "email":""
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .body(reqBody.toString())
+                .post(RequestToAValidEndpointForForgetPasswordEndpoint());
+    }
+
+    @Step("I should receive a response with HTTP status code 200 OK and successfully")
+    public void ResponseWithHTTPStatusCode200OKAndSuccessfully() {
+        restAssuredThat(response -> response.statusCode(200));
+    }
+}

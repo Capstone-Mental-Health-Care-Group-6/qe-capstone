@@ -12,7 +12,7 @@ public class POST_RegisterSteps {
     @Steps
     POST_Register POSTRegister;
     
-    // Authentication_register_negative1
+    // [Negative] POST - Register Error Validation
     @Given("I have an valid registration endpoint")
     public void validRegistrationEndpoint() {
         POSTRegister.validRegistrationEndpoint();
@@ -28,7 +28,7 @@ public class POST_RegisterSteps {
         POSTRegister.ResponseWithHTTPStatusCode400BadRequest();
     }
 
-    // Authentication_register_negative2
+    // [Negative] POST - Register Error
     @When("I provide name, email, role, and password that are already registered")
     public void NameEmailRoleAndPasswordThatAreAlreadyRegistered() {
         POSTRegister.NameEmailRoleAndPasswordThatAreAlreadyRegistered();
@@ -43,13 +43,13 @@ public class POST_RegisterSteps {
         POSTRegister.ResponseWithHTTPStatusCode500InternalServerError();
     }
 
-    // Authentication_register_negative3
+    // [Negative] POST - Error Email Already Registered
     @Given("I have a valid registration endpoint")
     public void ValidRegistrationEndpoint() {
         POSTRegister.ValidRegistrationEndpoint();
     }
 
-    // Authentication_register_positive1
+    // [Positive] POST - Successful Registration for Admin
     @When("I provide name, email, role, and password for an admin")
     public void NameEmailRoleAndPasswordForAnAdmin() {
         POSTRegister.NameEmailRoleAndPasswordForAnAdmin();
@@ -65,13 +65,13 @@ public class POST_RegisterSteps {
         POSTRegister.ResponseWithHTTPStatusCode201Created();
     }
 
-    // Authentication_register_positive2
+    // [Positive] POST - Successful Registration for Patient
     @When("I provide name, email, role, and password for a patient")
     public void NameEmailRoleAndPasswordForAPatient() {
         POSTRegister.NameEmailRoleAndPasswordForAPatient();
     }
 
-    // Authentication_register_positive3
+    // [Positive] POST - Successful Registration for Doctor
     @When("I provide name, email, role, and password for a doctor")
     public void NameEmailRoleAndPasswordForADoctor() {
         POSTRegister.NameEmailRoleAndPasswordForADoctor();

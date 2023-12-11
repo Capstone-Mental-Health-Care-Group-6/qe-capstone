@@ -8,8 +8,9 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class POST_ForgetPassword {
 
-    public String valid_url_ForgetPassword = "localhost:8000/forget-password ";
+    public String valid_url_ForgetPassword = "localhost:8000/forget-password";
 
+    // [Positive] POST - Success Forget Password
     @Step("I sets a POST request to a valid endpoint for forget password endpoint")
     public String RequestToAValidEndpointForForgetPasswordEndpoint() {
         return valid_url_ForgetPassword;

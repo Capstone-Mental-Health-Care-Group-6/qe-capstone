@@ -10,10 +10,10 @@ public class GET_LoginGoogleSteps {
     @Steps
     GET_LoginGoogle get_loginGoogle;
 
+    // [Positive] GET - Login Google Redirect to Callback
     @Given("I sets a GET request to a valid endpoint for login google endpoint")
     public void RequestToAValidEndpointForLoginGoogleEndpoint() {
         get_loginGoogle.RequestToAValidEndpointForLoginGoogleEndpoint();
-
     }
 
     @When("I sends a GET request to the login google endpoint for redirection to callback")

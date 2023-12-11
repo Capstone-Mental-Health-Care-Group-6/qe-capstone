@@ -8,6 +8,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 public class GET_LoginGoogleCallback {
     public String valid_url_loginGoogleCallback = "localhost:8000/login/google/callback ";
 
+    // [Positive] GET - Success Login Google Callback
     @Step("I sets a GET request to a valid endpoint for login google callback endpoint")
     public String ValidEndpointForLoginGoogleCallbackEndpoint() {
         return valid_url_loginGoogleCallback;

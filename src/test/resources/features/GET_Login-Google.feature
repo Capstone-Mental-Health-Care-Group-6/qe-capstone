@@ -3,8 +3,7 @@ Feature: Login Google
   As a
   I want to successfully log in with google using the API
 
-  # login google
-  @Authentication_login_Google_positive1
+  # [Positive] GET - Login Google Redirect to Callback
   Scenario: I login google redirect to callback
     Given I sets a GET request to a valid endpoint for login google endpoint
     When I sends a GET request to the login google endpoint for redirection to callback

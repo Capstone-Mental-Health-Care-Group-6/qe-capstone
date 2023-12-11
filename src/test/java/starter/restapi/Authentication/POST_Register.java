@@ -11,7 +11,7 @@ public class POST_Register {
     public String valid_domain_register = "https://kmb5alta.online/register";
     public String valid_endpoint_register = "localhost:8000/register";
 
-    // Authentication_register_negative1
+    // [Negative] POST - Register Error Validation
     @Step("I have an valid registration endpoint")
     public String validRegistrationEndpoint() {
         return valid_endpoint_register;
@@ -32,7 +32,7 @@ public class POST_Register {
         restAssuredThat(response -> response.statusCode(400));
     }
 
-    // Authentication_register_negative2
+    // [Negative] POST - Register Error
     @Step("I provide name, email, role, and password that are already registered")
     public void NameEmailRoleAndPasswordThatAreAlreadyRegistered() {
         String email = "admin@gmail.com";
@@ -53,13 +53,13 @@ public class POST_Register {
         restAssuredThat(response -> response.statusCode(500));
     }
 
-    // Authentication_register_negative3
+    // [Negative] POST - Error Email Already Registered
     @Step("I have a valid registration endpoint")
     public String ValidRegistrationEndpoint() {
         return valid_domain_register;
     }
 
-    // Authentication_register_positive1
+    // [Positive] POST - Successful Registration for Admin
     @Step("I provide name, email, role, and password for an admin")
     public void NameEmailRoleAndPasswordForAnAdmin() {
         String email = "admin@gmail.com";
@@ -89,7 +89,7 @@ public class POST_Register {
         restAssuredThat(response -> response.statusCode(201));
     }
 
-    // Authentication_register_positive2
+    // [Positive] POST - Successful Registration for Patient
     @Step("I provide name, email, role, and password for a patient")
     public void NameEmailRoleAndPasswordForAPatient() {
         String email = "patient@gmail.com";
@@ -106,7 +106,7 @@ public class POST_Register {
                 .post(validRegistrationEndpoint());
     }
 
-    // Authentication_register_positive3
+    // [Positive] POST - Successful Registration for Doctor
     @Step("I provide name, email, role, and password for a doctor")
     public void NameEmailRoleAndPasswordForADoctor() {
         String email = "doctorkedua@gmail.com";

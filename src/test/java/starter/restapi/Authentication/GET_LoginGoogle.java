@@ -9,6 +9,7 @@ public class GET_LoginGoogle {
 
     public String valid_url_loginGoogle = "localhost:8000/login/google";
 
+    // [Positive] GET - Login Google Redirect to Callback
     @Step("I sets a GET request to a valid endpoint for login google endpoint")
     public String RequestToAValidEndpointForLoginGoogleEndpoint() {
         return valid_url_loginGoogle;

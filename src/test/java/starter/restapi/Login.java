@@ -65,6 +65,7 @@ public class Login {
     public void ResponseWithHTTPStatusCodeBad400Request() {
         restAssuredThat(response -> response.statusCode(400));
     }
+
     // Authentication_login_negative2
     @Step("I sends a POST request to the login endpoint with data not found")
     public void RequestToTheLoginEndpointWithDataNotFound() {

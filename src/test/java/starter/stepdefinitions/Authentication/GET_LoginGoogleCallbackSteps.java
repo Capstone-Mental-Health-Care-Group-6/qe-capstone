@@ -12,6 +12,7 @@ public class GET_LoginGoogleCallbackSteps {
     @Steps
     GET_LoginGoogleCallback get_loginGoogleCallback;
 
+    // # [Positive] GET - Success Login Google Callback
     @Given("I sets a GET request to a valid endpoint for login google callback endpoint")
     public void ValidEndpointForLoginGoogleCallbackEndpoint() {
         get_loginGoogleCallback.ValidEndpointForLoginGoogleCallbackEndpoint();
@@ -20,7 +21,6 @@ public class GET_LoginGoogleCallbackSteps {
     @When("I sends a GET request to the login google callback endpoint")
     public void RequestToTheLoginGoogleCallbackEndpoint() {
         get_loginGoogleCallback.RequestToTheLoginGoogleCallbackEndpoint();
-
     }
 
     @Then("I should receive a response with HTTP status code 200")

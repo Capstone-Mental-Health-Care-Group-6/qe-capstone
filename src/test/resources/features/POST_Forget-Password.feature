@@ -3,8 +3,7 @@ Feature: Forget Password
   As a user
   I want to successfully request a password reset using the API
 
- # Forget Password
-  @Authentication_Forget_Password_positive1
+  # [Positive] POST - Success Forget Password
   Scenario: Successful Forget Password
     Given I sets a POST request to a valid endpoint for forget password endpoint
     When I sends a POST request to the forget password endpoint with a valid email

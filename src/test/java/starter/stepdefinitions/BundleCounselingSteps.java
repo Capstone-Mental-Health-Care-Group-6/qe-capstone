@@ -61,15 +61,24 @@ public class BundleCounselingSteps {
         BundleCounseling.validateBundleInvalidEndpoint404();
     }
 
+//    // [Positive] POST - Create Bundle
+//    @Given("I set the POST endpoint for creating a bundle")
+//    public void setCreateBundleEndpoint() {
+//        starter.restapi.BundleCounseling.setCreateBundleEndpoint();
+//    }
+
     // [Positive] POST - Create Bundle
     @Given("I set the POST endpoint for creating a bundle")
     public void setCreateBundleEndpoint() {
-        starter.restapi.BundleCounseling.setCreateBundleEndpoint();
+        // Simpan hasilnya dalam variabel
+        String endpoint = starter.restapi.BundleCounseling.setCreateBundleEndpoint();
+        // Opsional, Anda dapat menggunakan nilai endpoint dalam langkah-langkah selanjutnya atau mencetaknya
+        System.out.println("Endpoint untuk membuat bundle: " + endpoint);
     }
 
     @When("I send an HTTP POST request Create Bundle")
     public void sendCreateBundleRequest() {
-        starter.restapi.BundleCounseling.sendCreateBundleRequest("Test", 1, "PREMIUM", 300000, "Test", 1, "/Users/laras/OneDrive/Pictures/Icon/1.png");
+        BundleCounselingTest = starter.restapi.BundleCounseling.sendCreateBundleRequest("Test", 1, "PREMIUM", 300000, "Test", 1, "/Users/laras/OneDrive/Pictures/Icon/1.png");
     }
 
     @Then("I receive a valid data response for Create Bundle with HTTP status code 201 Created")
@@ -312,7 +321,8 @@ public class BundleCounselingSteps {
         BundleCounseling.sendDeleteBundleRequest();
     }
 
-    @Then("I receive a valid data response with HTTP status code 200 OK")
+    @Then("I receive a valid data response with HTTP status code 200 OK for delete bundle")
+
     public void validateDeleteBundle200() {
         BundleCounseling.validateDeleteBundle200();
     }

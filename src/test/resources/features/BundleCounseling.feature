@@ -116,7 +116,7 @@ Feature: Bundle Counseling
   Scenario: User successfully deletes a bundle
     Given I set the DELETE endpoint for deleting a bundle
     When I send an HTTP DELETE request with a valid ID
-    Then I receive a valid data response with HTTP status code 200 OK
+    Then I receive a valid data response with HTTP status code 200 OK for delete bundle
 
   # [Negative] DELETE - Delete Bundle Invalid ID
   Scenario: User fails to delete a bundle with an invalid ID

@@ -1,5 +1,6 @@
 package starter.stepdefinitions;
 
+import io.restassured.response.Response;
 import net.thucydides.core.annotations.Steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -7,6 +8,8 @@ import io.cucumber.java.en.Then;
 import starter.restapi.Web_Doctor;
 
 public class Web_DoctorSteps {
+
+    private Response Web_DoctorTest;
 
     @Steps
     Web_Doctor WebDoctorSteps;
@@ -43,23 +46,47 @@ public class Web_DoctorSteps {
         WebDoctorSteps.validateGetDoctorByIdResponse();
     }
 
-/*
     // [Positive] POST Register Doctor
     @Given("I set the POST endpoint for registering a doctor")
     public void setPostRegisterDoctorEndpoint() {
-        WebDoctorSteps.setPostRegisterDoctorEndpoint();
+//        WebDoctorSteps.setPostRegisterDoctorEndpoint();
+        // Simpan hasilnya dalam variabel
+        String endpoint = starter.restapi.Web_Doctor.setPostRegisterDoctorEndpoint();
+        // Opsional, Anda dapat menggunakan nilai endpoint dalam langkah-langkah selanjutnya atau mencetaknya
+        System.out.println("Endpoint untuk membuat bundle: " + endpoint);
     }
 
     @When("I send an HTTP POST request with a valid baseURL and body parameters")
     public void sendHttpPostRequestForRegisteringDoctor() {
-        WebDoctorSteps.sendHttpPostRequestForRegisteringDoctor();
+        Web_DoctorTest = starter.restapi.Web_Doctor.sendHttpPostRequestForRegisteringDoctor(
+                "Fauzan Ali Gans", "five_to_ten_years", "Doctor Desc B",
+                "Doctor Office B", "Doctor Office Addr B", "Doctor Office City B",
+                "Doctor Meet Link B", 4,
+                new String[]{"University C", "University D"},
+                new String[]{"Program C", "Program D"},
+                new String[]{"2020-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
+                new String[]{"Company C", "Company D"},
+                new String[]{"Title C", "Title D"},
+                new String[]{"Description C", "Description D"},
+                new String[]{"2020-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
+                new String[]{"2021-01-01T00:00:00Z", "2022-01-01T00:00:00Z"},
+                new boolean[]{true, false},
+                new int[]{1, 2},
+                new String[]{"2021-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
+                new String[]{"2021-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
+                "/Users/laras/OneDrive/Pictures/Icon/1.png",
+                "/Users/laras/OneDrive/Pictures/Icon/1.png",
+                "/Users/laras/OneDrive/Pictures/Icon/1.png",
+                "/Users/laras/OneDrive/Pictures/Icon/1.png",
+                "/Users/laras/OneDrive/Pictures/Icon/1.png"
+        );
+
     }
 
     @Then("I receive a valid data response for registering a doctor with HTTP status code 200 OK")
     public void validateRegisterDoctorResponse() {
-        WebDoctorSteps.validateRegisterDoctorResponse();
+        starter.restapi.Web_Doctor.validateRegisterDoctorResponse(Web_DoctorTest);
     }
-*/
 
     // [Positive] GET Search Doctor by Name
     @Given("I set the GET endpoint for searching a doctor by name")
@@ -76,8 +103,9 @@ public class Web_DoctorSteps {
     public void validateSearchDoctorByNameResponse() {
         WebDoctorSteps.validateSearchDoctorByNameResponse();
     }
+/*
 
-    /*// [Positive] PUT Edit Doctor Datapokok By Doctor ID
+    // [Positive] PUT Edit Doctor Datapokok By Doctor ID
     @Given("I set the PUT endpoint for editing doctor datapokok by ID")
     public void setPutEditDoctorDatapokokEndpoint() {
         WebDoctorSteps.setPutEditDoctorDatapokokEndpoint();
@@ -92,6 +120,7 @@ public class Web_DoctorSteps {
     public void validateEditDoctorDatapokokResponse() {
         WebDoctorSteps.validateEditDoctorDatapokokResponse();
     }
+*/
 
     // [Positive] PUT Edit Doctor Workdays By Doctor ID
     @Given("I set the PUT endpoint for editing doctor workdays by ID")
@@ -140,7 +169,7 @@ public class Web_DoctorSteps {
     public void validateEditDoctorExperienceResponse() {
         WebDoctorSteps.validateEditDoctorExperienceResponse();
     }
-*/
+
     // [Negative] GET All Doctor Invalid Endpoint
     @Given("I set the GET endpoint for retrieving all doctors with an invalid endpoint")
     public void setGetAllDoctorInvalidEndpoint() {
@@ -168,7 +197,7 @@ public class Web_DoctorSteps {
         WebDoctorSteps.sendHttpGetRequestForInvalidDoctorByIdEndpoint();
     }
 
-    @Then("I receive a valid data response for invalid endpoint retrieving a doctor by ID with HTTP status code 400 Bad Request")
+    @Then("I receive a valid data response for invalid endpoint retrieving a doctor by ID with HTTP status code 404 Not Found")
     public void validateInvalidDoctorByIdEndpointResponse() {
         WebDoctorSteps.validateInvalidDoctorByIdEndpointResponse();
     }
@@ -205,7 +234,6 @@ public class Web_DoctorSteps {
         WebDoctorSteps.validateInvalidSearchDoctorByNameEndpointResponse();
     }
 /*
-
     // [Negative] PUT Edit Doctor Datapokok By Doctor ID Invalid Endpoint
     @Given("I set the PUT endpoint for editing doctor datapokok by ID with an invalid endpoint")
     public void setPutEditDoctorDatapokokInvalidEndpoint() {
@@ -221,7 +249,8 @@ public class Web_DoctorSteps {
     public void validateInvalidEditDoctorDatapokokEndpointResponse() {
         WebDoctorSteps.validateInvalidEditDoctorDatapokokEndpointResponse();
     }
-
+*/
+/*
     // [Negative] PUT Edit Doctor Workdays By Doctor ID Invalid Endpoint
     @Given("I set the PUT endpoint for editing doctor workdays by ID with an invalid endpoint")
     public void setPutEditDoctorWorkdaysInvalidEndpoint() {
@@ -268,6 +297,5 @@ public class Web_DoctorSteps {
     @Then("I receive a valid data response for invalid endpoint editing doctor experience by ID with HTTP status code 404 Not Found")
     public void validateInvalidEditDoctorExperienceEndpointResponse() {
         WebDoctorSteps.validateInvalidEditDoctorExperienceEndpointResponse();
-    }
-*/
+    }*/
 }

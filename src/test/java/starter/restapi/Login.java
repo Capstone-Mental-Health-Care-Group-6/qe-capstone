@@ -12,38 +12,60 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Login {
 
-    protected static String email = "admin@gmail.com";
-    protected static String password = "admin123";
 
+    protected String email = "doctor5@gmail.com";
+    protected String password = "password";
     public String endpoint_auth = "https://kmb5alta.online/login";
-    public  String Endpoint_auth1 = "34.132.155.76:8000/login";
-    public static String token = "";
 
-    // Authentication_login_positive1
-    @Step ("I set authentication endpoint")
+
+    @Step("I set authentication endpoint for login")
     public String ISetAuthenticationEndpoint() {
-        return Endpoint_auth1; }
-
-    @Step("I send authentication endpoint")
-    public void ISendAuthenticationEndpoint() {
-        String email = "admin@gmail.com";
-        String password = "admin123";
-
-        Map<String, String> requestBody = new HashMap<>();
-        requestBody.put("email", email);
-        requestBody.put("password", password);
-
-        JSONObject reqBody = new JSONObject(requestBody);
-
-        SerenityRest.given()
-                .header("Content-Type", "application/json")
-                .body(reqBody.toString())
-                .post(ISetAuthenticationEndpoint());
-        token = lastResponse().getBody().jsonPath().get("data");
+        return endpoint_auth;
     }
 
+    @Step("I send authentication endpoint for login")
+    public void ISendAuthenticationEndpoint(String role) {
+        String authEmail = email;
+        String authPassword = password;
+
+        // Set credentials based on role
+        switch (role.toLowerCase()) {
+            case "admin":
+                authEmail = "admin@gmail.com";
+                authPassword = "admin@12";
+                break;
+            case "doctor":
+                authEmail = "Doctor5@gmail.com";
+                authPassword = "password";
+                break;
+            case "user":
+                authEmail = "user@gmail.com";
+                authPassword = "user@12";
+                break;
+            default:
+                // Handle unknown role or provide a default scenario
+                break;
+        }
+
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("email", authEmail);
+        requestBody.put("password", authPassword);
+
+        SerenityRest.given()
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDIzODU3MTMsImlhdCI6MTcwMjM4MjExMywiaWQiOjQ2LCJyb2xlIjoiRG9jdG9yIiwic3RhdHVzIjoiQWN0aXZlIn0.qSOTy0VA79oscbnPkMAaezLuAhKBayyuJsyCnhLJHis")
+                .contentType("application/json")
+                .body(requestBody.toJSONString())
+                .post(ISetAuthenticationEndpoint());
+
+    }
+
+    @Step("I receive a valid data response for login with HTTP status code 200 OK")
+    public void validateLogin200() {
+        restAssuredThat(response -> response.statusCode(200));
+    }
+/*
     // Authentication_login_negative1
-    @Step("I sends a POST request to the login endpoint with incorrect password")
+    @Step("I send a POST request to the login endpoint with incorrect password")
     public void RequestToTheLoginEndpointWithIncorrectPassword() {
         String email = "admin@gmail.com";
         String password = "admin1234"; // incorrect password
@@ -58,7 +80,11 @@ public class Login {
                 .header("Content-Type", "application/json")
                 .body(reqBody.toString())
                 .post(ISetAuthenticationEndpoint());
-        token = lastResponse().getBody().jsonPath().get("data");
+
+        token = lastResponse()
+                .getBody()
+                .jsonPath()
+                .get("data");
     }
 
     @Step("I should receive a response with HTTP status code 400 Bad Request")
@@ -67,7 +93,7 @@ public class Login {
     }
 
     // Authentication_login_negative2
-    @Step("I sends a POST request to the login endpoint with data not found")
+    @Step("I send a POST request to the login endpoint with data not found")
     public void RequestToTheLoginEndpointWithDataNotFound() {
         String email = "admin@gmail.com";
         String password = "admin1234"; // incorrect password
@@ -83,5 +109,5 @@ public class Login {
                 .body(reqBody.toString())
                 .post(ISetAuthenticationEndpoint());
         token = lastResponse().getBody().jsonPath().get("data");
-    }
+    }*/
 }

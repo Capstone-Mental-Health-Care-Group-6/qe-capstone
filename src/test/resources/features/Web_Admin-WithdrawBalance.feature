@@ -1,7 +1,3 @@
-
-public String valid_endpoint_withdrawBalance = "localhost:8000/withdraw";
-
-
 Feature: User Balance Disbursement Management
 
   Background:

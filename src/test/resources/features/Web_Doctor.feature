@@ -82,7 +82,7 @@ Feature: Doctor
 #    When I send an HTTP PUT request for editing doctor datapokok by ID with an invalid endpoint
 #    Then I receive a valid data response for invalid endpoint editing doctor datapokok by ID with HTTP status code 404 Not Found
 #
-## [Negative] PUT Edit Doctor Workdays By Doctor ID Invalid Endpoint
+# [Negative] PUT Edit Doctor Workdays By Doctor ID Invalid Endpoint
 #  Scenario: User fails to edit doctor workdays by ID with an invalid endpoint
 #    Given I set the PUT endpoint for editing doctor workdays by ID with an invalid endpoint
 #    When I send an HTTP PUT request for editing doctor workdays by ID with an invalid endpoint

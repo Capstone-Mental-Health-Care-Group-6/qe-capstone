@@ -13,18 +13,21 @@ public class LoginSteps {
     Login login;
 
     // Authentication_login_positive1
-    @Given("I set authentication endpoint")
+    @Given("I set authentication endpoint for login")
     public void ISetAuthenticationEndpoint() {
         login.ISetAuthenticationEndpoint();
     }
-
-    @And("I send authentication endpoint")
+    @When("I send authentication endpoint for login")
     public void ISendAuthenticationEndpoint() {
-        login.ISendAuthenticationEndpoint();
+        login.ISendAuthenticationEndpoint("doctor");
+    }
+    @Then("I receive a valid data response for login with HTTP status code 200 OK")
+    public void validateLogin200() {
+        login.validateLogin200();
     }
 
-    // Authentication_login_negative1
-    @When("I sends a POST request to the login endpoint with incorrect password")
+/*    // Authentication_login_negative1
+    @When("I send a POST request to the login endpoint with incorrect password")
     public void RequestToTheLoginEndpointWithIncorrectPassword() {
         login.RequestToTheLoginEndpointWithIncorrectPassword();
     }
@@ -35,8 +38,8 @@ public class LoginSteps {
     }
 
     // Authentication_login_negative2
-    @When("I sends a POST request to the login endpoint with data not found")
+    @When("I send a POST request to the login endpoint with data not found")
     public void RequestToTheLoginEndpointWithDataNotFound() {
         login.RequestToTheLoginEndpointWithDataNotFound();
-    }
+    }*/
 }

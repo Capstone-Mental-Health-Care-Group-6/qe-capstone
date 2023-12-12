@@ -1,22 +1,22 @@
-package starter.stepdefinitions.WebWithdrawBalance;
+package starter.stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
-import starter.restapi.WithdrawBalance;
+import starter.restapi.Web_AdminWithdrawBalance;
 
-public class GET_GetAllDataSteps {
+public class Web_AdminWithdrawBalanceSteps {
 
     @Steps
-    WithdrawBalance withdrawBalance;
+    Web_AdminWithdrawBalance withdrawBalance;
 
 
     // Background
     @Given("I set a valid endpoint for Withdraw Balance Disbursement operations")
     public void ValidEndpointForWithdrawBalanceDisbursementOperations() {
+        withdrawBalance.ValidEndpointForWithdrawBalanceDisbursementOperations();
     }
 
     // # [Positive] GET - Get All Data

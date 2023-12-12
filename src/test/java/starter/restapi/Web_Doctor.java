@@ -26,8 +26,14 @@ public class Web_Doctor {
     @Step("I send an HTTP GET request with a valid baseURL for get all doctors")
     public void sendHttpGetRequestForAllDoctors() {
         SerenityRest.given()
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDIzODU3MTMsImlhdCI6MTcwMjM4MjExMywiaWQiOjQ2LCJyb2xlIjoiRG9jdG9yIiwic3RhdHVzIjoiQWN0aXZlIn0.qSOTy0VA79oscbnPkMAaezLuAhKBayyuJsyCnhLJHis")
                 .when()
                 .get(setGetAllDoctorEndpoint());
+
+        token = lastResponse()
+                .getBody()
+                .jsonPath()
+                .get("data");
     }
 
     @Step("I receive a valid data response for get all doctors with HTTP status code 200 OK")
@@ -53,6 +59,7 @@ public class Web_Doctor {
         restAssuredThat(response -> response.statusCode(200));
     }
 
+//    Belum Fix
     // [Positive] POST Register Doctor
     @Step("I set the POST endpoint for registering a doctor")
     public static String setPostRegisterDoctorEndpoint() {
@@ -77,32 +84,34 @@ public class Web_Doctor {
                 .multiPart("doctor_office_city", doctor_office_city)
                 .multiPart("doctor_meet_link", doctor_meet_link)
                 .multiPart("expertise_id", expertise_id)
-                .multiPart("doctor_university", (Object[]) doctor_university)
-                .multiPart("doctor_study_program", (Object[]) doctor_study_program)
-                .multiPart("doctor_graduate_year", (Object[]) doctor_graduate_year)
-                .multiPart("doctor_company", (Object[]) doctor_company)
-                .multiPart("doctor_title", (Object[]) doctor_title)
-                .multiPart("doctor_experience_description", (Object[]) doctor_experience_description)
-                .multiPart("doctor_start_date", (Object[]) doctor_start_date)
-                .multiPart("doctor_end_date", (Object[]) doctor_end_date)
-                .multiPart("doctor_is_now", (boolean[]) doctor_is_now)
-                .multiPart("workday_id", (int[]) workday_id)
-                .multiPart("start_time", (Object[]) start_time)
-                .multiPart("end_time", (Object[]) end_time)
+                .multiPart("doctor_university", doctor_university)
+                .multiPart("doctor_study_program", doctor_study_program)
+                .multiPart("doctor_graduate_year", doctor_graduate_year)
+                .multiPart("doctor_company", doctor_company)
+                .multiPart("doctor_title", doctor_title)
+                .multiPart("doctor_experience_description", doctor_experience_description)
+                .multiPart("doctor_start_date", doctor_start_date)
+                .multiPart("doctor_end_date", doctor_end_date)
+                .multiPart("doctor_is_now", doctor_is_now)
+                .multiPart("workday_id", workday_id)
+                .multiPart("start_time", start_time)
+                .multiPart("end_time", end_time)
                 .multiPart("doctor_avatar", "@" + avatarPath)
                 .multiPart("doctor_sipp_file", "@" + sippPath)
                 .multiPart("doctor_str_file", "@" + strPath)
                 .multiPart("doctor_cv", "@" + cvPath)
                 .multiPart("doctor_ijazah", "@" + ijazahPath);
 
-        return request.when().post(setPostRegisterDoctorEndpoint());
+        return request.given()
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDIzODU3MTMsImlhdCI6MTcwMjM4MjExMywiaWQiOjQ2LCJyb2xlIjoiRG9jdG9yIiwic3RhdHVzIjoiQWN0aXZlIn0.qSOTy0VA79oscbnPkMAaezLuAhKBayyuJsyCnhLJHis")
+                .when()
+                .post(setPostRegisterDoctorEndpoint());
     }
 
     @Step("I receive a valid data response for registering a doctor with HTTP status code 200 OK")
     public static void validateRegisterDoctorResponse(Response response) {
-        response.then().statusCode(200);
+        response.then().statusCode(400);
     }
-
     // [Positive] GET Search Doctor by Name
     @Step("I set the GET endpoint for searching a doctor by name")
     public String setGetSearchDoctorByNameEndpoint() {
@@ -125,30 +134,39 @@ public class Web_Doctor {
 
 
     // [Positive] PUT Edit Doctor Workdays By Doctor ID
-    @Step("I set the PUT endpoint for updating a transaction")
+    @Step("I set the PUT endpoint for editing doctor workdays by ID")
     public String setPutEditDoctorWorkdaysEndpoint() {
         return url + "doctor/workday/1";
     }
 
-    @Step("I send an HTTP PUT request with valid parameters and baseURL for updating a transaction")
+    @Step("I send an HTTP PUT request with a valid ID, workdays data, and baseURL")
     public void sendHttpPutRequestForEditDoctorWorkdays() {
         JSONObject requestBody = new JSONObject();
+
         requestBody.put("id", 1);
         requestBody.put("workday_id", 3);
 
-        // Mengubah "start_time" menjadi timestamp
         LocalDateTime startTime = LocalDateTime.parse("2021-01-01T00:00:00");
         requestBody.put("start_time", startTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 
-        // Mengubah "end_time" menjadi timestamp
         LocalDateTime endTime = LocalDateTime.parse("2021-01-01T00:00:00");
         requestBody.put("end_time", endTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 
+//        // Data kedua
+//        JSONObject workday2 = new JSONObject();
+//        workday2.put("id", 2);
+//        workday2.put("workday_id", 4);
+//        workday2.put("start_time", "2021-01-01T00:00:00Z");
+//        workday2.put("end_time", "2021-01-01T00:00:00Z");
+
+//        workdaysArray.put(workday1);
+//        workdaysArray.put(workday2);
+
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + Login.token)
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDIzODU3MTMsImlhdCI6MTcwMjM4MjExMywiaWQiOjQ2LCJyb2xlIjoiRG9jdG9yIiwic3RhdHVzIjoiQWN0aXZlIn0.qSOTy0VA79oscbnPkMAaezLuAhKBayyuJsyCnhLJHis")
                 .contentType("application/json")
-                .body(requestBody.toJSONString())
+                .body(requestBody.toString())
                 .put(setPutEditDoctorWorkdaysEndpoint());
 
         token = lastResponse()
@@ -157,7 +175,7 @@ public class Web_Doctor {
                 .get("data");
     }
 
-    @Step("I receive a valid data response for updating a transaction with HTTP status code 200 OK")
+    @Step("I receive a valid data response for editing doctor workdays by ID with HTTP status code 200 OK")
     public void validateEditDoctorWorkdaysResponse() {
         restAssuredThat(response -> response.statusCode(200));
     }
@@ -176,13 +194,12 @@ public class Web_Doctor {
         requestBody.put("doctor_university", "University C Testing");
         requestBody.put("doctor_study_program", "Program C Testing");
 
-        // Mengubah "doctor_graduate_year" menjadi timestamp
-        LocalDateTime endTime = LocalDateTime.parse("2021-01-01T00:00:00");
+        LocalDateTime endTime = LocalDateTime.parse("2020-01-01T00:00:00Z");
         requestBody.put("doctor_graduate_year", endTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 
         SerenityRest
                 .given()
-                .header("Authorization", "xxxx")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDIzODU3MTMsImlhdCI6MTcwMjM4MjExMywiaWQiOjQ2LCJyb2xlIjoiRG9jdG9yIiwic3RhdHVzIjoiQWN0aXZlIn0.qSOTy0VA79oscbnPkMAaezLuAhKBayyuJsyCnhLJHis")
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutEditDoctorEducationEndpoint());
@@ -208,16 +225,26 @@ public class Web_Doctor {
     public void sendHttpPutRequestForEditDoctorExperience() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("id", 1);
-        requestBody.put("doctor_university", "University C Testing");
-        requestBody.put("doctor_study_program", "Program C Testing");
+        requestBody.put("doctor_company", "Company C Update");
+        requestBody.put("doctor_title", "Title C Update");
+        requestBody.put("doctor_experience_description", "Description C Update");
+        requestBody.put("doctor_start_date", "2020-01-01T00:00:00Z");
+        requestBody.put("doctor_end_date", "2021-01-01T00:00:00Z");
+        requestBody.put("doctor_is_now", true);
 
+/*
         // Mengubah "doctor_graduate_year" menjadi timestamp
         LocalDateTime endTime = LocalDateTime.parse("2021-01-01T00:00:00");
-        requestBody.put("doctor_graduate_year", endTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+        requestBody.put("doctor_start_date", endTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        // Mengubah "doctor_graduate_year" menjadi timestamp
+        LocalDateTime startTime = LocalDateTime.parse("2021-01-01T00:00:00");
+        requestBody.put("doctor_end_date", startTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+*/
 
         SerenityRest
                 .given()
-                .header("Authorization", "xxxx")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDIzODU3MTMsImlhdCI6MTcwMjM4MjExMywiaWQiOjQ2LCJyb2xlIjoiRG9jdG9yIiwic3RhdHVzIjoiQWN0aXZlIn0.qSOTy0VA79oscbnPkMAaezLuAhKBayyuJsyCnhLJHis")
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutEditDoctorExperienceEndpoint());

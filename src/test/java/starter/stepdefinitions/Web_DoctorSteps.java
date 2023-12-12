@@ -52,7 +52,7 @@ public class Web_DoctorSteps {
 //        WebDoctorSteps.setPostRegisterDoctorEndpoint();
         // Simpan hasilnya dalam variabel
         String endpoint = starter.restapi.Web_Doctor.setPostRegisterDoctorEndpoint();
-        // Opsional, Anda dapat menggunakan nilai endpoint dalam langkah-langkah selanjutnya atau mencetaknya
+        // Opsional, dapat menggunakan nilai endpoint dalam langkah-langkah selanjutnya atau mencetaknya
         System.out.println("Endpoint untuk membuat bundle: " + endpoint);
     }
 

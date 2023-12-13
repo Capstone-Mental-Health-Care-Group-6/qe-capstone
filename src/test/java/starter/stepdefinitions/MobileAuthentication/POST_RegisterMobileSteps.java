@@ -48,4 +48,9 @@ public class POST_RegisterMobileSteps {
     public void ResponseWithHTTPStatusCode400BadRequestDueToDuplicateEmail() {
         post_registerMobile.ResponseWithHTTPStatusCode400BadRequestDueToDuplicateEmail();
     }
+
+    // [Negative] PUT - Update Failed Validation
+    @When("I send a PUT HTTP request with invalid data to Update status of Balance Disbursement")
+    public void iSendAPUTHTTPRequestWithInvalidDataToUpdateStatusOfBalanceDisbursement() {
+    }
 }

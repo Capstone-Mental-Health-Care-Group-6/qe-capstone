@@ -207,3 +207,41 @@ Feature: Emphati Care
     Given I set the GET endpoint for retrieving transaction status by Midtrans ID
     When I send an HTTP GET request with valid Midtrans ID and baseURL for retrieving transaction status by Midtrans ID
     Then I receive a valid data response for retrieving transaction status by Midtrans ID with HTTP status code 200 OK
+
+# ===========================WEBSITE_ADMIN ARTICLE===========================
+
+  # [Positive] PUT - Approve Article
+  Scenario: User approves an article successfully
+    Given I set the PUT endpoint for approving an article
+    When I send an HTTP PUT request with valid parameters and baseURL for approving an article
+    Then I receive a valid data response for approving an article with HTTP status code 200 OK
+
+  # [Negative] PUT - Approve Article Invalid Input Param
+  Scenario: User fails to approve an article with invalid input parameters
+    Given I set the PUT endpoint for approving an article with invalid input parameters
+    When I send an HTTP PUT request with invalid baseURL for approving an article with invalid input parameters
+    Then I receive a valid data response for approving an article with invalid input parameters with HTTP status code 400 Bad Request
+
+  # [Positive] PUT - Deny Article
+  Scenario: User denies an article successfully
+    Given I set the PUT endpoint for denying an article
+    When I send an HTTP PUT request with valid parameters and baseURL for denying an article
+    Then I receive a valid data response for denying an article with HTTP status code 200 OK
+
+  # [Negative] PUT - Deny Article Invalid Input Param
+  Scenario: User fails to deny an article with invalid input parameters
+    Given I set the PUT endpoint for denying an article with invalid input parameters
+    When I send an HTTP PUT request with invalid baseURL for denying an article with invalid input parameters
+    Then I receive a valid data response for denying an article with invalid input parameters with HTTP status code 400 Bad Request
+
+  # [Positive] GET - Get All Article
+  Scenario: User retrieves all articles successfully
+    Given I set the GET endpoint for retrieving all articles
+    When I send an HTTP GET request with valid baseURL for retrieving all articles
+    Then I receive a valid data response for retrieving all articles with HTTP status code 200 OK
+
+# [Negative] GET - Get All Article Invalid Endpoint
+  Scenario: User fails to retrieve all articles with an invalid endpoint
+    Given I set the GET endpoint for retrieving all articles with an invalid endpoint
+    When I send an HTTP GET request with invalid baseURL for retrieving all articles with an invalid endpoint
+    Then I receive a valid data response for retrieving all articles with an invalid endpoint with HTTP status code 404 Not Found

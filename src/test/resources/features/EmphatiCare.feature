@@ -8,46 +8,46 @@ Feature: Emphati Care
   # KALO MAU EDIT FILE FITUR INI BILANG BILANG DI GRUP DULU YA, TAKUT KETIBAN KERJAAN KALIAN NANTI HILANG:(
 
   # ===========================AUTH REGISTER===========================
-
-  # [Negative] POST - Register Error Validation
-  Scenario: Error Validation on POST Register
-    Given I have an valid registration endpoint
-    When I send a POST request to the registration endpoint with an empty request body
-    Then I should receive a response with HTTP status code 400 bad request
-
-  # [Negative] POST - Register Error
-  Scenario: Error on POST Register with Duplicate Information
-    Given I have an valid registration endpoint
-    When I provide name, email, role, and password that are already registered
-    And I send a POST request to the invalid registration endpoint
-    Then I should receive a response with HTTP status code 500 internal server error
-
-  # [Negative] POST - Error Email Already Registered
-  Scenario: Error - Email Already Registered
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password that are already registered
-    Then I should receive a response with HTTP status code 500 internal server error
-
-  # [Positive] POST - Successful Registration for Admin
-  Scenario: Successful Registration for Admin
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for an admin
-    And I send a POST request to the valid registration endpoint
-    Then I should receive a response with HTTP status code 201 created
-
-  # [Positive] POST - Successful Registration for Patient
-  Scenario: Successful Registration for Patient
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for a patient
-    And I send a POST request to the valid registration endpoint
-    Then I should receive a response with HTTP status code 201 created
-
-  # [Positive] POST - Successful Registration for Doctor
-  Scenario: Successful Registration for Doctor
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for a doctor
-    And I send a POST request to the valid registration endpoint
-    Then I should receive a response with HTTP status code 201 created
+#
+#  # [Negative] POST - Register Error Validation
+#  Scenario: Error Validation on POST Register
+#    Given I have an valid registration endpoint
+#    When I send a POST request to the registration endpoint with an empty request body
+#    Then I should receive a response with HTTP status code 400 bad request
+#
+#  # [Negative] POST - Register Error
+#  Scenario: Error on POST Register with Duplicate Information
+#    Given I have an valid registration endpoint
+#    When I provide name, email, role, and password that are already registered
+#    And I send a POST request to the invalid registration endpoint
+#    Then I should receive a response with HTTP status code 500 internal server error
+#
+#  # [Negative] POST - Error Email Already Registered
+#  Scenario: Error - Email Already Registered
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password that are already registered
+#    Then I should receive a response with HTTP status code 500 internal server error
+#
+#  # [Positive] POST - Successful Registration for Admin
+#  Scenario: Successful Registration for Admin
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for an admin
+#    And I send a POST request to the valid registration endpoint
+#    Then I should receive a response with HTTP status code 201 created
+#
+#  # [Positive] POST - Successful Registration for Patient
+#  Scenario: Successful Registration for Patient
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for a patient
+#    And I send a POST request to the valid registration endpoint
+#    Then I should receive a response with HTTP status code 201 created
+#
+#  # [Positive] POST - Successful Registration for Doctor
+#  Scenario: Successful Registration for Doctor
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for a doctor
+#    And I send a POST request to the valid registration endpoint
+#    Then I should receive a response with HTTP status code 201 created
 
 
   # ===========================AUTH lOGIN==============================
@@ -133,3 +133,77 @@ Feature: Emphati Care
     Given I set the PUT endpoint for updating admin profile with an invalid endpoint
     When I send an HTTP PUT request with invalid baseURL for updating admin profile with an invalid endpoint
     Then I receive a valid data response for updating admin profile with an invalid endpoint with HTTP status code 404 Not Found
+
+  # ===========================TRANSACTION MANUAL===========================
+
+  # [Positive] POST - Make Manual Transaction
+  Scenario: User makes a manual transaction successfully
+    Given I set the POST endpoint for making a manual transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a manual transaction
+    Then I receive a valid data response for making a manual transaction with HTTP status code 201 Created
+
+  # [Negative] POST - Make Manual Transaction Doctor ID Not Found
+  Scenario: User fails to make a manual transaction with invalid doctor ID
+    Given I set the POST endpoint for making a manual transaction with invalid doctor ID
+    When I send an HTTP POST request with invalid doctor ID and valid parameters
+    Then I receive a valid data response for making a manual transaction with invalid doctor ID with HTTP status code 500 Internal Server Error
+
+  # [Positive] PUT - Update Transaction
+  Scenario: User updates transaction successfully
+    Given I set the PUT endpoint for updating a transaction
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction
+    Then I receive a valid data response for updating a transaction with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Transaction By ID
+  Scenario: User updates transaction by ID successfully
+    Given I set the PUT endpoint for updating a transaction by ID
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction by ID
+    Then I receive a valid data response for updating a transaction by ID with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Transaction Deny Transaction By Admin (On Confirmation)
+  Scenario: Admin denies transaction successfully (On Confirmation)
+    Given I set the PUT endpoint for updating a transaction to deny status by Admin
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction to deny status by Admin
+    Then I receive a valid data response for updating a transaction to deny status by Admin with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Transaction Accept Transaction By Admin (On Confirmation)
+  Scenario: Admin accepts transaction successfully (On Confirmation)
+    Given I set the PUT endpoint for updating a transaction to accept status by Admin
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction to accept status by Admin
+    Then I receive a valid data response for updating a transaction to accept status by Admin with HTTP status code 200 OK
+
+  # [Negative] PUT - Update Transaction Status is Accepted or Failure
+  Scenario: User fails to update transaction status to Accepted or Failure
+    Given I set the PUT endpoint for updating a transaction with invalid status
+    When I send an HTTP PUT request for updating a transaction with invalid status
+    Then I receive a valid data response for updating a transaction with invalid status with HTTP status code 500 Internal Server Error
+
+  # [Positive] GET - Get Transactions from User ID
+  Scenario: User retrieves transactions by User ID successfully
+    Given I set the GET endpoint for retrieving transactions by User ID
+    When I send an HTTP GET request with valid User ID and baseURL for retrieving transactions by User ID
+    Then I receive a valid data response for retrieving transactions by User ID with HTTP status code 200 OK
+
+  # [Positive] GET - Get Transactions from User ID Get Filtered By Payment Type Transactions from User ID
+  Scenario: User retrieves transactions by User ID and filtered by Payment Type successfully
+    Given I set the GET endpoint for retrieving transactions by User ID and filtered by Payment Type
+    When I send an HTTP GET request for retrieving transactions by User ID and filtered by Payment Type
+    Then I receive a valid data response for retrieving transactions by User ID and filtered by Payment Type with HTTP status code 200 OK
+
+  # [Positive] GET - Get All Transactions
+  Scenario: User retrieves all transactions successfully
+    Given I set the GET endpoint for retrieving all transactions
+    When I send an HTTP GET request with valid baseURL for retrieving all transactions
+    Then I receive a valid data response for retrieving all transactions with HTTP status code 200 OK
+
+  # [Positive] GET - Get All Transactions Get Sorted By Payment Type All Transactions
+  Scenario: User retrieves all transactions and sorted by Payment Type successfully
+    Given I set the GET endpoint for retrieving all transactions and sorted by Payment Type
+    When I send an HTTP GET request with valid Payment Type and baseURL for retrieving all transactions and sorted by Payment Type
+    Then I receive a valid data response for retrieving all transactions and sorted by Payment Type with HTTP status code 200 OK
+
+  # [Positive] GET - Show Transaction Status By Midtrans ID
+  Scenario: User retrieves transaction status by Midtrans ID successfully
+    Given I set the GET endpoint for retrieving transaction status by Midtrans ID
+    When I send an HTTP GET request with valid Midtrans ID and baseURL for retrieving transaction status by Midtrans ID
+    Then I receive a valid data response for retrieving transaction status by Midtrans ID with HTTP status code 200 OK

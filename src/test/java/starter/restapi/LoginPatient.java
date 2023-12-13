@@ -29,7 +29,7 @@ public class LoginPatient {
     @Step("I send authentication endpoint for login patient")
     public void sendAuthenticationEndpointForPatientLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "Admin1@gmail.com");
+        requestBody.put("email", "Patient@gmail.com");
         requestBody.put("password", "password");
 
         SerenityRest

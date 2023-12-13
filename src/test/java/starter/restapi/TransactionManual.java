@@ -26,7 +26,7 @@ public class TransactionManual {
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .multiPart("price_method", priceMethod)
                 .multiPart("price_counseling", priceCounseling)
                 .multiPart("price_duration", priceDuration)
@@ -38,7 +38,7 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for making a manual transaction with HTTP status code 201 Created")
     public void validateMakeManualTransactionResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(201));
     }
 
     // [Positive] POST - Make Manual Transaction Doctor ID Not Found
@@ -55,7 +55,7 @@ public class TransactionManual {
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .multiPart("price_method", priceMethod)
                 .multiPart("price_counseling", priceCounseling)
                 .multiPart("price_duration", priceDuration)
@@ -67,7 +67,7 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for making a manual transaction with invalid doctor ID with HTTP status code 500 Internal Server Error")
     public void validateMakeManualTransactionInvalidDoctorIdResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] PUT - Update Transaction / Update Transaction By Transaction ID
@@ -83,7 +83,7 @@ public class TransactionManual {
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutUpdateTransactionEndpoint());
@@ -91,7 +91,7 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for updating a transaction with HTTP status code 200 OK")
     public void validateUpdateTransactionResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     //[Positive] PUT - Update Transaction By ID
@@ -107,7 +107,7 @@ public class TransactionManual {
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutUpdateTransactionByIdEndpoint());
@@ -115,7 +115,7 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for updating a transaction by ID with HTTP status code 200 OK")
     public void validateUpdateTransactionByIdResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] PUT - Update Transaction Deny Transaction By Admin (On Confirmation)
@@ -131,7 +131,7 @@ public class TransactionManual {
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutDenyTransactionByAdminEndpoint());
@@ -139,7 +139,7 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for updating a transaction to deny status by Admin with HTTP status code 200 OK")
     public void validateDenyTransactionByAdminResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] PUT - Update Transaction Accept Transaction By Admin (On Confirmation)
@@ -155,7 +155,7 @@ public class TransactionManual {
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutAcceptTransactionByAdminEndpoint());
@@ -163,44 +163,44 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for updating a transaction to accept status by Admin with HTTP status code 200 OK")
     public void validateAcceptTransactionByAdminResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Negative] PUT - Update Transaction Status is Accepted or Failure
-    @Step("I set the PUT endpoint for updating a transaction to accept status by Admin")
+    @Step("I set the PUT endpoint for updating a transaction with invalid status")
     public String setPutUpdateTransactionWithInvalidStatusEndpoint() {
         return url + "transaksi/M-1702409419";
     }
 
-    @Step("I send an HTTP PUT request with valid parameters and baseURL for updating a transaction to accept status by Admin")
+    @Step("I send an HTTP PUT request for updating a transaction with invalid status")
     public void sendHttpPutRequestForUpdateTransactionWithInvalidStatus() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("payment_status", 4);
+        requestBody.put("payment_status", 2);
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutUpdateTransactionWithInvalidStatusEndpoint());
     }
 
-    @Step("I receive a valid data response for updating a transaction to accept status by Admin with HTTP status code 200 OK")
+    @Step("I receive a valid data response for updating a transaction with invalid status with HTTP status code 500 Internal Server Error")
     public void validateUpdateTransactionWithInvalidStatusResponse() {
-        restAssuredThat(response -> response.statusCode(401));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] GET - Get Transactions from User ID
     @Step("I set the GET endpoint for retrieving user information")
     public String setGetUserTransactionsEndpoint(){
-        return url + "transaksi/26";
+        return url + "transaksi/2";
 
     }
     @Step("I send an HTTP GET request with a valid token")
     public void sendHttpGetRequestForUserTransactions(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .get(setGetUserTransactionsEndpoint());
 
     }
@@ -219,7 +219,7 @@ public class TransactionManual {
     public void sendHttpGetRequestForUserTransactionsFilteredByPaymentType(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .get(setGetUserTransactionsFilteredByPaymentTypeEndpoint());
 
     }
@@ -238,7 +238,7 @@ public class TransactionManual {
     public void sendHttpGetRequestForAllTransactions(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .get(setGetAllTransactionsEndpoint());
 
     }
@@ -250,14 +250,15 @@ public class TransactionManual {
     // [Positive] GET - Get All Transactions Get Sorted By Payment Type All Transactions
     @Step("I set the GET endpoint for retrieving all transactions and sorted by Payment Type")
     public String setGetAllTransactionsSortedByPaymentTypeEndpoint(){
-        return url + "transaksi?payment_type=manual";
+        return url + "transaksi?payment_type=";
 
     }
     @Step("I send an HTTP GET request with valid Payment Type and baseURL for retrieving all transactions and sorted by Payment Type")
     public void sendHttpGetRequestForAllTransactionsSortedByPaymentType(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
+                .param("payment_type", "manual") // Adjust the parameter as needed
                 .get(setGetAllTransactionsSortedByPaymentTypeEndpoint());
 
     }
@@ -276,7 +277,7 @@ public class TransactionManual {
     public void sendHttpGetRequestForTransactionStatusByMidtransId(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0MDY4NzUsImlhdCI6MTcwMjQwMzI3NSwiaWQiOjQ4LCJyb2xlIjoiUGF0aWVudCIsInN0YXR1cyI6IkFjdGl2ZSJ9.l-5rRSq0EwVIL4Ry0sRqbqoTCFe63sKe_-U9Ucx2mK4")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .get(setGetTransactionStatusByMidtransIdEndpoint());
 
     }

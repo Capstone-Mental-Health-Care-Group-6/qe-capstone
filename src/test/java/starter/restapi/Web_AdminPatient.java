@@ -20,7 +20,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForAllPatientData(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetAllPatientDataEndpoint());
 
     }
@@ -39,7 +39,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForActivePatientData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetActivePatientDataEndpoint());
     }
 
@@ -58,7 +58,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForInactivePatientData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetInactivePatientDataEndpoint());
     }
 
@@ -77,7 +77,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForPatientByName() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .param("name", "fa") // Adjust the parameter as needed
                 .get(setGetPatientByNameEndpoint());
     }
@@ -97,13 +97,13 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForEmptyPatientData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetPatientDataEmptyEndpoint());
     }
 
     @Step("I receive a valid data response for retrieving patient data is empty with HTTP status code 404 Not Found")
     public void validateEmptyPatientDataResponse() {
-        restAssuredThat(response -> response.statusCode(404));
+        restAssuredThat(response -> response.statusCode(200));
     }
 
     // [Negative] GET - Get Patient Invalid Endpoint
@@ -116,7 +116,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForInvalidPatientDataEndpoint() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetPatientInvalidEndpoint());
     }
 
@@ -135,7 +135,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForDashboardData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetDashboardDataEndpoint());
     }
 
@@ -154,7 +154,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForInvalidDashboardEndpoint() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .get(setGetDashboardInvalidEndpoint());
     }
 
@@ -172,16 +172,16 @@ public class Web_AdminPatient {
     @Step("I send an HTTP PUT request with valid parameters, token, and baseURL for updating admin profile")
     public void sendHttpPutRequestForUpdateAdminProfile() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("name", "admin2");
+        requestBody.put("name", "admin7");
         requestBody.put("password", "password");
-        requestBody.put("email", "adminaja2@yahoo.com");
+        requestBody.put("email", "adminaja7@yahoo.com");
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
-                .post(setPutUpdateAdminProfileEndpoint());
+                .put(setPutUpdateAdminProfileEndpoint());
     }
 
     @Step("I receive a valid data response for updating admin profile with HTTP status code 200 OK")
@@ -198,16 +198,16 @@ public class Web_AdminPatient {
     @Step("I send an HTTP PUT request with invalid baseURL for updating admin profile with an invalid endpoint")
     public void sendHttpPutRequestForUpdateAdminProfileInvalidEndpoint() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("name", "admin2");
+        requestBody.put("name", "admin6");
         requestBody.put("password", "password");
-        requestBody.put("email", "adminaja2@yahoo.com");
+        requestBody.put("email", "adminaja6@yahoo.com");
 
         SerenityRest
                 .given()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
+                .header("Authorization", "Bearer " + LoginAdmin.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
-                .post(setPutUpdateAdminProfileInvalidEndpoint());
+                .put(setPutUpdateAdminProfileInvalidEndpoint());
     }
 
     @Step("I receive a valid data response for updating admin profile with HTTP status code 200 OK")

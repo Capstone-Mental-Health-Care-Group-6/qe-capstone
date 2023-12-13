@@ -11,7 +11,7 @@ public class Mobile_Patient_Auth_LoginSteps {
     @Steps
     Mobile_Patient_Auth_Login mobilePatientAuthLogin;
 
-    // [Positive] POST - Login Success
+    // [Positive] POST - LoginAdmin Success
     @Given("I set the authentication mobile endpoint")
     public void AuthenticationMobileEndpoint() {
         mobilePatientAuthLogin.AuthenticationMobileEndpoint();
@@ -27,8 +27,8 @@ public class Mobile_Patient_Auth_LoginSteps {
         mobilePatientAuthLogin.ResponseWithHTTPStatusCode200OKAndSuccessfullyLogIn();
     }
 
-    // [Negative] POST - Login Error Password Invalid
-    @When("I send a POST request to the login endpoint with an invalid Password")
+    // [Negative] POST - LoginAdmin Error Password Invalid
+    @When("I send a POST request to the loginAdmin endpoint with an invalid Password")
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
         mobilePatientAuthLogin.RequestToTheLoginEndpointWithAnInvalidPassword();
     }
@@ -38,8 +38,8 @@ public class Mobile_Patient_Auth_LoginSteps {
         mobilePatientAuthLogin.ResponseWithHTTPStatusCode400BadRequestAndInvalidPassword();
     }
 
-    // [Positive] POST - Login Success update Password
-    @When("I send a POST request to the login endpoint with a successful password update")
+    // [Positive] POST - LoginAdmin Success update Password
+    @When("I send a POST request to the loginAdmin endpoint with a successful password update")
     public void RequestToTheLoginEndpointWithASuccessfulPasswordUpdate() {
         mobilePatientAuthLogin.RequestToTheLoginEndpointWithASuccessfulPasswordUpdate();
     }

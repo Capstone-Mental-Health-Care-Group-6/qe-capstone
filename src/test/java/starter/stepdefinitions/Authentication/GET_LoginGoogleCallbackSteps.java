@@ -12,7 +12,7 @@ public class GET_LoginGoogleCallbackSteps {
     @Steps
     GET_LoginGoogleCallback get_loginGoogleCallback;
 
-    // # [Positive] GET - Success Login Google Callback
+    // # [Positive] GET - Success LoginAdmin Google Callback
     @Given("I sets a GET request to a valid endpoint for login google callback endpoint")
     public void ValidEndpointForLoginGoogleCallbackEndpoint() {
         get_loginGoogleCallback.ValidEndpointForLoginGoogleCallbackEndpoint();

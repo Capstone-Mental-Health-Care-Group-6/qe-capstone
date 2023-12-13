@@ -20,7 +20,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForAllPatientData(){
         SerenityRest.given()
                 .when()
-                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0NzI1NjAsImlhdCI6MTcwMjQ2ODk2MCwiaWQiOjU0LCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.P7q_BQcsbCYHTSgqx2iW5wJxGnGVHZX8OWTZr51o9M0")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
                 .get(setGetAllPatientDataEndpoint());
 
     }
@@ -39,7 +39,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForActivePatientData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
                 .get(setGetActivePatientDataEndpoint());
     }
 
@@ -58,7 +58,7 @@ public class Web_AdminPatient {
     public void sendHttpGetRequestForInactivePatientData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
                 .get(setGetInactivePatientDataEndpoint());
     }
 
@@ -70,15 +70,15 @@ public class Web_AdminPatient {
     // [Positive] GET - Get Patient by Name
     @Step("I set the GET endpoint for retrieving patient data by name")
     public String setGetPatientByNameEndpoint() {
-        return url + "patient/byName";
+        return url + "patient?name=";
     }
 
     @Step("I send an HTTP GET request with valid parameters and baseURL for retrieving patient data by name")
     public void sendHttpGetRequestForPatientByName() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
-                .param("name", "your_patient_name_here") // Adjust the parameter as needed
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
+                .param("name", "fa") // Adjust the parameter as needed
                 .get(setGetPatientByNameEndpoint());
     }
 
@@ -90,14 +90,14 @@ public class Web_AdminPatient {
     // [Negative] GET - Get Patient Data Empty
     @Step("I set the GET endpoint for retrieving patient data is empty")
     public String setGetPatientDataEmptyEndpoint() {
-        return url + "patient/empty";
+        return url + "patient";
     }
 
     @Step("I send an HTTP GET request with valid baseURL for retrieving patient data is empty")
     public void sendHttpGetRequestForEmptyPatientData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
                 .get(setGetPatientDataEmptyEndpoint());
     }
 
@@ -109,14 +109,14 @@ public class Web_AdminPatient {
     // [Negative] GET - Get Patient Invalid Endpoint
     @Step("I set the GET endpoint for retrieving patient data with an invalid endpoint")
     public String setGetPatientInvalidEndpoint() {
-        return url + "patient/invalid";
+        return url + "patien";
     }
 
     @Step("I send an HTTP GET request with invalid baseURL for retrieving patient data")
     public void sendHttpGetRequestForInvalidPatientDataEndpoint() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0ODM5NjMsImlhdCI6MTcwMjQ4MDM2MywiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ._AaVC39wKuriSdcNhoGyGsk-hB5hUvYNAMfMjjd0YpQ")
                 .get(setGetPatientInvalidEndpoint());
     }
 
@@ -126,16 +126,16 @@ public class Web_AdminPatient {
     }
 
     // [Positive] GET - Dashboard
-    @Given("I set the GET endpoint for retrieving dashboard data")
+    @Step("I set the GET endpoint for retrieving dashboard data")
     public String setGetDashboardDataEndpoint() {
-        return url + "dashboard";
+        return url + "patient/dashboard";
     }
 
-    @When("I send an HTTP GET request with valid parameters, token, and baseURL for retrieving dashboard data")
+    @Step("I send an HTTP GET request with valid parameters, token, and baseURL for retrieving dashboard data")
     public void sendHttpGetRequestForDashboardData() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
                 .get(setGetDashboardDataEndpoint());
     }
 
@@ -147,14 +147,14 @@ public class Web_AdminPatient {
     // [Negative] GET - Dashboard Invalid Endpoint
     @Step("I set the GET endpoint for retrieving dashboard data with an invalid endpoint")
     public String setGetDashboardInvalidEndpoint() {
-        return url + "dashboard/invalid";
+        return url + "patient/dashboar";
     }
 
     @Step("I send an HTTP GET request with invalid baseURL for retrieving dashboard data with an invalid endpoint")
     public void sendHttpGetRequestForInvalidDashboardEndpoint() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "your_auth_token_here")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
                 .get(setGetDashboardInvalidEndpoint());
     }
 
@@ -166,18 +166,19 @@ public class Web_AdminPatient {
     // [Positive] PUT - Update Profile Admin
     @Step("I set the PUT endpoint for updating admin profile")
     public String setPutUpdateAdminProfileEndpoint() {
-        return url + "admin/profile";
+        return url + "admin/update";
     }
 
     @Step("I send an HTTP PUT request with valid parameters, token, and baseURL for updating admin profile")
     public void sendHttpPutRequestForUpdateAdminProfile() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "larasati@gmail.com");
+        requestBody.put("name", "admin2");
         requestBody.put("password", "password");
+        requestBody.put("email", "adminaja2@yahoo.com");
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IiAiLCJFbWFpbCI6ImxhcmFzYXRpQGdtYWlsLmNvbSJ9.MabljNzw6McLeT2yj_RllLcEgjbvnnNOb4_R_bKi83E")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .post(setPutUpdateAdminProfileEndpoint());
@@ -185,32 +186,33 @@ public class Web_AdminPatient {
 
     @Step("I receive a valid data response for updating admin profile with HTTP status code 200 OK")
     public void validateUpdateAdminProfileResponse() {
-        // Add your logic to validate the response, e.g., check for status code 200
+        restAssuredThat(response -> response.statusCode(200));
     }
 
     // [Negative] PUT - Update Profile Admin Invalid Endpoint
     @Step("I set the PUT endpoint for updating admin profile with an invalid endpoint")
     public String setPutUpdateAdminProfileInvalidEndpoint() {
-        return url + "admin/profile/invalid";
+        return url + "admin/updat";
     }
 
     @Step("I send an HTTP PUT request with invalid baseURL for updating admin profile with an invalid endpoint")
     public void sendHttpPutRequestForUpdateAdminProfileInvalidEndpoint() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "larasati@gmail.com");
+        requestBody.put("name", "admin2");
         requestBody.put("password", "password");
+        requestBody.put("email", "adminaja2@yahoo.com");
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IiAiLCJFbWFpbCI6ImxhcmFzYXRpQGdtYWlsLmNvbSJ9.MabljNzw6McLeT2yj_RllLcEgjbvnnNOb4_R_bKi83E")
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI0OTEwNTAsImlhdCI6MTcwMjQ4NzQ1MCwiaWQiOjYzLCJyb2xlIjoiQWRtaW4iLCJzdGF0dXMiOiJBY3RpdmUifQ.lVinJSuHYudtLHmpqUSGVHVJkaZSN5muLbSBmm-KHKU")
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .post(setPutUpdateAdminProfileInvalidEndpoint());
     }
 
-    @Step("I receive a valid data response for updating admin profile with an invalid endpoint with HTTP status code 404 Not Found")
+    @Step("I receive a valid data response for updating admin profile with HTTP status code 200 OK")
     public void validateUpdateAdminProfileInvalidEndpointResponse() {
-        // Add your logic to validate the response, e.g., check for status code 404
+        restAssuredThat(response -> response.statusCode(404));
     }
 
 }

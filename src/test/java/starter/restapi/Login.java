@@ -31,16 +31,16 @@ public class Login {
         // Set credentials based on role
         switch (role.toLowerCase()) {
             case "admin":
-                authEmail = "admin@gmail.com";
-                authPassword = "admin@12";
+                authEmail = "admintest@gmail.com";
+                authPassword = "password";
                 break;
             case "doctor":
                 authEmail = "Doctor5@gmail.com";
                 authPassword = "password";
                 break;
             case "user":
-                authEmail = "user@gmail.com";
-                authPassword = "user@12";
+                authEmail = "patient@gmail.com";
+                authPassword = "password";
                 break;
             default:
                 // Handle unknown role or provide a default scenario

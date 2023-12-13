@@ -1,12 +1,10 @@
-package starter.restapi.MobileAuthentication;
+package starter.restapi;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
-public class POST_LoginMobile {
+public class Mobile_Patient_Auth_Login {
     public String endpoint_login_mobile = "104.198.45.50:80/patient/login ";
 
     // [Positive] POST - Login Success

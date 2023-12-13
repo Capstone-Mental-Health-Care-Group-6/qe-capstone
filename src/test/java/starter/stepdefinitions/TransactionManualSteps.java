@@ -11,24 +11,30 @@ public class TransactionManualSteps {
     @Steps
     TransactionManual TransactionManual;
 
-/*
     // [Positive] POST - Make Manual Transaction
-     @Given("I set the POST endpoint for making a manual transaction")
-     public void setPostMakeManualTransactionEndpoint() {
-         TransactionManual.setPostMakeManualTransactionEndpoint();
-     }
+    @Given("I set the POST endpoint for making a manual transaction")
+    public void setPostMakeManualTransactionEndpoint() {
+        TransactionManual.setPostMakeManualTransactionEndpoint();
+    }
 
-     @When("I send an HTTP POST request with valid parameters and baseURL for making a manual transaction")
-     public void sendHttpPostRequestForMakeManualTransaction() {
-         TransactionManual.sendHttpPostRequestForMakeManualTransaction();
-     }
+    @When("I send an HTTP POST request with valid parameters and baseURL for making a manual transaction")
+    public void sendHttpPostRequestForMakeManualTransaction() {
+        String priceMethod = "180000";
+        String priceCounseling = "50000";
+        String priceDuration = "45000";
+        String paymentProofPath = "/Users/laras/OneDrive/Pictures/Icon/1.png";
+        String paymentType = "manual";
+        String doctorId = "6";
 
-     @Then("I receive a valid data response for making a manual transaction with HTTP status code 201 Created")
-     public void validateMakeManualTransactionResponse() {
-         TransactionManual.validateMakeManualTransactionResponse();
-     }
+        TransactionManual.sendHttpPostRequestForMakeManualTransaction(priceMethod, priceCounseling, priceDuration, paymentProofPath, paymentType, doctorId);
+    }
 
-     // [Negative] POST - Make Manual Transaction Doctor ID Not Found
+    @Then("I receive a valid data response for making a manual transaction with HTTP status code 201 Created")
+    public void validateMakeManualTransactionResponse() {
+        TransactionManual.validateMakeManualTransactionResponse();
+    }
+
+    // [Negative] POST - Make Manual Transaction Doctor ID Not Found
      @Given("I set the POST endpoint for making a manual transaction with invalid doctor ID")
      public void setPostMakeManualTransactionInvalidDoctorIdEndpoint() {
          TransactionManual.setPostMakeManualTransactionInvalidDoctorIdEndpoint();
@@ -36,14 +42,20 @@ public class TransactionManualSteps {
 
      @When("I send an HTTP POST request with invalid doctor ID and valid parameters")
      public void sendHttpPostRequestForMakeManualTransactionInvalidDoctorId() {
-         TransactionManual.sendHttpPostRequestForMakeManualTransactionInvalidDoctorId();
+         String priceMethod = "180000";
+         String priceCounseling = "50000";
+         String priceDuration = "45000";
+         String paymentProofPath = "/Users/laras/OneDrive/Pictures/Icon/1.png";
+         String paymentType = "manual";
+//         String doctorId = "6";
+
+         TransactionManual.sendHttpPostRequestForMakeManualTransactionInvalidDoctorId(priceMethod, priceCounseling, priceDuration, paymentProofPath, paymentType);
      }
 
      @Then("I receive a valid data response for making a manual transaction with invalid doctor ID with HTTP status code 500 Internal Server Error")
      public void validateMakeManualTransactionInvalidDoctorIdResponse() {
          TransactionManual.validateMakeManualTransactionInvalidDoctorIdResponse();
      }
-*/
     // [Positive] PUT - Update Transaction
     @Given("I set the PUT endpoint for updating a transaction")
     public void setPutUpdateTransactionEndpoint() {
@@ -60,7 +72,7 @@ public class TransactionManualSteps {
         TransactionManual.validateUpdateTransactionResponse();
     }
 
-    /*// [Positive] PUT - Update Transaction By ID
+    //[Positive] PUT - Update Transaction By ID
     @Given("I set the PUT endpoint for updating a transaction by ID")
     public void setPutUpdateTransactionByIdEndpoint() {
         TransactionManual.setPutUpdateTransactionByIdEndpoint();
@@ -74,22 +86,6 @@ public class TransactionManualSteps {
     @Then("I receive a valid data response for updating a transaction by ID with HTTP status code 200 OK")
     public void validateUpdateTransactionByIdResponse() {
         TransactionManual.validateUpdateTransactionByIdResponse();
-    }
-
-    // [Positive] PUT - Update Transaction By Transaction ID
-    @Given("I set the PUT endpoint for updating a transaction by transaction ID")
-    public void setPutUpdateTransactionByTransactionIdEndpoint() {
-        TransactionManual.setPutUpdateTransactionByTransactionIdEndpoint();
-    }
-
-    @When("I send an HTTP PUT request with valid parameters and baseURL for updating a transaction by transaction ID")
-    public void sendHttpPutRequestForUpdateTransactionByTransactionId() {
-        TransactionManual.sendHttpPutRequestForUpdateTransactionByTransactionId();
-    }
-
-    @Then("I receive a valid data response for updating a transaction by transaction ID with HTTP status code 200 OK")
-    public void validateUpdateTransactionByTransactionIdResponse() {
-        TransactionManual.validateUpdateTransactionByTransactionIdResponse();
     }
 
     // [Positive] PUT - Update Transaction Deny Transaction By Admin (On Confirmation)
@@ -218,5 +214,5 @@ public class TransactionManualSteps {
     @Then("I receive a valid data response for retrieving transaction status by Midtrans ID with HTTP status code 200 OK")
     public void validateTransactionStatusByMidtransIdResponse() {
         TransactionManual.validateTransactionStatusByMidtransIdResponse();
-    }*/
+    }
 }

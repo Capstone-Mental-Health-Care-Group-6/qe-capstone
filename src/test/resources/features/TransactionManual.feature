@@ -28,12 +28,6 @@ Feature: Transaction Manual
     When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction by ID
     Then I receive a valid data response for updating a transaction by ID with HTTP status code 200 OK
 
-  # [Positive] PUT - Update Transaction By Transaction ID
-  Scenario: User updates transaction by transaction ID successfully
-  Given I set the PUT endpoint for updating a transaction by transaction ID
-  When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction by transaction ID
-  Then I receive a valid data response for updating a transaction by transaction ID with HTTP status code 200 OK
-
   # [Positive] PUT - Update Transaction Deny Transaction By Admin (On Confirmation)
   Scenario: Admin denies transaction successfully (On Confirmation)
     Given I set the PUT endpoint for updating a transaction to deny status by Admin

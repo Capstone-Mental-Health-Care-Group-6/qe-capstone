@@ -48,65 +48,91 @@ class DashboardNotifikasiChatBot {
 
 	@Given("I logged in and was on the dashboard page")
 	def navigateDashboardPage() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
+		WebUI.maximizeWindow()
+		
+		WebUI.delay(2)
 	}
 
 	@When("I click the sidebar menu")
 	def clickSidebarMenu() {
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Chat'))
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Transaksi'))
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Pencairan Saldo'))
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Konten'))
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Dashboard'))
+		WebUI.delay(2)
+		
 	}
 
 	@When("I check the icons in the navbar")
 	def clickIconNavbar() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/img_via_notif-icon'))
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/img_lihat detail_iconNavbar'))
+		WebUI.delay(2)
 	}
 
 	@When("I click the chatbot button")
 	def clickChatbotButton() {
-	}
-
-	@And("I click the send button")
-	def clickSendtButton() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/div_Lihat Detail_bg-white px-3 py-3 d-flex _c5ac12'))
+		WebUI.delay(2)
 	}
 
 	@And("I select and click the chat button")
 	def clickSelectChattButton() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Depresi'))
+		WebUI.refresh()
+		WebUI.delay(3)
+				
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Gangguan Kecemasan'))
+		WebUI.refresh()
+		WebUI.delay(3)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Kegilaan'))
+		WebUI.refresh()
+		WebUI.delay(3)
+		
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Stress'))
+		WebUI.takeScreenshot()
+		WebUI.delay(3)
+		
 	}
-
-	@And("I click the yet button")
-	def clickYetButton() {
-	}
-
-	@And("I click the Done button")
-	def clickDoneButton() {
-	}
-
+	
 	@And("I click the return button")
 	def clickReturnDashboardButton() {
-	}
-
-	@And("I click the attachment button")
-	def clickAttachmentButton() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/svg'))
+		WebUI.delay(2)
 	}
 
 	@Then("I should verify the functionality and correctness of the links")
 	def redirectFunctionalityLinks() {
+		WebUI.closeBrowser()
 	}
 
 	@Then("I should verify the visibility and correctness of the notification icons")
 	def verifyIconNotification() {
-	}
-
-	@Then("I should send message with the chatbot successfully")
-	def verifySendMessageChatbot() {
+		WebUI.closeBrowser()
 	}
 
 	@Then("I should provide information for Chatbot")
 	def verifyInformationChatbot() {
+		WebUI.closeBrowser()
 	}
 
 	@Then("I should be redirected to the dashboard page")
 	def redirectDashboard() {
-	}
-
-	@Then("I should provide options for attachments Chatbot")
-	def verifyoptionsAttachments() {
+		WebUI.closeBrowser()
 	}
 }

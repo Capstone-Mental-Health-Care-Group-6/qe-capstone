@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Pencairan Saldo</name>
+   <tag></tag>
+   <elementGuidId>6f96e89d-af8c-4a18-936c-2369871cfd40</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/ul/li[4]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6041dd39-a70e-4551-87a8-d9690456c17e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sidebar-link</value>
+      <webElementGuid>68a8b41f-f225-4d73-aaea-c8cb03b62342</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/dokter/saldo</value>
+      <webElementGuid>2c5fb3a9-184e-4f30-83a6-86c4c840cb46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Pencairan Saldo</value>
+      <webElementGuid>d73ed7c5-c961-4938-b850-b2af6e813470</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sidebar&quot;]/div[@class=&quot;offcanvass offcanvas-start&quot;]/div[@class=&quot;d-grid wrapper align-items-stretch&quot;]/div[@class=&quot;offcanvass-body d-grid  align-items-stretch&quot;]/ul[@class=&quot;menu d-grid justify-content-center align-items-center mx-auto p-0&quot;]/li[@class=&quot;sidebar-item  undefined&quot;]/a[@class=&quot;sidebar-link&quot;]</value>
+      <webElementGuid>08cf83e2-f724-42bd-8c56-05517b2b724c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/ul/li[4]/a</value>
+      <webElementGuid>5548eeae-ab6a-4887-9dd4-1ed655c6511e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaksi'])[1]/following::a[1]</value>
+      <webElementGuid>64427469-0fe9-4aff-8f7c-c711d4aa79ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chat'])[1]/following::a[2]</value>
+      <webElementGuid>dfd80fb1-9cb6-431e-9dcb-d64e8ddf142e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Konten'])[1]/preceding::a[1]</value>
+      <webElementGuid>60b62790-4370-4be6-a043-9fdf2b403bd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/dokter/saldo')]</value>
+      <webElementGuid>086b30a6-761f-4386-aca7-724cafacdd03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/a</value>
+      <webElementGuid>b590eaa1-da73-4459-9de1-295adffd75d3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/dokter/saldo' and (text() = ' Pencairan Saldo' or . = ' Pencairan Saldo')]</value>
+      <webElementGuid>5c4f716b-fba5-480e-b7bc-d9e8a747e83f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

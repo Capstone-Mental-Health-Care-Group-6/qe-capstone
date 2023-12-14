@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite" time="151.179" tests="1" failures="1" errors="0">
+   <testsuite name="Test Suite" tests="1" failures="1" errors="0" time="151.179" skipped="0" timestamp="2023-12-15 02:13:25" hostname="La - La" id="Test Suites/Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311"/>
+         <property name="logFiles" value="C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581220808.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581224671.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581228198.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581233835.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581236746.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581248087.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581282713.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581292373.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581300505.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581308950.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581318820.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581322032.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581330342.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581333492.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581336294.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581347851.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581351024.png, C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581353810.png"/>
+         <property name="hostName" value="La - La"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+         <property name="browser" value="Edge Chromium 120"/>
+         <property name="hostAddress" value="192.168.0.150"/>
+         <property name="sessionId" value="81e5b90352057d6558b2b3c4d236baae"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Test_BDD" time="150.811" classname="Test Cases/Test_BDD" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Test_BDD FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+"/>
+         <system-out><![CDATA[2023-12-15 02:13:26 - [TEST_CASE][FAILED] - Test Cases/Test_BDD: Test Cases/Test_BDD FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:13:26 - [TEST_STEP][FAILED] - runFeatureFile("Include/features/Dokter/Dokter-Login.feature"): Keyword runFeatureFile was failed (Root cause: com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+)
+
+2023-12-15 02:13:26 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Dokter/Dokter-Login.feature' and extract report to folder: 'C:\Users\laras\OneDrive\Documents\Studi Independen\Altera\Capstone Project\WebsiteTest\Reports\20231215_021311\Test Suite\20231215_021311/cucumber_report/1702581206766'...
+
+2023-12-15 02:13:27 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Login with valid data: SCENARIO Login with valid data
+
+2023-12-15 02:13:27 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:13:28 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:13:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:13:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:13:38 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:13:39 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:13:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:13:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:13:41 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581220808.png]]
+
+2023-12-15 02:13:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:13:43 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:13:43 - [TEST_STEP][PASSED] - I input Dokter6@gmail.com and Dokter@1: I input Dokter6@gmail.com and Dokter@1
+
+2023-12-15 02:13:44 - [MESSAGE][PASSED] - Text 'Dokter6@gmail.com' is set on object 'Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'
+
+2023-12-15 02:13:44 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581224671.png]]
+
+2023-12-15 02:13:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:13:47 - [MESSAGE][PASSED] - Text 'Dokter@1' is set on object 'Object Repository/Dokter-LoginDoctor/input_Masuk_password'
+
+2023-12-15 02:13:48 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581228198.png]]
+
+2023-12-15 02:13:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:13:50 - [MESSAGE][PASSED] - I input Dokter6@gmail.com and Dokter@1
+
+2023-12-15 02:13:50 - [TEST_STEP][PASSED] - I click login button: I click login button
+
+2023-12-15 02:13:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/input_Masuk_checkbox me-2' is clicked on
+
+2023-12-15 02:13:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Masuk' is clicked on
+
+2023-12-15 02:13:53 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581233835.png]]
+
+2023-12-15 02:13:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:13:55 - [MESSAGE][PASSED] - I click login button
+
+2023-12-15 02:13:55 - [TEST_STEP][PASSED] - I navigate to dashboard: I navigate to dashboard
+
+2023-12-15 02:13:56 - [MESSAGE][PASSED] - Object 'Object Repository/Dokter-LoginDoctor/img' is present
+
+2023-12-15 02:13:56 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581236746.png]]
+
+2023-12-15 02:13:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:13:59 - [MESSAGE][PASSED] - Browser is closed
+
+2023-12-15 02:13:59 - [MESSAGE][PASSED] - I navigate to dashboard
+
+2023-12-15 02:13:59 - [TEST_CASE][ERROR] - Start Test Case : SCENARIO Login with invalid data: SCENARIO Login with invalid data FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid Dokter6@gmail.com and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:13:59 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:13:59 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:14:00 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:14:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:14:06 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:14:06 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:14:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:14:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:14:08 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581248087.png]]
+
+2023-12-15 02:14:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:14:10 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:14:10 - [TEST_STEP][ERROR] - I input invalid Dokter6@gmail.com and invalid xxx: I input invalid Dokter6@gmail.com and invalid xxx FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid Dokter6@gmail.com and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:10 - [MESSAGE][ERROR] - I input invalid Dokter6@gmail.com and invalid xxx FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid Dokter6@gmail.com and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:10 - [TEST_STEP][NOT_RUN] - I click login button: I click login button
+
+2023-12-15 02:14:10 - [MESSAGE][NOT_RUN] - I click login button
+
+2023-12-15 02:14:10 - [TEST_STEP][NOT_RUN] - Error message showed: Error message showed
+
+2023-12-15 02:14:10 - [MESSAGE][NOT_RUN] - Error message showed
+
+2023-12-15 02:14:10 - [TEST_CASE][ERROR] - Start Test Case : SCENARIO Login with invalid data: SCENARIO Login with invalid data FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:10 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:14:10 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-12-15 02:14:11 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:14:11 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:14:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:14:40 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:14:41 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:14:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:14:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:14:42 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581282713.png]]
+
+2023-12-15 02:14:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:14:44 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:14:44 - [TEST_STEP][ERROR] - I input invalid lalala and invalid Dokter@1: I input invalid lalala and invalid Dokter@1 FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:44 - [MESSAGE][ERROR] - I input invalid lalala and invalid Dokter@1 FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:44 - [TEST_STEP][NOT_RUN] - I click login button: I click login button
+
+2023-12-15 02:14:44 - [MESSAGE][NOT_RUN] - I click login button
+
+2023-12-15 02:14:44 - [TEST_STEP][NOT_RUN] - Error message showed: Error message showed
+
+2023-12-15 02:14:44 - [MESSAGE][NOT_RUN] - Error message showed
+
+2023-12-15 02:14:44 - [TEST_CASE][ERROR] - Start Test Case : SCENARIO Login with invalid data: SCENARIO Login with invalid data FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:44 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:14:44 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-12-15 02:14:45 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:14:46 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:14:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:14:50 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:14:50 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:14:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:14:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:14:52 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581292373.png]]
+
+2023-12-15 02:14:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:14:54 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:14:54 - [TEST_STEP][ERROR] - I input invalid lalala and invalid xxx: I input invalid lalala and invalid xxx FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:54 - [MESSAGE][ERROR] - I input invalid lalala and invalid xxx FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:54 - [TEST_STEP][NOT_RUN] - I click login button: I click login button
+
+2023-12-15 02:14:54 - [MESSAGE][NOT_RUN] - I click login button
+
+2023-12-15 02:14:54 - [TEST_STEP][NOT_RUN] - Error message showed: Error message showed
+
+2023-12-15 02:14:54 - [MESSAGE][NOT_RUN] - Error message showed
+
+2023-12-15 02:14:54 - [TEST_CASE][ERROR] - Start Test Case : SCENARIO Login with blank data: SCENARIO Login with blank data FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank  and blank Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:14:54 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:14:54 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-12-15 02:14:55 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:14:56 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:14:56 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:14:58 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:14:59 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:14:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:15:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:15:00 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581300505.png]]
+
+2023-12-15 02:15:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:02 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:15:02 - [TEST_STEP][ERROR] - I input blank  and blank Dokter@1: I input blank  and blank Dokter@1 FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank  and blank Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:15:02 - [MESSAGE][ERROR] - I input blank  and blank Dokter@1 FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank  and blank Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:15:02 - [TEST_STEP][NOT_RUN] - I click login button: I click login button
+
+2023-12-15 02:15:02 - [MESSAGE][NOT_RUN] - I click login button
+
+2023-12-15 02:15:02 - [TEST_STEP][NOT_RUN] - Error message showed: Error message showed
+
+2023-12-15 02:15:02 - [MESSAGE][NOT_RUN] - Error message showed
+
+2023-12-15 02:15:02 - [TEST_CASE][ERROR] - Start Test Case : SCENARIO Login with blank data: SCENARIO Login with blank data FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank Dokter6@gmail.com and blank " matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:15:02 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:15:02 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-12-15 02:15:03 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:15:04 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:15:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:15:06 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:15:07 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:15:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:15:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:15:09 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581308950.png]]
+
+2023-12-15 02:15:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:11 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:15:11 - [TEST_STEP][ERROR] - I input blank Dokter6@gmail.com and blank : I input blank Dokter6@gmail.com and blank  FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank Dokter6@gmail.com and blank " matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:15:11 - [MESSAGE][ERROR] - I input blank Dokter6@gmail.com and blank  FAILED.
+Reason:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank Dokter6@gmail.com and blank " matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+
+
+2023-12-15 02:15:11 - [TEST_STEP][NOT_RUN] - I click login button: I click login button
+
+2023-12-15 02:15:11 - [MESSAGE][NOT_RUN] - I click login button
+
+2023-12-15 02:15:11 - [TEST_STEP][NOT_RUN] - Error message showed: Error message showed
+
+2023-12-15 02:15:11 - [MESSAGE][NOT_RUN] - Error message showed
+
+2023-12-15 02:15:11 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Login with Google account: SCENARIO Login with Google account
+
+2023-12-15 02:15:11 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:15:11 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-12-15 02:15:12 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:15:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:15:13 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:15:17 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:15:17 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:15:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:15:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:15:18 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581318820.png]]
+
+2023-12-15 02:15:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:20 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:15:20 - [TEST_STEP][PASSED] - I click button login by Google: I click button login by Google
+
+2023-12-15 02:15:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/div_Google' is clicked on
+
+2023-12-15 02:15:22 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581322032.png]]
+
+2023-12-15 02:15:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:24 - [MESSAGE][PASSED] - I click button login by Google
+
+2023-12-15 02:15:24 - [TEST_STEP][PASSED] - I navigate to choose my Google account: I navigate to choose my Google account
+
+2023-12-15 02:15:25 - [MESSAGE][PASSED] - Browser is closed
+
+2023-12-15 02:15:25 - [MESSAGE][PASSED] - I navigate to choose my Google account
+
+2023-12-15 02:15:25 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Forgot Password: SCENARIO Forgot Password
+
+2023-12-15 02:15:25 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:15:25 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:15:25 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:15:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:15:28 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:15:28 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:15:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:15:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:15:30 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581330342.png]]
+
+2023-12-15 02:15:32 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:32 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:15:32 - [TEST_STEP][PASSED] - I click button forgot password: I click button forgot password
+
+2023-12-15 02:15:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Forgot Password' is clicked on
+
+2023-12-15 02:15:33 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581333492.png]]
+
+2023-12-15 02:15:35 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:35 - [MESSAGE][PASSED] - I click button forgot password
+
+2023-12-15 02:15:35 - [TEST_STEP][PASSED] - I navigate to reset password page: I navigate to reset password page
+
+2023-12-15 02:15:36 - [MESSAGE][PASSED] - Object 'Object Repository/Dokter-LoginDoctor/h2_Atur Ulang Kata Sandi Anda' is present
+
+2023-12-15 02:15:36 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581336294.png]]
+
+2023-12-15 02:15:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:39 - [MESSAGE][PASSED] - Browser is closed
+
+2023-12-15 02:15:39 - [MESSAGE][PASSED] - I navigate to reset password page
+
+2023-12-15 02:15:39 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Verify Regist: SCENARIO Verify Regist
+
+2023-12-15 02:15:39 - [TEST_STEP][PASSED] - I navigate to login page: I navigate to login page
+
+2023-12-15 02:15:39 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+2023-12-15 02:15:39 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-12-15 02:15:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-12-15 02:15:46 - [MESSAGE][PASSED] - Navigate to 'https://empathicare-dokter.vercel.app/' successfully
+
+2023-12-15 02:15:46 - [MESSAGE][PASSED] - Current window maximized
+
+2023-12-15 02:15:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang' is clicked on
+
+2023-12-15 02:15:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Masuk' is clicked on
+
+2023-12-15 02:15:48 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581347851.png]]
+
+2023-12-15 02:15:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:50 - [MESSAGE][PASSED] - I navigate to login page
+
+2023-12-15 02:15:50 - [TEST_STEP][PASSED] - I click button regist: I click button regist
+
+2023-12-15 02:15:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Dokter-LoginDoctor/a_Daftar' is clicked on
+
+2023-12-15 02:15:51 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581351024.png]]
+
+2023-12-15 02:15:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:53 - [MESSAGE][PASSED] - I click button regist
+
+2023-12-15 02:15:53 - [TEST_STEP][PASSED] - I navigate to regist page: I navigate to regist page
+
+2023-12-15 02:15:53 - [MESSAGE][PASSED] - Object 'Object Repository/Dokter-LoginDoctor/button_Daftar' is present
+
+2023-12-15 02:15:53 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\WebsiteTest\\Reports\\20231215_021311\\Test Suite\\20231215_021311\\1702581353810.png]]
+
+2023-12-15 02:15:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2023-12-15 02:15:56 - [MESSAGE][PASSED] - Browser is closed
+
+2023-12-15 02:15:56 - [MESSAGE][PASSED] - I navigate to regist page
+
+2023-12-15 02:15:57 - [MESSAGE][FAILED] - Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+
+2023-12-15 02:15:57 - [MESSAGE][FAILED] - Keyword runFeatureFile was failed (Root cause: com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+)]]></system-out>
+         <system-err><![CDATA[2023-12-15 02:13:26 - [TEST_CASE][FAILED] - Test Cases/Test_BDD: Test Cases/Test_BDD FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-12-15 02:13:25 - [TEST_SUITE][FAILED] - Test Suite: Test Cases/Test_BDD FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)]]></system-out>
+      <system-err><![CDATA[2023-12-15 02:13:25 - [TEST_SUITE][FAILED] - Test Suite: Test Cases/Test_BDD FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Dokter/Dokter-Login.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:114)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

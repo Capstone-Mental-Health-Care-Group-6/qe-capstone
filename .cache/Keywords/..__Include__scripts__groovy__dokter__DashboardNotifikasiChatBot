@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "D05C55A504376CA5B64A15A501A6D4BD",
+  "keywordFileContentHash": "70E724C59CD151F5827A0788B2524A0E",
   "keywordClasses": [
     {
       "name": "dokter.DashboardNotifikasiChatBot",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

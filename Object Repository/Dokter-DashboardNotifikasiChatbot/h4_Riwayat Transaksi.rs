@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h4_Riwayat Transaksi</name>
+   <tag></tag>
+   <elementGuidId>64c70ad4-3f9b-4de7-ad3a-5ff1449cdc51</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h4.h4-title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/section/div/div/h4</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>8bed2270-a59d-4b29-856c-6fbb24b1ba43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>h4-title</value>
+      <webElementGuid>c14b2828-edb7-4fa7-83d7-23a7100ceab0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Riwayat Transaksi</value>
+      <webElementGuid>a2a8ebb6-ceef-4529-b1fd-5d4c65fd8db9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;section-transaksi&quot;]/div[@class=&quot;row header&quot;]/div[@class=&quot;col-sm-12 col-md-12 col-lg-4&quot;]/h4[@class=&quot;h4-title&quot;]</value>
+      <webElementGuid>44fb26c7-3a59-4998-adc0-ba3a241f2615</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section/div/div/h4</value>
+      <webElementGuid>45c9579a-8431-4b64-9dd4-9b10feb1f079</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::h4[1]</value>
+      <webElementGuid>cc9f25f5-fdee-429b-baca-78c449cf2111</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak'])[1]/following::h4[1]</value>
+      <webElementGuid>bacc83bb-c528-429c-9792-41092504d902</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Urut Berdasarakan ID'])[1]/preceding::h4[1]</value>
+      <webElementGuid>8f6f905d-90a0-4a82-8764-49d77ec56ba0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID'])[1]/preceding::h4[1]</value>
+      <webElementGuid>aa0adf76-7d8f-4e69-b5a9-8d1c4e0470e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Riwayat Transaksi']/parent::*</value>
+      <webElementGuid>b7de7393-29d5-4f65-b2a2-dfc974b442b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h4</value>
+      <webElementGuid>4a0c98f9-7503-4d77-93ce-f25917c10d11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h4[(text() = 'Riwayat Transaksi' or . = 'Riwayat Transaksi')]</value>
+      <webElementGuid>cc7d7a8e-e79f-4aea-88a5-49f43bf6d3c3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

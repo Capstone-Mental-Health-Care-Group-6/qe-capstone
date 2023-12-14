@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Lihat Detail_bg-white px-3 py-3 d-flex _c5ac12</name>
+   <tag></tag>
+   <elementGuidId>fc28fb1d-e68b-4aba-ab15-c398dc5e3c56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.bg-white.px-3.py-3.d-flex.align-items-center.justify-content-center</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/section[2]/div[6]/a/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>40804d35-7818-43aa-94ba-82341edaa91e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-white px-3 py-3 d-flex align-items-center justify-content-center</value>
+      <webElementGuid>ac62ff8c-ca16-4dda-86c2-65f5730d9f93</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;wrapper__laporan__Mingguan bg-white mt-2&quot;]/div[@class=&quot;toogle__chatbot&quot;]/a[1]/div[@class=&quot;bg-white px-3 py-3 d-flex align-items-center justify-content-center&quot;]</value>
+      <webElementGuid>92632a40-eaa2-42b7-a4e5-57a8d8421d2b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section[2]/div[6]/a/div</value>
+      <webElementGuid>1a983fc7-e6e0-48ec-ad0b-a6ed77de1c03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lihat Detail'])[5]/following::div[7]</value>
+      <webElementGuid>ec32a772-c64f-463f-9204-826ca08341e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Video Call'])[3]/following::div[8]</value>
+      <webElementGuid>31fc87e9-53ee-4cc7-9595-4fdec55d2e94</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/a/div</value>
+      <webElementGuid>72c9db64-7c8a-4fd6-84a5-b28a77c06f04</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

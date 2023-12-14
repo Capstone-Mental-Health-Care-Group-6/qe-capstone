@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Dashboard</name>
+   <tag></tag>
+   <elementGuidId>c04edc64-5f8d-4d59-80ee-b8ffcc214de7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.sidebar-link</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/ul/li/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>d538158a-4418-4234-9a04-255b5ce0fea5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sidebar-link</value>
+      <webElementGuid>af223bbe-821f-4027-a527-1077bfff909e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/dokter/dashboard</value>
+      <webElementGuid>c33b2d0a-66cd-4546-b6e1-b4ab75e85490</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Dashboard</value>
+      <webElementGuid>5f4a2387-ec39-4f80-b5dc-5fe6d541afb6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sidebar&quot;]/div[@class=&quot;offcanvass offcanvas-start&quot;]/div[@class=&quot;d-grid wrapper align-items-stretch&quot;]/div[@class=&quot;offcanvass-body d-grid  align-items-stretch&quot;]/ul[@class=&quot;menu d-grid justify-content-center align-items-center mx-auto p-0&quot;]/li[@class=&quot;sidebar-item  undefined&quot;]/a[@class=&quot;sidebar-link&quot;]</value>
+      <webElementGuid>bca9a7b0-12d5-495a-969e-1a30c2ea3f2a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/ul/li/a</value>
+      <webElementGuid>03a88616-d08a-462b-ac82-8a1fc0ede044</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lihat detail'])[1]/following::a[2]</value>
+      <webElementGuid>488a6e9a-6982-42c8-b872-3ae7404e95be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='via'])[1]/following::a[2]</value>
+      <webElementGuid>08b205a1-b018-4573-be02-06250a98e457</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chat'])[1]/preceding::a[1]</value>
+      <webElementGuid>729e9112-c4f9-4b04-bb10-8645c8874f8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/dokter/dashboard')]</value>
+      <webElementGuid>cfdc3d98-e24b-4632-8287-ea250bb56573</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/a</value>
+      <webElementGuid>565efa37-a3c3-4f9d-b7bd-6fa43990abb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/dokter/dashboard' and (text() = ' Dashboard' or . = ' Dashboard')]</value>
+      <webElementGuid>ba537d65-7aa1-4114-9f26-457cb1abff53</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="5" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="149.261159">
+<testcase classname="Login" name="Login with valid data" time="32.128201">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input Dokter6@gmail.com and Dokter@1.................................passed
+Then I click login button...................................................passed
+And I navigate to dashboard.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with invalid data" time="10.577756">
+<failure message="cucumber.runtime.AmbiguousStepDefinitionsException: &quot;I input invalid Dokter6@gmail.com and invalid xxx&quot; matches more than one step definition:&#10;  &quot;I input (.*) and (.*)&quot; in LoginDokter.inputEmailPassword(String,String)&#10;  &quot;I input invalid (.*) and invalid (.*)&quot; in LoginDokter.inputBlankEmailPassword(String,String)&#10;&#13;&#10;&#9;at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)&#13;&#10;&#9;at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)&#13;&#10;&#9;at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:43)&#13;&#10;&#9;at cucumber.runtime.Runtime.runFeature(Runtime.java:120)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:106)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:35)&#13;&#10;&#9;at cucumber.api.cli.Main$run.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)&#13;&#10;&#9;at Test_BDD.run(Test_BDD:20)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#13;&#10;&#9;at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#13;&#10;&#9;at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)&#13;&#10;"><![CDATA[Given I navigate to login page..............................................passed
+When I input invalid Dokter6@gmail.com and invalid xxx......................ambiguous
+Then I click login button...................................................skipped
+And Error message showed....................................................skipped
+
+StackTrace:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid Dokter6@gmail.com and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with invalid data 2" time="34.539141">
+<failure message="cucumber.runtime.AmbiguousStepDefinitionsException: &quot;I input invalid lalala and invalid Dokter@1&quot; matches more than one step definition:&#10;  &quot;I input (.*) and (.*)&quot; in LoginDokter.inputEmailPassword(String,String)&#10;  &quot;I input invalid (.*) and invalid (.*)&quot; in LoginDokter.inputBlankEmailPassword(String,String)&#10;&#13;&#10;&#9;at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)&#13;&#10;&#9;at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)&#13;&#10;&#9;at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:43)&#13;&#10;&#9;at cucumber.runtime.Runtime.runFeature(Runtime.java:120)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:106)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:35)&#13;&#10;&#9;at cucumber.api.cli.Main$run.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)&#13;&#10;&#9;at Test_BDD.run(Test_BDD:20)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#13;&#10;&#9;at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#13;&#10;&#9;at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)&#13;&#10;"><![CDATA[Given I navigate to login page..............................................passed
+When I input invalid lalala and invalid Dokter@1............................ambiguous
+Then I click login button...................................................skipped
+And Error message showed....................................................skipped
+
+StackTrace:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with invalid data 3" time="9.679855">
+<failure message="cucumber.runtime.AmbiguousStepDefinitionsException: &quot;I input invalid lalala and invalid xxx&quot; matches more than one step definition:&#10;  &quot;I input (.*) and (.*)&quot; in LoginDokter.inputEmailPassword(String,String)&#10;  &quot;I input invalid (.*) and invalid (.*)&quot; in LoginDokter.inputBlankEmailPassword(String,String)&#10;&#13;&#10;&#9;at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)&#13;&#10;&#9;at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)&#13;&#10;&#9;at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:43)&#13;&#10;&#9;at cucumber.runtime.Runtime.runFeature(Runtime.java:120)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:106)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:35)&#13;&#10;&#9;at cucumber.api.cli.Main$run.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)&#13;&#10;&#9;at Test_BDD.run(Test_BDD:20)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#13;&#10;&#9;at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#13;&#10;&#9;at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)&#13;&#10;"><![CDATA[Given I navigate to login page..............................................passed
+When I input invalid lalala and invalid xxx.................................ambiguous
+Then I click login button...................................................skipped
+And Error message showed....................................................skipped
+
+StackTrace:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input invalid lalala and invalid xxx" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input invalid (.*) and invalid (.*)" in LoginDokter.inputBlankEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with blank data" time="8.116063">
+<failure message="cucumber.runtime.AmbiguousStepDefinitionsException: &quot;I input blank  and blank Dokter@1&quot; matches more than one step definition:&#10;  &quot;I input (.*) and (.*)&quot; in LoginDokter.inputEmailPassword(String,String)&#10;  &quot;I input blank (.*) and blank (.*)&quot; in LoginDokter.inputInvalidEmailPassword(String,String)&#10;&#13;&#10;&#9;at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)&#13;&#10;&#9;at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)&#13;&#10;&#9;at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:43)&#13;&#10;&#9;at cucumber.runtime.Runtime.runFeature(Runtime.java:120)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:106)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:35)&#13;&#10;&#9;at cucumber.api.cli.Main$run.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)&#13;&#10;&#9;at Test_BDD.run(Test_BDD:20)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#13;&#10;&#9;at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#13;&#10;&#9;at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)&#13;&#10;"><![CDATA[Given I navigate to login page..............................................passed
+When I input blank  and blank Dokter@1......................................ambiguous
+Then I click login button...................................................skipped
+And Error message showed....................................................skipped
+
+StackTrace:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank  and blank Dokter@1" matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with blank data 2" time="8.442237">
+<failure message="cucumber.runtime.AmbiguousStepDefinitionsException: &quot;I input blank Dokter6@gmail.com and blank &quot; matches more than one step definition:&#10;  &quot;I input (.*) and (.*)&quot; in LoginDokter.inputEmailPassword(String,String)&#10;  &quot;I input blank (.*) and blank (.*)&quot; in LoginDokter.inputInvalidEmailPassword(String,String)&#10;&#13;&#10;&#9;at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)&#13;&#10;&#9;at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)&#13;&#10;&#9;at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:43)&#13;&#10;&#9;at cucumber.runtime.Runtime.runFeature(Runtime.java:120)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:106)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:35)&#13;&#10;&#9;at cucumber.api.cli.Main$run.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)&#13;&#10;&#9;at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)&#13;&#10;&#9;at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)&#13;&#10;&#9;at Test_BDD.run(Test_BDD:20)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#13;&#10;&#9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#13;&#10;&#9;at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#13;&#10;&#9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)&#13;&#10;&#9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#13;&#10;&#9;at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)&#13;&#10;"><![CDATA[Given I navigate to login page..............................................passed
+When I input blank Dokter6@gmail.com and blank .............................ambiguous
+Then I click login button...................................................skipped
+And Error message showed....................................................skipped
+
+StackTrace:
+cucumber.runtime.AmbiguousStepDefinitionsException: "I input blank Dokter6@gmail.com and blank " matches more than one step definition:
+  "I input (.*) and (.*)" in LoginDokter.inputEmailPassword(String,String)
+  "I input blank (.*) and blank (.*)" in LoginDokter.inputInvalidEmailPassword(String,String)
+
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:89)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:73)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:63)
+	at cucumber.runner.Runner.runPickle(Runner.java:43)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Test_BDD.run(Test_BDD:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1702581191982.run(TempTestSuite1702581191982.groovy:36)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with Google account" time="13.977134">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I click button login by Google.........................................passed
+Then I navigate to choose my Google account.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Forgot Password" time="14.158167">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I click button forgot password.........................................passed
+Then I navigate to reset password page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Verify Regist" time="17.642605">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I click button regist..................................................passed
+Then I navigate to regist page..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

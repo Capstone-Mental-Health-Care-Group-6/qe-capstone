@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Mengatasi Depresi</name>
+   <tag></tag>
+   <elementGuidId>b8433489-987f-4706-8650-26ae0b89dd87</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-of-type(3) > button.btn.btn-outline-primary.text-black.fw-semibold.rounded-5</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id=''])[4]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>78dca45f-855c-40ce-a58f-074fc571f4f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>f68ee330-46b2-4af3-b455-695f0453ae3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-outline-primary text-black fw-semibold rounded-5</value>
+      <webElementGuid>9d6b1051-5ebc-4bef-8087-75e9e8e6b02c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Mengatasi Depresi</value>
+      <webElementGuid>f5a79e2b-8263-4af5-949e-bab1dfbcac4e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;body__chatbot d-flex justify-content-center my-5&quot;]/div[@class=&quot;wrapper__chatbot d-flex flex-column justify-content-between&quot;]/div[@class=&quot;chat__bot p-3&quot;]/div[@class=&quot;chat-text d-flex align-items-center m-0 p-0 flex-row gap-2 d-block aos-init aos-animate&quot;]/div[3]/button[@class=&quot;btn btn-outline-primary text-black fw-semibold rounded-5&quot;]</value>
+      <webElementGuid>e0744d30-77cd-4d1b-b225-5ef91bcce972</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@id=''])[4]</value>
+      <webElementGuid>ef60964e-09e2-4416-9156-626b465eb8bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[2]/div/div/div[2]/div[3]/button</value>
+      <webElementGuid>77faa4c1-18f5-4a9b-a98d-25d78a49940f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mengatasi Stress'])[1]/following::button[1]</value>
+      <webElementGuid>245b4f9a-2f63-4fbb-a1d0-2854976459c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mengatasi Gangguan Kecemasan'])[1]/following::button[2]</value>
+      <webElementGuid>c3740e5d-1a7a-46b7-acc4-10cf2c7ed92c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mengatasi Kegilaan'])[1]/preceding::button[1]</value>
+      <webElementGuid>8cf2e967-db8c-4790-8d0d-8ce7e084bf13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Mengatasi Depresi']/parent::*</value>
+      <webElementGuid>b1730872-9759-4918-aec5-49dc6de29674</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/button</value>
+      <webElementGuid>24594019-b060-4299-bab7-ff9f37665f4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Mengatasi Depresi' or . = 'Mengatasi Depresi')]</value>
+      <webElementGuid>6adac7bc-a125-4876-80a8-ab34e65252bc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite,Edge Chromium 120,,,2023-12-15 02:13:25,2023-12-15 02:15:57,2m - 31.179s,FAILED
+,,,,,,,
+Test Cases/Test_BDD,Edge Chromium 120,,,2023-12-15 02:13:26,2023-12-15 02:15:57,2m - 30.811s,FAILED
+"runFeatureFile(""Include/features/Dokter/Dokter-Login.feature"")",Edge Chromium 120,,,2023-12-15 02:13:26,2023-12-15 02:15:57,2m - 30.362s,FAILED

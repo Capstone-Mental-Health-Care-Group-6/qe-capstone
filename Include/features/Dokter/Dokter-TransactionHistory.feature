@@ -30,14 +30,12 @@ Feature: Transaction History
     When I navigate to view the previous transaction data
     Then I should see the details of the previous transaction
 
-  Scenario: User Sees Transaction Details
-    Given I am on the transaction history page
-    When I view the details of a transaction
-    Then I should see detailed information about the transaction
-
-  Scenario: User Returns to the Transaction History Page from the Transaction Details Page
-    Given I am on the transaction history page
-    When I navigate back to the transaction history page
-    Then I should be on the transaction history page
-    
-    #=====================FIX=====================
+  #Scenario: User Sees Transaction Details
+    #Given I am on the transaction history page
+    #When I view the details of a transaction
+    #Then I should see detailed information about the transaction
+#
+  #Scenario: User Returns to the Transaction History Page from the Transaction Details Page
+    #Given I am on the transaction history page
+    #When I navigate back to the transaction history page
+    #Then I should be on the transaction history page

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Service</name>
+   <name>a_Forgot Password</name>
    <tag></tag>
-   <elementGuidId>495cef62-d7f8-4c83-9ab3-6a17f41a2bd3</elementGuidId>
+   <elementGuidId>dd35411e-2dc0-4691-aaad-6b6b6eb4a0e6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>a.forgot-password-link.text-end.mt-1</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='offcanvasNavbar']/div[2]/div/div[2]/a</value>
+         <value>//div[@id='root']/div/div/form/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,118 +22,110 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>554ed72a-49bb-4e83-a2cc-8994a9820b58</webElementGuid>
+      <webElementGuid>e522c917-21c6-422e-862c-f06222621bfc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>nav-link active py-4</value>
-      <webElementGuid>a7fa579a-9740-41d8-a11b-15e130c1696c</webElementGuid>
+      <value>forgot-password-link text-end mt-1</value>
+      <webElementGuid>4502c8cd-13ac-4e7e-8e6e-9cc221f17f03</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>#</value>
-      <webElementGuid>9cf8a5cc-f391-4c79-986e-213a89745365</webElementGuid>
+      <value>/forgot-password</value>
+      <webElementGuid>dda012b6-28b3-4e36-b2bd-6f4006754d89</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Service</value>
-      <webElementGuid>5a912aec-f1c1-422c-bece-412768cdd291</webElementGuid>
+      <value>Forgot Password?</value>
+      <webElementGuid>9422b163-a609-4b9a-a2bf-e47acc70c6d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;offcanvasNavbar&quot;)/div[@class=&quot;offcanvas-body align-items-center&quot;]/div[@class=&quot;navMenu navbar-nav justify-content-center flex-grow-1 pe-3 gap-4&quot;]/div[@class=&quot;nav-item&quot;]/a[@class=&quot;nav-link active py-4&quot;]</value>
-      <webElementGuid>9d61d550-92a8-4fd7-81b9-1c2f1974354f</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;content&quot;]/div[@class=&quot;container col-lg-12&quot;]/form[@class=&quot;login-form-container col-lg&quot;]/a[@class=&quot;forgot-password-link text-end mt-1&quot;]</value>
+      <webElementGuid>9f174eaf-2084-4c49-b258-939f3364af7a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='offcanvasNavbar']/div[2]/div/div[2]/a</value>
-      <webElementGuid>59258881-7339-41a4-af89-d949c223563c</webElementGuid>
+      <value>//div[@id='root']/div/div/form/a</value>
+      <webElementGuid>5ed81e71-c8e1-4866-94c4-7746fed0bbb2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Service')]</value>
-      <webElementGuid>31feb9d2-dde2-46ad-b5d8-7ef3f8b19e65</webElementGuid>
+      <value>//a[contains(text(),'Forgot Password?')]</value>
+      <webElementGuid>b7e748af-ce52-4a38-9a7d-6aee50a54feb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EmpathiCare'])[1]/following::a[2]</value>
-      <webElementGuid>636b540e-036b-4ee0-b139-5e0b816cd22b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Masuk'])[1]/following::a[1]</value>
+      <webElementGuid>c57b3aa5-67a1-497d-b4e6-ca6f45048835</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Diawasioleh'])[1]/following::a[2]</value>
-      <webElementGuid>b809f5bc-0c81-4021-b13a-4c333a1536d8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Google'])[1]/preceding::a[1]</value>
+      <webElementGuid>e1fea339-9aba-407a-8461-7e635298c4dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Register'])[1]/preceding::a[2]</value>
-      <webElementGuid>79d969a1-6ba5-443b-a05f-d8af6730752f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daftar'])[1]/preceding::a[1]</value>
+      <webElementGuid>17185b35-5f52-43f6-a1a4-4b3b2aeb9797</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download Sekarang'])[1]/preceding::a[3]</value>
-      <webElementGuid>fbef4153-004f-4ea3-91ae-0994d57db562</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Service']/parent::*</value>
-      <webElementGuid>4addead2-8682-48d4-8289-390578e4eb36</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Forgot Password?']/parent::*</value>
+      <webElementGuid>f147314d-37db-46ef-a67e-6fb7aef52bff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '#')])[3]</value>
-      <webElementGuid>caccf933-8144-48af-b1fb-e8484d78be9a</webElementGuid>
+      <value>//a[contains(@href, '/forgot-password')]</value>
+      <webElementGuid>f2e4d3c7-be2f-4c1f-99fa-c7d10b4e89eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/a</value>
-      <webElementGuid>e59b5e47-1b37-468d-9808-20f67c89a576</webElementGuid>
+      <value>//a</value>
+      <webElementGuid>a852e8b7-3d1d-4436-a3ec-c96cf6eab125</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = '#' and (text() = 'Service' or . = 'Service')]</value>
-      <webElementGuid>5c819b14-14b6-44f1-8053-29fda601d879</webElementGuid>
+      <value>//a[@href = '/forgot-password' and (text() = 'Forgot Password?' or . = 'Forgot Password?')]</value>
+      <webElementGuid>4f788f58-b511-429c-a0aa-39fc3d71cdfa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

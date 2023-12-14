@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/')
 
-WebUI.click(findTestObject('Object Repository/Page_EmphatiCare Doctor/button_Daftar Sebagai Konselor'))
+WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/button_Daftar Sebagai Konselor'))
 
 WebUI.closeBrowser()
 

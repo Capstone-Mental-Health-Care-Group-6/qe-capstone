@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Register</name>
+   <name>a_Daftar</name>
    <tag></tag>
-   <elementGuidId>20982b7c-0e5e-4266-8626-aad9528e38de</elementGuidId>
+   <elementGuidId>747e2bb5-a466-43f7-830c-d0c05058d195</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>a.text-decoration-none.fw-bold</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='offcanvasNavbar']/div[2]/div/div[4]/a</value>
+         <value>//div[@id='root']/div/div/form/p[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,110 +22,118 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>d63b18e3-b240-415b-b50a-adc1a65901f7</webElementGuid>
+      <webElementGuid>1f5d06e4-fbd8-4b02-a2d8-1cbe7b3369cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>nav-link active py-4</value>
-      <webElementGuid>f0987427-6276-4f61-bb51-8ce89410c80a</webElementGuid>
+      <value>text-decoration-none fw-bold</value>
+      <webElementGuid>5558f058-2a26-4536-973e-0702e1fea150</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/register-dokter</value>
+      <webElementGuid>d2d6a266-3743-404b-8be3-e91e187fa2b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Register</value>
-      <webElementGuid>f14db6bc-86d5-48d7-a60d-51abc3f34dec</webElementGuid>
+      <value>Daftar</value>
+      <webElementGuid>7712cc7e-5a4d-4d73-9022-806e5a720963</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;offcanvasNavbar&quot;)/div[@class=&quot;offcanvas-body align-items-center&quot;]/div[@class=&quot;navMenu navbar-nav justify-content-center flex-grow-1 pe-3 gap-4&quot;]/div[@class=&quot;nav-item&quot;]/a[@class=&quot;nav-link active py-4&quot;]</value>
-      <webElementGuid>25268620-6706-4192-b466-4cce27334576</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;content&quot;]/div[@class=&quot;container col-lg-12&quot;]/form[@class=&quot;login-form-container col-lg&quot;]/p[@class=&quot;text-center mt-3 fw-bold&quot;]/a[@class=&quot;text-decoration-none fw-bold&quot;]</value>
+      <webElementGuid>dbb90d12-bedc-4956-b2b6-e192171c9e99</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='offcanvasNavbar']/div[2]/div/div[4]/a</value>
-      <webElementGuid>93b2fa56-44cb-495b-b224-a3f2bc8e62ce</webElementGuid>
+      <value>//div[@id='root']/div/div/form/p[2]/a</value>
+      <webElementGuid>d7a1c9eb-5c2b-4a7d-b300-f80980d7574a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Register')]</value>
-      <webElementGuid>9274f3a7-6abc-42ec-b425-807bf9295e35</webElementGuid>
+      <value>//a[contains(text(),'Daftar')]</value>
+      <webElementGuid>a23063fa-539e-4aae-9f9d-a87af471e0b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EmpathiCare'])[1]/following::a[4]</value>
-      <webElementGuid>7e1b6c88-eb15-4bce-9512-2ecae721b825</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Google'])[1]/following::a[1]</value>
+      <webElementGuid>783e2b49-cbeb-4461-a825-678864c9aafc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Diawasioleh'])[1]/following::a[4]</value>
-      <webElementGuid>a5a2341d-f2a6-4079-af83-12879a394d6d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot Password?'])[1]/following::a[1]</value>
+      <webElementGuid>110780b4-6189-47a6-940e-6ab1478cb92f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download Sekarang'])[1]/preceding::a[1]</value>
-      <webElementGuid>a7f56471-f93d-4492-882b-06872c509f9b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::a[1]</value>
+      <webElementGuid>a0475287-feaf-4d02-9e54-a1ffd3a3e13d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daftar Sebagai Konselor'])[1]/preceding::a[1]</value>
-      <webElementGuid>af8e6c36-a060-4f11-a8d9-b40b491b463e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::a[1]</value>
+      <webElementGuid>88b92352-6742-4207-9bb1-b450de0eb82d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Register']/parent::*</value>
-      <webElementGuid>9375dbd5-5b6b-4666-b87a-ca6b0dde1d83</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Daftar']/parent::*</value>
+      <webElementGuid>ff842144-526f-442e-9f1f-ef69f62e5703</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '')])[5]</value>
-      <webElementGuid>58136b4c-0f99-459a-939e-be5fb77444a1</webElementGuid>
+      <value>//a[contains(@href, '/register-dokter')]</value>
+      <webElementGuid>cd16d614-2b70-427f-8050-78121e26b770</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/a</value>
-      <webElementGuid>49db0d44-5e18-41dc-94be-2bd180d6d958</webElementGuid>
+      <value>//p[2]/a</value>
+      <webElementGuid>dc60b7ea-faf0-46c8-a122-f0e80319234e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[(text() = 'Register' or . = 'Register')]</value>
-      <webElementGuid>091e119a-ac1b-4b47-8dae-14cb47d42212</webElementGuid>
+      <value>//a[@href = '/register-dokter' and (text() = 'Daftar' or . = 'Daftar')]</value>
+      <webElementGuid>e238375e-8cbc-4b3e-89f1-a1f352591260</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

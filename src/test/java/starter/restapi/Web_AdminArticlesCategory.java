@@ -1,6 +1,8 @@
 package starter.restapi;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
@@ -92,6 +94,30 @@ public class Web_AdminArticlesCategory {
     @Step("I receive an HTTP response with code 400 for creating a new articles category")
     public void ResponseWithCode400ForCreatingANewArticlesCategory() {
         restAssuredThat(response -> response.statusCode(400));
+    }
+
+    // [Positive] GET - Success Get By ID
+    @Step("I set a valid GET endpoint for articles category by ID")
+    public String iSetAValidGETEndpointForArticlesCategoryByID() {
+        return url + "categories/2";
+    }
+
+    @Step("I sends a GET HTTP request with a valid endpoint for articles category by ID")
+    public void RequestWithAValidEndpointForArticlesCategoryByID() {
+        SerenityRest.given()
+                .header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDEyNzY4MTIsImlhdCI6MTcwMTI3MzIxMiwiaWQiOjEsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6IkFjdGl2ZSJ9.rpsfDYEVwAjblb_rvWvYaFDxrY2mCbbyAsf-6sAOyOs")
+                .contentType("application/json")
+                .put(iSetAValidGETEndpointForArticlesCategoryByID());
+
+        token = lastResponse()
+                .getBody()
+                .jsonPath()
+                .get("data");
+    }
+
+    @Step("I receives a valid GET HTTP response with a status code of 200 for articles category by ID")
+    public void ResponseWithAStatusCodeOf200ForArticlesCategoryByID() {
+        restAssuredThat(response -> response.statusCode(200));
     }
 
     //  [Negative] GET - Invalid User Input
@@ -239,4 +265,7 @@ public class Web_AdminArticlesCategory {
     public void ResponseWithAStatusCodeOf404ForTheInvalidParamID() {
         restAssuredThat(response -> response.statusCode(404));
     }
+
 }
+
+

@@ -57,6 +57,23 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.ResponseWithCode400ForCreatingANewArticlesCategory();
     }
 
+    // [Positive] GET - Success Get By ID
+    @Given("I set a valid GET endpoint for articles category by ID")
+    public void iSetAValidGETEndpointForArticlesCategoryByID() {
+        adminArticlesCategory.iSetAValidGETEndpointForArticlesCategoryByID();
+    }
+
+    @When("I sends a GET HTTP request with a valid endpoint for articles category by ID")
+    public void RequestWithAValidEndpointForArticlesCategoryByID() {
+        adminArticlesCategory.RequestWithAValidEndpointForArticlesCategoryByID();
+
+    }
+
+    @Then("I receives a valid GET HTTP response with a status code of 200 for articles category by ID")
+    public void ResponseWithAStatusCodeOf200ForArticlesCategoryByID() {
+        adminArticlesCategory.ResponseWithAStatusCodeOf200ForArticlesCategoryByID();
+    }
+
     //  [Negative] GET - Invalid User Input
     @Given("I set an valid GET endpoint for articles category by ID")
     public void iSetAnValidGETEndpointForArticlesCategoryByID() {
@@ -152,4 +169,5 @@ public class Web_AdminArticlesCategorySteps {
     public void ResponseWithAStatusCodeOf404ForTheInvalidParamID() {
         adminArticlesCategory.ResponseWithAStatusCodeOf404ForTheInvalidParamID();
     }
+
 }

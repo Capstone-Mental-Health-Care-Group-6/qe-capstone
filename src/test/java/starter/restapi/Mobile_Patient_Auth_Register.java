@@ -1,6 +1,5 @@
-package starter.restapi.MobileAuthentication;
+package starter.restapi;
 
-import io.cucumber.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 
@@ -8,7 +7,7 @@ import java.io.File;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
-public class POST_RegisterMobile {
+public class Mobile_Patient_Auth_Register {
 
     public String endpoint_register_mobile = "104.198.45.50:80/patient/register ";
 

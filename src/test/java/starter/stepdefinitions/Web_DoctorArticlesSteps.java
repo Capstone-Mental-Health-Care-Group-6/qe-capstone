@@ -24,7 +24,7 @@ public class Web_DoctorArticlesSteps {
         String content = "Mencegah kecemasan diri";
         String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
-        web_doctorArticles.iSendThePOSTRequestToCreateANewArticlesDoctor();
+        web_doctorArticles.iSendThePOSTRequestToCreateANewArticlesDoctor(categoryId,title,content,thumbnail);
     }
 
     @Then("I receive an HTTP response with code 201 for creating a new articles doctor")
@@ -45,7 +45,7 @@ public class Web_DoctorArticlesSteps {
         String content = "Mencegah kecemasan diri";
         String thumbnail = "";
 
-        web_doctorArticles.iSendThePOSTRequestWithInvalidInputThumbnailForCreatingANewArticlesDoctor();
+        web_doctorArticles.iSendThePOSTRequestWithInvalidInputThumbnailForCreatingANewArticlesDoctor(categoryId,title,content,thumbnail);
     }
 
     @Then("I receive an HTTP response with code 400 for creating a invalid input thumbnail")
@@ -67,7 +67,7 @@ public class Web_DoctorArticlesSteps {
         String content = "Mencegah kecemasan diri";
         String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
-        web_doctorArticles.iSendThePOSTRequestWithInvalidUserInputForCreatingANewArticlesDoctor();
+        web_doctorArticles.iSendThePOSTRequestWithInvalidUserInputForCreatingANewArticlesDoctor(categoryId,title,content,thumbnail);
     }
 
     @Then("I receive an HTTP response with code 400 for creating a invalid user input")
@@ -87,7 +87,7 @@ public class Web_DoctorArticlesSteps {
         String content = "Insecure banyak dialami oleh remaja jaman sekarang";
         String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
-        web_doctorArticles.RequestUpdateArticlesDoctor();
+        web_doctorArticles.RequestUpdateArticlesDoctor(title,content,thumbnail);
     }
 
     @Then("I receives an HTTP response code 200 with valid endpoint for update articles doctor")
@@ -127,7 +127,7 @@ public class Web_DoctorArticlesSteps {
         String content = "Insecure banyak dialami oleh remaja jaman sekarang";
         String thumbnail = "";
 
-        web_doctorArticles.iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail();
+        web_doctorArticles.iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail(title,content,thumbnail);
     }
 
     @Then("I receives an HTTP response code 400 with invalid user input thumbnail")

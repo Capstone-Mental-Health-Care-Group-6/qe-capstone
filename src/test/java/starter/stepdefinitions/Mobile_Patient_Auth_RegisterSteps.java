@@ -1,52 +1,52 @@
-package starter.stepdefinitions.MobileAuthentication;
+package starter.stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import starter.restapi.MobileAuthentication.POST_RegisterMobile;
+import starter.restapi.Mobile_Patient_Auth_Register;
 
-public class POST_RegisterMobileSteps {
+public class Mobile_Patient_Auth_RegisterSteps {
 
     @Steps
-    POST_RegisterMobile post_registerMobile;
+    Mobile_Patient_Auth_Register mobilePatientAuthRegister;
 
     // [Positive] POST - Register Success
     @Given("I have a valid registration mobile endpoint")
     public void ValidRegistrationMobileEndpoint() {
-        post_registerMobile.ValidRegistrationMobileEndpoint();
+        mobilePatientAuthRegister.ValidRegistrationMobileEndpoint();
     }
 
     @When("I provide valid user information for registration")
     public void ProvideValidUserInformationForRegistration() {
-        post_registerMobile.ProvideValidUserInformationForRegistration();
+        mobilePatientAuthRegister.ProvideValidUserInformationForRegistration();
     }
 
     @Then("I should receive a response with HTTP status code 200 OK and successfully registered")
     public void ResponseWithHTTPStatusCode200OKAndSuccessfullyRegistered() {
-        post_registerMobile.ResponseWithHTTPStatusCode200OKAndSuccessfullyRegistered();
+        mobilePatientAuthRegister.ResponseWithHTTPStatusCode200OKAndSuccessfullyRegistered();
     }
 
     // [Negative] POST - Register Error Upload Avatar
     @When("I provide valid user information with an invalid avatar for registration")
     public void ProvideValidUserInformationWithAnInvalidAvatarForRegistration() {
-        post_registerMobile.ProvideValidUserInformationWithAnInvalidAvatarForRegistration();
+        mobilePatientAuthRegister.ProvideValidUserInformationWithAnInvalidAvatarForRegistration();
     }
 
     @Then("I should receive a response with HTTP status code 400 Bad Request due to invalid avatar")
     public void ResponseWithHTTPStatusCode400BadRequestDueToInvalidAvatar() {
-        post_registerMobile.ResponseWithHTTPStatusCode400BadRequestDueToInvalidAvatar();
+        mobilePatientAuthRegister.ResponseWithHTTPStatusCode400BadRequestDueToInvalidAvatar();
     }
 
     // [Negative] POST - Register Duplicate Email
     @When("I provide valid user information for a user account with a duplicate email")
     public void ProvideValidUserInformationForAUserAccountWithADuplicateEmail() {
-        post_registerMobile.ProvideValidUserInformationForAUserAccountWithADuplicateEmail();
+        mobilePatientAuthRegister.ProvideValidUserInformationForAUserAccountWithADuplicateEmail();
     }
 
     @Then("I should receive a response with HTTP status code 400 Bad Request due to duplicate email")
     public void ResponseWithHTTPStatusCode400BadRequestDueToDuplicateEmail() {
-        post_registerMobile.ResponseWithHTTPStatusCode400BadRequestDueToDuplicateEmail();
+        mobilePatientAuthRegister.ResponseWithHTTPStatusCode400BadRequestDueToDuplicateEmail();
     }
 
     // [Negative] PUT - Update Failed Validation

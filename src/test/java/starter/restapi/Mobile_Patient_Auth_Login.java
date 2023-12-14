@@ -1,15 +1,13 @@
-package starter.restapi.MobileAuthentication;
+package starter.restapi;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
-public class POST_LoginMobile {
+public class Mobile_Patient_Auth_Login {
     public String endpoint_login_mobile = "104.198.45.50:80/patient/login ";
 
-    // [Positive] POST - Login Success
+    // [Positive] POST - LoginAdmin Success
     @Step("I set the authentication mobile endpoint")
     public String AuthenticationMobileEndpoint() {
         return endpoint_login_mobile;
@@ -32,7 +30,7 @@ public class POST_LoginMobile {
         restAssuredThat(response -> response.statusCode(200));
     }
 
-    // [Negative] POST - Login Error Password Invalid
+    // [Negative] POST - LoginAdmin Error Password Invalid
     @Step("I send a POST request to the login endpoint with an invalid Password")
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
         SerenityRest.given()
@@ -47,7 +45,7 @@ public class POST_LoginMobile {
         restAssuredThat(response -> response.statusCode(400));
     }
 
-    // [Positive] POST - Login Success update Password
+    // [Positive] POST - LoginAdmin Success update Password
     @Step("I send a POST request to the login endpoint with a successful password update")
     public void RequestToTheLoginEndpointWithASuccessfulPasswordUpdate() {
         SerenityRest.given()

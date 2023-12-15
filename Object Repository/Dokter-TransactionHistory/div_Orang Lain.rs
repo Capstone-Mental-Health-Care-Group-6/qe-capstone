@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Orang Lain</name>
+   <tag></tag>
+   <elementGuidId>5289ea1f-1448-4b60-a102-3eb2be3a58be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;root&quot;]/main/div/section/div[2]/div/div/div[1]/table/tbody/tr[4]/td[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.d-flex.align-item-center</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>97ff4c72-fd3a-4182-8b44-7041967b8974</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>d-flex align-item-center</value>
+      <webElementGuid>b87add37-103b-4743-994c-e6c7e70cac6b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Orang Lain</value>
+      <webElementGuid>ec75cc0f-721d-4256-aad8-181060f9c23c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;section-transaksi&quot;]/div[@class=&quot;row table-transaksi&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;p-datatable-sm p-datatable p-component p-datatable-responsive-scroll&quot;]/div[@class=&quot;p-datatable-wrapper&quot;]/table[@class=&quot;p-datatable-table&quot;]/tbody[@class=&quot;p-datatable-tbody&quot;]/tr[@class=&quot;table-row-height&quot;]/td[2]/div[@class=&quot;d-flex align-item-center&quot;]</value>
+      <webElementGuid>0603ad1f-ff5b-4194-a20f-ebdc5d55b50d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section/div[2]/div/div/div/table/tbody/tr/td[2]/div</value>
+      <webElementGuid>58d2d9bd-e1a8-421b-b7fb-dbb0d5735d39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CASDI9823HUAK'])[1]/following::div[1]</value>
+      <webElementGuid>0f226f9c-b813-47bd-a584-189340e8892c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Metode Pembayaran'])[1]/following::div[1]</value>
+      <webElementGuid>acbdfd83-2ca7-4c25-8d50-ff7b7bca896f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paket Premium'])[1]/preceding::div[1]</value>
+      <webElementGuid>ae0dd2b4-c6ed-483d-a8ba-c4c734710850</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div</value>
+      <webElementGuid>c81560bb-f5a6-48b8-93df-7810f21fa787</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'nurul fauziah' or . = 'nurul fauziah')]</value>
+      <webElementGuid>6ff16aba-dde7-46d0-8892-3ba8db27642d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

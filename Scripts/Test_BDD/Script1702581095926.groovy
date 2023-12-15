@@ -19,3 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-Login.feature')
 
+CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-LandingPageDokter.feature')
+
+CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-DashboardNotifikasiChatBot.feature')
+

@@ -50,23 +50,18 @@ class LoginDokter {
 	@Given("I navigate to login page")
 	def navigateLogin() {
 		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/login-dokter')
 		WebUI.maximizeWindow()
-		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/button_Daftar Sekarang'))
 
-		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/a_Masuk'))
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 	}
 
 	@When("I input (.*) and (.*)")
 	def inputEmailPassword(String email, String password) {
 		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), email)
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 
 		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), password)
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 	}
 
@@ -75,48 +70,21 @@ class LoginDokter {
 		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_checkbox me-2'))
 
 		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/button_Masuk'))
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 	}
 
 	@And("I navigate to dashboard")
 	def navigateDashboard() {
-		//		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/a_Dashboard'), 30, FailureHandling.STOP_ON_FAILURE)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/img'), 30, FailureHandling.STOP_ON_FAILURE)
-		WebUI.takeScreenshot()
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/img'), 30)
 		WebUI.delay(2)
+		WebUI.takeScreenshot()
 		WebUI.closeBrowser()
-	}
-
-	//	 ===Negative-input-invalid===
-	@When("I input invalid (.*) and invalid (.*)")
-	def inputBlankEmailPassword(String email1, String password1) {
-		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), email1)
-		WebUI.takeScreenshot()
-		WebUI.delay(2)
-
-		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), password1)
-		WebUI.takeScreenshot()
-		WebUI.delay(2)
-	}
-
-	//	 ===Negative-input-blank===
-	@When("I input blank (.*) and blank (.*)")
-	def inputInvalidEmailPassword(String email2, String password2) {
-		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), email2)
-		WebUI.takeScreenshot()
-		WebUI.delay(2)
-
-		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), password2)
-		WebUI.takeScreenshot()
-		WebUI.delay(2)
 	}
 
 	//	 ===Positive-by-google===
 	@When("I click button login by Google")
 	def clickLoginGoogle() {
 		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/div_Google'))
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 	}
 
@@ -134,14 +102,12 @@ class LoginDokter {
 	@When("I click button forgot password")
 	def clickLoginButtonForgotPW() {
 		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/a_Forgot Password'))
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 	}
 
 	@Then("I navigate to reset password page")
 	def navigateLoginResetPW() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/h2_Atur Ulang Kata Sandi Anda'), 30, FailureHandling.STOP_ON_FAILURE)
-		//		WebUI.verifyElementVisible(findTestObject(''))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/h2_Atur Ulang Kata Sandi Anda'), 30)
 		WebUI.takeScreenshot()
 		WebUI.delay(2)
 
@@ -153,14 +119,12 @@ class LoginDokter {
 	@When("I click button regist")
 	def clickLoginButtonRegist() {
 		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/a_Daftar'))
-		WebUI.takeScreenshot()
 		WebUI.delay(2)
 	}
 
 	@Then("I navigate to regist page")
 	def navigateLoginRegistPage() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/button_Daftar'), 30, FailureHandling.STOP_ON_FAILURE)
-		//		WebUI.verifyElementVisible(findTestObject(''))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LoginDoctor/button_Daftar'), 30)
 		WebUI.takeScreenshot()
 		WebUI.delay(2)
 

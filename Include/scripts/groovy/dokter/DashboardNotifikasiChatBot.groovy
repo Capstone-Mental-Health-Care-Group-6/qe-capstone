@@ -51,35 +51,34 @@ class DashboardNotifikasiChatBot {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
 		WebUI.maximizeWindow()
-		
+
 		WebUI.delay(2)
 	}
 
 	@When("I click the sidebar menu")
 	def clickSidebarMenu() {
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Chat'))
 		WebUI.delay(2)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Transaksi'))
 		WebUI.delay(2)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Pencairan Saldo'))
 		WebUI.delay(2)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Konten'))
 		WebUI.delay(2)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/a_Dashboard'))
 		WebUI.delay(2)
-		
 	}
 
 	@When("I check the icons in the navbar")
 	def clickIconNavbar() {
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/img_via_notif-icon'))
 		WebUI.delay(2)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/img_lihat detail_iconNavbar'))
 		WebUI.delay(2)
 	}
@@ -95,21 +94,20 @@ class DashboardNotifikasiChatBot {
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Depresi'))
 		WebUI.refresh()
 		WebUI.delay(3)
-				
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Gangguan Kecemasan'))
 		WebUI.refresh()
 		WebUI.delay(3)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Kegilaan'))
 		WebUI.refresh()
 		WebUI.delay(3)
-		
+
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/button_Mengatasi Stress'))
 		WebUI.takeScreenshot()
 		WebUI.delay(3)
-		
 	}
-	
+
 	@And("I click the return button")
 	def clickReturnDashboardButton() {
 		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/svg'))

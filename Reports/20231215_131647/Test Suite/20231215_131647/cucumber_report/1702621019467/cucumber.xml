@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="150.138963">
+<testcase classname="Login" name="Login with valid data" time="21.11177">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input Dokter6@gmail.com and Dokter@1.................................passed
+Then I click login button...................................................passed
+And I navigate to dashboard.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with invalid data" time="17.534244">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input Dokter6@gmail.com and xxx......................................passed
+Then I click login button...................................................passed
+And Error message showed....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with invalid data 2" time="17.496125">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input lalala and Dokter@1............................................passed
+Then I click login button...................................................passed
+And Error message showed....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with invalid data 3" time="16.709864">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input lalala and xxx.................................................passed
+Then I click login button...................................................passed
+And Error message showed....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with blank data" time="17.501922">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input  and Dokter@1..................................................passed
+Then I click login button...................................................passed
+And Error message showed....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with blank data 2" time="20.529033">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I input Dokter6@gmail.com and .........................................passed
+Then I click login button...................................................passed
+And Error message showed....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with Google account" time="12.079376">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I click button login by Google.........................................passed
+Then I navigate to choose my Google account.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Forgot Password" time="13.695151">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I click button forgot password.........................................passed
+Then I navigate to reset password page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Verify Regist" time="13.481478">
+<system-out><![CDATA[Given I navigate to login page..............................................passed
+When I click button regist..................................................passed
+Then I navigate to regist page..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -7,38 +7,38 @@ Feature: Login
   @Positive-Login
   Scenario Outline: Login with valid data
     Given I navigate to login page
-    When I input <username> and <password>
+    When I input <email> and <password>
     Then I click login button
     And I navigate to dashboard
 
     Examples: 
-      | username          | password |
-      | Dokter6@gmail.com | Dokter@1 |
+      | email             | password |
+      | Doctor6@gmail.com | password |
 
   @Negative-input-invalid
   Scenario Outline: Login with invalid data
     Given I navigate to login page
-    When I input invalid <username1> and invalid <password1>
+    When I input <email> and <password>
     Then I click login button
     And Error message showed
 
     Examples: 
-      | username1         | password1 |
-      | Dokter6@gmail.com | xxx       |
-      | lalala            | Dokter@1  |
-      | lalala            | xxx       |
+      | email             | password |
+      | Doctor6@gmail.com | xxx      |
+      | lalala            | password |
+      | lalala            | xxx      |
 
   @Negative-input-blank
   Scenario Outline: Login with blank data
     Given I navigate to login page
-    When I input blank <username2> and blank <password2>
+    When I input <email> and <password>
     Then I click login button
     And Error message showed
 
     Examples: 
-      | username2         | password2 |
-      |                   | Dokter@1  |
-      | Dokter6@gmail.com |           |
+      | email             | password |
+      |                   | password |
+      | Doctor6@gmail.com |          |
 
   @Positive-by-google
   Scenario: Login with Google account

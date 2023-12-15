@@ -1,0 +1,640 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Login with valid data",
+        "description": "",
+        "id": "login;login-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8812976100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5929416100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input Dokter6@gmail.com and Dokter@1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dokter6@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "Dokter@1",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2888290400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3195869800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I navigate to dashboard",
+            "match": {
+              "location": "LoginDokter.navigateDashboard()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-Login"
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Login with invalid data",
+        "description": "",
+        "id": "login;login-with-invalid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8223344500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5623923200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input Dokter6@gmail.com and xxx",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dokter6@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "xxx",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2810142400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 867185800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-invalid"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Login with invalid data",
+        "description": "",
+        "id": "login;login-with-invalid-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8161775600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5675826800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input lalala and Dokter@1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lalala",
+                  "offset": 8
+                },
+                {
+                  "val": "Dokter@1",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2796970800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 852802000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-invalid"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Login with invalid data",
+        "description": "",
+        "id": "login;login-with-invalid-data;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7483923400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5578312400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input lalala and xxx",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lalala",
+                  "offset": 8
+                },
+                {
+                  "val": "xxx",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2822216400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 818547700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-invalid"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Login with blank data",
+        "description": "",
+        "id": "login;login-with-blank-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8353561100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5490567200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I input  and Dokter@1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 8
+                },
+                {
+                  "val": "Dokter@1",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2830713500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 818869000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-blank"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Login with blank data",
+        "description": "",
+        "id": "login;login-with-blank-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11249917900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5641343800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I input Dokter6@gmail.com and ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dokter6@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2795160600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 834968500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-blank"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Login with Google account",
+        "description": "",
+        "id": "login;login-with-google-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8709996400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2482335800,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click button login by Google",
+            "match": {
+              "location": "LoginDokter.clickLoginGoogle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 880794400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I navigate to choose my Google account",
+            "match": {
+              "location": "LoginDokter.navigateGoogleAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-by-google"
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "name": "Forgot Password",
+        "description": "",
+        "id": "login;forgot-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7959160900,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2513130900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I click button forgot password",
+            "match": {
+              "location": "LoginDokter.clickLoginButtonForgotPW()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3216281000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I navigate to reset password page",
+            "match": {
+              "location": "LoginDokter.navigateLoginResetPW()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-Forgot-Password"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Verify Regist",
+        "description": "",
+        "id": "login;verify-regist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7797686600,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2473001400,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click button regist",
+            "match": {
+              "location": "LoginDokter.clickLoginButtonRegist()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3205330300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I navigate to regist page",
+            "match": {
+              "location": "LoginDokter.navigateLoginRegistPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-Verify-RegistButton"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As a user\n  I want to login with my registered account\n  So that I can manage my account",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-Login.feature",
+    "tags": [
+      {
+        "name": "@LoginPageDokter",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

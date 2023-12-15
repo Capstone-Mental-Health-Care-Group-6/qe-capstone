@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img</name>
+   <tag></tag>
+   <elementGuidId>05f32a3a-eb98-44c6-9a1a-b5cb71731a79</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/section/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.text-decoration-none.d-flex.align-items-center.gap-3 > img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>445a50a2-e8f5-407f-bbca-d409dcf008ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/assets/arrowLeft-0963e6a5.svg</value>
+      <webElementGuid>53fe5def-2e6a-4777-863b-e0b66c0237c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;header&quot;]/a[@class=&quot;text-decoration-none d-flex align-items-center gap-3&quot;]/img[1]</value>
+      <webElementGuid>760bb8d1-825a-4673-a742-73a9b933723c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section/a/img</value>
+      <webElementGuid>de6c0e58-8bcd-4447-93de-fb5bc73ec373</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/a/img</value>
+      <webElementGuid>b02569a8-1e3e-4a35-92e7-7a65aea98c12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/assets/arrowLeft-0963e6a5.svg']</value>
+      <webElementGuid>c1c5848f-c397-4795-880e-ccb00ef38e28</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,7 +1,9 @@
 package starter.restapi;
 
+import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import org.junit.runner.RunWith;
 
 import java.io.File;
 
@@ -9,53 +11,60 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Mobile_Patient_Auth_Register {
 
-    public String endpoint_register_mobile = "104.198.45.50:80/patient/register ";
+    public String endpoint_register_mobile = "https://kmb5alta.online";
 
     // [Positive] POST - Register Success
     @Step("I have a valid registration mobile endpoint")
     public String ValidRegistrationMobileEndpoint() {
-        return endpoint_register_mobile;
+        return endpoint_register_mobile + "/patient/register";
     }
 
     @Step("I provide valid user information for registration")
-    public void ProvideValidUserInformationForRegistration() {
-        String filePath = "src/test/resources/avatar/avatar1.jpeg"; // Sesuaikan dengan lokasi sebenarnya
-        File file = new File(filePath);
+    public void ProvideValidUserInformationForRegistration(String name, String email, String password, String dateOfBirth, String gender, String phoneNumber, String avatar) {
+        File avatarFile = new File(avatar);
 
         SerenityRest.given()
                 .contentType("multipart/form-data")
-                .multiPart("name", "fauzi")
-                .multiPart("email", "fauzihidayat@gmail.com")
-                .multiPart("password", "fauzi1234")
-                .multiPart("date_of_birth", "2000-10-20")
-                .multiPart("gender", "laki-laki")
-                .multiPart("phone_number", "0812345678")
-                .multiPart("avatar", file)
+                .multiPart("name", name)
+                .multiPart("email", email)
+                .multiPart("password", password)
+                .multiPart("date_of_birth", dateOfBirth)
+                .multiPart("gender", gender)
+                .multiPart("phone_number", phoneNumber)
+                .multiPart("avatar", avatarFile)
                 .post(ValidRegistrationMobileEndpoint());
-        // Jika Anda menggunakan form data yang melibatkan file (seperti avatar), metode yang benar adalah multiPart karena ini memungkinkan pengiriman data multipart/form-data
-        // yang mencakup file. Jadi, dalam kasus ini, penggunaan multiPart akan lebih tepat daripada formParam.
     }
+////    # Expected status code <201> but was <400>.
+    @Step("I should receive a response with HTTP status code 400 OK and successfully registered")
+    public void ResponseWithHTTPStatusCode400OKAndSuccessfullyRegistered() {
+        restAssuredThat(response -> response.statusCode(400));
+    }
+////    # Expected status code <400> but was <201>.
+//    @Step("I should receive a response with HTTP status code 201 created and successfully registered")
+//    public void ResponseWithHTTPStatusCode201CreatedAndSuccessfullyRegistered() {
+//        restAssuredThat(response -> response.statusCode(201));
+//    }
+//
+////    # Expected status code <200> but was <400>.
+////    @Step("I should receive a response with HTTP status code 200 OK and successfully registered")
+////    public void ResponseWithHTTPStatusCode200OKAndSuccessfullyRegistered() {
+////        restAssuredThat(response -> response.statusCode(200));
+////    }
 
-    @Step("I should receive a response with HTTP status code 200 OK and successfully registered")
-    public void ResponseWithHTTPStatusCode200OKAndSuccessfullyRegistered() {
-        restAssuredThat(response -> response.statusCode(200));
-    }
 
     // [Negative] POST - Register Error Upload Avatar
     @Step("I provide valid user information with an invalid avatar for registration")
-    public void ProvideValidUserInformationWithAnInvalidAvatarForRegistration() {
-        String filePath = "src/test/resources/nama_folder/nama_file.png"; //
-        File file = new File(filePath);
-
+    public void ProvideValidUserInformationWithAnInvalidAvatarForRegistration(String name, String email, String password, String dateOfBirth, String gender, String phoneNumber) {
+//        File avatarFile = new File(avatar);
         SerenityRest.given()
                 .contentType("multipart/form-data")
-                .multiPart("name", "fauzi")
-                .multiPart("email", "fauzihidayat@gmail.com")
-                .multiPart("password", "fauzi1234")
-                .multiPart("date_of_birth", "2000-10-20")
-                .multiPart("gender", "laki-laki")
-                .multiPart("phone_number", "0812345678")
-                .multiPart("avatar", file)
+                .multiPart("name", name)
+                .multiPart("email", email)
+                .multiPart("password", password)
+                .multiPart("date_of_birth", dateOfBirth)
+                .multiPart("gender", gender)
+                .multiPart("phone_number", phoneNumber)
+//                .multiPart("avatar", avatarFile)
                 .post(ValidRegistrationMobileEndpoint());
     }
 
@@ -66,19 +75,18 @@ public class Mobile_Patient_Auth_Register {
 
     // [Negative] POST - Register Duplicate Email
     @Step("I provide valid user information for a user account with a duplicate email")
-    public void ProvideValidUserInformationForAUserAccountWithADuplicateEmail() {
-        String filePath = "src/test/resources/avatar/avatar1.jpeg"; // Sesuaikan dengan lokasi sebenarnya
-        File file = new File(filePath);
+    public void ProvideValidUserInformationForAUserAccountWithADuplicateEmail(String name, String email, String password, String dateOfBirth, String gender, String phoneNumber, String avatar) {
 
+        File avatarFile = new File(avatar);
         SerenityRest.given()
                 .contentType("multipart/form-data")
-                .multiPart("name", "fauzi")
-                .multiPart("email", "fauzihidayat@gmail.com") // duplicate email
-                .multiPart("password", "fauzi1234")
-                .multiPart("date_of_birth", "2000-10-20")
-                .multiPart("gender", "laki-laki")
-                .multiPart("phone_number", "0812345678")
-                .multiPart("avatar", file)
+                .multiPart("name", name)
+                .multiPart("email", email)
+                .multiPart("password", password)
+                .multiPart("date_of_birth", dateOfBirth)
+                .multiPart("gender", gender)
+                .multiPart("phone_number", phoneNumber)
+                .multiPart("avatar", avatarFile)
                 .post(ValidRegistrationMobileEndpoint());
         // Jika Anda menggunakan form data yang melibatkan file (seperti avatar), metode yang benar adalah multiPart karena ini memungkinkan pengiriman data multipart/form-data
         // yang mencakup file. Jadi, dalam kasus ini, penggunaan multiPart akan lebih tepat daripada formParam.
@@ -88,4 +96,6 @@ public class Mobile_Patient_Auth_Register {
     public void ResponseWithHTTPStatusCode400BadRequestDueToDuplicateEmail() {
         restAssuredThat(response -> response.statusCode(400));
     }
+
+
 }

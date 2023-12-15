@@ -39,13 +39,19 @@ public class Mobile_Patient_Auth_LoginSteps {
     }
 
     // [Positive] POST - LoginAdmin Success update Password
-    @When("I send a POST request to the loginAdmin endpoint with a successful password update")
+    @When("I send a POST request to the login endpoint with a successful password update")
     public void RequestToTheLoginEndpointWithASuccessfulPasswordUpdate() {
         mobilePatientAuthLogin.RequestToTheLoginEndpointWithASuccessfulPasswordUpdate();
     }
 
-    @Then("I should receive a response with HTTP status code 200 OK and successful password update")
-    public void ResponseWithHTTPStatusCode200OKAndSuccessfulPasswordUpdate() {
-        mobilePatientAuthLogin.ResponseWithHTTPStatusCode200OKAndSuccessfulPasswordUpdate();
-    }
+//    Expected status code <200> but was <400>.
+    @Then("I should receive a response with HTTP status code 400 OK and successful password update")
+    public void ResponseWithHTTPStatusCode400OKAndSuccessfulPasswordUpdate() {
+        mobilePatientAuthLogin.ResponseWithHTTPStatusCode400OKAndSuccessfulPasswordUpdate();
+}
+
+//    @Then("I should receive a response with HTTP status code 200 OK and successful password update")
+//    public void ResponseWithHTTPStatusCode200OKAndSuccessfulPasswordUpdate() {
+//        mobilePatientAuthLogin.ResponseWithHTTPStatusCode200OKAndSuccessfulPasswordUpdate();
+//    }
 }

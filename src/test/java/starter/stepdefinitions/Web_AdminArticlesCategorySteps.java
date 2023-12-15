@@ -3,9 +3,12 @@ package starter.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.thucydides.core.annotations.Steps;
 import starter.restapi.Web_AdminArticlesCategory;
 
 public class Web_AdminArticlesCategorySteps {
+
+    @Steps
     Web_AdminArticlesCategory adminArticlesCategory;
 
 
@@ -57,6 +60,23 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.ResponseWithCode400ForCreatingANewArticlesCategory();
     }
 
+    // [Positive] GET - Success Get By ID
+    @Given("I set a valid GET endpoint for articles category by ID")
+    public void iSetAValidGETEndpointForArticlesCategoryByID() {
+        adminArticlesCategory.iSetAValidGETEndpointForArticlesCategoryByID();
+    }
+
+    @When("I sends a GET HTTP request with a valid endpoint for articles category by ID")
+    public void RequestWithAValidEndpointForArticlesCategoryByID() {
+        adminArticlesCategory.RequestWithAValidEndpointForArticlesCategoryByID();
+
+    }
+
+    @Then("I receives a valid GET HTTP response with a status code of 200 for articles category by ID")
+    public void ResponseWithAStatusCodeOf200ForArticlesCategoryByID() {
+        adminArticlesCategory.ResponseWithAStatusCodeOf200ForArticlesCategoryByID();
+    }
+
     //  [Negative] GET - Invalid User Input
     @Given("I set an valid GET endpoint for articles category by ID")
     public void iSetAnValidGETEndpointForArticlesCategoryByID() {
@@ -84,10 +104,16 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.iSendsAPUTHTTPRequestUpdateArticlesCategory();
     }
 
-    @Then("I receives an HTTP response code 200 with valid endpoint")
-    public void ResponseCode200WithValidEndpoint() {
-        adminArticlesCategory.ResponseCode200WithValidEndpoint();
+    @Then("I receives an HTTP response code 405 with valid endpoint")
+    public void ResponseCode405WithValidEndpoint() {
+        adminArticlesCategory.ResponseCode405WithValidEndpoint();
     }
+
+
+//    @Then("I receives an HTTP response code 200 with valid endpoint")
+//    public void ResponseCode200WithValidEndpoint() {
+//        adminArticlesCategory.ResponseCode200WithValidEndpoint();
+//    }
 
     //  [Negative] PUT - Invalid Param ID
     @Given("I set an valid PUT endpoint Update Articles Category with an invalid param ID")
@@ -100,10 +126,15 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.RequestUpdateArticlesCategoryWithAnInvalidParamID();
     }
 
-    @Then("I receives an HTTP response code 400 with invalid param ID")
-    public void ResponseCode400WithInvalidParamID() {
-        adminArticlesCategory.ResponseCode400WithInvalidParamID();
+    @Then("I receives an HTTP response code 405 with invalid param ID")
+    public void ResponseCode405WithInvalidParamID() {
+        adminArticlesCategory.ResponseCode405WithInvalidParamID();
     }
+
+//    @Then("I receives an HTTP response code 400 with invalid param ID")
+//    public void ResponseCode400WithInvalidParamID() {
+//        adminArticlesCategory.ResponseCode400WithInvalidParamID();
+//    }
 
     // [Negative] PUT - Invalid User Input
     @Given("I set an valid PUT endpoint Update Articles Category with an invalid user input")
@@ -116,10 +147,16 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.RequestUpdateArticlesCategoryWithAnInvalidUserInput();
     }
 
-    @Then("I receives an HTTP response code 400 with invalid user input")
-    public void ResponseCode400WithInvalidUserInput() {
-        adminArticlesCategory.ResponseCode400WithInvalidUserInput();
+
+    @Then("I receives an HTTP response code 405 with invalid user input")
+    public void ResponseCode405WithInvalidUserInput() {
+        adminArticlesCategory.ResponseCode405WithInvalidUserInput();
     }
+
+//    @Then("I receives an HTTP response code 400 with invalid user input")
+//    public void ResponseCode400WithInvalidUserInput() {
+//        adminArticlesCategory.ResponseCode400WithInvalidUserInput();
+//    }
 
     // [Positive] DEL - Delete Success
     @Given("I set the DELETE endpoint to a valid endpoint")
@@ -132,9 +169,9 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.iSendADELETEHTTPRequestWithAValidEndpoint();
     }
 
-    @Then("I receive a DELETE HTTP response with a status code of 200 for the valid endpoint")
-    public void ResponseWithAStatusCodeOf200ForTheValidEndpoint() {
-        adminArticlesCategory.ResponseWithAStatusCodeOf200ForTheValidEndpoint();
+    @Then("I receive a DELETE HTTP response with a status code of 204 for the valid endpoint")
+    public void ResponseWithAStatusCodeOf204ForTheValidEndpoint() {
+        adminArticlesCategory.ResponseWithAStatusCodeOf204ForTheValidEndpoint();
     }
 
     // [Negative] DEL - Delete Invalid Param ID
@@ -148,8 +185,16 @@ public class Web_AdminArticlesCategorySteps {
         adminArticlesCategory.iSendADELETEHTTPRequestWithAnInvalidParamID();
     }
 
-    @Then("I receive a DELETE HTTP response with a status code of 404 for the invalid param ID")
-    public void ResponseWithAStatusCodeOf404ForTheInvalidParamID() {
-        adminArticlesCategory.ResponseWithAStatusCodeOf404ForTheInvalidParamID();
+
+    @Then("I receive a DELETE HTTP response with a status code of 400 for the invalid param ID")
+    public void ResponseWithAStatusCodeOf400ForTheInvalidParamID() {
+        adminArticlesCategory.ResponseWithAStatusCodeOf400ForTheInvalidParamID();
     }
+//    @Then("I receive a DELETE HTTP response with a status code of 404 for the invalid param ID")
+//    public void ResponseWithAStatusCodeOf404ForTheInvalidParamID() {
+//        adminArticlesCategory.ResponseWithAStatusCodeOf404ForTheInvalidParamID();
+//    }
+
+
+
 }

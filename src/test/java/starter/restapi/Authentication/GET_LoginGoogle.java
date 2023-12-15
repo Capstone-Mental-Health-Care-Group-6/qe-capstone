@@ -7,7 +7,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class GET_LoginGoogle {
 
-    public String valid_url_loginGoogle = "localhost:8000/login/google";
+    public String valid_url_loginGoogle = "https://kmb5alta.online/login/google";
 
     // [Positive] GET - LoginAdmin Google Redirect to Callback
     @Step("I sets a GET request to a valid endpoint for login google endpoint")

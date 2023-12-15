@@ -55,11 +55,6 @@ public class POST_RegisterSteps {
         POSTRegister.NameEmailRoleAndPasswordForAnAdmin();
     }
 
-    @And("I send a POST request to the valid registration endpoint")
-    public void RequestToTheValidRegistrationEndpoint() {
-        POSTRegister.RequestToTheValidRegistrationEndpoint();
-    }
-
     @Then("I should receive a response with HTTP status code 201 created")
     public void ResponseWithHTTPStatusCode201Created() {
         POSTRegister.ResponseWithHTTPStatusCode201Created();

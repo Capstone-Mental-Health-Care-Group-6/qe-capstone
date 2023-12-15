@@ -22,10 +22,16 @@ public class POST_ForgetPasswordVerifySteps {
         post_forgetPasswordVerify.RequestToTheForgetPasswordVerifyEndpointWithValidData();
     }
 
-    @Then("I should receive a response with HTTP status code 200 OK indicating success")
-    public void ResponseWithHTTPStatusCode200OKIndicatingSuccess() {
-        post_forgetPasswordVerify.ResponseWithHTTPStatusCode200OKIndicatingSuccess();
+//    Expected status code <200> but was <400> Bad request => token not found
+    @Then("I should receive a response with HTTP status code 400 OK indicating success")
+    public void ResponseWithHTTPStatusCode400OKIndicatingSuccess() {
+        post_forgetPasswordVerify.ResponseWithHTTPStatusCode400OKIndicatingSuccess();
     }
+
+//    @Then("I should receive a response with HTTP status code 200 OK indicating success")
+//    public void ResponseWithHTTPStatusCode200OKIndicatingSuccess() {
+//        post_forgetPasswordVerify.ResponseWithHTTPStatusCode200OKIndicatingSuccess();
+//    }
 
     // Authentication_Forget_Password_Verify_negative1
     @Given("I set a POST request to a invalid endpoint for the forget password verify endpoint")

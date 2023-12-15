@@ -42,7 +42,9 @@ public class LoginAdmin {
     public void validateAdminLoginResponse() {
         restAssuredThat(response -> response.statusCode(200));
     }
-  /*  @Step("I set authentication endpoint for login")
+
+
+    /*  @Step("I set authentication endpoint for login")
     public String ISetAuthenticationEndpoint() {
         return endpoint_auth;
     }

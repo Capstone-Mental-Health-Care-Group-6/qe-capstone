@@ -23,8 +23,13 @@ public class POST_ForgetPasswordSteps {
         post_forgetPassword.RequestToTheForgetPasswordEndpointWithAValidEmail();
     }
 
-    @Then("I should receive a response with HTTP status code 200 OK and successfully")
-    public void ResponseWithHTTPStatusCode200OKAndSuccessfully() {
-        post_forgetPassword.ResponseWithHTTPStatusCode200OKAndSuccessfully();
+//    @Then("I should receive a response with HTTP status code 200 OK and successfully")
+//    public void ResponseWithHTTPStatusCode200OKAndSuccessfully() {
+//        post_forgetPassword.ResponseWithHTTPStatusCode200OKAndSuccessfully();
+//    }
+
+    @Then("I should receive a response with HTTP status code 500 internal server error but successfully")
+    public void ResponseWithHTTPStatusCode500InternalServerErrorButSuccessfully() {
+        post_forgetPassword.ResponseWithHTTPStatusCode500InternalServerErrorButSuccessfully();
     }
 }

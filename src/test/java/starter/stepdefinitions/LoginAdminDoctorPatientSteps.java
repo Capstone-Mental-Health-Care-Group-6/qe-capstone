@@ -17,6 +17,7 @@ public class LoginAdminDoctorPatientSteps {
     @Steps
     LoginPatient LoginPatient;
 
+
     // LoginAdmin by Admin
     @Given("I set authentication endpoint for login admin")
     public void setAuthenticationEndpointForAdminLogin() {

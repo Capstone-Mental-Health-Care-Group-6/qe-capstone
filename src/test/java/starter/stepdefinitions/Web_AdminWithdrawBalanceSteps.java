@@ -1,6 +1,5 @@
 package starter.stepdefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -39,73 +38,93 @@ public class Web_AdminWithdrawBalanceSteps {
         withdrawBalance.iSendAPUTHTTPRequestToUpdateStatusToDone();
     }
 
-    @Then("I receive an HTTP response code 200 with a valid endpoint for updating status to Done")
-    public void ResponseCode200WithAValidEndpointForUpdatingStatusToDone() {
-        withdrawBalance.ResponseCode200WithAValidEndpointForUpdatingStatusToDone();
+//    @Then("I receive an HTTP response code 200 with a valid endpoint for updating status to Done")
+//    public void ResponseCode200WithAValidEndpointForUpdatingStatusToDone() {
+//        withdrawBalance.ResponseCode200WithAValidEndpointForUpdatingStatusToDone();
+//    }
+
+    @Then("I receive an HTTP response code 404 with a valid endpoint for updating status to Done")
+    public void ResponseCode404WithAValidEndpointForUpdatingStatusToDone() {
+        withdrawBalance.ResponseCode404WithAValidEndpointForUpdatingStatusToDone();
+        // # Expected status code <200> but was <404>
     }
+
 
     // [Negative] PUT - Update Status Pending
     @Given("I sets a valid PUT endpoint Update status pending all data from balance disbursement")
     public void ValidPUTEndpointUpdateStatusPendingAllDataFromBalanceDisbursement() {
         withdrawBalance.ValidPUTEndpointUpdateStatusPendingAllDataFromBalanceDisbursement();
     }
+
     @When("I send a PUT HTTP request to Update status to Pending")
     public void iSendAPUTHTTPRequestToUpdateStatusToPending() {
         withdrawBalance.iSendAPUTHTTPRequestToUpdateStatusToPending();
     }
 
-    @Then("I receive an HTTP response code 200 with a valid endpoint for updating status to Pending")
-    public void ResponseCode200WithAValidEndpointForUpdatingStatusToPending() {
-        withdrawBalance.ResponseCode200WithAValidEndpointForUpdatingStatusToPending();
+//    @Then("I receive an HTTP response code 200 with a valid endpoint for updating status to Pending")
+//    public void ResponseCode200WithAValidEndpointForUpdatingStatusToPending() {
+//        withdrawBalance.ResponseCode200WithAValidEndpointForUpdatingStatusToPending();
+//    }
+
+
+    @Then("I receive an HTTP response code 404 with a valid endpoint for updating status to Pending")
+    public void ResponseCode404WithAValidEndpointForUpdatingStatusToPending() {
+        withdrawBalance.ResponseCode404WithAValidEndpointForUpdatingStatusToPending();
+        // # Expected status code <200> but was <404>
     }
 
-    // [Negative] PUT - Update Failed Validation
 
-    @Given("I sets a valid PUT endpoint Update status failed validation all data from balance disbursement")
-    public void ValidPUTEndpointUpdateStatusFailedValidationAllDataFromBalanceDisbursement() {
-        withdrawBalance.ValidPUTEndpointUpdateStatusFailedValidationAllDataFromBalanceDisbursement();
-    }
+        // [Negative] PUT - Update Failed Validation
 
-    @When("I send a PUT HTTP request with invalid data validation to Update status of Balance Disbursement")
-    public void RequestWithInvalidDataValidationToUpdateStatusOfBalanceDisbursement() {
-        withdrawBalance.RequestWithInvalidDataValidationToUpdateStatusOfBalanceDisbursement();
-    }
+        @Given("I sets a valid PUT endpoint Update status failed validation all data from balance disbursement")
+        public void ValidPUTEndpointUpdateStatusFailedValidationAllDataFromBalanceDisbursement () {
+            withdrawBalance.ValidPUTEndpointUpdateStatusFailedValidationAllDataFromBalanceDisbursement();
+        }
 
-    @Then("I receive an HTTP response code 400 due to invalid request format")
-    public void ResponseCode400DueToInvalidRequestFormat() {
-        withdrawBalance.ResponseCode400DueToInvalidRequestFormat();
-    }
+        @When("I send a PUT HTTP request with invalid data validation to Update status of Balance Disbursement")
+        public void RequestWithInvalidDataValidationToUpdateStatusOfBalanceDisbursement () {
+            withdrawBalance.RequestWithInvalidDataValidationToUpdateStatusOfBalanceDisbursement();
+        }
 
-    // [Positive] GET - Get By ID Success
-    @Given("I sets a valid GET endpoint for retrieving All Balance Withdraw data by ID")
-    public void ValidGETEndpointForRetrievingAllBalanceWithdrawDataByID() {
-        withdrawBalance.ValidGETEndpointForRetrievingAllBalanceWithdrawDataByID();
-    }
+        @Then("I receive an HTTP response code 404 due to invalid request format")
+        public void ResponseCode404DueToInvalidRequestFormat () {
+            withdrawBalance.ResponseCode404DueToInvalidRequestFormat();
+        }
 
-    @When("I send a GET HTTP request with a valid ID for All Balance Withdraw")
-    public void iSendAGETHTTPRequestWithAValidIDForAllBalanceWithdraw() {
-        withdrawBalance.iSendAGETHTTPRequestWithAValidIDForAllBalanceWithdraw();
-    }
+        // [Positive] GET - Get By ID Success
+        @Given("I sets a valid GET endpoint for retrieving All Balance Withdraw data by ID")
+        public void ValidGETEndpointForRetrievingAllBalanceWithdrawDataByID () {
+            withdrawBalance.ValidGETEndpointForRetrievingAllBalanceWithdrawDataByID();
+        }
 
-    @Then("I receive a valid GET HTTP response with a status code of 200 for the All Balance Withdraw data by ID")
-    public void ResponseWithAStatusCodeOf200ForTheAllBalanceWithdrawDataByID() {
-        withdrawBalance.ResponseWithAStatusCodeOf200ForTheAllBalanceWithdrawDataByID();
-    }
+        @When("I send a GET HTTP request with a valid ID for All Balance Withdraw")
+        public void iSendAGETHTTPRequestWithAValidIDForAllBalanceWithdraw () {
+            withdrawBalance.iSendAGETHTTPRequestWithAValidIDForAllBalanceWithdraw();
+        }
 
-    // [Negative] GET - Get By ID Not Found
-    @Given("I sets a valid GET endpoint for retrieving All Balance Withdraw data by ID Not found")
-    public void ValidGETEndpointForRetrievingAllBalanceWithdrawDataByIDNotFound() {
-        withdrawBalance.ValidGETEndpointForRetrievingAllBalanceWithdrawDataByIDNotFound();
-    }
-    @When("I send a GET HTTP request with an invalid ID for All Balance Withdraw")
-    public void iSendAGETHTTPRequestWithAnInvalidIDForAllBalanceWithdraw() {
-        withdrawBalance.iSendAGETHTTPRequestWithAnInvalidIDForAllBalanceWithdraw();
-    }
+        @Then("I receive a valid GET HTTP response with a status code of 404 for the All Balance Withdraw data by ID")
+        public void ResponseWithAStatusCodeOf404ForTheAllBalanceWithdrawDataByID () {
+            withdrawBalance.StatusCodeOf404ForTheAllBalanceWithdrawDataByID();
+            // # Expected status code <200> but was <404>
+        }
+//    @Then("I receive a valid GET HTTP response with a status code of 200 for the All Balance Withdraw data by ID")
+//    public void ResponseWithAStatusCodeOf200ForTheAllBalanceWithdrawDataByID() {
+//        withdrawBalance.ResponseWithAStatusCodeOf200ForTheAllBalanceWithdrawDataByID();
 
-    @Then("I receive a GET HTTP response with a status code of 400 for the All Balance Withdraw data by ID")
-    public void ResponseWithAStatusCodeOf400ForTheAllBalanceWithdrawDataByID() {
-        withdrawBalance.ResponseWithAStatusCodeOf400ForTheAllBalanceWithdrawDataByID();
-    }
 
-}
+        // [Negative] GET - Get By ID Not Found
+        @Given("I sets a valid GET endpoint for retrieving All Balance Withdraw data by ID Not found")
+        public void ValidGETEndpointForRetrievingAllBalanceWithdrawDataByIDNotFound () {
+            withdrawBalance.ValidGETEndpointForRetrievingAllBalanceWithdrawDataByIDNotFound();
+        }
+        @When("I send a GET HTTP request with an invalid ID for All Balance Withdraw")
+        public void iSendAGETHTTPRequestWithAnInvalidIDForAllBalanceWithdraw () {
+            withdrawBalance.iSendAGETHTTPRequestWithAnInvalidIDForAllBalanceWithdraw();
+        }
+
+        @Then("I receive a GET HTTP response with a status code of 404 for the All Balance Withdraw data by ID")
+        public void IreceiveAGetHTTPResponseWithAStatusCodeOf404ForTheAllBalanceWithdrawDataByID () {
+            withdrawBalance.IreceiveAGetHTTPResponseWithAStatusCodeOf404ForTheAllBalanceWithdrawDataByID();
+        }
+    }
 

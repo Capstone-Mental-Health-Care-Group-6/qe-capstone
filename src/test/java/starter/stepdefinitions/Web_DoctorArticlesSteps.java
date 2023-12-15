@@ -22,7 +22,8 @@ public class Web_DoctorArticlesSteps {
         String categoryId = "2";
         String title = "Kecemasan diri";
         String content = "Mencegah kecemasan diri";
-        String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
+        String thumbnail = "/EmpathiCare/thumbnail.jpg";
+        //String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
         web_doctorArticles.iSendThePOSTRequestToCreateANewArticlesDoctor(categoryId,title,content,thumbnail);
     }
@@ -43,9 +44,9 @@ public class Web_DoctorArticlesSteps {
         String categoryId = "2";
         String title = "Kecemasan diri";
         String content = "Mencegah kecemasan diri";
-        String thumbnail = "";
+      //  String thumbnail = "/Users/Anastasya/OneDrive/Quality Engineer-empathiCare.docx";
 
-        web_doctorArticles.iSendThePOSTRequestWithInvalidInputThumbnailForCreatingANewArticlesDoctor(categoryId,title,content,thumbnail);
+        web_doctorArticles.iSendThePOSTRequestWithInvalidInputThumbnailForCreatingANewArticlesDoctor(categoryId,title,content);
     }
 
     @Then("I receive an HTTP response with code 400 for creating a invalid input thumbnail")
@@ -65,7 +66,8 @@ public class Web_DoctorArticlesSteps {
         String categoryId = "asd";
         String title = "123";
         String content = "Mencegah kecemasan diri";
-        String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
+        String thumbnail = "/EmpathiCare/thumbnail.jpg";
+        //String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
         web_doctorArticles.iSendThePOSTRequestWithInvalidUserInputForCreatingANewArticlesDoctor(categoryId,title,content,thumbnail);
     }
@@ -85,7 +87,8 @@ public class Web_DoctorArticlesSteps {
     public void RequestUpdateArticlesDoctor() {
         String title = "Menghadapi Insecure";
         String content = "Insecure banyak dialami oleh remaja jaman sekarang";
-        String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
+        String thumbnail = "/EmpathiCare/thumbnail.jpg";
+        //  String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
         web_doctorArticles.RequestUpdateArticlesDoctor(title,content,thumbnail);
     }

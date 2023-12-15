@@ -4,12 +4,15 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class POST_Register {
 
     public String valid_domain_register = "https://kmb5alta.online/register";
-    public String valid_endpoint_register = "localhost:8000/register";
+    public String valid_endpoint_register = "https://kmb5alta.online/register";
 
     // [Negative] POST - Register Error Validation
     @Step("I have an valid registration endpoint")
@@ -60,27 +63,26 @@ public class POST_Register {
     }
 
     // [Positive] POST - Successful Registration for Admin
+    public String generateUniqueEmail(String role) {
+        // Membuat alamat email unik berdasarkan timestamp saat ini
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+        String timeStamp = dateFormat.format(new Date());
+        return role.toLowerCase() + "_" + timeStamp + "@gmail.com";
+    }
     @Step("I provide name, email, role, and password for an admin")
     public void NameEmailRoleAndPasswordForAnAdmin() {
-        String email = "admin@gmail.com";
+        String uniqueAdminEmail = generateUniqueEmail("admin");
 
         JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "admin"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", email);
-        reqBody.put("role", "admin"); // Menambahkan peran sebagai "admin"
+        reqBody.put("name", "admin");
+        reqBody.put("email", uniqueAdminEmail);
+        reqBody.put("role", "admin");
         reqBody.put("password", "admin");
+
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
                 .body(reqBody.toString())
-                .post(ValidRegistrationEndpoint());
-    }
-
-    @Step("I send a POST request to the valid registration endpoint")
-    public void RequestToTheValidRegistrationEndpoint() {
-        // Mengirimkan permintaan POST ke endpoint registrasi yang valid
-        SerenityRest.given()
-                .header("Content-Type", "application/json")
                 .post(ValidRegistrationEndpoint());
     }
 
@@ -92,11 +94,11 @@ public class POST_Register {
     // [Positive] POST - Successful Registration for Patient
     @Step("I provide name, email, role, and password for a patient")
     public void NameEmailRoleAndPasswordForAPatient() {
-        String email = "patient@gmail.com";
+        String uniquePatientEmail = generateUniqueEmail("patient");
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "patient"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", email);
+        reqBody.put("email", uniquePatientEmail);
         reqBody.put("role", "patient"); // Menambahkan peran sebagai "admin"
         reqBody.put("password", "patient");
 
@@ -109,11 +111,11 @@ public class POST_Register {
     // [Positive] POST - Successful Registration for Doctor
     @Step("I provide name, email, role, and password for a doctor")
     public void NameEmailRoleAndPasswordForADoctor() {
-        String email = "doctorkedua@gmail.com";
+        String uniqueDoctorEmail = generateUniqueEmail("doctor");
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "Doctor"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", email);
+        reqBody.put("email", uniqueDoctorEmail);
         reqBody.put("role", "Doctor"); // Menambahkan peran sebagai "admin"
         reqBody.put("password", "Doctor");
 

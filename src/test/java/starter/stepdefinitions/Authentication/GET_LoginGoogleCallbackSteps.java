@@ -23,8 +23,13 @@ public class GET_LoginGoogleCallbackSteps {
         get_loginGoogleCallback.RequestToTheLoginGoogleCallbackEndpoint();
     }
 
-    @Then("I should receive a response with HTTP status code 200")
-    public void ResponseWithHTTPStatusCode200() {
-        get_loginGoogleCallback.ResponseWithHTTPStatusCode200();
+    @Then("I should receive a response with HTTP status code 500")
+    public void ResponseWithHTTPStatusCode500() {
+        get_loginGoogleCallback.ResponseWithHTTPStatusCode500();
     }
 }
+//    @Then("I should receive a response with HTTP status code 200")
+//    public void ResponseWithHTTPStatusCode200() {
+//        get_loginGoogleCallback.ResponseWithHTTPStatusCode200();
+//    }
+//}

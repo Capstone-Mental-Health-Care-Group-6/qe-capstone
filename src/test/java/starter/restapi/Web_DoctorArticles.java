@@ -13,7 +13,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Web_DoctorArticles {
 
-    protected static String url = "localhost:8000/";
+    protected static String url = "https://kmb5alta.online/";
     public static String token = "";
 
     //  [Positive] POST - Success Create Article Doctor
@@ -30,11 +30,11 @@ public class Web_DoctorArticles {
        File thumbnailFile = new File(thumbnail);
        SerenityRest
                .given()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .multiPart("category_id", categoryId)
                 .multiPart("title", title)
                 .multiPart("content", content)
-                .multiPart("thumbnail", thumbnail)
+                .multiPart("thumbnail", thumbnailFile)
                 .post(iSetAPOSTRequestToAValidEndpointForCreatingANewArticlesDoctor());
 
     }
@@ -52,17 +52,16 @@ public class Web_DoctorArticles {
 
     @Step("I send the POST request with invalid input thumbnail for creating a new articles doctor")
     public void iSendThePOSTRequestWithInvalidInputThumbnailForCreatingANewArticlesDoctor(String categoryId,
-                                                                                          String title, String content,
-                                                                                          String thumbnail) {
+                                                                                          String title, String content) {
 
-        File thumbnailFile = new File(thumbnail);
+      //  File thumbnailFile = new File(thumbnail);
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .multiPart("category_id", categoryId)
                 .multiPart("title", title)
                 .multiPart("content", content)
-                .multiPart("thumbnail", thumbnailFile) // Gunakan file bukan string kosong untuk thumbnail
+               // .multiPart("thumbnail", thumbnailFile) // Gunakan file bukan string kosong untuk thumbnail
                 .post(iSetAPOSTRequestWithInvalidInputForCreatingANewArticlesDoctor());
     }
 
@@ -85,7 +84,7 @@ public class Web_DoctorArticles {
         File thumbnailFile = new File(thumbnail);
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .multiPart("category_id", categoryId)
                 .multiPart("title", title)
                 .multiPart("content", content)
@@ -111,10 +110,10 @@ public class Web_DoctorArticles {
         File thumbnailFile = new File(thumbnail);
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .multiPart("title", title)
                 .multiPart("content", content)
-                .multiPart("thumbnail", thumbnail)
+                .multiPart("thumbnail", thumbnailFile)
                 .put(iSetAValidPUTEndpointUpdateArticlesDoctor());
     }
 
@@ -133,7 +132,7 @@ public class Web_DoctorArticles {
     public void iSendsAPUTHTTPRequestUpdateArticlesDoctorWithAnInvalidParamID() {
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .put(iSetAnValidPUTEndpointUpdateArticlesDoctorWithAnInvalidParamID() );
     }
 
@@ -154,7 +153,7 @@ public class Web_DoctorArticles {
         File thumbnailFile = new File(thumbnail);
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .multiPart("title", title)
                 .multiPart("content", content)
                 .multiPart("thumbnail", thumbnail)
@@ -176,7 +175,7 @@ public class Web_DoctorArticles {
     public void iSendAnHTTPGETRequestToFetchArticlesDoctorUsingAValidEndpoint() {
         SerenityRest.given()
                 .when()
-                .header("Authorization", "Bearer " + LoginPatient.token)
+                .header("Authorization", "Bearer " + LoginDoctor.token)
                 .get(iSetAuthenticationEndpointToRetrieveArticlesDoctor());
     }
 

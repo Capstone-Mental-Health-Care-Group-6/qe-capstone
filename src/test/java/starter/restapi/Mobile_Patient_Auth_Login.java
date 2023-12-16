@@ -17,8 +17,8 @@ public class Mobile_Patient_Auth_Login {
     public void RequestToTheAuthenticationMobileEndpoint() {
         SerenityRest.given()
                 .contentType("application/x-www-form-urlencoded") // Set content type as form data
-                .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
-                .formParam("password", "fauzi123")
+                .formParam("email", "anastasyazher@gmail.com") // Add form parameters
+                .formParam("password", "anas123")
                 .post(AuthenticationMobileEndpoint());
         // formParam digunakan ketika Anda ingin mengirim data sebagai formulir biasa dalam permintaan HTTP,
         // seperti mengirim data teks atau numerik, bukan file atau objek biner lainnya. Misalnya,
@@ -35,7 +35,7 @@ public class Mobile_Patient_Auth_Login {
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
         SerenityRest.given()
                 .contentType("application/x-www-form-urlencoded") // Set content type as form data
-                .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
+                .formParam("email", "anastasyazher@gmail.com") // Add form parameters
                 .formParam("password", "invalid password")
                 .post(AuthenticationMobileEndpoint());
     }
@@ -50,7 +50,7 @@ public class Mobile_Patient_Auth_Login {
     public void RequestToTheLoginEndpointWithASuccessfulPasswordUpdate() {
         SerenityRest.given()
                 .contentType("application/x-www-form-urlencoded") // Set content type as form data
-                .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
+                .formParam("email", "anastasyazher@gmail.com") // Add form parameters
                 .formParam("password", "update password")
                 .post(AuthenticationMobileEndpoint());
     }

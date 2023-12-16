@@ -91,6 +91,7 @@ public class POST_Register {
         restAssuredThat(response -> response.statusCode(201));
     }
 
+
     // [Positive] POST - Successful Registration for Patient
     @Step("I provide name, email, role, and password for a patient")
     public void NameEmailRoleAndPasswordForAPatient() {

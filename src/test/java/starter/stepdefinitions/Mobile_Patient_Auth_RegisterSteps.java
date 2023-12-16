@@ -19,11 +19,11 @@ public class Mobile_Patient_Auth_RegisterSteps {
 
     @When("I provide valid user information for registration")
     public void ProvideValidUserInformationForRegistration() {
-                String name = "fauzi";
-                String email ="fauzihidayat@gmail.com";
-                String password ="fauzi1234";
+                String name = "anas";
+                String email ="anastasyazher@gmail.com";
+                String password ="anas1234";
                 String date_of_birth = "2000-10-20";
-                String gender = "laki-laki";
+                String gender = "perempuan";
                 String phone_number= "0812345678";
                 String avatar = "/EmpathiCare/thumbnail.jpg";
 
@@ -52,11 +52,11 @@ public class Mobile_Patient_Auth_RegisterSteps {
     // [Negative] POST - Register Error Upload Avatar
     @When("I provide valid user information with an invalid avatar for registration")
     public void ProvideValidUserInformationWithAnInvalidAvatarForRegistration() {
-        String name = "fauzi";
-        String email ="fauzihidayat@gmail.com";
-        String password ="fauzi1234";
+        String name = "anas";
+        String email ="anastasyazher@gmail.com";
+        String password ="anas1234";
         String date_of_birth = "2000-10-20";
-        String gender = "laki-laki";
+        String gender = "perempuan";
         String phone_number= "0812345678";
 //        String avatar = "/EmpathiCare/thumbnail.jpg";
         mobilePatientAuthRegister.ProvideValidUserInformationWithAnInvalidAvatarForRegistration(name,email,password,date_of_birth,gender,phone_number);
@@ -71,11 +71,11 @@ public class Mobile_Patient_Auth_RegisterSteps {
     @When("I provide valid user information for a user account with a duplicate email")
     public void ProvideValidUserInformationForAUserAccountWithADuplicateEmail() {
 
-        String name = "fauzi";
-        String email ="fauzihidayat@gmail.com";
-        String password ="fauzi1234";
+        String name = "anas";
+        String email ="anastasyazher@gmail.com";
+        String password ="anas1234";
         String date_of_birth = "2000-10-20";
-        String gender = "laki-laki";
+        String gender = "perempuan";
         String phone_number= "0812345678";
         String avatar = "/EmpathiCare/thumbnail.jpg";
 

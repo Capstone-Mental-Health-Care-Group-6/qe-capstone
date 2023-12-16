@@ -306,7 +306,7 @@ public class Web_AdminBundleCounselingSteps {
         int price = 80000;
         String description = "Update paket kenangan indah";
         int activePeriod = 1;
-        String avatarimgPath = "C:/EmpathiCare/thumbnail.jpg";
+        String avatarimgPath = "/EmpathiCare/thumbnail.jpg";
         Web_AdminBundleCounseling.sendUpdateBundleSuccessButFileNotUpdateRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 

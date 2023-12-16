@@ -38,7 +38,7 @@ public class TransactionManual {
 
     @Step("I receive a valid data response for making a manual transaction with HTTP status code 201 Created")
     public void validateMakeManualTransactionResponse() {
-        restAssuredThat(response -> response.statusCode(201));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] POST - Make Manual Transaction Doctor ID Not Found

@@ -13,6 +13,60 @@ public class POST_Register {
 
     public String valid_domain_register = "https://kmb5alta.online/register";
     public String valid_endpoint_register = "https://kmb5alta.online/register";
+    @Step("I have a valid registration endpoint")
+    public String ValidRegistrationEndpoint() {
+        return valid_domain_register;
+    }
+
+    // [Positive] POST - Successful Registration
+
+    @Step("I provide name, email, role, and password for an admin")
+    public void NameEmailRoleAndPasswordForAnAdmin() {
+
+        JSONObject reqBody = new JSONObject();
+        reqBody.put("name", "admin");
+        reqBody.put("email", "AdminAja1@gmail.com");
+        reqBody.put("role", "admin");
+        reqBody.put("password", "admin");
+
+
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .body(reqBody.toString())
+                .post(ValidRegistrationEndpoint());
+    }
+    @Step("I provide name, email, role, and password for an admin")
+    public void NameEmailRoleAndPasswordForAnDoctor() {
+        JSONObject reqBody = new JSONObject();
+        reqBody.put("name", "Doctor");
+        reqBody.put("email", "DoctorAja1@gmail.com");
+        reqBody.put("role", "Doctor");
+        reqBody.put("password", "password");
+
+        SerenityRest
+                .given()
+                .contentType("application/json")
+                .post(ValidRegistrationEndpoint());
+    }
+
+    // [Positive] POST - Successful Registration for Patient
+    @Step("I provide name, email, role, and password for a patient")
+    public void NameEmailRoleAndPasswordForAnPatient() {
+        JSONObject reqBody = new JSONObject();
+        reqBody.put("name", "Patient");
+        reqBody.put("email", "Patient1@gmail.com");
+        reqBody.put("role", "Patient");
+        reqBody.put("password", "password");
+
+        SerenityRest
+                .given()
+                .contentType("application/json")
+                .post(ValidRegistrationEndpoint());
+    }
+    @Step("I should receive a response with HTTP status code 201 created")
+    public void ResponseWithHTTPStatusCode201Created() {
+        restAssuredThat(response -> response.statusCode(201));
+    }
 
     // [Negative] POST - Register Error Validation
     @Step("I have an valid registration endpoint")
@@ -57,10 +111,6 @@ public class POST_Register {
     }
 
     // [Negative] POST - Error Email Already Registered
-    @Step("I have a valid registration endpoint")
-    public String ValidRegistrationEndpoint() {
-        return valid_domain_register;
-    }
 
 //    // [Positive] POST - Successful Registration for Admin
 //    public String generateUniqueEmail(String role) {
@@ -69,59 +119,5 @@ public class POST_Register {
 //        String timeStamp = dateFormat.format(new Date());
 //        return role.toLowerCase() + "_" + timeStamp + "@gmail.com";
 //    }
-    @Step("I provide name, email, role, and password for an admin")
-    public void NameEmailRoleAndPasswordForAnAdmin() {
 
-        JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "admin");
-        reqBody.put("email", "AdminAja@gmail.com");
-        reqBody.put("role", "admin");
-        reqBody.put("password", "admin");
-
-
-        SerenityRest.given()
-                .header("Content-Type", "application/json")
-                .body(reqBody.toString())
-                .post(ValidRegistrationEndpoint());
-    }
-
-    @Step("I should receive a response with HTTP status code 500 internal server error")
-    public void ResponseWithHTTPStatusCode201Created() {
-        restAssuredThat(response -> response.statusCode(500));
-    }
-
-
-    // [Positive] POST - Successful Registration for Patient
-    @Step("I provide name, email, role, and password for a patient")
-    public void NameEmailRoleAndPasswordForAPatient() {
-//        String uniquePatientEmail = generateUniqueEmail("patient");
-
-        JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "patient"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", "PatientAja@gmail.com");
-        reqBody.put("role", "patient"); // Menambahkan peran sebagai "admin"
-        reqBody.put("password", "patient");
-
-        SerenityRest.given()
-                .header("Content-Type", "application/json")
-                .body(reqBody.toString())
-                .post(validRegistrationEndpoint());
-    }
-
-    // [Positive] POST - Successful Registration for Doctor
-    @Step("I provide name, email, role, and password for a doctor")
-    public void NameEmailRoleAndPasswordForADoctor() {
-//        String uniqueDoctorEmail = generateUniqueEmail("doctor");
-
-        JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "Doctor"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", "DoctorAja@gmail.com");
-        reqBody.put("role", "Doctor"); // Menambahkan peran sebagai "admin"
-        reqBody.put("password", "Doctor");
-
-        SerenityRest.given()
-                .header("Content-Type", "application/json")
-                .body(reqBody.toString())
-                .post(validRegistrationEndpoint());
-    }
 }

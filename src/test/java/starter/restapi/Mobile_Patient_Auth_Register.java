@@ -37,7 +37,7 @@ public class Mobile_Patient_Auth_Register {
 ////    # Expected status code <201> but was <400>.
     @Step("I should receive a response with HTTP status code 400 OK and successfully registered")
     public void ResponseWithHTTPStatusCode400OKAndSuccessfullyRegistered() {
-        restAssuredThat(response -> response.statusCode(400));
+        restAssuredThat(response -> response.statusCode(201));
     }
 ////    # Expected status code <400> but was <201>.
 //    @Step("I should receive a response with HTTP status code 201 created and successfully registered")

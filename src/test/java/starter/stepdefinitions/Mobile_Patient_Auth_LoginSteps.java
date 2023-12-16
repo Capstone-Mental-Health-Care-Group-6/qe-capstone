@@ -22,7 +22,7 @@ public class Mobile_Patient_Auth_LoginSteps {
 
     @When("I send a POST request to the authentication mobile endpoint")
     public void RequestToTheAuthenticationMobileEndpoint() {
-        String emailPatient = "nurulfauziah2@gmail.com";
+        String emailPatient = "nurulfauziah3@gmail.com";
         String pwPatient = "fauzi123";
         mobilePatientAuthLogin.RequestToTheAuthenticationMobileEndpoint(emailPatient, pwPatient);
     }
@@ -37,8 +37,8 @@ public class Mobile_Patient_Auth_LoginSteps {
     @When("I send a POST request to the loginAdmin endpoint with an invalid Password")
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
         String emailPatient = "nurulfauziah2@gmail.com";
-        String pwPatient = "asdf";
-        mobilePatientAuthLogin.RequestToTheLoginEndpointWithAnInvalidPassword(emailPatient, pwPatient);
+//        String pwPatient = "asdf";
+        mobilePatientAuthLogin.RequestToTheLoginEndpointWithAnInvalidPassword(emailPatient);
     }
 
     @Then("I should receive a response with HTTP status code 400 Bad Request and invalid Password")

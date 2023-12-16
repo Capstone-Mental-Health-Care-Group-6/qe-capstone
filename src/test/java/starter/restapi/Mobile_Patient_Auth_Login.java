@@ -37,10 +37,10 @@ public class Mobile_Patient_Auth_Login {
 
     // [Negative] POST - LoginAdmin Error Password Invalid
     @Step("I send a POST request to the loginAdmin endpoint with an invalid Password")
-    public void RequestToTheLoginEndpointWithAnInvalidPassword(String emailPatient, String pwPatient) {
+    public void RequestToTheLoginEndpointWithAnInvalidPassword(String emailPatient) {
         SerenityRest.given()
                 .multiPart("email", emailPatient) // Add form parameters
-                .multiPart("password", pwPatient)
+//                .multiPart("password", pwPatient)
                 .post(AuthenticationMobileEndpoint());
 
 

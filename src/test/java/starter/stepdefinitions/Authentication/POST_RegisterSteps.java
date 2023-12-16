@@ -34,10 +34,6 @@ public class POST_RegisterSteps {
         POSTRegister.NameEmailRoleAndPasswordThatAreAlreadyRegistered();
     }
 
-    @And("I send a POST request to the invalid registration endpoint")
-    public void iSendAPOSTRequestToTheInvalidRegistrationEndpoint() {
-    }
-
     @Then("I should receive a response with HTTP status code 500 internal server error")
     public void ResponseWithHTTPStatusCode500InternalServerError() {
         POSTRegister.ResponseWithHTTPStatusCode500InternalServerError();
@@ -55,22 +51,22 @@ public class POST_RegisterSteps {
         POSTRegister.NameEmailRoleAndPasswordForAnAdmin();
     }
 
+    @When("I provide name, email, role, and password for a doctor")
+    public void NameEmailRoleAndPasswordForAnDoctor() {
+        POSTRegister.NameEmailRoleAndPasswordForAnDoctor();
+    }
+
+    @When("I provide name, email, role, and password for a patient")
+    public void NameEmailRoleAndPasswordForAnPatient() {
+        POSTRegister.NameEmailRoleAndPasswordForAnPatient();
+    }
+
     @Then("I should receive a response with HTTP status code 201 created")
     public void ResponseWithHTTPStatusCode201Created() {
         POSTRegister.ResponseWithHTTPStatusCode201Created();
     }
 
-    // [Positive] POST - Successful Registration for Patient
-    @When("I provide name, email, role, and password for a patient")
-    public void NameEmailRoleAndPasswordForAPatient() {
-        POSTRegister.NameEmailRoleAndPasswordForAPatient();
-    }
 
-    // [Positive] POST - Successful Registration for Doctor
-    @When("I provide name, email, role, and password for a doctor")
-    public void NameEmailRoleAndPasswordForADoctor() {
-        POSTRegister.NameEmailRoleAndPasswordForADoctor();
-    }
 
 
 }

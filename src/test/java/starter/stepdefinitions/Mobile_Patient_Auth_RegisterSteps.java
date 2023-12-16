@@ -3,6 +3,7 @@ package starter.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import java.util.Random;
 import net.thucydides.core.annotations.Steps;
 import starter.restapi.Mobile_Patient_Auth_Register;
 
@@ -20,7 +21,7 @@ public class Mobile_Patient_Auth_RegisterSteps {
     @When("I provide valid user information for registration")
     public void ProvideValidUserInformationForRegistration() {
                 String name = "anas";
-                String email ="anastasyazher@gmail.com";
+                String email = generateRandomEmail();
                 String password ="anas1234";
                 String date_of_birth = "2000-10-20";
                 String gender = "perempuan";
@@ -30,6 +31,15 @@ public class Mobile_Patient_Auth_RegisterSteps {
         mobilePatientAuthRegister.ProvideValidUserInformationForRegistration(name,email,password,date_of_birth,gender,phone_number,avatar);
     }
 
+    private String generateRandomEmail() {
+        String[] domains = {"gmail.com", "yahoo.com"};
+        Random random = new Random();
+
+        String username = "user" + random.nextInt(1000); // You can customize the username format
+        String domain = domains[random.nextInt(domains.length)];
+
+        return username + "@" + domain;
+    }
 
     @Then("I should receive a response with HTTP status code 400 OK and successfully registered")
     public void ResponseWithHTTPStatusCode400OKAndSuccessfullyRegistered() {

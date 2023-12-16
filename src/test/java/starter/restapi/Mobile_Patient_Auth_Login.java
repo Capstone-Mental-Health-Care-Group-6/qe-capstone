@@ -16,13 +16,10 @@ public class Mobile_Patient_Auth_Login {
     @Step("I send a POST request to the authentication mobile endpoint")
     public void RequestToTheAuthenticationMobileEndpoint() {
         SerenityRest.given()
-                .contentType("application/x-www-form-urlencoded") // Set content type as form data
+                .contentType("application/json")
                 .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
                 .formParam("password", "fauzi123")
                 .post(AuthenticationMobileEndpoint());
-        // formParam digunakan ketika Anda ingin mengirim data sebagai formulir biasa dalam permintaan HTTP,
-        // seperti mengirim data teks atau numerik, bukan file atau objek biner lainnya. Misalnya,
-        // ketika perlu mengirimkan nama pengguna, kata sandi, alamat email, atau data serupa yang tidak melibatkan file.
     }
 
     @Step("I should receive a response with HTTP status code 200 OK and successfully log in")
@@ -31,10 +28,10 @@ public class Mobile_Patient_Auth_Login {
     }
 
     // [Negative] POST - LoginAdmin Error Password Invalid
-    @Step("I send a POST request to the login endpoint with an invalid Password")
+    @Step("I send a POST request to the loginAdmin endpoint with an invalid Password")
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
         SerenityRest.given()
-                .contentType("application/x-www-form-urlencoded") // Set content type as form data
+                .contentType("application/json")
                 .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
                 .formParam("password", "invalid password")
                 .post(AuthenticationMobileEndpoint());
@@ -49,7 +46,7 @@ public class Mobile_Patient_Auth_Login {
     @Step("I send a POST request to the login endpoint with a successful password update")
     public void RequestToTheLoginEndpointWithASuccessfulPasswordUpdate() {
         SerenityRest.given()
-                .contentType("application/x-www-form-urlencoded") // Set content type as form data
+                .contentType("application/json")
                 .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
                 .formParam("password", "update password")
                 .post(AuthenticationMobileEndpoint());

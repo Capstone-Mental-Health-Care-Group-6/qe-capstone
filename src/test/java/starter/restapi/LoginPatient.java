@@ -15,10 +15,6 @@ public class LoginPatient {
 
     public static String token = "";
 
-    @Step("I receive a valid data response for login doctor with HTTP status code 200 OK")
-    public void validateDoctorLoginResponse() {
-        restAssuredThat(response -> response.statusCode(200));
-    }
 
     // LoginAdmin by Patient
     @Step("I set authentication endpoint for login patient")

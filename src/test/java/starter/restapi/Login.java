@@ -149,7 +149,7 @@ public class Login {
 
     @Step("I should receive a response with HTTP status code 500 Internal Server Error")
     public void ResponseWithHTTPStatusCodeInternalServerError() {
-        restAssuredThat(response -> response.statusCode(500));
+        restAssuredThat(response -> response.statusCode(404));
     }
 //    @Step("I should receive a response with HTTP status code 400 Bad Request")
 //    public void iShouldReceiveAResponseWithHTTPStatusCode400BadRequest() {

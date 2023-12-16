@@ -112,6 +112,8 @@ Feature: Emphati Care
     Given I sets a POST request to a valid endpoint for forget password endpoint
     When I sends a POST request to the forget password endpoint with a valid email
     Then I should receive a response with HTTP status code 500 internal server error but successfully
+
+
     # Then I should receive a response with HTTP status code 200 OK and successfully
     # Expected status code <400> but was <500> Internal Server Error
 
@@ -551,3 +553,255 @@ Feature: Emphati Care
     Given I set the GET endpoint for retrieving all articles with an invalid endpoint
     When I send an HTTP GET request with invalid baseURL for retrieving all articles with an invalid endpoint
     Then I receive a valid data response for retrieving all articles with an invalid endpoint with HTTP status code 404 Not Found
+
+    # ===========================WEBSITE_ADMIN BUNDLE COUNSELING===========================
+
+    # [Positive] GET - Get All Bundle
+  Scenario: User retrieves Get All Bundle successfully
+    Given I set the GET endpoint for retrieving Get All Bundle
+    When I send an HTTP GET request Get All Bundle Counseling
+    Then I receive a valid data response for Get All Bundle with HTTP status code 200 OK
+
+  # [Negative] GET - Data Empty Bundle
+  Scenario: User retrieves Data Empty Bundle successfully
+    Given I set the GET endpoint for retrieving Data Empty Bundle
+    When I send an HTTP GET request Data Empty Bundle
+    Then I receive a valid data response for Data Empty Bundle with HTTP status code 200 OK
+
+  # [Negative] GET - Bundle Invalid Endpoint
+  Scenario: User fails to retrieve Bundle Invalid Endpoint
+    Given I set the GET endpoint for retrieving Bundle Invalid Endpoint
+    When I send an HTTP GET request Bundle Invalid Endpoint
+    Then I receive a valid data response for Bundle Invalid Endpoint with HTTP status code 404 Not Found
+
+  # [Positive] POST - Create Bundle
+  Scenario: User successfully creates a bundle
+    Given I set the POST endpoint for creating a bundle
+    When I send an HTTP POST request Create Bundle
+    Then I receive a valid data response for Create Bundle with HTTP status code 201 Created
+
+  # [Negative] POST - Create Bundle Validation Error
+  Scenario: User fails to create a bundle due to validation errors
+    Given I set the POST endpoint for Create Bundle Validation Error
+    When I send an HTTP POST request with invalid data for Create Bundle Validation Error
+    Then I receive a valid data response for Create Bundle Validation Error with HTTP status code 400 Bad Request
+
+  # [Negative] POST - Create Bundle Validation File Error
+  Scenario: User fails to create a bundle due to file validation error
+    Given I set the POST endpoint for Create Bundle Validation File Error
+    When I send an HTTP POST request with invalid file type for Create Bundle Validation File Error
+    Then I receive a valid data response for Create Bundle Validation File Error with HTTP status code 400 Bad Request
+
+    # [Negative] POST - Create Bundle Validation File Invalid Type
+  Scenario: User fails to create a bundle due to invalid file type
+    Given I set the POST endpoint for Create Bundle Validation File Invalid Type
+    When I send an HTTP POST request with a file of invalid type for Create Bundle Validation File Invalid Type
+    Then I receive a valid data response for Create Bundle Validation File Invalid Type with HTTP status code 400 Bad Request
+
+# [Negative] POST - Create Bundle Validation File Size Error
+  Scenario: User fails to create a bundle due to file size error
+    Given I set the POST endpoint for Create Bundle Validation File Size Error
+    When I send an HTTP POST request with a file exceeding size limit for Create Bundle Validation File Size Error
+    Then I receive a valid data response for Create Bundle Validation File Size Error with HTTP status code 400 Bad Request
+
+# [Negative] POST - Create Bundle Invalid Endpoint
+  Scenario: User fails to create a bundle with an invalid endpoint
+    Given I set the POST endpoint for creating a bundle with an invalid endpoint
+    When I send an HTTP POST request for Create Bundle Invalid Endpoint
+    Then I receive a valid data response for Create Bundle Invalid Endpoint with HTTP status code 404 Not Found
+
+  # [Positive] GET - Get By ID
+  Scenario: User retrieves a bundle by ID successfully
+    Given I set the GET endpoint for retrieving a bundle by ID
+    When I send an HTTP GET request with a valid ID
+    Then I receive a valid data response with HTTP status code 200 OK
+
+  # [Negative] GET - Get By ID Invalid ID
+  Scenario: User fails to retrieve a bundle with an Get By ID Invalid ID
+    Given I set the GET endpoint for retrieving a bundle Get By ID Invalid ID
+    When I send an HTTP GET request with an Get By ID Invalid ID
+    Then I receive a valid data response for Get By ID Invalid ID with HTTP status code 400 Bad Request
+
+  #  GET - Get By ID Data Not Found
+  Scenario: User fails to retrieve a bundle with an Get By ID Data Not Found
+    Given I set the GET endpoint for retrieving a bundle Get By ID Data Not Found
+    When I send an HTTP GET request with an Get By ID Data Not Found
+    Then I receive a valid data response for get Get By ID Data Not Found with HTTP status code 404 Not Found
+
+  #  GET - Get By ID Invalid Endpoint
+  Scenario: User fails to retrieve a bundle with an Get By ID Invalid Endpoint
+    Given I set the GET endpoint for retrieving a bundle Get By ID Invalid Endpoint
+    When I send an HTTP GET request with an Get By ID Invalid Endpoint
+    Then I receive a valid data response for Get By ID Invalid Endpoint with HTTP status code 404 Not Found
+
+  # [Positive] PUT - Update Bundle Success With File Update
+  Scenario: User successfully updates a bundle With File Update
+    Given I set the PUT endpoint for updating a bundle With File Update
+    When I send an HTTP PUT request with valid data for Update Bundle Success With File Update
+    Then I receive a valid data response for Update Bundle Success With File Update with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Bundle Success But File Not Update
+  Scenario: User successfully updates a bundle But File Not Update
+    Given I set the PUT endpoint for updating a bundle With File Not Update
+    When I send an HTTP PUT request with valid data for Update Bundle Success But File Not Update
+    Then I receive a valid data response for Update Bundle Success But File Not Update with HTTP status code 200 OK
+
+  # [Negative] PUT - Update Bundle Validate Error
+  Scenario: User fails to update a bundle due to validation errors
+    Given I set the PUT endpoint for updating a bundle
+    When I send an HTTP PUT request with invalid data
+    Then I receive a valid data response with HTTP status code 400 Bad Request
+
+  # [Negative] PUT - Update Bundle Server Error
+  Scenario: User fails to update a bundle, resulting in a server error
+    Given I set the PUT endpoint for Update Bundle Server Error
+    When I send an HTTP PUT request with valid data for Update Bundle Server Error
+    Then I receive a valid data response for Update Bundle Server Error with HTTP status code 500 Internal Server Error
+
+# [Negative] PUT - Update Bundle Invalid Endpoint
+  Scenario: User fails to update a bundle with an invalid endpoint
+    Given I set the PUT endpoint for updating a bundle with an invalid endpoint
+    When I send an HTTP PUT request for Update Bundle Invalid Endpoint
+    Then I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found
+
+  # [Positive] DELETE - Delete Bundle
+  Scenario: User successfully deletes a bundle
+    Given I set the DELETE endpoint for deleting a bundle
+    When I send an HTTP DELETE request with a valid ID
+    Then I receive a valid data response with HTTP status code 200 OK for delete bundle
+
+  # [Negative] DELETE - Delete Bundle Invalid ID
+  Scenario: User fails to delete a bundle with an invalid ID
+    Given I set the DELETE endpoint for deleting a bundle with an invalid ID
+    When I send an HTTP DELETE request with an invalid ID
+    Then I receive a valid data response for Delete Bundle Invalid ID with HTTP status code 400 Bad Request
+
+  # [Negative] DELETE - Delete Bundle Invalid Endpoint
+  Scenario: User fails to delete a bundle with an invalid endpoint
+    Given I set the DELETE endpoint for deleting a bundle with an invalid endpoint
+    When I send an HTTP DELETE request with an invalid endpoint
+    Then I receive a valid data response for Delete Bundle Invalid Endpoint with HTTP status code 404 Not Found
+
+# ===========================CHATBOT CS===========================
+
+    # [Positive] GET - All Chatbot
+  Scenario: User retrieves all chatbot messages successfully
+    Given I set the GET endpoint for retrieving all chatbot messages
+    When I send an HTTP GET request Chatbot
+    Then I receive a valid data response for get all chatbot with HTTP status code 200 OK
+
+  # [Positive] POST - Send Message
+  Scenario: User sends a message to chatbot successfully
+    Given I set the POST endpoint for sending a message to chatbot
+    When I send an HTTP POST request chatbot send message
+    Then I receive a valid data response for send message with HTTP status code 200 OK
+
+  # [Negative] GET - All Chatbot Invalid Endpoint
+  Scenario: User fails to retrieve all chatbot messages with an invalid endpoint
+    Given I set the GET endpoint for retrieving all chatbot messages with an invalid endpoint
+    When I send an HTTP GET request Chatbot Invalid Endpoint
+    Then I receive a valid data response for chatbot invalid endpoint with HTTP status code 404 Not Found
+
+  # [Negative] POST - Send Message Invalid Endpoint
+  Scenario: User fails to send a message to chatbot with an invalid endpoint
+    Given I set the POST endpoint for sending a message to chatbot with an invalid endpoint
+    When I send an HTTP POST request Chatbot Invalid Endpoint
+    Then I receive a valid data response for send message invalid endpoint with HTTP status code 404 Not Found
+
+# ===========================Admin Bundle Counseling===========================
+
+    # [Positive] GET All Doctor
+  Scenario: User retrieves all doctors successfully
+    Given I set the GET endpoint for retrieving all doctors
+    When I send an HTTP GET request with a valid baseURL for get all doctors
+    Then I receive a valid data response for get all doctors with HTTP status code 200 OK
+
+# [Positive] GET Doctor By ID
+  Scenario: User retrieves a doctor by ID successfully
+    Given I set the GET endpoint for retrieving a doctor by ID
+    When I send an HTTP GET request with a valid ID and baseURL
+    Then I receive a valid data response for get doctor by ID with HTTP status code 200 OK
+
+# [Positive] POST Register Doctor
+  Scenario: User registers a doctor successfully
+    Given I set the POST endpoint for registering a doctor
+    When I send an HTTP POST request with a valid baseURL and body parameters
+    Then I receive a valid data response for registering a doctor with HTTP status code 201 Created
+
+# [Positive] GET Search Doctor by Name
+  Scenario: User searches for a doctor by name successfully
+    Given I set the GET endpoint for searching a doctor by name
+    When I send an HTTP GET request with a valid name parameter and baseURL
+    Then I receive a valid data response for searching a doctor by name with HTTP status code 200 OK
+
+## [Positive] PUT Edit Doctor Datapokok By Doctor ID
+#  Scenario: User edits doctor datapokok by ID successfully
+#    Given I set the PUT endpoint for editing doctor datapokok by ID
+#    When I send an HTTP PUT request with a valid ID and baseURL for editing doctor datapokok by ID
+#    Then I receive a valid data response for editing doctor datapokok by ID with HTTP status code 200 OK
+
+# [Positive] PUT Edit Doctor Workdays By Doctor ID
+  Scenario: User edits doctor workdays by ID successfully
+    Given I set the PUT endpoint for editing doctor workdays by ID
+    When I send an HTTP PUT request with a valid ID, workdays data, and baseURL
+    Then I receive a valid data response for editing doctor workdays by ID with HTTP status code 200 OK
+
+# [Positive] PUT Edit Doctor Education By Doctor ID
+  Scenario: User edits doctor education by ID successfully
+    Given I set the PUT endpoint for editing doctor education by ID
+    When I send an HTTP PUT request with a valid ID, education data, and baseURL
+    Then I receive a valid data response for editing doctor education by ID with HTTP status code 200 OK
+
+# [Positive] PUT Edit Doctor Experience By Doctor ID
+  Scenario: User edits doctor experience by ID successfully
+    Given I set the PUT endpoint for editing doctor experience by ID
+    When I send an HTTP PUT request with a valid ID, experience data, and baseURL
+    Then I receive a valid data response for editing doctor experience by ID with HTTP status code 200 OK
+
+# [Negative] GET All Doctor Invalid Endpoint
+  Scenario: User fails to retrieve all doctors with an invalid endpoint
+    Given I set the GET endpoint for retrieving all doctors with an invalid endpoint
+    When I send an HTTP GET request for retrieving all doctors with an invalid endpoint
+    Then I receive a valid data response for invalid endpoint retrieving all doctors with HTTP status code 404 Not Found
+
+# [Negative] GET Doctor By ID Invalid Endpoint
+  Scenario: User fails to retrieve a doctor by ID with an invalid endpoint
+    Given I set the GET endpoint for retrieving a doctor by ID with an invalid endpoint
+    When I send an HTTP GET request for retrieving a doctor by ID with an invalid endpoint
+    Then I receive a valid data response for invalid endpoint retrieving a doctor by ID with HTTP status code 404 Not Found
+
+## [Negative] POST Register Doctor Invalid Endpoint
+#  Scenario: User fails to register a doctor with an invalid endpoint
+#    Given I set the POST endpoint for registering a doctor with an invalid endpoint
+#    When I send an HTTP POST request for registering a doctor with an invalid endpoint
+#    Then I receive a valid data response for invalid endpoint registering a doctor with HTTP status code 404 Not Found
+
+# [Negative] GET Search Doctor by Name Invalid Endpoint
+  Scenario: User fails to search for a doctor by name with an invalid endpoint
+    Given I set the GET endpoint for searching a doctor by name with an invalid endpoint
+    When I send an HTTP GET request for searching a doctor by name with an invalid endpoint
+    Then I receive a valid data response for invalid endpoint searching a doctor by name with HTTP status code 404 Not Found
+
+## [Negative] PUT Edit Doctor Datapokok By Doctor ID Invalid Endpoint
+#  Scenario: User fails to edit doctor datapokok by ID with an invalid endpoint
+#    Given I set the PUT endpoint for editing doctor datapokok by ID with an invalid endpoint
+#    When I send an HTTP PUT request for editing doctor datapokok by ID with an invalid endpoint
+#    Then I receive a valid data response for invalid endpoint editing doctor datapokok by ID with HTTP status code 404 Not Found
+#
+# [Negative] PUT Edit Doctor Workdays By Doctor ID Invalid Endpoint
+#  Scenario: User fails to edit doctor workdays by ID with an invalid endpoint
+#    Given I set the PUT endpoint for editing doctor workdays by ID with an invalid endpoint
+#    When I send an HTTP PUT request for editing doctor workdays by ID with an invalid endpoint
+#    Then I receive a valid data response for invalid endpoint editing doctor workdays by ID with HTTP status code 404 Not Found
+#
+## [Negative] PUT Edit Doctor Education By Doctor ID Invalid Endpoint
+#  Scenario: User fails to edit doctor education by ID with an invalid endpoint
+#    Given I set the PUT endpoint for editing doctor education by ID with an invalid endpoint
+#    When I send an HTTP PUT request for editing doctor education by ID with an invalid endpoint
+#    Then I receive a valid data response for invalid endpoint editing doctor education by ID with HTTP status code 404 Not Found
+#
+## [Negative] PUT Edit Doctor Experience By Doctor ID Invalid Endpoint
+#  Scenario: User fails to edit doctor experience by ID with an invalid endpoint
+#    Given I set the PUT endpoint for editing doctor experience by ID with an invalid endpoint
+#    When I send an HTTP PUT request for editing doctor experience by ID with an invalid endpoint
+#    Then I receive a valid data response for invalid endpoint editing doctor experience by ID with HTTP status code 404 Not Found

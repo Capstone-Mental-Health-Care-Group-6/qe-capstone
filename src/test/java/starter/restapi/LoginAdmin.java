@@ -16,15 +16,15 @@ public class LoginAdmin {
     public static String token = "";
 
     // LoginAdmin by Admin
-    @Step("I set the POST endpoint for login")
+    @Step("I set authentication endpoint for login admin")
     public String setAuthenticationEndpointForAdminLogin() {
         return endpoint_auth;
     }
 
-    @Step("I send an HTTP POST request with valid email and password")
+    @Step("I send authentication endpoint for login admin")
     public void sendAuthenticationEndpointForAdminLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "Admin1@gmail.com");
+        requestBody.put("email", "Admin6@gmail.com");
         requestBody.put("password", "password");
 
         SerenityRest
@@ -38,7 +38,7 @@ public class LoginAdmin {
                 .jsonPath()
                 .get("data.token.access_token");
     }
-    @Step("I receive a valid data login HTTP response code 200 OK")
+    @Step("I receive a valid data response for login admin with HTTP status code 200 OK")
     public void validateAdminLoginResponse() {
         restAssuredThat(response -> response.statusCode(200));
     }

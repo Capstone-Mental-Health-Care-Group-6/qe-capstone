@@ -4,359 +4,431 @@ import net.thucydides.core.annotations.Steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-import starter.restapi.BundleCounseling;
+import starter.restapi.Web_AdminBundleCounseling;
 
-public class BundleCounselingSteps {
+public class Web_AdminBundleCounselingSteps {
 
     private Response BundleCounselingTest;
 
     @Steps
-    BundleCounseling BundleCounseling;
+    Web_AdminBundleCounseling Web_AdminBundleCounseling;
 
     // [Positive] GET - Get All Bundle
     @Given("I set the GET endpoint for retrieving Get All Bundle")
     public void setGetAllBundleEndpoint() {
-        BundleCounseling.setGetAllBundleEndpoint();
+        Web_AdminBundleCounseling.setGetAllBundleEndpoint();
     }
 
     @When("I send an HTTP GET request Get All Bundle Counseling")
     public void sendGetAllBundleRequest() {
-        BundleCounseling.sendGetAllBundleRequest();
+        Web_AdminBundleCounseling.sendGetAllBundleRequest();
     }
 
     @Then("I receive a valid data response for Get All Bundle with HTTP status code 200 OK")
     public void validateGetAllBundle200() {
-        BundleCounseling.validateGetAllBundle200();
+        Web_AdminBundleCounseling.validateGetAllBundle200();
     }
 
     // [Negative] GET - Data Empty Bundle
     @Given("I set the GET endpoint for retrieving Data Empty Bundle")
     public void setDataEmptyBundleEndpoint() {
-        BundleCounseling.setDataEmptyBundleEndpoint();
+        Web_AdminBundleCounseling.setDataEmptyBundleEndpoint();
     }
 
     @When("I send an HTTP GET request Data Empty Bundle")
     public void sendDataEmptyBundleRequest() {
-        BundleCounseling.sendDataEmptyBundleRequest();
+        Web_AdminBundleCounseling.sendDataEmptyBundleRequest();
     }
 
     @Then("I receive a valid data response for Data Empty Bundle with HTTP status code 200 OK")
     public void validateDataEmptyBundle200() {
-        BundleCounseling.validateDataEmptyBundle200();
+        Web_AdminBundleCounseling.validateDataEmptyBundle200();
     }
 
     // [Negative] GET - Bundle Invalid Endpoint
     @Given("I set the GET endpoint for retrieving Bundle Invalid Endpoint")
     public void setBundleInvalidEndpoint() {
-        BundleCounseling.setBundleInvalidEndpoint();
+        Web_AdminBundleCounseling.setBundleInvalidEndpoint();
     }
 
     @When("I send an HTTP GET request Bundle Invalid Endpoint")
     public void sendBundleInvalidEndpointRequest() {
-        BundleCounseling.sendBundleInvalidEndpointRequest();
+        Web_AdminBundleCounseling.sendBundleInvalidEndpointRequest();
     }
 
     @Then("I receive a valid data response for Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateBundleInvalidEndpoint404() {
-        BundleCounseling.validateBundleInvalidEndpoint404();
+        Web_AdminBundleCounseling.validateBundleInvalidEndpoint404();
     }
 
-//    // [Positive] POST - Create Bundle
-//    @Given("I set the POST endpoint for creating a bundle")
-//    public void setCreateBundleEndpoint() {
-//        starter.restapi.BundleCounseling.setCreateBundleEndpoint();
-//    }
 
     // [Positive] POST - Create Bundle
     @Given("I set the POST endpoint for creating a bundle")
     public void setCreateBundleEndpoint() {
-        // Simpan hasilnya dalam variabel
-        String endpoint = starter.restapi.BundleCounseling.setCreateBundleEndpoint();
-        // Opsional, Anda dapat menggunakan nilai endpoint dalam langkah-langkah selanjutnya atau mencetaknya
-        System.out.println("Endpoint untuk membuat bundle: " + endpoint);
+      Web_AdminBundleCounseling.setCreateBundleEndpoint();
+
     }
 
     @When("I send an HTTP POST request Create Bundle")
     public void sendCreateBundleRequest() {
-        BundleCounselingTest = starter.restapi.BundleCounseling.sendCreateBundleRequest("Test", 1, "PREMIUM", 300000, "Test", 1, "/Users/laras/OneDrive/Pictures/Icon/1.png");
+        String name = "Paket Perkenalan";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Test";
+        int activePeriod = 1;
+        String avatarimgPath = "C:/EmpathiCare/thumbnail.jpg";
+
+        Web_AdminBundleCounseling.sendCreateBundleRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Create Bundle with HTTP status code 201 Created")
     public void validateCreateBundle201() {
-        starter.restapi.BundleCounseling.validateCreateBundle201(BundleCounselingTest);
+        Web_AdminBundleCounseling.validateCreateBundle201();
     }
 
     // [Negative] POST - Create Bundle Validation Error
-/*    @Given("I set the POST endpoint for Create Bundle Validation Error")
+    @Given("I set the POST endpoint for Create Bundle Validation Error")
     public void setCreateBundleValidationErrorEndpoint() {
-        BundleCounseling.setCreateBundleValidationErrorEndpoint();
+        Web_AdminBundleCounseling.setCreateBundleValidationErrorEndpoint();
     }
 
     @When("I send an HTTP POST request with invalid data for Create Bundle Validation Error")
     public void sendCreateBundleValidationErrorRequest() {
-        BundleCounseling.sendCreateBundleValidationErrorRequest();
+        String name = " ";
+        int sessions = 0;
+        String type = " ";
+        int price = 0;
+        String description = " ";
+        int activePeriod = 0;
+//        String avatarimgPath = " ";
+
+        Web_AdminBundleCounseling.sendCreateBundleValidationErrorRequest(name, sessions, type, price, description, activePeriod);
     }
 
     @Then("I receive a valid data response for Create Bundle Validation Error with HTTP status code 400 Bad Request")
     public void validateCreateBundleValidationError400() {
-        BundleCounseling.validateCreateBundleValidationError400();
+        Web_AdminBundleCounseling.validateCreateBundleValidationError400();
     }
 
     // [Negative] POST - Create Bundle Validation File Error
     @Given("I set the POST endpoint for Create Bundle Validation File Error")
     public void setCreateBundleValidationFileErrorEndpoint() {
-        BundleCounseling.setCreateBundleValidationFileErrorEndpoint();
+        Web_AdminBundleCounseling.setCreateBundleValidationFileErrorEndpoint();
     }
 
     @When("I send an HTTP POST request with invalid file type for Create Bundle Validation File Error")
     public void sendCreateBundleValidationFileErrorRequest() {
-        BundleCounseling.sendCreateBundleValidationFileErrorRequest();
+        String name = "Paket Perkenalan";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Test";
+        int activePeriod = 1;
+        String avatarimgPath = "/EmpathiCare/coba.xlsx";
+
+        Web_AdminBundleCounseling.sendCreateBundleValidationFileErrorRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
-    @Then("I receive a valid data response for Create Bundle Validation File Error with HTTP status code 404 Not Found")
-    public void validateCreateBundleValidationFileError404() {
-        BundleCounseling.validateCreateBundleValidationFileError404();
+    @Then("I receive a valid data response for Create Bundle Validation File Error with HTTP status code 400 Bad Request")
+    public void validateCreateBundleValidationFileError400() {
+        Web_AdminBundleCounseling.validateCreateBundleValidationFileError400();
     }
 
     // [Negative] POST - Create Bundle Validation File Invalid Type
     @Given("I set the POST endpoint for Create Bundle Validation File Invalid Type")
     public void setCreateBundleValidationFileInvalidTypeEndpoint() {
-        BundleCounseling.setCreateBundleValidationFileInvalidTypeEndpoint();
+        Web_AdminBundleCounseling.setCreateBundleValidationFileInvalidTypeEndpoint();
     }
 
     @When("I send an HTTP POST request with a file of invalid type for Create Bundle Validation File Invalid Type")
     public void sendCreateBundleValidationFileInvalidTypeRequest() {
-        BundleCounseling.sendCreateBundleValidationFileInvalidTypeRequest();
+        String name = "Paket Perkenalan";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Test";
+        int activePeriod = 1;
+        String avatarimgPath = "/EmpathiCare/coba.xlsx";
+
+        Web_AdminBundleCounseling.sendCreateBundleValidationFileInvalidTypeRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Create Bundle Validation File Invalid Type with HTTP status code 400 Bad Request")
     public void validateCreateBundleValidationFileInvalidType400() {
-        BundleCounseling.validateCreateBundleValidationFileInvalidType400();
+        Web_AdminBundleCounseling.validateCreateBundleValidationFileInvalidType400();
     }
 
     // [Negative] POST - Create Bundle Validation File Size Error
     @Given("I set the POST endpoint for Create Bundle Validation File Size Error")
     public void setCreateBundleValidationFileSizeErrorEndpoint() {
-        BundleCounseling.setCreateBundleValidationFileSizeErrorEndpoint();
+        Web_AdminBundleCounseling.setCreateBundleValidationFileSizeErrorEndpoint();
     }
 
     @When("I send an HTTP POST request with a file exceeding size limit for Create Bundle Validation File Size Error")
     public void sendCreateBundleValidationFileSizeErrorRequest() {
-        BundleCounseling.sendCreateBundleValidationFileSizeErrorRequest();
+        String name = "Paket Perkenalan";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Test";
+        int activePeriod = 1;
+        String avatarimgPath = "/EmpathiCare/coba.xlsx";
+        Web_AdminBundleCounseling.sendCreateBundleValidationFileSizeErrorRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Create Bundle Validation File Size Error with HTTP status code 400 Bad Request")
     public void validateCreateBundleValidationFileSizeError400() {
-        BundleCounseling.validateCreateBundleValidationFileSizeError400();
+        Web_AdminBundleCounseling.validateCreateBundleValidationFileSizeError400();
     }
 
     // [Negative] POST - Create Bundle Invalid Endpoint
     @Given("I set the POST endpoint for creating a bundle with an invalid endpoint")
     public void setCreateBundleInvalidEndpoint() {
-        BundleCounseling.setCreateBundleInvalidEndpoint();
+        Web_AdminBundleCounseling.setCreateBundleInvalidEndpoint();
     }
 
     @When("I send an HTTP POST request for Create Bundle Invalid Endpoint")
     public void sendCreateBundleInvalidEndpointRequest() {
-        BundleCounseling.sendCreateBundleInvalidEndpointRequest();
+        String name = "Paket Perkenalan";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Test";
+        int activePeriod = 1;
+        String avatarimgPath = "/EmpathiCare/thumbnail.jpg";
+        Web_AdminBundleCounseling.sendCreateBundleInvalidEndpointRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Create Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateCreateBundleInvalidEndpoint404() {
-        BundleCounseling.validateCreateBundleInvalidEndpoint404();
-    }*/
+        Web_AdminBundleCounseling.validateCreateBundleInvalidEndpoint404();
+    }
 
     // [Positive] GET - Get By ID
     @Given("I set the GET endpoint for retrieving a bundle by ID")
     public void setGetBundleByIdEndpoint() {
-        BundleCounseling.setGetBundleByIdEndpoint();
+        Web_AdminBundleCounseling.setGetBundleByIdEndpoint();
     }
 
     @When("I send an HTTP GET request with a valid ID")
     public void sendGetBundleByIdRequest() {
-        BundleCounseling.sendGetBundleByIdRequest();
+        Web_AdminBundleCounseling.sendGetBundleByIdRequest();
     }
 
     @Then("I receive a valid data response with HTTP status code 200 OK")
     public void validateGetBundleById200() {
-        BundleCounseling.validateGetBundleById();
+        Web_AdminBundleCounseling.validateGetBundleById();
     }
 
     // [Negative] GET - Get By ID Invalid ID
     @Given("I set the GET endpoint for retrieving a bundle Get By ID Invalid ID")
     public void setGetBundleByIdInvalidIdEndpoint() {
-        BundleCounseling.setGetBundleByIdInvalidIdEndpoint();
+        Web_AdminBundleCounseling.setGetBundleByIdInvalidIdEndpoint();
     }
 
     @When("I send an HTTP GET request with an Get By ID Invalid ID")
     public void sendGetBundleByIdInvalidIdRequest() {
-        BundleCounseling.sendGetBundleByIdInvalidIdRequest();
+        Web_AdminBundleCounseling.sendGetBundleByIdInvalidIdRequest();
     }
 
     @Then("I receive a valid data response for Get By ID Invalid ID with HTTP status code 400 Bad Request")
     public void validateGetBundleByIdInvalidId400() {
-        BundleCounseling.validateGetBundleByIdInvalidId400();
+        Web_AdminBundleCounseling.validateGetBundleByIdInvalidId400();
     }
 
     // [Negative] GET - Get By ID Data Not Found
     @Given("I set the GET endpoint for retrieving a bundle Get By ID Data Not Found")
     public void setGetBundleByIdDataNotFoundEndpoint() {
-        BundleCounseling.setGetBundleByIdDataNotFoundEndpoint();
+        Web_AdminBundleCounseling.setGetBundleByIdDataNotFoundEndpoint();
     }
 
     @When("I send an HTTP GET request with an Get By ID Data Not Found")
     public void sendGetBundleByIdDataNotFoundRequest() {
-        BundleCounseling.sendGetBundleByIdDataNotFoundRequest();
+        Web_AdminBundleCounseling.sendGetBundleByIdDataNotFoundRequest();
     }
 
-    @Then("I receive a valid data response for get Get By ID Data Not Found with HTTP status code 400 Bad Request")
+    @Then("I receive a valid data response for get Get By ID Data Not Found with HTTP status code 404 Not Found")
     public void validateGetBundleByIdDataNotFound400() {
-        BundleCounseling.validateGetBundleByIdDataNotFound400();
+        Web_AdminBundleCounseling.validateGetBundleByIdDataNotFound400();
     }
 
     // [Negative] GET - Get By ID Invalid Endpoint
     @Given("I set the GET endpoint for retrieving a bundle Get By ID Invalid Endpoint")
     public void setGetBundleByIdInvalidEndpoint() {
-        BundleCounseling.setGetBundleByIdInvalidEndpoint();
+        Web_AdminBundleCounseling.setGetBundleByIdInvalidEndpoint();
     }
 
     @When("I send an HTTP GET request with an Get By ID Invalid Endpoint")
     public void sendGetBundleByIdInvalidEndpointRequest() {
-        BundleCounseling.sendGetBundleByIdInvalidEndpointRequest();
+        Web_AdminBundleCounseling.sendGetBundleByIdInvalidEndpointRequest();
     }
 
-    @Then("I receive a valid data response for Get By ID Invalid Endpoint with HTTP status code 400 Bad Request")
+    @Then("I receive a valid data response for Get By ID Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateGetBundleByIdInvalidEndpoint400() {
-        BundleCounseling.validateGetBundleByIdInvalidEndpoint400();
+        Web_AdminBundleCounseling.validateGetBundleByIdInvalidEndpoint404();
     }
 
-/*    // [Positive] PUT - Update Bundle Success With File Update
+   // [Positive] PUT - Update Bundle Success With File Update
     @Given("I set the PUT endpoint for updating a bundle With File Update")
     public void setUpdateBundleWithFileUpdateEndpoint() {
-        BundleCounseling.setUpdateBundleWithFileUpdateEndpoint();
+        Web_AdminBundleCounseling.setUpdateBundleWithFileUpdateEndpoint();
     }
 
     @When("I send an HTTP PUT request with valid data for Update Bundle Success With File Update")
     public void sendUpdateBundleWithFileUpdateRequest() {
-        BundleCounseling.sendUpdateBundleWithFileUpdateRequest();
+        String name = "Paket Update Testing";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Update paket kenangan indah";
+        int activePeriod = 1;
+        String avatarimgPath = "/EmpathiCare/thumbnail.jpg";
+        Web_AdminBundleCounseling.sendUpdateBundleWithFileUpdateRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Update Bundle Success With File Update with HTTP status code 200 OK")
     public void validateUpdateBundleWithFileUpdate200() {
-        BundleCounseling.validateUpdateBundleWithFileUpdate200();
+        Web_AdminBundleCounseling.validateUpdateBundleWithFileUpdate200();
     }
 
     // [Positive] PUT - Update Bundle Success But File Not Update
-    @Given("I set the PUT endpoint for updating a bundle With File Update")
+    @Given("I set the PUT endpoint for updating a bundle With File Not Update")
     public void setUpdateBundleSuccessButFileNotUpdateEndpoint() {
-        BundleCounseling.setUpdateBundleSuccessButFileNotUpdateEndpoint();
+        Web_AdminBundleCounseling.setUpdateBundleSuccessButFileNotUpdateEndpoint();
     }
 
     @When("I send an HTTP PUT request with valid data for Update Bundle Success But File Not Update")
     public void sendUpdateBundleSuccessButFileNotUpdateRequest() {
-        BundleCounseling.sendUpdateBundleSuccessButFileNotUpdateRequest();
+        String name = "Paket Update Testing";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Update paket kenangan indah";
+        int activePeriod = 1;
+        String avatarimgPath = "C:/EmpathiCare/thumbnail.jpg";
+        Web_AdminBundleCounseling.sendUpdateBundleSuccessButFileNotUpdateRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Update Bundle Success But File Not Update with HTTP status code 200 OK")
     public void validateUpdateBundleSuccessButFileNotUpdate200() {
-        BundleCounseling.validateUpdateBundleSuccessButFileNotUpdate200();
+        Web_AdminBundleCounseling.validateUpdateBundleSuccessButFileNotUpdate200();
     }
 
     // [Negative] PUT - Update Bundle Validate Error
     @Given("I set the PUT endpoint for updating a bundle")
     public void setUpdateBundleValidateErrorEndpoint() {
-        BundleCounseling.setUpdateBundleValidateErrorEndpoint();
+        Web_AdminBundleCounseling.setUpdateBundleValidateErrorEndpoint();
     }
 
     @When("I send an HTTP PUT request with invalid data")
     public void sendUpdateBundleValidateErrorRequest() {
-        BundleCounseling.sendUpdateBundleValidateErrorRequest();
+        String name = " ";
+        int sessions = 1;
+        String type = " ";
+        int price = 80000;
+        String description = " ";
+        int activePeriod = 1;
+        String avatarimgPath = " ";
+        Web_AdminBundleCounseling.sendUpdateBundleValidateErrorRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response with HTTP status code 400 Bad Request")
     public void validateUpdateBundleValidateError400() {
-        BundleCounseling.validateUpdateBundleValidateError400();
+        Web_AdminBundleCounseling.validateUpdateBundleValidateError400();
     }
 
     // [Negative] PUT - Update Bundle Server Error
     @Given("I set the PUT endpoint for Update Bundle Server Error")
     public void setUpdateBundleServerErrorEndpoint() {
-        BundleCounseling.setUpdateBundleServerErrorEndpoint();
+        Web_AdminBundleCounseling.setUpdateBundleServerErrorEndpoint();
     }
 
     @When("I send an HTTP PUT request with valid data for Update Bundle Server Error")
     public void sendUpdateBundleServerErrorRequest() {
-        BundleCounseling.sendUpdateBundleServerErrorRequest();
+        String name = "Paket Update Testing";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Update paket kenangan indah";
+        int activePeriod = 1;
+        Web_AdminBundleCounseling.sendUpdateBundleServerErrorRequest(name, sessions, type, price, description, activePeriod);
     }
 
     @Then("I receive a valid data response for Update Bundle Server Error with HTTP status code 500 Internal Server Error")
     public void validateUpdateBundleServerError500() {
-        BundleCounseling.validateUpdateBundleServerError500();
+        Web_AdminBundleCounseling.validateUpdateBundleServerError500();
     }
 
     // [Negative] PUT - Update Bundle Invalid Endpoint
     @Given("I set the PUT endpoint for updating a bundle with an invalid endpoint")
     public void setUpdateBundleInvalidEndpoint() {
-        BundleCounseling.setUpdateBundleInvalidEndpoint();
+        Web_AdminBundleCounseling.setUpdateBundleInvalidEndpoint();
     }
 
     @When("I send an HTTP PUT request for Update Bundle Invalid Endpoint")
     public void sendUpdateBundleInvalidEndpointRequest() {
-        BundleCounseling.sendUpdateBundleInvalidEndpointRequest();
+        String name = "Paket Update Testing";
+        int sessions = 1;
+        String type = "INSTAN";
+        int price = 80000;
+        String description = "Update paket kenangan indah";
+        int activePeriod = 1;
+        String avatarimgPath = "/EmpathiCare/thumbnail.jpg";
+        Web_AdminBundleCounseling.sendUpdateBundleInvalidEndpointRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
     }
 
     @Then("I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateUpdateBundleInvalidEndpoint404() {
-        BundleCounseling.validateUpdateBundleInvalidEndpoint404();
-    }*/
+        Web_AdminBundleCounseling.validateUpdateBundleInvalidEndpoint404();
+    }
 
     // [Positive] DELETE - Delete Bundle
     @Given("I set the DELETE endpoint for deleting a bundle")
     public void setDeleteBundleEndpoint() {
-        BundleCounseling.setDeleteBundleEndpoint();
+        Web_AdminBundleCounseling.setDeleteBundleEndpoint();
     }
 
     @When("I send an HTTP DELETE request with a valid ID")
     public void sendDeleteBundleRequest() {
-        BundleCounseling.sendDeleteBundleRequest();
+        Web_AdminBundleCounseling.sendDeleteBundleRequest();
     }
 
     @Then("I receive a valid data response with HTTP status code 200 OK for delete bundle")
 
     public void validateDeleteBundle200() {
-        BundleCounseling.validateDeleteBundle200();
+        Web_AdminBundleCounseling.validateDeleteBundle200();
     }
 
     // [Negative] DELETE - Delete Bundle Invalid ID
     @Given("I set the DELETE endpoint for deleting a bundle with an invalid ID")
     public void setDeleteBundleInvalidIdEndpoint() {
-        BundleCounseling.setDeleteBundleInvalidIdEndpoint();
+        Web_AdminBundleCounseling.setDeleteBundleInvalidIdEndpoint();
     }
 
     @When("I send an HTTP DELETE request with an invalid ID")
     public void sendDeleteBundleInvalidIdRequest() {
-        BundleCounseling.sendDeleteBundleInvalidIdRequest();
+        Web_AdminBundleCounseling.sendDeleteBundleInvalidIdRequest();
     }
 
     @Then("I receive a valid data response for Delete Bundle Invalid ID with HTTP status code 400 Bad Request")
     public void validateDeleteBundleInvalidId400() {
-        BundleCounseling.validateDeleteBundleInvalidId400();
+        Web_AdminBundleCounseling.validateDeleteBundleInvalidId400();
     }
 
     // [Negative] DELETE - Delete Bundle Invalid Endpoint
     @Given("I set the DELETE endpoint for deleting a bundle with an invalid endpoint")
     public void setDeleteBundleInvalidEndpoint() {
-        BundleCounseling.setDeleteBundleInvalidEndpoint();
+        Web_AdminBundleCounseling.setDeleteBundleInvalidEndpoint();
     }
 
     @When("I send an HTTP DELETE request with an invalid endpoint")
     public void sendDeleteBundleInvalidEndpointRequest() {
-        BundleCounseling.sendDeleteBundleInvalidEndpointRequest();
+        Web_AdminBundleCounseling.sendDeleteBundleInvalidEndpointRequest();
     }
 
     @Then("I receive a valid data response for Delete Bundle Invalid Endpoint with HTTP status code 404 Not Found")
     public void validateDeleteBundleInvalidEndpoint400() {
-        BundleCounseling.validateDeleteBundleInvalidEndpoint404();
+        Web_AdminBundleCounseling.validateDeleteBundleInvalidEndpoint404();
     }
-
 }

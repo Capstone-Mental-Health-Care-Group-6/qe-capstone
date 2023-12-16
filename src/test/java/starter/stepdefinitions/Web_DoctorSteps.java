@@ -49,43 +49,61 @@ public class Web_DoctorSteps {
     // [Positive] POST Register Doctor
     @Given("I set the POST endpoint for registering a doctor")
     public void setPostRegisterDoctorEndpoint() {
-//        WebDoctorSteps.setPostRegisterDoctorEndpoint();
-        // Simpan hasilnya dalam variabel
-        String endpoint = starter.restapi.Web_Doctor.setPostRegisterDoctorEndpoint();
-        // Opsional, dapat menggunakan nilai endpoint dalam langkah-langkah selanjutnya atau mencetaknya
-        System.out.println("Endpoint untuk membuat bundle: " + endpoint);
+        WebDoctorSteps.setPostRegisterDoctorEndpoint();
     }
 
     @When("I send an HTTP POST request with a valid baseURL and body parameters")
     public void sendHttpPostRequestForRegisteringDoctor() {
-        Web_DoctorTest = starter.restapi.Web_Doctor.sendHttpPostRequestForRegisteringDoctor(
-                "Fauzan Ali Gans", "five_to_ten_years", "Doctor Desc B",
-                "Doctor Office B", "Doctor Office Addr B", "Doctor Office City B",
-                "Doctor Meet Link B", 4,
-                new String[]{"University C", "University D"},
-                new String[]{"Program C", "Program D"},
-                new String[]{"2020-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
-                new String[]{"Company C", "Company D"},
-                new String[]{"Title C", "Title D"},
-                new String[]{"Description C", "Description D"},
-                new String[]{"2020-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
-                new String[]{"2021-01-01T00:00:00Z", "2022-01-01T00:00:00Z"},
-                new boolean[]{true, false},
-                new int[]{1, 2},
-                new String[]{"2021-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
-                new String[]{"2021-01-01T00:00:00Z", "2021-01-01T00:00:00Z"},
-                "/Users/laras/OneDrive/Pictures/Icon/1.png",
-                "/Users/laras/OneDrive/Pictures/Icon/1.png",
-                "/Users/laras/OneDrive/Pictures/Icon/1.png",
-                "/Users/laras/OneDrive/Pictures/Icon/1.png",
-                "/Users/laras/OneDrive/Pictures/Icon/1.png"
-        );
+        String doctorName = "Fauzan Ali Gans";
+        String doctorNik = "3173645454546372";
+        String doctorDob = "Tangerang, 11 Mei 2002";
+        String doctorGender = "laki";
+        String doctorDescription = "Doctor Description";
+        String doctorProvinsi = "Jakarta";
+        String doctorKota = "Jakarta Barat";
+        String doctorNumberPhone = "0876776547364";
+        String doctorMeetLink = "www.google.com";
+        String doctorSipp = "0034588908839";
+        String doctorStr = "0034588908839";
+        int expertiseId = 4;
+        String doctorUniversity1 = "University C";
+        String doctorUniversity2 = "University D";
+        String doctorStudyProgram1 = "Program C";
+        String doctorStudyProgram2 = "Program D";
+        String doctorEnrollYear1 = "2020-01-01T00:00:00Z";
+        String doctorEnrollYear2 = "2020-01-01T00:00:00Z";
+        String doctorGraduateYear1 = "2020-01-01T00:00:00Z";
+        String doctorGraduateYear2 = "2021-01-01T00:00:00Z";
+        String doctorCompany1 = "Company C";
+        String doctorCompany2 = "Company D";
+        String doctorStartDate1 = "2020-01-01T00:00:00Z";
+        String doctorStartDate2 = "2021-01-01T00:00:00Z";
+        String doctorEndDate1 = "2021-01-01T00:00:00Z";
+        String doctorEndDate2 = "2022-01-01T00:00:00Z";
+        String doctorAvatar = "/EmpathiCare/thumbnail.jpg";
+        String doctorSippFile = "/EmpathiCare/Quality Engineer-empathiCare.docx";
+        String doctorStrFile = "/EmpathiCare/Quality Engineer-empathiCare.docx";
+        String doctorCv = "/EmpathiCare/Quality Engineer-empathiCare.docx";
+        String doctorIjazah = "/EmpathiCare/Quality Engineer-empathiCare.docx";
+
+        WebDoctorSteps.sendHttpPostRequestForRegisteringDoctor(doctorName, doctorNik, doctorDob, doctorGender,
+                doctorDescription, doctorProvinsi, doctorKota, doctorNumberPhone,
+                doctorMeetLink, doctorSipp, doctorStr, expertiseId,
+                doctorUniversity1, doctorUniversity2,
+                doctorStudyProgram1, doctorStudyProgram2,
+                doctorEnrollYear1, doctorEnrollYear2,
+                doctorGraduateYear1, doctorGraduateYear2,
+                doctorCompany1, doctorCompany2,
+                doctorStartDate1, doctorStartDate2,
+                doctorEndDate1, doctorEndDate2,
+                doctorAvatar, doctorSippFile,
+                doctorStrFile, doctorCv, doctorIjazah);
 
     }
 
-    @Then("I receive a valid data response for registering a doctor with HTTP status code 200 OK")
+    @Then("I receive a valid data response for registering a doctor with HTTP status code 201 Created")
     public void validateRegisterDoctorResponse() {
-        starter.restapi.Web_Doctor.validateRegisterDoctorResponse(Web_DoctorTest);
+        WebDoctorSteps.validateRegisterDoctorResponse();
     }
 
     // [Positive] GET Search Doctor by Name

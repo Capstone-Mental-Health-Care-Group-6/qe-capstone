@@ -38,7 +38,7 @@ public class POST_Register {
     // [Negative] POST - Register Error
     @Step("I provide name, email, role, and password that are already registered")
     public void NameEmailRoleAndPasswordThatAreAlreadyRegistered() {
-        String email = "admin@gmail.com";
+        String email = "Admin6@gmail.com";
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "admin"); // Mengubah "fullname" menjadi "name"

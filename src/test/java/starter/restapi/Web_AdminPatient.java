@@ -4,6 +4,8 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
 
+import java.util.Random;
+
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Web_AdminPatient {
@@ -174,7 +176,7 @@ public class Web_AdminPatient {
         JSONObject requestBody = new JSONObject();
         requestBody.put("name", "admin7");
         requestBody.put("password", "password");
-        requestBody.put("email", "adminaja7@yahoo.com");
+        requestBody.put("email", generateRandomEmail());
 
         SerenityRest
                 .given()
@@ -182,6 +184,26 @@ public class Web_AdminPatient {
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .put(setPutUpdateAdminProfileEndpoint());
+    }
+
+    private String generateRandomEmail() {
+        String[] emailProviders = {"gmail.com", "yahoo.com"};
+        String randomUsername = getRandomString(8); // You can adjust the length of the username as needed
+        String randomProvider = emailProviders[new Random().nextInt(emailProviders.length)];
+
+        return randomUsername + "@" + randomProvider;
+    }
+
+    private String getRandomString(int length) {
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder randomString = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = new Random().nextInt(characters.length());
+            randomString.append(characters.charAt(index));
+        }
+
+        return randomString.toString();
     }
 
     @Step("I receive a valid data response for updating admin profile with HTTP status code 200 OK")

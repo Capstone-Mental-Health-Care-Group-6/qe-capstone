@@ -18,6 +18,7 @@ public class ChatBotCS {
     @Step("I send an HTTP GET request Chatbot")
     public void sendHttpGetRequestToChatbot() {
         SerenityRest.given()
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .when()
                 .get(setGetAllChatbotEndpoint());
     }
@@ -40,7 +41,7 @@ public class ChatBotCS {
 
         SerenityRest
                 .given()
-                .header("Authorization", "xxxx")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .post(setPostSendMessageEndpoint());
@@ -54,12 +55,13 @@ public class ChatBotCS {
     // [Negative] GET - All Chatbot Invalid Endpoint
     @Step("I set the GET endpoint for retrieving all chatbot messages with an invalid endpoint")
     public String setGetAllChatbotInvalidEndpoint() {
-        return url + "chatbotcs";
+        return url + "chatbotc";
     }
 
     @Step("I send an HTTP GET request Chatbot Invalid Endpoint")
     public void sendHttpGetRequestToInvalidEndpoint() {
         SerenityRest.given()
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .when()
                 .get(setGetAllChatbotInvalidEndpoint());
     }
@@ -72,7 +74,7 @@ public class ChatBotCS {
     // [Negative] - POST Send Message Invalid Endpoint
     @Step("I set the POST endpoint for sending a message to chatbot with an invalid endpoint")
     public String setPostSendMessageInvalidEndpoint() {
-        return url + "chatbocs";
+        return url + "chatboc";
     }
 
     @Step("I send an HTTP POST request Chatbot Invalid Endpoint")
@@ -82,7 +84,7 @@ public class ChatBotCS {
 
         SerenityRest
                 .given()
-                .header("Authorization", "xxxx")
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .contentType("application/json")
                 .body(requestBody.toJSONString())
                 .post(setPostSendMessageInvalidEndpoint());

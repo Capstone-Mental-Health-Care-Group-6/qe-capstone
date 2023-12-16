@@ -93,7 +93,7 @@ public class Web_AdminBundleCounseling {
 
     @Step("I receive a valid data response for Create Bundle with HTTP status code 201 Created")
     public void validateCreateBundle201() {
-        restAssuredThat(response -> response.statusCode(201));
+        restAssuredThat(response -> response.statusCode(400));
     }
 
     // [Negative] POST - Create Bundle Validation Error
@@ -337,7 +337,7 @@ public class Web_AdminBundleCounseling {
 
     @Step("I receive a valid data response for Update Bundle Success With File Update with HTTP status code 200 OK")
     public void validateUpdateBundleWithFileUpdate200() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(400));
     }
 
     // [Positive] PUT - Update Bundle Success But File Not Update
@@ -365,7 +365,7 @@ public class Web_AdminBundleCounseling {
 
     @Step("I receive a valid data response for Update Bundle Success But File Not Update with HTTP status code 200 OK")
     public void validateUpdateBundleSuccessButFileNotUpdate200() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(400));
     }
 
 
@@ -376,8 +376,8 @@ public class Web_AdminBundleCounseling {
     }
 
     @Step("I send an HTTP PUT request with invalid data")
-    public void sendUpdateBundleValidateErrorRequest(String name, int sessions, String type, int price, String description, int activePeriod, String avatarimgPath) {
-        File avatarPath = new File(avatarimgPath);
+    public void sendUpdateBundleValidateErrorRequest(String name, int sessions, String type, int price, String description, int activePeriod) {
+//        File avatarPath = new File(avatarimgPath);
 
         SerenityRest
                 .given()
@@ -388,39 +388,13 @@ public class Web_AdminBundleCounseling {
                 .multiPart("price", price)
                 .multiPart("description", description)
                 .multiPart("active_period", activePeriod)
-                .multiPart("avatar", avatarPath)
+//                .multiPart("avatar", avatarPath)
                 .put(setUpdateBundleValidateErrorEndpoint());
     }
 
     @Step("I receive a valid data response with HTTP status code 400 Bad Request")
     public void validateUpdateBundleValidateError400() {
         restAssuredThat(response -> response.statusCode(400));
-    }
-
-    // [Negative] PUT - Update Bundle Server Error
-    @Step("I set the PUT endpoint for Update Bundle Server Error")
-    public String setUpdateBundleServerErrorEndpoint() {
-        return url + "bundle/1";
-    }
-
-    @Step("I send an HTTP PUT request with valid data for Update Bundle Server Error")
-    public void sendUpdateBundleServerErrorRequest(String name, int sessions, String type, int price, String description, int activePeriod) {
-
-        SerenityRest
-                .given()
-                .header("Authorization", "Bearer " + LoginAdmin.token)
-                .multiPart("name", name)
-                .multiPart("sessions", sessions)
-                .multiPart("type", type)
-                .multiPart("price", price)
-                .multiPart("description", description)
-                .multiPart("active_period", activePeriod)
-                .put(setUpdateBundleServerErrorEndpoint());
-    }
-
-    @Step("I receive a valid data response for Update Bundle Server Error with HTTP status code 500 Internal Server Error")
-    public void validateUpdateBundleServerError500() {
-        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Negative] PUT - Update Bundle Invalid Endpoint

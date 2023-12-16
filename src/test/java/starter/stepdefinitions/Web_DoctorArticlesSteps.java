@@ -22,7 +22,7 @@ public class Web_DoctorArticlesSteps {
         String categoryId = "2";
         String title = "Kecemasan diri";
         String content = "Mencegah kecemasan diri";
-        String thumbnail = "/EmpathiCare/thumbnail.jpg";
+        String thumbnail = "C:/Users/laras/OneDrive/Pictures/Icon/1.png";
         //String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
         web_doctorArticles.iSendThePOSTRequestToCreateANewArticlesDoctor(categoryId,title,content,thumbnail);
@@ -66,7 +66,7 @@ public class Web_DoctorArticlesSteps {
         String categoryId = "asd";
         String title = "123";
         String content = "Mencegah kecemasan diri";
-        String thumbnail = "/EmpathiCare/thumbnail.jpg";
+        String thumbnail = "Users/laras/OneDrive/Pictures/Icon/1.png";
         //String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
         web_doctorArticles.iSendThePOSTRequestWithInvalidUserInputForCreatingANewArticlesDoctor(categoryId,title,content,thumbnail);
@@ -87,7 +87,8 @@ public class Web_DoctorArticlesSteps {
     public void RequestUpdateArticlesDoctor() {
         String title = "Menghadapi Insecure";
         String content = "Insecure banyak dialami oleh remaja jaman sekarang";
-        String thumbnail = "/EmpathiCare/thumbnail.jpg";
+        String thumbnail = "C:/Users/laras/OneDrive/Pictures/Icon/1.png";
+
         //  String thumbnail = "/Users/Anastasya/OneDrive/thumbnail.jpg";
 
         web_doctorArticles.RequestUpdateArticlesDoctor(title,content,thumbnail);
@@ -106,9 +107,6 @@ public class Web_DoctorArticlesSteps {
 
     @When("I sends a PUT HTTP request Update articles doctor with an invalid param ID")
     public void iSendsAPUTHTTPRequestUpdateArticlesDoctorWithAnInvalidParamID() {
-        String title = "";
-        String content = "";
-        String thumbnail = "";
 
         web_doctorArticles.iSendsAPUTHTTPRequestUpdateArticlesDoctorWithAnInvalidParamID();
     }
@@ -128,9 +126,8 @@ public class Web_DoctorArticlesSteps {
     public void iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail() {
         String title = "Menghadapi Insecure";
         String content = "Insecure banyak dialami oleh remaja jaman sekarang";
-        String thumbnail = "";
 
-        web_doctorArticles.iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail(title,content,thumbnail);
+        web_doctorArticles.iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail(title,content);
     }
 
     @Then("I receives an HTTP response code 400 with invalid user input thumbnail")

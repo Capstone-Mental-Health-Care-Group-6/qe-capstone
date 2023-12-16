@@ -148,15 +148,14 @@ public class Web_DoctorArticles {
     }
 
     @Step("I sends a PUT HTTP request Update Articles Category with an invalid user input thumbnail")
-    public void iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail(String title, String content, String thumbnail) {
+    public void iSendsAPUTHTTPRequestUpdateArticlesCategoryWithAnInvalidUserInputThumbnail(String title, String content) {
 
-        File thumbnailFile = new File(thumbnail);
+//        File thumbnailFile = new File(thumbnail);
         SerenityRest
                 .given()
                 .header("Authorization", "Bearer " + LoginDoctor.token)
                 .multiPart("title", title)
                 .multiPart("content", content)
-                .multiPart("thumbnail", thumbnail)
                 .put(iSetAnValidPUTEndpointUpdateArticlesDoctorWithAnInvalidUserInputThumbnail());
     }
 

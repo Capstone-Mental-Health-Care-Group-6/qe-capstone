@@ -24,13 +24,9 @@ public class LoginAdmin {
     @Step("I send authentication endpoint for login admin")
     public void sendAuthenticationEndpointForAdminLogin() {
         JSONObject requestBody = new JSONObject();
-<<<<<<< HEAD
-        requestBody.put("email", "Admin6@gmail.com");
+
+        requestBody.put("email", "AdminAja1@gmail.com");
         requestBody.put("password", "password");
-=======
-        requestBody.put("email", "admin_try@gmail.com");
-        requestBody.put("password", "admin");
->>>>>>> bdb4f6c5a94c1fb7bf1d1152e4e6bf28b778f429
 
         SerenityRest
                 .given()

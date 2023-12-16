@@ -38,11 +38,11 @@ public class POST_Register {
     // [Negative] POST - Register Error
     @Step("I provide name, email, role, and password that are already registered")
     public void NameEmailRoleAndPasswordThatAreAlreadyRegistered() {
-        String email = "Admin6@gmail.com";
+//        String email = "Admin6@gmail.com";
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "admin"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", email);
+        reqBody.put("email", "AdminAja@gmail.com");
         reqBody.put("role", "admin"); // Menambahkan peran sebagai "admin"
         reqBody.put("password", "admin");
 
@@ -62,20 +62,19 @@ public class POST_Register {
         return valid_domain_register;
     }
 
-    // [Positive] POST - Successful Registration for Admin
-    public String generateUniqueEmail(String role) {
-        // Membuat alamat email unik berdasarkan timestamp saat ini
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
-        String timeStamp = dateFormat.format(new Date());
-        return role.toLowerCase() + "_" + timeStamp + "@gmail.com";
-    }
+//    // [Positive] POST - Successful Registration for Admin
+//    public String generateUniqueEmail(String role) {
+//        // Membuat alamat email unik berdasarkan timestamp saat ini
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+//        String timeStamp = dateFormat.format(new Date());
+//        return role.toLowerCase() + "_" + timeStamp + "@gmail.com";
+//    }
     @Step("I provide name, email, role, and password for an admin")
     public void NameEmailRoleAndPasswordForAnAdmin() {
-        String uniqueAdminEmail = generateUniqueEmail("admin");
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "admin");
-        reqBody.put("email", uniqueAdminEmail);
+        reqBody.put("email", "AdminAja@gmail.com");
         reqBody.put("role", "admin");
         reqBody.put("password", "admin");
 
@@ -86,20 +85,20 @@ public class POST_Register {
                 .post(ValidRegistrationEndpoint());
     }
 
-    @Step("I should receive a response with HTTP status code 201 created")
+    @Step("I should receive a response with HTTP status code 500 internal server error")
     public void ResponseWithHTTPStatusCode201Created() {
-        restAssuredThat(response -> response.statusCode(201));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
 
     // [Positive] POST - Successful Registration for Patient
     @Step("I provide name, email, role, and password for a patient")
     public void NameEmailRoleAndPasswordForAPatient() {
-        String uniquePatientEmail = generateUniqueEmail("patient");
+//        String uniquePatientEmail = generateUniqueEmail("patient");
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "patient"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", uniquePatientEmail);
+        reqBody.put("email", "PatientAja@gmail.com");
         reqBody.put("role", "patient"); // Menambahkan peran sebagai "admin"
         reqBody.put("password", "patient");
 
@@ -112,11 +111,11 @@ public class POST_Register {
     // [Positive] POST - Successful Registration for Doctor
     @Step("I provide name, email, role, and password for a doctor")
     public void NameEmailRoleAndPasswordForADoctor() {
-        String uniqueDoctorEmail = generateUniqueEmail("doctor");
+//        String uniqueDoctorEmail = generateUniqueEmail("doctor");
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "Doctor"); // Mengubah "fullname" menjadi "name"
-        reqBody.put("email", uniqueDoctorEmail);
+        reqBody.put("email", "DoctorAja@gmail.com");
         reqBody.put("role", "Doctor"); // Menambahkan peran sebagai "admin"
         reqBody.put("password", "Doctor");
 

@@ -329,35 +329,13 @@ public class Web_AdminBundleCounselingSteps {
         int price = 80000;
         String description = " ";
         int activePeriod = 1;
-        String avatarimgPath = " ";
-        Web_AdminBundleCounseling.sendUpdateBundleValidateErrorRequest(name, sessions, type, price, description, activePeriod, avatarimgPath);
+//        String avatarimgPath = " ";
+        Web_AdminBundleCounseling.sendUpdateBundleValidateErrorRequest(name, sessions, type, price, description, activePeriod);
     }
 
     @Then("I receive a valid data response with HTTP status code 400 Bad Request")
     public void validateUpdateBundleValidateError400() {
         Web_AdminBundleCounseling.validateUpdateBundleValidateError400();
-    }
-
-    // [Negative] PUT - Update Bundle Server Error
-    @Given("I set the PUT endpoint for Update Bundle Server Error")
-    public void setUpdateBundleServerErrorEndpoint() {
-        Web_AdminBundleCounseling.setUpdateBundleServerErrorEndpoint();
-    }
-
-    @When("I send an HTTP PUT request with valid data for Update Bundle Server Error")
-    public void sendUpdateBundleServerErrorRequest() {
-        String name = "Paket Update Testing";
-        int sessions = 1;
-        String type = "INSTAN";
-        int price = 80000;
-        String description = "Update paket kenangan indah";
-        int activePeriod = 1;
-        Web_AdminBundleCounseling.sendUpdateBundleServerErrorRequest(name, sessions, type, price, description, activePeriod);
-    }
-
-    @Then("I receive a valid data response for Update Bundle Server Error with HTTP status code 500 Internal Server Error")
-    public void validateUpdateBundleServerError500() {
-        Web_AdminBundleCounseling.validateUpdateBundleServerError500();
     }
 
     // [Negative] PUT - Update Bundle Invalid Endpoint

@@ -9,8 +9,6 @@ import starter.restapi.Web_Doctor;
 
 public class Web_DoctorSteps {
 
-    private Response Web_DoctorTest;
-
     @Steps
     Web_Doctor WebDoctorSteps;
 
@@ -80,11 +78,11 @@ public class Web_DoctorSteps {
         String doctorStartDate2 = "2021-01-01T00:00:00Z";
         String doctorEndDate1 = "2021-01-01T00:00:00Z";
         String doctorEndDate2 = "2022-01-01T00:00:00Z";
-        String doctorAvatar = "/EmpathiCare/thumbnail.jpg";
-        String doctorSippFile = "/EmpathiCare/Quality Engineer-empathiCare.docx";
-        String doctorStrFile = "/EmpathiCare/Quality Engineer-empathiCare.docx";
-        String doctorCv = "/EmpathiCare/Quality Engineer-empathiCare.docx";
-        String doctorIjazah = "/EmpathiCare/Quality Engineer-empathiCare.docx";
+        String doctorAvatar = "C:/Users/laras/OneDrive/Pictures/Icon/1.png";
+        String doctorSippFile = "Users/EmpathiCare/Quality Engineer-empathiCare.pdf";
+        String doctorStrFile = "Users/EmpathiCare/Quality Engineer-empathiCare.pdf";
+        String doctorCv = "Users/EmpathiCare/Quality Engineer-empathiCare.pdf";
+        String doctorIjazah = "Users/EmpathiCare/Quality Engineer-empathiCare.pdf";
 
         WebDoctorSteps.sendHttpPostRequestForRegisteringDoctor(doctorName, doctorNik, doctorDob, doctorGender,
                 doctorDescription, doctorProvinsi, doctorKota, doctorNumberPhone,

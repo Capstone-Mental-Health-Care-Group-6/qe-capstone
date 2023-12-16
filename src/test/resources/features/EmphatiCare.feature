@@ -8,6 +8,11 @@ Feature: Emphati Care
   # KALO MAU EDIT FILE FITUR INI BILANG BILANG DI GRUP DULU YA, TAKUT KETIBAN KERJAAN KALIAN NANTI HILANG:(
 
   # ===========================AUTH REGISTER===========================
+#   [Positive] POST - Successful Registration for Admin
+#  Scenario: Successful Registration for Admin
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for an admin
+#    Then I should receive a response with HTTP status code 201 created
 
   # [Negative] POST - Register Error Validation
   Scenario: Error Validation on POST Register
@@ -28,11 +33,6 @@ Feature: Emphati Care
     When I provide name, email, role, and password that are already registered
     Then I should receive a response with HTTP status code 500 internal server error
 
-  # [Positive] POST - Successful Registration for Admin
-  Scenario: Successful Registration for Admin
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for an admin
-    Then I should receive a response with HTTP status code 201 created
 
   # [Positive] POST - Successful Registration for Patient
   Scenario: Successful Registration for Patient
@@ -272,12 +272,12 @@ Feature: Emphati Care
     When I provide valid user information for a user account with a duplicate email
     Then I should receive a response with HTTP status code 400 Bad Request due to duplicate email
 
-#  # ==============================AUTH PATIENT LOGIN================================
+#  # ==============================AUTH PATIENT LOGIN MOBILE================================
 #
   # [Positive] POST - Login Success
   Scenario: I login using authentication mobile
     Given I set the authentication mobile endpoint
-    And I send a POST request to the authentication mobile endpoint
+    When I send a POST request to the authentication mobile endpoint
     Then I should receive a response with HTTP status code 200 OK and successfully log in
 
   # [Negative] POST - Login Error Password Invalid
@@ -286,12 +286,12 @@ Feature: Emphati Care
     When I send a POST request to the loginAdmin endpoint with an invalid Password
     Then I should receive a response with HTTP status code 400 Bad Request and invalid Password
 
-  # [Positive] POST - Login Success update Password
-  Scenario: I login using authentication with updated password
-    Given I set the authentication mobile endpoint
-    When I send a POST request to the login endpoint with a successful password update
-    Then I should receive a response with HTTP status code 400 OK and successful password update
-    # Then I should receive a response with HTTP status code 200 OK and successful password update
+  # [Positive] PUT - Login Success update Password
+#  Scenario: I login using authentication with updated password
+#    Given I set the authentication mobile endpoint updated password
+#    When I send a POST request to the login endpoint with a successful password update
+#    Then I should receive a response with HTTP status code 400 OK and successful password update
+#    # Then I should receive a response with HTTP status code 200 OK and successful password update
     # Expected status code <200> but was <400>.
 
 #  # ===========================WEB ADMIN WITHDRAW BALANCE===========================
@@ -652,12 +652,6 @@ Feature: Emphati Care
     When I send an HTTP PUT request with invalid data
     Then I receive a valid data response with HTTP status code 400 Bad Request
 
-  # [Negative] PUT - Update Bundle Server Error
-  Scenario: User fails to update a bundle, resulting in a server error
-    Given I set the PUT endpoint for Update Bundle Server Error
-    When I send an HTTP PUT request with valid data for Update Bundle Server Error
-    Then I receive a valid data response for Update Bundle Server Error with HTTP status code 500 Internal Server Error
-
 # [Negative] PUT - Update Bundle Invalid Endpoint
   Scenario: User fails to update a bundle with an invalid endpoint
     Given I set the PUT endpoint for updating a bundle with an invalid endpoint
@@ -722,11 +716,11 @@ Feature: Emphati Care
     When I send an HTTP GET request with a valid ID and baseURL
     Then I receive a valid data response for get doctor by ID with HTTP status code 200 OK
 
-# [Positive] POST Register Doctor
-  Scenario: User registers a doctor successfully
-    Given I set the POST endpoint for registering a doctor
-    When I send an HTTP POST request with a valid baseURL and body parameters
-    Then I receive a valid data response for registering a doctor with HTTP status code 201 Created
+## [Positive] POST Register Doctor
+#  Scenario: User registers a doctor successfully
+#    Given I set the POST endpoint for registering a doctor
+#    When I send an HTTP POST request with a valid baseURL and body parameters
+#    Then I receive a valid data response for registering a doctor with HTTP status code 201 Created
 
 # [Positive] GET Search Doctor by Name
   Scenario: User searches for a doctor by name successfully

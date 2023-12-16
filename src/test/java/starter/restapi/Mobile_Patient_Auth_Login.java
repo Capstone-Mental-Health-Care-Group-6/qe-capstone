@@ -16,9 +16,15 @@ public class Mobile_Patient_Auth_Login {
     @Step("I send a POST request to the authentication mobile endpoint")
     public void RequestToTheAuthenticationMobileEndpoint() {
         SerenityRest.given()
+<<<<<<< HEAD
                 .contentType("application/json")
                 .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
                 .formParam("password", "fauzi123")
+=======
+                .contentType("application/x-www-form-urlencoded") // Set content type as form data
+                .formParam("email", "anastasyazher@gmail.com") // Add form parameters
+                .formParam("password", "anas123")
+>>>>>>> bdb4f6c5a94c1fb7bf1d1152e4e6bf28b778f429
                 .post(AuthenticationMobileEndpoint());
     }
 
@@ -31,8 +37,13 @@ public class Mobile_Patient_Auth_Login {
     @Step("I send a POST request to the loginAdmin endpoint with an invalid Password")
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
         SerenityRest.given()
+<<<<<<< HEAD
                 .contentType("application/json")
                 .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
+=======
+                .contentType("application/x-www-form-urlencoded") // Set content type as form data
+                .formParam("email", "anastasyazher@gmail.com") // Add form parameters
+>>>>>>> bdb4f6c5a94c1fb7bf1d1152e4e6bf28b778f429
                 .formParam("password", "invalid password")
                 .post(AuthenticationMobileEndpoint());
     }
@@ -46,8 +57,13 @@ public class Mobile_Patient_Auth_Login {
     @Step("I send a POST request to the login endpoint with a successful password update")
     public void RequestToTheLoginEndpointWithASuccessfulPasswordUpdate() {
         SerenityRest.given()
+<<<<<<< HEAD
                 .contentType("application/json")
                 .formParam("email", "nurulfauziah2@gmail.com") // Add form parameters
+=======
+                .contentType("application/x-www-form-urlencoded") // Set content type as form data
+                .formParam("email", "anastasyazher@gmail.com") // Add form parameters
+>>>>>>> bdb4f6c5a94c1fb7bf1d1152e4e6bf28b778f429
                 .formParam("password", "update password")
                 .post(AuthenticationMobileEndpoint());
     }

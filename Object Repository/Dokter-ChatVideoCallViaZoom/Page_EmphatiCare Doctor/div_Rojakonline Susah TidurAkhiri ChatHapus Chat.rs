@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Rojakonline Susah TidurAkhiri ChatHapus Chat</name>
+   <tag></tag>
+   <elementGuidId>643d7ad4-08f9-43cd-80b5-f72cc8d23e72</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.d-flex.justify-content-between.bg-primary.align-items-center.p-lg-3.py-3.p-1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='chat-page']/div/div[2]/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>44ce8672-d75c-40f6-86ac-69c21f770a57</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>d-flex justify-content-between bg-primary  align-items-center p-lg-3 py-3 p-1</value>
+      <webElementGuid>7089ab22-5504-40be-ab5d-39b6c666d022</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Rojakonline Susah TidurAkhiri ChatHapus Chat</value>
+      <webElementGuid>2b5aeef0-f1b2-4d4a-8200-3dcc9de2011b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;chat-page&quot;)/div[@class=&quot;row d-flex justify-content-between&quot;]/div[@class=&quot;col col-lg-7 col-sm-8&quot;]/div[@class=&quot;chat-content  d-flex flex-column justify-content-between&quot;]/div[@class=&quot;profile-and-status&quot;]/div[@class=&quot;d-flex justify-content-between bg-primary  align-items-center p-lg-3 py-3 p-1&quot;]</value>
+      <webElementGuid>b53674a1-af1d-41dc-bbbb-a2d2709992f4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='chat-page']/div/div[2]/div/div/div</value>
+      <webElementGuid>7cba085f-49e3-47d3-b1b4-077bb5fe93d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='bapak saya hamil'])[1]/following::div[4]</value>
+      <webElementGuid>ab2d6235-62ca-4d5b-8c14-2cc2d3d9b0f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Putri'])[1]/following::div[4]</value>
+      <webElementGuid>acb72034-170c-4eee-895f-8cd2af66d87f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div[2]/div/div/div</value>
+      <webElementGuid>88ba98c7-9563-4d17-9140-176486ee3c7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Rojakonline Susah TidurAkhiri ChatHapus Chat' or . = 'Rojakonline Susah TidurAkhiri ChatHapus Chat')]</value>
+      <webElementGuid>b751c4ab-f2fd-4eea-b230-4408a394b6c8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

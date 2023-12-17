@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Mr. Dawn Haley</name>
+   <tag></tag>
+   <elementGuidId>55c4ff39-95d5-4ef8-b840-ec6abf8ad2e4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-lihat-detail']/div/div/div/div/div[2]/p/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.fw-semibold</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dbc18c06-c37d-4f8a-8622-518039d6fbbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fw-semibold</value>
+      <webElementGuid>64648151-390c-45e3-b6b5-116356a61529</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Mr. Dawn Haley</value>
+      <webElementGuid>077d94b8-da48-41a6-a816-2dc9a3fbfc76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-lihat-detail&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered  modal-lg&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;d-flex justify-content-center&quot;]/div[@class=&quot;ms-4&quot;]/p[@class=&quot;d-flex flex-column&quot;]/span[@class=&quot;fw-semibold&quot;]</value>
+      <webElementGuid>ebf2d1c2-206d-4249-8497-de678c743a14</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-lihat-detail']/div/div/div/div/div[2]/p/span</value>
+      <webElementGuid>e25329d1-90e7-4fa7-93c6-18e28433503f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Oke'])[1]/following::span[1]</value>
+      <webElementGuid>1c4d5763-0e18-4597-88ef-9a630b630841</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tolak'])[1]/following::span[1]</value>
+      <webElementGuid>0c79f432-29ae-4738-b91a-2fe622eaab2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Laki-Laki'])[1]/preceding::span[1]</value>
+      <webElementGuid>2887391d-2586-4f88-adfd-cfd1e606b3be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cemas'])[1]/preceding::span[2]</value>
+      <webElementGuid>e470240a-8e4c-4079-a7be-16c23341c257</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Mr. Dawn Haley']/parent::*</value>
+      <webElementGuid>1016d53f-8fad-4813-a17f-1d84196722ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/p/span</value>
+      <webElementGuid>1c6a8ddc-828b-4574-8d4c-a72da011c38b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Mr. Dawn Haley' or . = 'Mr. Dawn Haley')]</value>
+      <webElementGuid>e2971b7a-f8db-452e-b248-6c3de04fcb7f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

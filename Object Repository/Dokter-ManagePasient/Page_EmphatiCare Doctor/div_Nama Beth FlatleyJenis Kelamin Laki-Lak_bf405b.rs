@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Nama Beth FlatleyJenis Kelamin Laki-Lak_bf405b</name>
+   <tag></tag>
+   <elementGuidId>2ebc4cd9-923a-4995-aaae-261c998a5ee7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-lihat-detail']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-lihat-detail > div.modal-dialog.modal-dialog-centered.modal-lg > div.modal-content</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>25a73f76-3e89-44a5-afc5-ff82bdaa77ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-content</value>
+      <webElementGuid>18659e88-9648-4460-9555-574f8eb3beef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nama Beth FlatleyJenis Kelamin Laki-LakiKeluhan StressVia Konsul ZoomTerimaTolak</value>
+      <webElementGuid>5f8cbb68-8a7c-4727-b460-62e42ccef6ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-lihat-detail&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered  modal-lg&quot;]/div[@class=&quot;modal-content&quot;]</value>
+      <webElementGuid>24d9e4b4-a4f5-40f0-8ea9-3281f0f5c758</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-lihat-detail']/div/div</value>
+      <webElementGuid>b1a7e8f8-c08e-445d-92bc-04ae197df5dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Oke'])[1]/following::div[3]</value>
+      <webElementGuid>5c033a2f-afb9-4065-87c4-0050b899d712</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tolak'])[1]/following::div[12]</value>
+      <webElementGuid>05a3c4ad-3da6-40d0-a46e-29f5b60a1ab4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div</value>
+      <webElementGuid>f8b2ec6d-b84d-41c5-b595-6a1c36958a7c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Nama Beth FlatleyJenis Kelamin Laki-LakiKeluhan StressVia Konsul ZoomTerimaTolak' or . = 'Nama Beth FlatleyJenis Kelamin Laki-LakiKeluhan StressVia Konsul ZoomTerimaTolak')]</value>
+      <webElementGuid>7a35392c-8eac-4dc1-883b-58d42b485ca9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

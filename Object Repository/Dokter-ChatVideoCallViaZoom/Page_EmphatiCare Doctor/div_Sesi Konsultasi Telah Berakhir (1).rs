@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Sesi Konsultasi Telah Berakhir (1)</name>
+   <tag></tag>
+   <elementGuidId>72c4bc36-5993-46c4-b96f-a52ecef50b56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.input-chat-end.d-flex.justify-content-center</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='chat-page']/div/div[2]/div/div[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>54822fe3-cd57-47ff-91c1-d7b18ab6696d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input-chat-end d-flex justify-content-center</value>
+      <webElementGuid>d0036fb8-42bd-48cc-b93b-76f2329ac15e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sesi Konsultasi Telah Berakhir</value>
+      <webElementGuid>26da7f49-47f9-484a-9139-7296d0874878</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;chat-page&quot;)/div[@class=&quot;row d-flex justify-content-between&quot;]/div[@class=&quot;col col-lg-7 col-sm-8&quot;]/div[@class=&quot;chat-content  d-flex flex-column justify-content-between&quot;]/div[@class=&quot;input-chat-end d-flex justify-content-center&quot;]</value>
+      <webElementGuid>9591ed89-f24c-4b6f-bf84-99924015b292</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='chat-page']/div/div[2]/div/div[3]</value>
+      <webElementGuid>4d8201c2-b214-4e24-abef-a94eaedc9588</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gabung Gmeet'])[2]/following::div[1]</value>
+      <webElementGuid>7fc9463a-387d-480d-9bc4-4b66a82c8f56</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gabung Gmeet'])[1]/following::div[6]</value>
+      <webElementGuid>ff483689-a784-4ebe-87f8-8e922d724fe0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[3]</value>
+      <webElementGuid>954550d1-8d76-4f08-b170-460b4935f1f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Sesi Konsultasi Telah Berakhir' or . = 'Sesi Konsultasi Telah Berakhir')]</value>
+      <webElementGuid>e110f897-9bbe-42cb-a440-f90442401670</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

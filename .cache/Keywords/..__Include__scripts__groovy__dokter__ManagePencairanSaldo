@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "05A37E4CE3DA0D1196BC079AB2AB29C5",
+  "keywordFileContentHash": "F9ACEC7A2AD6A8C939C59672AEC18B15",
   "keywordClasses": [
     {
       "name": "dokter.ManagePencairanSaldo",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

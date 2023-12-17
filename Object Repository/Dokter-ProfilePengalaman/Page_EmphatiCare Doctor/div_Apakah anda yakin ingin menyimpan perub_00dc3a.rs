@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Apakah anda yakin ingin menyimpan perub_00dc3a</name>
+   <tag></tag>
+   <elementGuidId>408e6f44-a9da-4478-a81d-48c867632b9e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.modal.show</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/div/div/div[5]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ee3bef48-fe39-499e-8bd6-7c6fedabb3ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal show</value>
+      <webElementGuid>1ca3e21e-a862-4b53-aee5-804c8e23decb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>271e47b6-9254-4db6-a41d-6fca42c7ed74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>dialog</value>
+      <webElementGuid>6bdcc2f4-56e2-4d43-860a-ef9fc033f8ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Apakah anda yakin ingin menyimpan perubahan?Yakin ingin menyimpan perubahan?Simpan PerubahanBatal</value>
+      <webElementGuid>014d889b-b1eb-43a8-b8a9-008eaf3891c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;pengalaman&quot;]/div[@class=&quot;container justify-content-center&quot;]/div[@class=&quot;modal-profile&quot;]/div[@class=&quot;modal show&quot;]</value>
+      <webElementGuid>77f25b0c-392a-41ed-be81-6491d46798ca</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div/div[5]/div[2]</value>
+      <webElementGuid>d0259d5f-0eb5-42e4-8d09-b99753ae5280</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan Perubahan'])[1]/following::div[3]</value>
+      <webElementGuid>143ed654-ef44-473d-a179-7cfd23bf68a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+ Tambah Data'])[1]/following::div[5]</value>
+      <webElementGuid>59a8d58f-62d1-492d-877f-ffd21e7281f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div[2]</value>
+      <webElementGuid>ed415e4b-8993-46fd-8c4d-aff035d9f24c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Apakah anda yakin ingin menyimpan perubahan?Yakin ingin menyimpan perubahan?Simpan PerubahanBatal' or . = 'Apakah anda yakin ingin menyimpan perubahan?Yakin ingin menyimpan perubahan?Simpan PerubahanBatal')]</value>
+      <webElementGuid>9b1ba085-71b2-46ae-b119-20e6b8bbdbf3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

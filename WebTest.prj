@@ -6,6 +6,7 @@
    <UUID>e8ce14e9-8a18-42dd-b9a0-c16b692c1076</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\javaproject\clone capstone\web-test\qe-capstone\WebTest.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

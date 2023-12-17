@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Gabung Sebagai Konselor</name>
+   <tag></tag>
+   <elementGuidId>ac922e9b-c2c3-4f7c-95d9-2cb07196006d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='footer']/div/div/div[3]/div/a[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a:nth-of-type(4)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>790be628-f8e2-4ee7-806f-64aaf0d45b1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://empathicare-dokter.vercel.app/</value>
+      <webElementGuid>c3e66ffb-403c-414a-a0ae-9c1f4361b0d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Gabung Sebagai Konselor </value>
+      <webElementGuid>32015e25-8372-4886-9ea3-aa03eaaa84ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;footer&quot;)/div[@class=&quot;footer-content p-5&quot;]/div[@class=&quot;row  row-cols-lg-4 row-cols-md-2 row-cols-1 d-flex justify-content-between&quot;]/div[@class=&quot;col d-flex flex-column align-items-md-center&quot;]/div[@class=&quot;text-start&quot;]/a[4]</value>
+      <webElementGuid>5347a432-8686-41e7-b204-3b0060369d8e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='footer']/div/div/div[3]/div/a[4]</value>
+      <webElementGuid>651f82cf-3aa9-46e8-bf1b-42b33842963d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Gabung Sebagai Konselor')]</value>
+      <webElementGuid>257555c5-3f4c-46a6-950c-a4b70660fc44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tentang Kami'])[1]/following::a[4]</value>
+      <webElementGuid>a8a6f651-4a49-4e20-a8cb-c55368a1571c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Layanan Kami'])[1]/following::a[5]</value>
+      <webElementGuid>222e7053-4d89-4e72-a076-b1bb5b570abd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lainnya'])[1]/preceding::a[1]</value>
+      <webElementGuid>ae8bcade-dcbe-4367-8686-2d39e7e74a25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Gabung Sebagai Konselor']/parent::*</value>
+      <webElementGuid>1071811b-8cbd-4518-b105-6c1632b817d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://empathicare-dokter.vercel.app/')]</value>
+      <webElementGuid>896d5fc0-47a6-47d7-95c7-2c321abcb318</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[4]</value>
+      <webElementGuid>d4c5aea6-0bf5-4fe2-bbf2-03d4252fb81d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'https://empathicare-dokter.vercel.app/' and (text() = 'Gabung Sebagai Konselor ' or . = 'Gabung Sebagai Konselor ')]</value>
+      <webElementGuid>6fa65b27-bbbe-4738-8ce7-d10e3e5e8d3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -17,11 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-Login.feature')
+//CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-Login.feature')
+//
+//CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-LandingPageDokter.feature')
+//
+//CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-DashboardNotifikasiChatBot.feature')
+//
+//CucumberKW.runFeatureFile('Include/features/Dokter/User-LandingPageUser.feature')
 
-CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-LandingPageDokter.feature')
+//CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-ChatVideoCallViaZoom.feature')
 
-CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-DashboardNotifikasiChatBot.feature')
+CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-ProfilePengalaman.feature')
 
 CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-TransactionHistory.feature')
 

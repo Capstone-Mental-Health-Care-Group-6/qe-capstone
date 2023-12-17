@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "837DE6DDFECEACBE12342EE93ECFCE2A",
+  "keywordFileContentHash": "19718C426F2E34261D28F896AFE69941",
   "keywordClasses": [
     {
       "name": "dokter.TransactionHistory",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

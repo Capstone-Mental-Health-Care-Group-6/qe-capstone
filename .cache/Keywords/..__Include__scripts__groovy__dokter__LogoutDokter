@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "32EB2A43831252BB807E0187ACE8BF86",
+  "keywordFileContentHash": "FF318543ADB4B6E0BA06A1DB88EBDDA1",
   "keywordClasses": [
     {
       "name": "dokter.LogoutDokter",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

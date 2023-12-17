@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Selanjutnya</name>
+   <tag></tag>
+   <elementGuidId>8f21994e-9b73-4a0c-b5de-80ad931e5421</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='testimonies']/div/div[2]/div[2]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.float-end.border-0</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>7909663c-9c54-4175-8b46-c7177ad53025</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn float-end border-0</value>
+      <webElementGuid>32d44187-c895-41dc-bef1-c22f0d4bfe67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Selanjutnya </value>
+      <webElementGuid>9151081b-1ac9-49d9-9b49-49d024c2028b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;testimonies&quot;)/div[@class=&quot;row justify-content-center row-cols-lg-2 row-cols-1&quot;]/div[@class=&quot;col col-lg-8  d-grid justify-content-center align-items-center&quot;]/div[@class=&quot;button-testimoni w-100&quot;]/button[@class=&quot;btn float-end border-0&quot;]</value>
+      <webElementGuid>af2408a2-4617-48e4-b2b7-d7c2ea37a38a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='testimonies']/div/div[2]/div[2]/button</value>
+      <webElementGuid>b5932516-225f-46c8-9b24-ea75703c8670</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yang Client Kami Katakan Tentang Kami'])[1]/following::button[1]</value>
+      <webElementGuid>61c695ff-9d55-4a78-ab99-a112e5ea305f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Psikolog Industri &amp; Organisasi | Spesialis Pengembangan Diri'])[3]/following::button[1]</value>
+      <webElementGuid>2342beeb-202b-4a74-961e-de514bb9ac2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Telah Dipercaya oleh Berbagai Industri'])[1]/preceding::button[1]</value>
+      <webElementGuid>b809ca67-9652-44e2-91a5-ef2d00899e0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Layanan Kami'])[1]/preceding::button[1]</value>
+      <webElementGuid>e8c22e95-5129-4c94-8c4b-4cacee3768b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Selanjutnya']/parent::*</value>
+      <webElementGuid>2978a0ac-fb1b-4060-bef3-98b2f9718eca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/button</value>
+      <webElementGuid>7257c0f3-58d1-4a6c-bbc9-df2c4dd038b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Selanjutnya ' or . = 'Selanjutnya ')]</value>
+      <webElementGuid>fa75fa4a-617f-4369-9b27-bb18356e6664</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -17,7 +17,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1702661837389</id>
+=======
+			<id>1702659946031</id>
+>>>>>>> 51f7d4efd1199967d95a9cf96956cf02ddaf49af
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +30,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1702661837400</id>
+=======
+			<id>1702659946031</id>
+>>>>>>> 51f7d4efd1199967d95a9cf96956cf02ddaf49af
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +43,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1702737600873</id>
+=======
+			<id>1702789737640</id>
+>>>>>>> 51f7d4efd1199967d95a9cf96956cf02ddaf49af
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,7 +56,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1702737600899</id>
+=======
+			<id>1702789737651</id>
+>>>>>>> 51f7d4efd1199967d95a9cf96956cf02ddaf49af
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -53,7 +69,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1702488446281</id>
+=======
+			<id>1702814740797</id>
+>>>>>>> 51f7d4efd1199967d95a9cf96956cf02ddaf49af
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -62,6 +82,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1702488446306</id>
 			<name></name>
 			<type>6</type>
@@ -405,6 +426,9 @@
 		</filter>
 		<filter>
 			<id>1702828155851</id>
+=======
+			<id>1702814740808</id>
+>>>>>>> 51f7d4efd1199967d95a9cf96956cf02ddaf49af
 			<name></name>
 			<type>6</type>
 			<matcher>

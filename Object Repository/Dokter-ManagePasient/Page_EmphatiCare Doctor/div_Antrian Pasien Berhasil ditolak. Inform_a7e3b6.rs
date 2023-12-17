@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Antrian Pasien Berhasil ditolak. Inform_a7e3b6</name>
+   <tag></tag>
+   <elementGuidId>26a6ce15-e50a-460e-a611-42c59aa2ab81</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/section[2]/div[5]/div/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.go3958317564</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f36ca848-8f81-4488-9ef5-693ef37a6e4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>status</value>
+      <webElementGuid>2fd43514-8a87-4cbd-a932-8b820ee05aa1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-live</name>
+      <type>Main</type>
+      <value>polite</value>
+      <webElementGuid>99c18f1a-c780-4252-a91f-76b5764677b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>go3958317564</value>
+      <webElementGuid>28b033dc-f219-44a9-80d7-d4b11ad97de9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Antrian Pasien Berhasil ditolak. Informasi ini akan disampaikan ke user</value>
+      <webElementGuid>31bd2d0f-f9b9-42cf-b074-70efe9d81c76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;wrapper__laporan__Mingguan bg-white mt-2&quot;]/div[5]/div[@class=&quot;go4109123758&quot;]/div[@class=&quot;go2072408551 custom-toast-payment&quot;]/div[@class=&quot;go3958317564&quot;]</value>
+      <webElementGuid>715a0a26-9f9a-4971-9a6d-c513c03b4d36</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section[2]/div[5]/div/div/div[2]</value>
+      <webElementGuid>0060563d-1f93-4ecf-972e-d65b202e30de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tolak'])[2]/following::div[8]</value>
+      <webElementGuid>e885a04a-3c59-4641-93b4-ec507964da71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Terima'])[1]/following::div[9]</value>
+      <webElementGuid>0a0bb70c-ff41-4fa7-b446-7f48179e3696</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama'])[1]/preceding::div[1]</value>
+      <webElementGuid>28c2b2de-c767-4c44-b9e8-6b0971beb8f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluhan'])[1]/preceding::div[2]</value>
+      <webElementGuid>b1b39c91-27a8-4178-b951-1df05ee33427</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Antrian Pasien Berhasil ditolak. Informasi ini akan disampaikan ke user']/parent::*</value>
+      <webElementGuid>328688bf-9018-44d8-bcb3-31e81436242a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/div[2]</value>
+      <webElementGuid>6b879b8b-ee6f-4c25-9942-b5bca76d11e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Antrian Pasien Berhasil ditolak. Informasi ini akan disampaikan ke user' or . = 'Antrian Pasien Berhasil ditolak. Informasi ini akan disampaikan ke user')]</value>
+      <webElementGuid>ef432aa4-b367-4f80-824e-360638ba719b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

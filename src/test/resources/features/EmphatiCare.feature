@@ -383,7 +383,7 @@ Feature: Emphati Care
     Then I receive a valid data response for Bundle Invalid Endpoint with HTTP status code 404 Not Found
 
   # [Positive] POST - Create Bundle
-  Scenario: User successfully creates a bundle
+#  Scenario: User successfully creates a bundle
 #    Given I set the POST endpoint for creating a bundle
 #    When I send an HTTP POST request Create Bundle
 #    Then I receive a valid data response for Create Bundle with HTTP status code 201 Created
@@ -401,19 +401,19 @@ Feature: Emphati Care
 #    Then I receive a valid data response for Create Bundle Validation File Error with HTTP status code 400 Bad Request
 
     # [Negative] POST - Create Bundle Validation File Invalid Type
-  Scenario: User fails to create a bundle due to invalid file type
+#  Scenario: User fails to create a bundle due to invalid file type
 #    Given I set the POST endpoint for Create Bundle Validation File Invalid Type
 #    When I send an HTTP POST request with a file of invalid type for Create Bundle Validation File Invalid Type
 #    Then I receive a valid data response for Create Bundle Validation File Invalid Type with HTTP status code 400 Bad Request
 
 # [Negative] POST - Create Bundle Validation File Size Error
-  Scenario: User fails to create a bundle due to file size error
+#  Scenario: User fails to create a bundle due to file size error
 #    Given I set the POST endpoint for Create Bundle Validation File Size Error
 #    When I send an HTTP POST request with a file exceeding size limit for Create Bundle Validation File Size Error
 #    Then I receive a valid data response for Create Bundle Validation File Size Error with HTTP status code 400 Bad Request
 
 # [Negative] POST - Create Bundle Invalid Endpoint
-  Scenario: User fails to create a bundle with an invalid endpoint
+#  Scenario: User fails to create a bundle with an invalid endpoint
 #    Given I set the POST endpoint for creating a bundle with an invalid endpoint
 #    When I send an HTTP POST request for Create Bundle Invalid Endpoint
 #    Then I receive a valid data response for Create Bundle Invalid Endpoint with HTTP status code 404 Not Found
@@ -443,13 +443,13 @@ Feature: Emphati Care
     Then I receive a valid data response for Get By ID Invalid Endpoint with HTTP status code 404 Not Found
 
   # [Positive] PUT - Update Bundle Success With File Update
-  Scenario: User successfully updates a bundle With File Update
+#  Scenario: User successfully updates a bundle With File Update
 #    Given I set the PUT endpoint for updating a bundle With File Update
 #    When I send an HTTP PUT request with valid data for Update Bundle Success With File Update
 #    Then I receive a valid data response for Update Bundle Success With File Update with HTTP status code 200 OK
 
   # [Positive] PUT - Update Bundle Success But File Not Update
-  Scenario: User successfully updates a bundle But File Not Update
+#  Scenario: User successfully updates a bundle But File Not Update
 #    Given I set the PUT endpoint for updating a bundle With File Not Update
 #    When I send an HTTP PUT request with valid data for Update Bundle Success But File Not Update
 #    Then I receive a valid data response for Update Bundle Success But File Not Update with HTTP status code 200 OK
@@ -461,7 +461,7 @@ Feature: Emphati Care
     Then I receive a valid data response with HTTP status code 400 Bad Request
 
 # [Negative] PUT - Update Bundle Invalid Endpoint
-  Scenario: User fails to update a bundle with an invalid endpoint
+#  Scenario: User fails to update a bundle with an invalid endpoint
 #    Given I set the PUT endpoint for updating a bundle with an invalid endpoint
 #    When I send an HTTP PUT request for Update Bundle Invalid Endpoint
 #    Then I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found
@@ -484,11 +484,10 @@ Feature: Emphati Care
     When I send an HTTP DELETE request with an invalid endpoint
     Then I receive a valid data response for Delete Bundle Invalid Endpoint with HTTP status code 404 Not Found
 
-
-    # ===========================WEB DOCTOR ARTICLE===========================
+# ===========================WEB DOCTOR ARTICLE===========================
 
     # [Positive] POST - Success Create Article Doctor
-  Scenario: User creating a new articles doctor with a valid endpoint
+#  Scenario: User creating a new articles doctor with a valid endpoint
 #    Given I set a POST request to a valid endpoint for creating a new articles doctor
 #    When I send the POST request to create a new articles doctor
 #    Then I receive an HTTP response with code 201 for creating a new articles doctor
@@ -506,7 +505,7 @@ Feature: Emphati Care
     Then I receive an HTTP response with code 400 for creating a invalid user input
 
   # [Positive] PUT - Success Update Article Doctor
-  Scenario: User Update articles doctor with Valid Endpoint
+#  Scenario: User Update articles doctor with Valid Endpoint
 #    Given I set a valid PUT endpoint Update articles doctor
 #    When I sends a PUT HTTP request Update articles doctor
 #    Then I receives an HTTP response code 200 with valid endpoint for update articles doctor
@@ -529,7 +528,7 @@ Feature: Emphati Care
     When I send an HTTP GET request to fetch articles doctor using a valid endpoint
     Then I should receive a valid HTTP response with status code 200 for articles doctor
 
-    # ===========================WEBSITE_DOKTER WITHDRAW BALANCE===========================
+# ===========================WEBSITE_DOKTER WITHDRAW BALANCE===========================
 
     # [Positive] POST - Add Withdraw
   Scenario: User adds a withdrawal successfully
@@ -704,7 +703,7 @@ Feature: Emphati Care
     Then I receive a response status 404 Not Found for Patient By ID
 
     # [Positive] PUT - Update Profile
-  Scenario: User updates profile successfully
+#  Scenario: User updates profile successfully
 #    Given I set the PUT endpoint for updating the user profile
 #    When I send an HTTP PUT request with valid parameters and baseURL for updating the user profile
 #    Then I receive a valid data response for updating the user profile with HTTP status code 200 OK
@@ -728,7 +727,7 @@ Feature: Emphati Care
     Then I receive a valid data response for updating the user status with HTTP status code 200 OK
 
     # [Negative] PUT - Update Profile Invalid Endpoint
-  Scenario: User attempts to update profile with an invalid endpoint
+#  Scenario: User attempts to update profile with an invalid endpoint
 #    Given I set an invalid PUT endpoint for updating the user profile
 #    When I send an HTTP PUT request with invalid baseURL
 #    Then I receive an error response with HTTP status code 404 Not Found

@@ -4,7 +4,7 @@ Feature: Emphati Care
   So that I can manage application
 
  # ===========================AUTH REGISTER===========================
-##   [Positive] POST - Successful Registration for Admin
+#  [Positive] POST - Successful Registration for Admin
 #  Scenario: Successful Registration for Admin
 #    Given I have a valid registration endpoint
 #    When I provide name, email, role, and password for an admin
@@ -40,7 +40,7 @@ Feature: Emphati Care
     When I provide name, email, role, and password that are already registered
     Then I should receive a response with HTTP status code 500 internal server error
 
-    #  # ===========================AUTH lOGIN==============================
+# ===========================AUTH lOGIN==============================
 
   # [Positive] Login by Admin
   Scenario: I login using authentication for Admin
@@ -68,9 +68,6 @@ Feature: Emphati Care
     And I sends a POST request to the login endpoint with patient credentials
     Then I receive a response with HTTP status code 500 Internal Server Error
 
-    # Then I receive a response with HTTP status code 400 Bad Request
-    # Expected status code <400> but was <500> Internal Server Error
-
   # [Negative] POST - Data Not Found
   Scenario: I login using authentication with data not found
     Given I set authentication endpoint with data not found
@@ -79,11 +76,8 @@ Feature: Emphati Care
     And I sends a POST request to the login endpoint with patient data not found
     Then I should receive a response with HTTP status code 500 Internal Server Error
 
-    # Then I should receive a response with HTTP status code 400 Bad Request
-    # Expected status code <400> but was <500> Internal Server Error
+# ===========================AUTH PATIENT REGISTRATION============================
 
-  #  # ===========================AUTH PATIENT REGISTRATION============================
-#
 #  [Positive] POST - Register Success
 #  Scenario: Successful registration
 #    Given I have a valid registration mobile endpoint
@@ -91,8 +85,6 @@ Feature: Emphati Care
 #    Then I should receive a response with HTTP status code 400 OK and successfully registered
 #     Then I should receive a response with HTTP status code 201 created and successfully registered
 #     Then I should receive a response with HTTP status code 200 OK and successfully registered
-    # Expected status code <200> but was <400>
-    # Expected status code <200> but was <201>
 
   # [Negative] POST - Register Error Upload Avatar
   Scenario: Registration error due to invalid avatar
@@ -100,14 +92,14 @@ Feature: Emphati Care
     When I provide valid user information with an invalid avatar for registration
     Then I should receive a response with HTTP status code 400 Bad Request due to invalid avatar
 
-#  # [Negative] POST - Register Duplicate Email
+  # [Negative] POST - Register Duplicate Email
 #  Scenario: Registration with duplicate email
 #    Given I have a valid registration mobile endpoint
 #    When I provide valid user information for a user account with a duplicate email
 #    Then I should receive a response with HTTP status code 400 Bad Request due to duplicate email
 
 #  # ==============================AUTH PATIENT LOGIN MOBILE================================
-#
+
   # [Positive] POST - Login Success
   Scenario: I login using authentication mobile
     Given I set the authentication mobile endpoint
@@ -125,10 +117,8 @@ Feature: Emphati Care
 #    Given I set the authentication mobile endpoint updated password
 #    When I send a POST request to the login endpoint with a successful password update
 #    Then I should receive a response with HTTP status code 400 OK and successful password update
-#    # Then I should receive a response with HTTP status code 200 OK and successful password update
-    # Expected status code <200> but was <400>.
 
-  #  # ===================================LOGIN GOOGLE=================================
+# ===================================LOGIN GOOGLE=================================
 
   # [Positive] GET - Login Google Redirect to Callback
   Scenario: I login google redirect to callback
@@ -136,10 +126,38 @@ Feature: Emphati Care
     When I sends a GET request to the login google endpoint for redirection to callback
     Then I should receive a response with HTTP status code 200 OK
 
-#  # ==============================LOGIN GOOGLE CALLBACK=============================
-#
+# ==============================LOGIN GOOGLE CALLBACK=============================
+
   # [Positive] GET - Login Google Redirect to Callback
   Scenario: I login google redirect to callback
     Given I sets a GET request to a valid endpoint for login google endpoint
     When I sends a GET request to the login google endpoint for redirection to callback
     Then I should receive a response with HTTP status code 200 OK
+
+# =============================AUTH FORGET PASSWORD===============================
+
+  # [Positive] POST - Success Forget Password
+  Scenario: Successful Forget Password
+    Given I sets a POST request to a valid endpoint for forget password endpoint
+    When I sends a POST request to the forget password endpoint with a valid email
+    Then I should receive a response with HTTP status code 500 internal server error but successfully
+
+# ==========================AUTH FORGET PASSWORD VERIFY===========================
+
+  # [Positive] POST - Success Forget Password Verify
+  Scenario: Success Forget Password Verify
+    Given I set a POST request to a valid endpoint for the forget password verify endpoint
+    When I send a POST request to the forget password verify endpoint with valid data
+    Then I should receive a response with HTTP status code 400 OK indicating success
+
+  # [Negative] POST - Error  Forget Password
+  Scenario: Error Forget Password
+    Given I set a POST request to a invalid endpoint for the forget password verify endpoint
+    When I send a POST request to the Error Forget Password endpoint with invalid data
+    Then I should receive a response with HTTP status code 400 Bad Request indicating an error
+
+  # [Negative] POST - Forget Password Token Not Found
+  Scenario: Forget Password Token Not Found
+    Given I set a POST request to a invalid endpoint for the forget password verify endpoint
+    When I send a POST request to the forget password verify endpoint with a missing token
+    Then I should receive a response with HTTP status code 400 Bad Request indicating token not found

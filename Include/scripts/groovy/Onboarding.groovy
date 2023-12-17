@@ -42,35 +42,23 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class Login {
 
-	//Login-ValidCredentials//
-	@Given("I want to log in with valid email and password")
-	def inputEmailPassword() {
-		Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 0)
+class Onboarding {
+	/**
+	 * The step definitions below match with Katalon sample Gherkin steps
+	 */
+	@Given("I want to write a step with (.*)")
+	def I_want_to_write_a_step_with_name(String name) {
+		println name
 	}
 
-	@When("I enter the (.*) and (.*)")
-	def interEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), 'user@gmail.com', 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), 'user12345', 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
+	@When("I check for the (\\d+) in step")
+	def I_check_for_the_value_in_step(int value) {
+		println value
 	}
 
-	@Then("I should be logged in to the application")
-	def I_should_be_logged_in_to_the_application() {
-		Mobile.verifyElementVisible(findTestObject('Object Repository/LoginFeature/Logo_emphatiCare'), 0)
-		Mobile.closeApplication()
+	@Then("I verify the (.*) in step")
+	def I_verify_the_status_in_step(String status) {
+		println status
 	}
-
-	//Login-InvalidCredentials//
-	
-	//RegisterLink//
-	
-	//GoogleButton//
-	
-	
-	
 }

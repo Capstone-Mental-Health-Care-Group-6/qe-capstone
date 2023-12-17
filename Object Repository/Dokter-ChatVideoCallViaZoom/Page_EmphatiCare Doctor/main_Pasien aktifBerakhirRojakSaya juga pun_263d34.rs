@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>main_Pasien aktifBerakhirRojakSaya juga pun_263d34</name>
+   <tag></tag>
+   <elementGuidId>c788ff16-0e2e-4b69-8ac5-463d24a1eb1a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>main.main</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>main</value>
+      <webElementGuid>1ff5afc7-434e-485e-a76f-459101282a6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>main</value>
+      <webElementGuid>8bb4b03d-371c-4a89-9ee3-96608330cf31</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pasien aktifBerakhirRojakSaya juga punya masalah hubungan... Mawardiaku selalu cemas Putribapak saya hamil Rojakonline Susah TidurAkhiri ChatHapus Chatsesi 1Halo selamat pagi rojakSelamat pagi Dok. Saya merasa sangat sulit tidur akhir-akhir ini. Saya terjaga sepanjang malam, dan ini mulai mengganggu hidup saya.Pertama, bisakah Anda ceritakan lebih banyak tentang kesulitan tidur yang Anda alami? Apakah ini telah berlangsung lama?Ya, masalah tidur ini sudah berlangsung sekitar sebulan. Saya sulit tidur, sering terbangun tengah malam, dan terkadang tidak bisa tidur lagi. Ini membuat saya merasa lelah sepanjang hari dan sulit berkonsentrasi.Saya mengerti, itu pasti sangat mengganggu. Apakah ada faktor khusus yang mungkin menjadi pemicu masalah tidur Anda? Misalnya, stres, kekhawatiran, atau perubahan dalam rutinitas harian Anda?Saya juga punya masalah hubungan pribadi akhir-akhir ini, yang membuat saya khawatir.Sebelum saya lanjut untuk menganalisa Anda saya menyarankan untuk membaca  ARTIKEL_GANGGUAN_TIDURSesi 1SelesaiSenin, 27-11-202310.00 Wib 60 MenitDokter : Helen DJPasien : mawardiSiap untuk memulai perjalanan konseling chat sesi 1 Anda? Klik link GMeet di bawah ini, dan mari kita mulai perbincangan yang penuh makna.Gabung GmeetSesi 2Belum SelesaiSelasa, 28-11-202310.00 Wib 60 MenitDokter : Helen DJPasien : mawardiSiap untuk memulai perjalanan konseling chat sesi 1 Anda? Klik link GMeet di bawah ini, dan mari kita mulai perbincangan yang penuh makna.Gabung Gmeet</value>
+      <webElementGuid>726f14af-c5a5-447b-8cf8-783b48ab028b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]</value>
+      <webElementGuid>f5de6b0c-4b88-4d7c-b922-2b73fe2b3746</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main</value>
+      <webElementGuid>d2ddd3fc-46b9-4646-94be-17111c59f7c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::main[1]</value>
+      <webElementGuid>490c4702-9096-471f-ad36-bb2587bb5cc4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak'])[1]/following::main[1]</value>
+      <webElementGuid>475a6fc7-bc5f-4a47-9d2d-86fd6f25f4f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main</value>
+      <webElementGuid>729a5c0d-bd63-4934-b38f-8aa802872fe3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//main[(text() = 'Pasien aktifBerakhirRojakSaya juga punya masalah hubungan... Mawardiaku selalu cemas Putribapak saya hamil Rojakonline Susah TidurAkhiri ChatHapus Chatsesi 1Halo selamat pagi rojakSelamat pagi Dok. Saya merasa sangat sulit tidur akhir-akhir ini. Saya terjaga sepanjang malam, dan ini mulai mengganggu hidup saya.Pertama, bisakah Anda ceritakan lebih banyak tentang kesulitan tidur yang Anda alami? Apakah ini telah berlangsung lama?Ya, masalah tidur ini sudah berlangsung sekitar sebulan. Saya sulit tidur, sering terbangun tengah malam, dan terkadang tidak bisa tidur lagi. Ini membuat saya merasa lelah sepanjang hari dan sulit berkonsentrasi.Saya mengerti, itu pasti sangat mengganggu. Apakah ada faktor khusus yang mungkin menjadi pemicu masalah tidur Anda? Misalnya, stres, kekhawatiran, atau perubahan dalam rutinitas harian Anda?Saya juga punya masalah hubungan pribadi akhir-akhir ini, yang membuat saya khawatir.Sebelum saya lanjut untuk menganalisa Anda saya menyarankan untuk membaca  ARTIKEL_GANGGUAN_TIDURSesi 1SelesaiSenin, 27-11-202310.00 Wib 60 MenitDokter : Helen DJPasien : mawardiSiap untuk memulai perjalanan konseling chat sesi 1 Anda? Klik link GMeet di bawah ini, dan mari kita mulai perbincangan yang penuh makna.Gabung GmeetSesi 2Belum SelesaiSelasa, 28-11-202310.00 Wib 60 MenitDokter : Helen DJPasien : mawardiSiap untuk memulai perjalanan konseling chat sesi 1 Anda? Klik link GMeet di bawah ini, dan mari kita mulai perbincangan yang penuh makna.Gabung Gmeet' or . = 'Pasien aktifBerakhirRojakSaya juga punya masalah hubungan... Mawardiaku selalu cemas Putribapak saya hamil Rojakonline Susah TidurAkhiri ChatHapus Chatsesi 1Halo selamat pagi rojakSelamat pagi Dok. Saya merasa sangat sulit tidur akhir-akhir ini. Saya terjaga sepanjang malam, dan ini mulai mengganggu hidup saya.Pertama, bisakah Anda ceritakan lebih banyak tentang kesulitan tidur yang Anda alami? Apakah ini telah berlangsung lama?Ya, masalah tidur ini sudah berlangsung sekitar sebulan. Saya sulit tidur, sering terbangun tengah malam, dan terkadang tidak bisa tidur lagi. Ini membuat saya merasa lelah sepanjang hari dan sulit berkonsentrasi.Saya mengerti, itu pasti sangat mengganggu. Apakah ada faktor khusus yang mungkin menjadi pemicu masalah tidur Anda? Misalnya, stres, kekhawatiran, atau perubahan dalam rutinitas harian Anda?Saya juga punya masalah hubungan pribadi akhir-akhir ini, yang membuat saya khawatir.Sebelum saya lanjut untuk menganalisa Anda saya menyarankan untuk membaca  ARTIKEL_GANGGUAN_TIDURSesi 1SelesaiSenin, 27-11-202310.00 Wib 60 MenitDokter : Helen DJPasien : mawardiSiap untuk memulai perjalanan konseling chat sesi 1 Anda? Klik link GMeet di bawah ini, dan mari kita mulai perbincangan yang penuh makna.Gabung GmeetSesi 2Belum SelesaiSelasa, 28-11-202310.00 Wib 60 MenitDokter : Helen DJPasien : mawardiSiap untuk memulai perjalanan konseling chat sesi 1 Anda? Klik link GMeet di bawah ini, dan mari kita mulai perbincangan yang penuh makna.Gabung Gmeet')]</value>
+      <webElementGuid>169e7dda-673a-44b9-be53-f188f99c6b7a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

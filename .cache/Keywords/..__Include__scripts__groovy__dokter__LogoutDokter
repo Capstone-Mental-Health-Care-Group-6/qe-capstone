@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "keywordFileContentHash": "F48A6EC02245EF10EEE1ADF7A6A21C2B",
+=======
+  "keywordFileContentHash": "FF318543ADB4B6E0BA06A1DB88EBDDA1",
+>>>>>>> 4542b31ec1f250e8cf013ba63976224e3b676496
   "keywordClasses": [
     {
       "name": "dokter.LogoutDokter",

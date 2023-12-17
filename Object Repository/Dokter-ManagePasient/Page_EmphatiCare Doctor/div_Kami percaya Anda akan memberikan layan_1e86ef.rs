@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Kami percaya Anda akan memberikan layan_1e86ef</name>
+   <tag></tag>
+   <elementGuidId>cdac627c-3612-40c1-99cf-09eca505ecb9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-terima-pasien']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-terima-pasien > div.modal-dialog.modal-dialog-centered.modal-lg > div.modal-content</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a5ebbbac-2c63-4b40-b07e-8d0d8d56b20d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-content</value>
+      <webElementGuid>66dfd588-1f09-4767-bee3-be74005feb06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Kami percaya Anda akan memberikan layanan yang luar biasa. Silakan berikan perawatan terbaik, dengan perhatian dan keahlian Anda.Oke</value>
+      <webElementGuid>41f2ea84-a24e-4182-93d5-56a31e54c008</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-terima-pasien&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered modal-lg&quot;]/div[@class=&quot;modal-content&quot;]</value>
+      <webElementGuid>f9ea9c0d-f8f7-4782-a289-82f074ecc0ea</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-terima-pasien']/div/div</value>
+      <webElementGuid>4773cb63-3e37-49f4-9873-fc0ffd79ea11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tolak'])[1]/following::div[3]</value>
+      <webElementGuid>108690ce-cb0a-4297-a543-81ad8701ee6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tuliskan alasan Penolakan'])[1]/following::div[5]</value>
+      <webElementGuid>8dac8151-15f8-47b8-9dda-1f3e24cab123</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Beth Flatley'])[1]/preceding::div[8]</value>
+      <webElementGuid>86b03616-aeb4-45e8-814c-fa653e49969a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div</value>
+      <webElementGuid>fdc12365-967c-4a2e-9e1d-38736253ad08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Kami percaya Anda akan memberikan layanan yang luar biasa. Silakan berikan perawatan terbaik, dengan perhatian dan keahlian Anda.Oke' or . = 'Kami percaya Anda akan memberikan layanan yang luar biasa. Silakan berikan perawatan terbaik, dengan perhatian dan keahlian Anda.Oke')]</value>
+      <webElementGuid>db8c10b7-a999-4455-9386-f6a64267312f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

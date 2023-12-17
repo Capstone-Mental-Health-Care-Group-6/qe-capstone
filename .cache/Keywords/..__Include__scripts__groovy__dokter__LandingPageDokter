@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "CB31FF636032ED5C9102CF7FCF6DC070",
+  "keywordFileContentHash": "83317DF832B9C7A5684F0A190E5B3E5F",
   "keywordClasses": [
     {
       "name": "dokter.LandingPageDokter",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

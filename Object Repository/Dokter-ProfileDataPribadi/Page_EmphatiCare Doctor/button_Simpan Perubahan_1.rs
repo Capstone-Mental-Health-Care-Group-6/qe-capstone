@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Simpan Perubahan_1</name>
+   <tag></tag>
+   <elementGuidId>df46bb3c-1ae8-4ba1-a00a-c3da6e6cd016</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.modal-footer.border-0.d-flex.flex-column.align-items-center > button.btn.btn-primary</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[4]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ebd307ca-60c7-4024-bdfb-f180dddcc2f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>cb6a2075-2f74-4729-baa2-38d0bceecc5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary</value>
+      <webElementGuid>3a1a5142-770e-46fc-9b4b-c2d809d3acd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Simpan Perubahan</value>
+      <webElementGuid>df307c76-7825-419e-9216-53de575934ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;data-pribadi&quot;]/div[@class=&quot;modal-profile&quot;]/div[@class=&quot;modal show&quot;]/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content border-0&quot;]/div[@class=&quot;modal-footer border-0 d-flex flex-column align-items-center&quot;]/button[@class=&quot;btn btn-primary&quot;]</value>
+      <webElementGuid>d11a50ef-c15f-48a8-9221-2f454f1d662f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[4]</value>
+      <webElementGuid>613aae16-1aa5-47f4-bf89-dd3c90c71af3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div[4]/div[2]/div/div/div[3]/button</value>
+      <webElementGuid>acde5722-6476-459b-8d87-9f91931d4772</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apakah anda yakin ingin menyimpan perubahan?'])[1]/following::button[1]</value>
+      <webElementGuid>eecca2d3-ebdf-416d-88df-fdd6f3cc25c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan Perubahan'])[1]/following::button[1]</value>
+      <webElementGuid>43eebcf6-3bb5-400b-ba28-f5cba42af608</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::button[1]</value>
+      <webElementGuid>d31faf7a-fe47-439e-892f-7c1001eb8a71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]/div/div/div[3]/button</value>
+      <webElementGuid>02d7cc44-c529-469b-b834-8ea5069f7312</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Simpan Perubahan' or . = 'Simpan Perubahan')]</value>
+      <webElementGuid>fe0c4724-6f80-4291-a56d-13609946ea99</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

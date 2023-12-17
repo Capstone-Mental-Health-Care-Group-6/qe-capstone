@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button img,emoticon</name>
+   <tag></tag>
+   <elementGuidId>0ec8ea6d-03f3-41db-a929-8544c6aae24f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.dropdown-toggle.border-0 > img</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='chat-page']/div/div[2]/div/form/button/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>6abfd85c-3dcc-420b-8a29-2648d30d7082</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/assets/choiseChat-b1213969.svg</value>
+      <webElementGuid>1e5c6ee0-4179-4836-8a15-099769083473</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;chat-page&quot;)/div[@class=&quot;row d-flex justify-content-between&quot;]/div[@class=&quot;col col-lg-7 col-sm-8&quot;]/div[@class=&quot;chat-content  d-flex flex-column justify-content-between&quot;]/form[@class=&quot;input-chat d-flex&quot;]/button[@class=&quot;btn dropdown-toggle border-0&quot;]/img[1]</value>
+      <webElementGuid>60144d6d-fa8f-4a94-bd4b-7eb1fdd69f9d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='chat-page']/div/div[2]/div/form/button/img</value>
+      <webElementGuid>440d7bee-0478-4bed-bad5-9e3684946e4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/button/img</value>
+      <webElementGuid>090122c4-14e7-46c1-8cbb-2c2a3d658ac4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/assets/choiseChat-b1213969.svg']</value>
+      <webElementGuid>4831b953-c077-4039-9d7d-2e1938a5b3ab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

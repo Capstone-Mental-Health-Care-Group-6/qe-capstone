@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_About Us</name>
+   <tag></tag>
+   <elementGuidId>428778b1-69e1-49e4-ae94-edadffd9fdc2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbarNav']/ul/li[3]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c3d60829-4fd4-46fa-8569-7ce3c0ad91dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>nav-link </value>
+      <webElementGuid>7bc314f2-723d-4396-8ce0-a288d7ff709c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#conselors</value>
+      <webElementGuid>67e96aa9-69d1-4d90-acbd-d15d83a4783d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>About Us</value>
+      <webElementGuid>eed3ef74-1617-4c83-aa1e-c4c6a3423b7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbarNav&quot;)/ul[@class=&quot;navbar-nav mx-auto&quot;]/li[@class=&quot;nav-item&quot;]/a[@class=&quot;nav-link&quot;]</value>
+      <webElementGuid>bdfff05b-d7ec-4c51-af7b-f8370180b36f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbarNav']/ul/li[3]/a</value>
+      <webElementGuid>dba7dacb-2baa-4b64-8b44-1960dd8d8886</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'About Us')]</value>
+      <webElementGuid>5a31ef87-c8eb-4009-87b9-0aaef5b564ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Services'])[1]/following::a[1]</value>
+      <webElementGuid>ee7450da-4a59-4a14-ac6f-d7ad3280bde6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::a[2]</value>
+      <webElementGuid>f5df9437-06e9-41d2-acf8-bd7ee0c185fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download Sekarang'])[1]/preceding::a[1]</value>
+      <webElementGuid>b9247373-85ec-4a90-aeea-eb83d5fa65d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='About Us']/parent::*</value>
+      <webElementGuid>0c1592ed-d64c-4ac4-8b77-582b52725a68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '#conselors')]</value>
+      <webElementGuid>5e538d9f-9ccf-4a76-90f9-d7865bd80597</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/a</value>
+      <webElementGuid>8aafdefe-38f3-4e26-b73b-e3e411d3871c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#conselors' and (text() = 'About Us' or . = 'About Us')]</value>
+      <webElementGuid>fb9ceb74-bec0-4c37-aafe-d997afa7d6f7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

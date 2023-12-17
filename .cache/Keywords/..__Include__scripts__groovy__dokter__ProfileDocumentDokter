@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "keywordFileContentHash": "1AC10F69D9C8D5810063DAE632F5F3DE",
+=======
+  "keywordFileContentHash": "908330589BCF4CA690317A5818FACE6F",
+>>>>>>> 4542b31ec1f250e8cf013ba63976224e3b676496
   "keywordClasses": [
     {
       "name": "dokter.ProfileDocumentDokter",

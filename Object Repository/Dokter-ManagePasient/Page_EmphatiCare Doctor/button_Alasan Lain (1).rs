@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Alasan Lain (1)</name>
+   <tag></tag>
+   <elementGuidId>4ca366ed-d57c-4ffa-a4aa-3d8940fc0ece</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.col-md-6.col-lg-3.col-12 > div > button.w-100.btn.border-secondary-subtle.text-black.fw-medium</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id=''])[6]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>6cb16cd2-e45c-4b99-9b1f-2db75c8a7ec5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>95f684cd-2ded-4d1f-a7f6-7816bdc20356</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn  border-secondary-subtle text-black fw-medium</value>
+      <webElementGuid>fadb4795-3794-469a-8380-7dd3403ece82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Alasan Lain</value>
+      <webElementGuid>de582071-5504-40f7-b759-f883c1bc0d1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-tolak-pasien&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered modal-lg&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;row row-cols-lg-2 row-cols-1 g-2&quot;]/div[@class=&quot;col-md-6 col-lg-3 col-12&quot;]/div[1]/button[@class=&quot;w-100 btn  border-secondary-subtle text-black fw-medium&quot;]</value>
+      <webElementGuid>c38fdb32-38ba-4277-b511-4d227d9cdaf0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@id=''])[6]</value>
+      <webElementGuid>6bae77ba-fce2-4df6-bca0-fec9274a459d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-tolak-pasien']/div/div/div[2]/div[2]/div[4]/div/button</value>
+      <webElementGuid>ca354adf-8d62-48d5-baeb-d2c901958fc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dokter Ada Kegiatan Mendadak'])[1]/following::button[1]</value>
+      <webElementGuid>8460c58d-d5a1-4b9e-861c-9f41e4da10b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keterbatasan Waktu'])[1]/following::button[2]</value>
+      <webElementGuid>deb29b84-9a8b-4195-b5f9-9f49c39f2ad1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tuliskan alasan Penolakan'])[1]/preceding::button[1]</value>
+      <webElementGuid>dd040798-a6c8-4f17-819c-a7c8cddaaa86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tolak'])[1]/preceding::button[1]</value>
+      <webElementGuid>0486912e-0806-44fa-bfce-c8e7823fdc0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Alasan Lain']/parent::*</value>
+      <webElementGuid>1f4de119-d595-44c1-92a1-c5c180b28411</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div[4]/div/button</value>
+      <webElementGuid>ce5e3277-924a-48c2-89eb-d2c0ca42dd1f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Alasan Lain' or . = 'Alasan Lain')]</value>
+      <webElementGuid>51eb8791-7a5b-4295-93a4-f74e74730b1b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

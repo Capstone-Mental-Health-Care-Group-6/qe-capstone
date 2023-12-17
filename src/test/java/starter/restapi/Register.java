@@ -22,7 +22,7 @@ public class Register {
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "admin");
-        reqBody.put("email", "AdminAja1@gmail.com");
+        reqBody.put("email", "AdminAja4@gmail.com");
         reqBody.put("role", "admin");
         reqBody.put("password", "admin");
 
@@ -36,7 +36,7 @@ public class Register {
     public void NameEmailRoleAndPasswordForAnDoctor() {
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "Doctor");
-        reqBody.put("email", "DoctorAja1@gmail.com");
+        reqBody.put("email", "DoctorAja4@gmail.com");
         reqBody.put("role", "Doctor");
         reqBody.put("password", "password");
 
@@ -51,7 +51,7 @@ public class Register {
     public void NameEmailRoleAndPasswordForAnPatient() {
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "Patient");
-        reqBody.put("email", "Patient1@gmail.com");
+        reqBody.put("email", "Patient4@gmail.com");
         reqBody.put("role", "Patient");
         reqBody.put("password", "password");
 
@@ -92,9 +92,9 @@ public class Register {
 //        String email = "Admin6@gmail.com";
 
         JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "admin"); // Mengubah "fullname" menjadi "name"
+        reqBody.put("name", "admin");
         reqBody.put("email", "AdminAja@gmail.com");
-        reqBody.put("role", "admin"); // Menambahkan peran sebagai "admin"
+        reqBody.put("role", "admin");
         reqBody.put("password", "admin");
 
         SerenityRest.given()

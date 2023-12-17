@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Pencairan SaldoPilih Metode PembayaranB_3e6623</name>
+   <tag></tag>
+   <elementGuidId>736e03ca-32b6-4b7a-ad7d-0ea4964613cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-tarik-saldo']/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>aeb57900-81b2-47a4-8e7a-68b75fb56e6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-body p-5 d-flex flex-column </value>
+      <webElementGuid>6af90aa1-f843-457a-ae2a-df246c2446e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pencairan SaldoPilih Metode PembayaranBANK BCABANK BRIBANK BNIBANK MANDIRINama PenerimaNomor RekeningJumlah Saldo Rp 200.000-,Pilih Nominal PenarikanRp 50.000-,Rp 75.000-,Rp 100.000-,Rp 150.000-,Cairkan Dana</value>
+      <webElementGuid>9baf1130-7007-4ea0-b398-240ea7abafa9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-tarik-saldo&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered modal-md&quot;]/div[@class=&quot;modal-content rounded-4&quot;]/div[@class=&quot;modal-body p-5 d-flex flex-column&quot;]</value>
+      <webElementGuid>0079f355-a7b6-4b97-89cf-f6ff80e5141e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-tarik-saldo']/div/div/div</value>
+      <webElementGuid>fc30e536-be3c-40fc-8637-d38498456aff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pencairan Dana Telah Diproses'])[1]/following::div[4]</value>
+      <webElementGuid>85c23010-5cf6-4e2c-9995-ec1c46f9846c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pending'])[2]/following::div[16]</value>
+      <webElementGuid>ecd11a62-238f-4af9-9428-daf236f81bd4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div[2]/div[2]/div/div/div</value>
+      <webElementGuid>31ce73b0-b55f-490c-8277-6ce79cd4d069</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Pencairan SaldoPilih Metode PembayaranBANK BCABANK BRIBANK BNIBANK MANDIRINama PenerimaNomor RekeningJumlah Saldo Rp 200.000-,Pilih Nominal PenarikanRp 50.000-,Rp 75.000-,Rp 100.000-,Rp 150.000-,Cairkan Dana' or . = 'Pencairan SaldoPilih Metode PembayaranBANK BCABANK BRIBANK BNIBANK MANDIRINama PenerimaNomor RekeningJumlah Saldo Rp 200.000-,Pilih Nominal PenarikanRp 50.000-,Rp 75.000-,Rp 100.000-,Rp 150.000-,Cairkan Dana')]</value>
+      <webElementGuid>d97d4a80-18d9-4ac3-859b-e9986b3e2be4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

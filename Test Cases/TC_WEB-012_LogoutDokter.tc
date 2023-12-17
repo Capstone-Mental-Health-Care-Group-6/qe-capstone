@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_WEB-012_LogoutDokter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f85e2677-e4eb-474b-9b4b-1174c51f5972</testCaseGuid>
+</TestCaseEntity>

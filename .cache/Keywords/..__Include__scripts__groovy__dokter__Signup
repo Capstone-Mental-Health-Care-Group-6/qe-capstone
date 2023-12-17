@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "keywordFileContentHash": "7476D88BDF5F2857C08216CB1C2E65CE",
+=======
   "keywordFileContentHash": "F9E7E83B528C1687ECCC16052B439DDE",
+>>>>>>> 4542b31ec1f250e8cf013ba63976224e3b676496
   "keywordClasses": [
     {
       "name": "dokter.Signup",

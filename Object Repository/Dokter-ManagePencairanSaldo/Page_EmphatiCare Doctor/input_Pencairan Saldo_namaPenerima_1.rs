@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Pencairan Saldo_namaPenerima_1</name>
+   <tag></tag>
+   <elementGuidId>248df4d7-238e-4d62-a949-4f316a0f4fc4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@id='namaPenerima'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.nomor__rekening.mb-3.px-3 > #namaPenerima</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>e57858da-cf82-42dc-93d9-f2f600e32738</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>c7d04431-1e32-4262-b225-d255008743c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control fw-semibold border border-secondary px-3 rounded-3</value>
+      <webElementGuid>47d97c10-b23f-4be9-995b-cc0f6fabf59e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>namaPenerima</value>
+      <webElementGuid>1ed0d775-f061-460f-9366-a9e6197d3bb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>namaPenerima</value>
+      <webElementGuid>6f78a8e1-5436-4de4-a2b7-65c477f3923b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Masukan Nomor Rekening</value>
+      <webElementGuid>32a11752-5eb6-4d7f-90bd-1ef793226e64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-tarik-saldo&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered modal-md&quot;]/div[@class=&quot;modal-content rounded-4&quot;]/div[@class=&quot;modal-body p-5 d-flex flex-column&quot;]/form[1]/div[@class=&quot;nomor__rekening mb-3 px-3&quot;]/input[@id=&quot;namaPenerima&quot;]</value>
+      <webElementGuid>29076f58-0f4a-49f2-971b-25d3d20d3a39</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@id='namaPenerima'])[2]</value>
+      <webElementGuid>85496ec7-8c24-4436-821d-3a3b728719bb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-tarik-saldo']/div/div/div/form/div[3]/input</value>
+      <webElementGuid>034a0d9e-1212-46a3-9758-0bb2d8a6efe2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pencairan Saldo'])[3]/following::input[2]</value>
+      <webElementGuid>492b4a49-3d3a-40be-89ce-43603ffdb47c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pencairan Dana Telah Diproses'])[1]/following::input[2]</value>
+      <webElementGuid>24af588a-ccf9-4792-8618-f29fdaf1fc17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp 200.000-,'])[1]/preceding::input[1]</value>
+      <webElementGuid>94865e18-d469-4f9e-a9a8-02e22e030e83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cairkan Dana'])[1]/preceding::input[1]</value>
+      <webElementGuid>7f5c5a69-7a66-4498-bcfa-9c88b32edb1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/input</value>
+      <webElementGuid>7b833145-8cca-4d9e-93d0-94398a2ff441</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @id = 'namaPenerima' and @name = 'namaPenerima' and @placeholder = 'Masukan Nomor Rekening']</value>
+      <webElementGuid>c88e135e-365d-4855-8901-01711de4c66e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

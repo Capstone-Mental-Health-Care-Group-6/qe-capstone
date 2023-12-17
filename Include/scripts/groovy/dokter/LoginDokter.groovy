@@ -130,5 +130,4 @@ class LoginDokter {
 
 		WebUI.closeBrowser()
 	}
-
 }

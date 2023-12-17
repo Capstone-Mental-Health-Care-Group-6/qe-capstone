@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Publik</name>
+   <tag></tag>
+   <elementGuidId>65362fea-5e72-4ee8-aaba-0ab99a87060e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/div/div/div[2]/div/div/div/div/div[2]/div/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.m-0.text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b353d218-e99e-42cb-9db4-4d3010fa8f03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>m-0 text-primary</value>
+      <webElementGuid>d83d9f01-4f28-46e1-b0dc-0eac15a1cf40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Publik</value>
+      <webElementGuid>06cc39fa-b81e-4c91-ae18-377c17dedb36</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-3&quot;]/div[@class=&quot;container  rounded-2 py-4 my-4&quot;]/div[1]/div[@class=&quot;grid&quot;]/div[@class=&quot;row justify-content-center align-items-center g-2 mb-2&quot;]/div[@class=&quot;col text-status text-end text-end pe-2&quot;]/div[@class=&quot;btn m-0 p-0&quot;]/button[@class=&quot;nav-link&quot;]/span[@class=&quot;m-0 text-primary&quot;]</value>
+      <webElementGuid>ff370ccb-c6dc-49e3-875c-07c425cbb810</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div/div[2]/div/div/div/div/div[2]/div/button/span</value>
+      <webElementGuid>1a804bee-d483-4241-8baf-b9afd41ada5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Visibilitas'])[1]/following::span[1]</value>
+      <webElementGuid>53b15033-05a4-456b-b4a3-cd4f50f884c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan sebagai Draft'])[1]/following::span[1]</value>
+      <webElementGuid>e8392b50-c06d-4d38-b349-005055e34d99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Publik'])[2]/preceding::span[1]</value>
+      <webElementGuid>b6dbd142-f26f-4d51-a741-d09a55bdb048</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privat'])[1]/preceding::span[1]</value>
+      <webElementGuid>e29c3136-548b-416e-9063-124038027519</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div[2]/div/button/span</value>
+      <webElementGuid>216138e3-7d9e-48ba-9dc6-f537570c771c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Publik' or . = 'Publik')]</value>
+      <webElementGuid>f128c65d-8047-47c6-8a58-81d84cf81cab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

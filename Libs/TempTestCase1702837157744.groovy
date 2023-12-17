@@ -1,6 +1,5 @@
 import com.kms.katalon.core.main.TestCaseMain
 import com.kms.katalon.core.logging.KeywordLogger
-import groovy.lang.MissingPropertyException
 import com.kms.katalon.core.testcase.TestCaseBinding
 import com.kms.katalon.core.driver.internal.DriverCleanerCollector
 import com.kms.katalon.core.model.FailureHandling
@@ -19,7 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Katalon\\Include\\features\\Dokter\\Dokter-ProfileDataAkademik.feature\\20231217_012913\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TC_WEB-011_ProfileDataAkademikDokumenDokter\\20231218_011917\\execution.properties')
 
 TestCaseMain.beforeStart()
-TestCaseMain.runFeatureFile('Include/features/Dokter/Dokter-ProfileDataAkademik.feature')
+
+        TestCaseMain.runTestCase('Test Cases/TC_WEB-011_ProfileDataAkademikDokumenDokter', new TestCaseBinding('Test Cases/TC_WEB-011_ProfileDataAkademikDokumenDokter',[:]), FailureHandling.STOP_ON_FAILURE , false)
+    

@@ -46,113 +46,26 @@ import cucumber.api.java.en.When
 
 class Login {
 
-	@Given("User is already at the login page")
-	def userIsAtLoginPage() {
-		// Add code to navigate to the login page
+	@Given("I on login page admin")
+	def AtLoginPage() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-admin.vercel.app/')
+		WebUI.maximizeWindow()
 	}
 
-	@Given("User already has an admin account")
-	def userHasAdminAccount() {
-		// Add code to ensure that an admin account exists
+	@When("I enter valid (.*), and (.*)")
+	def userHasAdminAccount(String email, String password) {
+		WebUI.setText(findTestObject('Object Repository/LoginAdmin/Page_EmpathiCare Admin/input_Masuk AdminEmphatiCare_email'), 'AdminEmphati@gmail.com')
+		WebUI.setEncryptedText(findTestObject('Object Repository/LoginAdmin/Page_EmpathiCare Admin/input_Masuk AdminEmphatiCare_password'),'Password@1')
 	}
 
-	@When("User input valid name and email")
-	def uservalidEmail() {
-		// Add code to fill valid name and email
+	@And("I click Login button as admin")
+	def btnlogadm() {
+		WebUI.click(findTestObject('Object Repository/LoginAdmin/Page_EmpathiCare Admin/button_Masuk'))
 	}
 
-	@When("User fills valid password")
-	def userValidPassword() {
-		// Add code to fill valid password
-	}
-
-	@When("User clicks the login button")
-	def userClicksLoginButton() {
-		// Add code to perform the login action
-	}
-
-	@Then("User should be logged in successfully")
-	def userShouldBeLoggedInSuccessfully() {
-		// Add assertions or verifications for successful login
-		// For example, check if the user is redirected to the home page
-	}
-	@When("User fills valid name but invalid email")
-	def userFillsValidNameInvalidEmail() {
-		// Add code to fill valid name and invalid email
-	}
-
-	@Then("User should see an error message for invalid email")
-	def userShouldSeeErrorMessageForInvalidEmail() {
-		// Add assertions or verifications for the displayed error message
-	}
-
-	@When("User fills valid name and email")
-	def userFillValidNameAndEmail() {
-		// Add code to fill valid name and email
-	}
-
-	@When("User fills invalid password")
-	def userFillsInvalidPassword() {
-		// Add code to fill invalid password
-	}
-
-	@Then("User should see an error message for invalid password")
-	def userShouldSeeErrorMessageForInvalidPassword() {
-		// Add assertions or verifications for the displayed error message
-	}
-
-	@When("User leaves the name, email, and password empty")
-	def userLeavesEmptyFields() {
-		// Add code to leave all fields empty
-	}
-
-	@Then("User should see an error message for empty fields")
-	def userShouldSeeErrorMessageForEmptyFields() {
-		// Add assertions or verifications for the displayed error message
-	}
-
-	@When("User leaves the name field empty")
-	def userLeavesEmptyNameField() {
-		// Add code to leave the name field empty
-	}
-
-	@When("User fills valid email and password")
-	def userFillsValidEmailAndPassword() {
-		// Add code to fill valid email and password
-	}
-
-	@Then("User should see an error message for the empty name field")
-	def userShouldSeeErrorMessageForEmptyNameField() {
-		// Add assertions or verifications for the displayed error message
-	}
-
-	@When("User fills valid name but leaves the email field empty")
-	def userFillsValidNameLeavesEmptyEmailField() {
-		// Add code to fill valid name but leave the email field empty
-	}
-
-	@When("User fills valid password for login")
-	def userFillsValidPassword() {
-		// Add code to fill valid password
-	}
-
-	@Then("User should see an error message for the empty email field")
-	def userShouldSeeErrorMessageForEmptyEmailField() {
-		// Add assertions or verifications for the displayed error message
-	}
-
-	@When("User fills valid name & email")
-	def userValidNameAndEmail() {
-		// Add code to fill valid name and email
-	}
-
-	@When("User leaves the password field empty")
-	def userLeavesEmptyPasswordField() {
-		// Add code to leave the password field empty
-	}
-
-	@Then("User should see an error message for the empty password field")
-	def userShouldSeeErrorMessageForEmptyPasswordField() {
-		// Add assertions or verifications for the displayed error message
+	@Then("I redirect to dashboard as admin")
+	def redcdbadmin() {
+		WebUI.navigateToUrl('https://empathicare-admin.vercel.app/admin/dashboard')
 	}
 }

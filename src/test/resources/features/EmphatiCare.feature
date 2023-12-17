@@ -779,7 +779,7 @@ Feature: Emphati Care
 
 # ===========================CHAT BOT CS===========================
 
-    # [Positive] GET - All Chatbot
+    # [Positive] GET - All Chat bot
   Scenario: User retrieves all chatbot messages successfully
     Given I set the GET endpoint for retrieving all chatbot messages
     When I send an HTTP GET request Chatbot

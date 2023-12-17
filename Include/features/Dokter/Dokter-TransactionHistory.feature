@@ -39,5 +39,3 @@ Feature: Transaction History
     Given I am on the transaction history page
     When I navigate back to the transaction history page
     Then I should be on the transaction history page
-    
-    #=====================FIX=====================

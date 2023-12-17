@@ -1,0 +1,682 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "a915690c-fabd-47b2-a1b3-38a157090f3c",
+        "line": 16,
+        "name": "Login with valid data",
+        "description": "",
+        "id": "login;login-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8812976100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "ff7e7755-1d17-4ac8-8dcb-1c32fd4a082c"
+          },
+          {
+            "result": {
+              "duration": 5929416100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input Dokter6@gmail.com and Dokter@1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dokter6@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "Dokter@1",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "b3fe25f5-046d-4e36-9117-2a88c75cec21"
+          },
+          {
+            "result": {
+              "duration": 2888290400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "11b06bb7-b7fa-43df-aecb-e95ba6f5353f"
+          },
+          {
+            "result": {
+              "duration": 3195869800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I navigate to dashboard",
+            "match": {
+              "location": "LoginDokter.navigateDashboard()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "2c7cd891-bcb0-443a-986d-e309de5ff0c8"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-Login"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "7c45798f-bab3-4457-8359-c72ce6696210",
+        "line": 27,
+        "name": "Login with invalid data",
+        "description": "",
+        "id": "login;login-with-invalid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8223344500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "05ab1378-2e0b-47ba-9bd5-8faec9a688a5"
+          },
+          {
+            "result": {
+              "duration": 5623923200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input Dokter6@gmail.com and xxx",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dokter6@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "xxx",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "e58bb732-deaf-4b36-8ae2-c3897d3be357"
+          },
+          {
+            "result": {
+              "duration": 2810142400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "f6f4de36-4a26-40d0-b5ae-5f613df05d35"
+          },
+          {
+            "result": {
+              "duration": 867185800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "eb35db9c-27da-47f8-9f7b-b6c831b84bc6"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-invalid"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "7fe29eba-a84a-45f3-9227-4b52c3daac73",
+        "line": 28,
+        "name": "Login with invalid data",
+        "description": "",
+        "id": "login;login-with-invalid-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8161775600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "d0ca5bdb-ed83-4c02-a4f8-55014ecdd23d"
+          },
+          {
+            "result": {
+              "duration": 5675826800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input lalala and Dokter@1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lalala",
+                  "offset": 8
+                },
+                {
+                  "val": "Dokter@1",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "35ed3e40-7aa8-4e4f-b6c3-649b3b0847c6"
+          },
+          {
+            "result": {
+              "duration": 2796970800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "d3fcd12c-6f66-4390-80c2-313f7555fbbb"
+          },
+          {
+            "result": {
+              "duration": 852802000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "1e785998-2f71-4dca-9fe0-b880942a850b"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-invalid"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "7bb2ea0a-7a06-403b-8ed9-cf580975346d",
+        "line": 29,
+        "name": "Login with invalid data",
+        "description": "",
+        "id": "login;login-with-invalid-data;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7483923400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "5245d3bd-4239-49bb-97a0-ddb9aaa764bd"
+          },
+          {
+            "result": {
+              "duration": 5578312400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input lalala and xxx",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lalala",
+                  "offset": 8
+                },
+                {
+                  "val": "xxx",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "2d6567f5-15dd-4e25-976b-65b8c27a4554"
+          },
+          {
+            "result": {
+              "duration": 2822216400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "83b3669d-cbe9-44d1-85f7-56a30e0c882d"
+          },
+          {
+            "result": {
+              "duration": 818547700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "004a999d-3f19-46fd-a4b9-d5c05f41dff5"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-invalid"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "07ee03ad-573c-477a-b687-cb709ab9c354",
+        "line": 40,
+        "name": "Login with blank data",
+        "description": "",
+        "id": "login;login-with-blank-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8353561100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "7414212b-77e8-48b2-a1bd-dd3af5cffa70"
+          },
+          {
+            "result": {
+              "duration": 5490567200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I input  and Dokter@1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 8
+                },
+                {
+                  "val": "Dokter@1",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "92b1fb8d-452b-40ff-b632-1759c2ec7297"
+          },
+          {
+            "result": {
+              "duration": 2830713500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "a8c8fa62-9eb0-4268-8e60-3250fe8a1138"
+          },
+          {
+            "result": {
+              "duration": 818869000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "cbf2d8f3-f039-40b4-a66c-5d7d2303c992"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-blank"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "ee3560a4-a12e-4746-9b59-156e55c008c8",
+        "line": 41,
+        "name": "Login with blank data",
+        "description": "",
+        "id": "login;login-with-blank-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11249917900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "6d44ef3b-3d87-47b6-a543-dbd87838e10b"
+          },
+          {
+            "result": {
+              "duration": 5641343800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I input Dokter6@gmail.com and ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dokter6@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginDokter.inputEmailPassword(String,String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "282bfc28-fcbf-43c6-b140-8ab57c93122b"
+          },
+          {
+            "result": {
+              "duration": 2795160600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginDokter.clickLoginButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "5f3cd205-ef0d-43f7-b3f4-fc92b56be855"
+          },
+          {
+            "result": {
+              "duration": 834968500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Error message showed",
+            "match": {
+              "location": "LoginDokter.errorMessage()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "b2287fc0-1791-4a2e-80db-d23226716c56"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Negative-input-blank"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "6974ef48-f633-46e7-ab38-0f6decd1654f",
+        "line": 44,
+        "name": "Login with Google account",
+        "description": "",
+        "id": "login;login-with-google-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8709996400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "e84a33aa-2cd1-4337-bcf1-68c1bb755757"
+          },
+          {
+            "result": {
+              "duration": 2482335800,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click button login by Google",
+            "match": {
+              "location": "LoginDokter.clickLoginGoogle()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "119167d9-cc42-4b9a-b9bf-1fd2511b904d"
+          },
+          {
+            "result": {
+              "duration": 880794400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I navigate to choose my Google account",
+            "match": {
+              "location": "LoginDokter.navigateGoogleAccount()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "2c7cfdd8-d358-40c2-8c9e-24ccf8d04e2f"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-by-google"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "b46672a3-cc45-4a42-a4ca-da9972530a31",
+        "line": 50,
+        "name": "Forgot Password",
+        "description": "",
+        "id": "login;forgot-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7959160900,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "54299462-1cbf-4372-b41e-1eeb8296d843"
+          },
+          {
+            "result": {
+              "duration": 2513130900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I click button forgot password",
+            "match": {
+              "location": "LoginDokter.clickLoginButtonForgotPW()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "57df4837-541b-42c4-b2dc-3632b20a2c10"
+          },
+          {
+            "result": {
+              "duration": 3216281000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I navigate to reset password page",
+            "match": {
+              "location": "LoginDokter.navigateLoginResetPW()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "7cb9d2a3-d59c-4325-b162-20381591d4e4"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-Forgot-Password"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "c36b9d75-d382-4d64-ba27-57c5d0afbd71",
+        "line": 56,
+        "name": "Verify Regist",
+        "description": "",
+        "id": "login;verify-regist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7797686600,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginDokter.navigateLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "4b545ee8-2987-4913-89eb-e2d51a43edc9"
+          },
+          {
+            "result": {
+              "duration": 2473001400,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click button regist",
+            "match": {
+              "location": "LoginDokter.clickLoginButtonRegist()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "2de6aabd-7003-401b-b38d-7bc2ab91d069"
+          },
+          {
+            "result": {
+              "duration": 3205330300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I navigate to regist page",
+            "match": {
+              "location": "LoginDokter.navigateLoginRegistPage()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "f3385baa-918b-4ba4-8981-6c13f5fe1fff"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageDokter"
+          },
+          {
+            "name": "@Positive-Verify-RegistButton"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As a user\n  I want to login with my registered account\n  So that I can manage my account",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-Login.feature",
+    "tags": [
+      {
+        "name": "@LoginPageDokter",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

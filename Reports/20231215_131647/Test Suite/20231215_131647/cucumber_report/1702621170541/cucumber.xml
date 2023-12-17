@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="36.452008">
+<testcase classname="Landing Page Dokter" name="Verify Home button on Navbar" time="24.955257">
+<system-out><![CDATA[Given I navigate to EmphatiCare landing page................................passed
+When I verify button and scroll all the navigation hyperlinks...............passed
+Then I should be redirected to the correct navigation hyperlinks............passed
+]]></system-out>
+</testcase>
+<testcase classname="Landing Page Dokter" name="Verify Register Now button" time="11.496751">
+<system-out><![CDATA[Given I navigate to EmphatiCare landing page................................passed
+When I click the register now button........................................passed
+Then I should be redirected to the registration page........................passed
+]]></system-out>
+</testcase>
+</testsuite>

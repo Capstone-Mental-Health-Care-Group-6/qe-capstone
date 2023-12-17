@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Urut Berdasarakan ID</name>
+   <tag></tag>
+   <elementGuidId>ac232761-c404-4d16-bcaf-6cd6c50563d7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/section/div/div[4]/div/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.filter__text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b78a3ab8-a032-4e89-b4a5-311031b03484</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>filter__text</value>
+      <webElementGuid>dd8724da-2ee3-4794-8ee4-8eb1c2736e10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Urut Berdasarakan ID</value>
+      <webElementGuid>c0a45181-7213-46ca-ab98-55c776d30ff0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;section-transaksi&quot;]/div[@class=&quot;row header&quot;]/div[@class=&quot;col-sm-12 col-md-6 col-lg-4&quot;]/div[@class=&quot;filter-container&quot;]/button[@class=&quot;filter__button w-100&quot;]/span[@class=&quot;filter__text&quot;]</value>
+      <webElementGuid>a5ac6461-685c-4fef-9b16-919dfcc3745e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section/div/div[4]/div/button/span</value>
+      <webElementGuid>7f504c2c-38c8-46da-90b3-461e3e191693</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Riwayat Transaksi'])[1]/following::span[1]</value>
+      <webElementGuid>3d7398b5-32e3-4ca2-a9f0-947cacb47b10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::span[1]</value>
+      <webElementGuid>2914d926-a49b-4a27-8768-4b261f94da9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID'])[1]/preceding::span[1]</value>
+      <webElementGuid>0e8e6eda-8e62-47fa-9fcc-84e0871c702c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Pasien'])[1]/preceding::span[2]</value>
+      <webElementGuid>ea51f4fa-dc66-4590-9f85-3f5aa042bfc3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Urut Berdasarakan ID']/parent::*</value>
+      <webElementGuid>7449bd2b-05d2-4dd1-a53f-85f3be700f5a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/button/span</value>
+      <webElementGuid>8bb80fb0-757f-4252-a734-e4b469469739</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Urut Berdasarakan ID' or . = 'Urut Berdasarakan ID')]</value>
+      <webElementGuid>0b938349-4a6c-4611-83bb-479a402dfcf3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

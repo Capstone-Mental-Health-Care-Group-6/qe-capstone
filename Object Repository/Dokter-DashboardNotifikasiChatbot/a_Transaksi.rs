@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Transaksi</name>
+   <tag></tag>
+   <elementGuidId>e2a28d7e-b458-40b8-908b-c5e3fe59072a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/ul/li[3]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>ae26f65c-1bdb-4b14-8536-73dd1696b595</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sidebar-link</value>
+      <webElementGuid>4bea5458-029f-40d0-ae0f-b48376e6f9fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/dokter/transaksi</value>
+      <webElementGuid>ee5f209a-a9f6-42ba-8126-59a088decf0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Transaksi</value>
+      <webElementGuid>9770fa58-b8f3-41fa-a123-7db2fae29766</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sidebar&quot;]/div[@class=&quot;offcanvass offcanvas-start&quot;]/div[@class=&quot;d-grid wrapper align-items-stretch&quot;]/div[@class=&quot;offcanvass-body d-grid  align-items-stretch&quot;]/ul[@class=&quot;menu d-grid justify-content-center align-items-center mx-auto p-0&quot;]/li[@class=&quot;sidebar-item  undefined&quot;]/a[@class=&quot;sidebar-link&quot;]</value>
+      <webElementGuid>2af2a16e-9f95-45e9-a514-6a56f0c9a342</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/ul/li[3]/a</value>
+      <webElementGuid>60d558cd-8bf6-4f4f-8747-b6f8567a1546</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chat'])[1]/following::a[1]</value>
+      <webElementGuid>91e045f2-9bd3-4101-ab5a-d3381602c0b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::a[2]</value>
+      <webElementGuid>33cf9849-bcc0-4184-8cf8-77fdbeae6dd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pencairan Saldo'])[1]/preceding::a[1]</value>
+      <webElementGuid>44ad3b23-eef6-4f4a-8fb1-c919a7dfbcb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/dokter/transaksi')]</value>
+      <webElementGuid>27ccd11c-31f6-4ad3-bfa9-4ba8d88b4937</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/a</value>
+      <webElementGuid>8036ea92-9c0d-44b1-8611-ae75453df721</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/dokter/transaksi' and (text() = ' Transaksi' or . = ' Transaksi')]</value>
+      <webElementGuid>b5653bb3-c3ee-4c97-bd05-90a242a42a61</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite,Edge Chromium 120,,,2023-12-15 13:16:58,2023-12-15 13:21:42,4m - 43.704s,PASSED
+,,,,,,,
+Test Cases/Test_BDD,Edge Chromium 120,,,2023-12-15 13:16:59,2023-12-15 13:21:42,4m - 43.445s,PASSED
+"runFeatureFile(""Include/features/Dokter/Dokter-Login.feature"")",Edge Chromium 120,,,2023-12-15 13:16:59,2023-12-15 13:19:30,2m - 31.120s,PASSED
+"runFeatureFile(""Include/features/Dokter/Dokter-LandingPageDokter.feature"")",Edge Chromium 120,,,2023-12-15 13:19:30,2023-12-15 13:20:07,36.694s,PASSED
+"runFeatureFile(""Include/features/Dokter/Dokter-DashboardNotifikasiChatBot.feature"")",Edge Chromium 120,,,2023-12-15 13:20:07,2023-12-15 13:21:42,1m - 35.292s,PASSED

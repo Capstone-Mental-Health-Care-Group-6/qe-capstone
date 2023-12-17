@@ -802,3 +802,145 @@ Feature: Emphati Care
     Given I set the POST endpoint for sending a message to chatbot with an invalid endpoint
     When I send an HTTP POST request Chatbot Invalid Endpoint
     Then I receive a valid data response for send message invalid endpoint with HTTP status code 404 Not Found
+
+# ===========================MIDTRANS TRANSACTIONS===========================
+
+  # POST - Make Transaction BCA
+  Scenario: User makes a successful BCA transaction
+    Given I set the POST endpoint for making a BCA transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a BCA transaction
+    Then I receive a valid data response for BCA transaction with HTTP status code 201 Created
+
+  # POST - Make Transaction BNI
+  Scenario: User makes a successful BNI transaction
+    Given I set the POST endpoint for making a BNI transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a BNI transaction
+    Then I receive a valid data response for BNI transaction with HTTP status code 201 Created
+
+  # POST - Make Transaction BRI
+  Scenario: User makes a successful BRI transaction
+    Given I set the POST endpoint for making a BRI transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a BRI transaction
+    Then I receive a valid data response for BRI transaction with HTTP status code 201 Created
+
+  # POST - Make Transaction Gopay
+  Scenario: User makes a successful Gopay transaction
+    Given I set the POST endpoint for making a Gopay transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a Gopay transaction
+    Then I receive a valid data response for Gopay transaction with HTTP status code 201 Created
+
+  # POST - Make Transaction Qris
+  Scenario: User makes a successful Qris transaction
+    Given I set the POST endpoint for making a Qris transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a Qris transaction
+    Then I receive a valid data response for Qris transaction with HTTP status code 201 Created
+
+  # GET - Get All Transactions from User ID
+  Scenario: User retrieves all transactions for a specific user ID successfully
+    Given I set the GET endpoint for retrieving all transactions for a specific user ID
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving all transactions for a specific user ID
+    Then I receive a valid data response for retrieving all transactions mindtrans with HTTP status code 200 OK
+
+  # GET - Get Filtered By Payment Type Transactions from User ID
+  Scenario: User retrieves transactions filtered by payment type for a specific user ID successfully
+    Given I set the GET endpoint for retrieving transactions filtered by payment type for a specific user ID
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving transactions filtered by payment type for a specific user ID
+    Then I receive a valid data response for retrieving transactions filtered by payment type with HTTP status code 200 OK
+
+  # GET - Get All Transactions
+  Scenario: User retrieves all transactions successfully
+    Given I set the GET endpoint for retrieving all transactions mindtrans
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving all transactions
+    Then I receive a valid data response for retrieving all mindtrans transactions with HTTP status code 200 OK
+
+  # GET - Get Sorted By Payment Type All Transactions
+  Scenario: User retrieves transactions sorted by payment type successfully
+    Given I set the GET endpoint for retrieving transactions sorted by payment type
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving transactions sorted by payment type
+    Then I receive a valid data response for retrieving transactions sorted by payment type with HTTP status code 200 OK
+
+  # GET - Get Show Transaction Status By Midtrans ID
+  Scenario: User retrieves transaction status by Midtrans ID successfully
+    Given I set the GET endpoint for retrieving transaction status by Midtrans ID transaction
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving transaction status by Midtrans ID
+    Then I receive a valid data response midtrans for retrieving transaction status by Midtrans ID with HTTP status code 200 OK
+
+  # GET - Get invalid Endpoint
+  Scenario: User attempts to access an invalid endpoint
+    Given I set the GET endpoint for an invalid request midtrans transaction
+    When I send an HTTP GET request with an invalid baseURL for an invalid request midtrans
+    Then I receive an error response with HTTP status code 404 Not Found for an invalid request midtrans
+
+# ===========================TRANSACTION MANUAL===========================
+
+  # [Positive] POST - Make Manual Transaction
+  Scenario: User makes a manual transaction successfully
+    Given I set the POST endpoint for making a manual transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a manual transaction
+    Then I receive a valid data response for making a manual transaction with HTTP status code 201 Created
+
+  # [Negative] POST - Make Manual Transaction Doctor ID Not Found
+  Scenario: User fails to make a manual transaction with invalid doctor ID
+    Given I set the POST endpoint for making a manual transaction with invalid doctor ID
+    When I send an HTTP POST request with invalid doctor ID and valid parameters
+    Then I receive a valid data response for making a manual transaction with invalid doctor ID with HTTP status code 500 Internal Server Error
+
+  # [Positive] PUT - Update Transaction
+  Scenario: User updates transaction successfully
+    Given I set the PUT endpoint for updating a transaction
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction
+    Then I receive a valid data response for updating a transaction with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Transaction By ID
+  Scenario: User updates transaction by ID successfully
+    Given I set the PUT endpoint for updating a transaction by ID
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction by ID
+    Then I receive a valid data response for updating a transaction by ID with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Transaction Deny Transaction By Admin (On Confirmation)
+  Scenario: Admin denies transaction successfully (On Confirmation)
+    Given I set the PUT endpoint for updating a transaction to deny status by Admin
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction to deny status by Admin
+    Then I receive a valid data response for updating a transaction to deny status by Admin with HTTP status code 200 OK
+
+  # [Positive] PUT - Update Transaction Accept Transaction By Admin (On Confirmation)
+  Scenario: Admin accepts transaction successfully (On Confirmation)
+    Given I set the PUT endpoint for updating a transaction to accept status by Admin
+    When I send an HTTP PUT request with valid parameters and baseURL for updating a transaction to accept status by Admin
+    Then I receive a valid data response for updating a transaction to accept status by Admin with HTTP status code 200 OK
+
+  # [Negative] PUT - Update Transaction Status is Accepted or Failure
+  Scenario: User fails to update transaction status to Accepted or Failure
+    Given I set the PUT endpoint for updating a transaction with invalid status
+    When I send an HTTP PUT request for updating a transaction with invalid status
+    Then I receive a valid data response for updating a transaction with invalid status with HTTP status code 500 Internal Server Error
+
+  # [Positive] GET - Get Transactions from User ID
+  Scenario: User retrieves transactions by User ID successfully
+    Given I set the GET endpoint for retrieving transactions by User ID
+    When I send an HTTP GET request with valid User ID and baseURL for retrieving transactions by User ID
+    Then I receive a valid data response for retrieving transactions by User ID with HTTP status code 200 OK
+
+  # [Positive] GET - Get Transactions from User ID Get Filtered By Payment Type Transactions from User ID
+  Scenario: User retrieves transactions by User ID and filtered by Payment Type successfully
+    Given I set the GET endpoint for retrieving transactions by User ID and filtered by Payment Type
+    When I send an HTTP GET request for retrieving transactions by User ID and filtered by Payment Type
+    Then I receive a valid data response for retrieving transactions by User ID and filtered by Payment Type with HTTP status code 200 OK
+
+  # [Positive] GET - Get All Transactions
+  Scenario: User retrieves all transactions successfully
+    Given I set the GET endpoint for retrieving all transactions
+    When I send an HTTP GET request with valid baseURL for retrieving all transactions
+    Then I receive a valid data response for retrieving all transactions with HTTP status code 200 OK
+
+  # [Positive] GET - Get All Transactions Get Sorted By Payment Type All Transactions
+  Scenario: User retrieves all transactions and sorted by Payment Type successfully
+    Given I set the GET endpoint for retrieving all transactions and sorted by Payment Type
+    When I send an HTTP GET request with valid Payment Type and baseURL for retrieving all transactions and sorted by Payment Type
+    Then I receive a valid data response for retrieving all transactions and sorted by Payment Type with HTTP status code 200 OK
+
+  # [Positive] GET - Show Transaction Status By Midtrans ID
+  Scenario: User retrieves transaction status by Midtrans ID successfully
+    Given I set the GET endpoint for retrieving transaction status by Midtrans ID
+    When I send an HTTP GET request with valid Midtrans ID and baseURL for retrieving transaction status by Midtrans ID
+    Then I receive a valid data response for retrieving transaction status by Midtrans ID with HTTP status code 200 OK

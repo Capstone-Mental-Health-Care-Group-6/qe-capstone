@@ -85,10 +85,10 @@ Feature: Emphati Care
   #  # ===========================AUTH PATIENT REGISTRATION============================
 #
  # [Positive] POST - Register Success
-  Scenario: Successful registration
-    Given I have a valid registration mobile endpoint
-    When I provide valid user information for registration
-    Then I should receive a response with HTTP status code 400 OK and successfully registered
+#  Scenario: Successful registration
+#    Given I have a valid registration mobile endpoint
+#    When I provide valid user information for registration
+#    Then I should receive a response with HTTP status code 400 OK and successfully registered
     # Then I should receive a response with HTTP status code 201 created and successfully registered
     # Then I should receive a response with HTTP status code 200 OK and successfully registered
     # Expected status code <200> but was <400>

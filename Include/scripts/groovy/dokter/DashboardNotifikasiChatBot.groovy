@@ -49,9 +49,17 @@ class DashboardNotifikasiChatBot {
 	@Given("I logged in and was on the dashboard page")
 	def navigateDashboardPage() {
 		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/login-dokter')
 		WebUI.maximizeWindow()
+		WebUI.delay(2)
 
+		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), 'Doctor6@gmail.com')
+		WebUI.delay(2)
+
+		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), 'password')
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/button_Masuk'))
 		WebUI.delay(2)
 	}
 
@@ -85,7 +93,7 @@ class DashboardNotifikasiChatBot {
 
 	@When("I click the chatbot button")
 	def clickChatbotButton() {
-		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/div_Lihat Detail_bg-white px-3 py-3 d-flex _c5ac12'))
+		WebUI.click(findTestObject('Object Repository/Dokter-DashboardNotifikasiChatbot/Page_EmphatiCare Doctor/div_Lihat Detail_bg-white px-3 py-3 d-flex _c5ac12'))
 		WebUI.delay(2)
 	}
 

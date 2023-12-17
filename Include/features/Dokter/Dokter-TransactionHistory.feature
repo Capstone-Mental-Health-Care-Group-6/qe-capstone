@@ -4,16 +4,11 @@ Feature: Transaction History
   I want to see transaction history
   So that I can manage my history transaction
 
-#ID, Name, Date, Subscription Package, Price, Payment Method
+#ID, Name, Date, Subscription Package, Price, Payment Method,No Data Exist
   Scenario: User Searches Transaction History
     Given I am on the transaction history page
     When I search for transaction history
     Then I shoucld see relevant transaction records
-
-  Scenario: User Searches Transaction History and No Data Exist
-    Given I am on the transaction history page
-    When I search for transaction history with no existing data
-    Then I should see a message indicating no data found
 
   Scenario: User Wants to Filter Data Based on Transaction ID
     Given I am on the transaction history page

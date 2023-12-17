@@ -1,0 +1,430 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8133842400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "User Verify Chat Menu Page Display",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-chat-menu-page-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2498815800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I open the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IOpenTheChatMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2103722200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see the active patient chat display",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IShouldSeeTheActivePatientChatDisplay()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5842445500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "User Verify Active Patient Chat Page View",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-active-patient-chat-page-view",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2590259000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2188402800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see the contents of the active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ShouldSeeTheContentsOfTheActivePatientChata()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4676250000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "User Verify More Button Functionality in Active Patient Chat Content",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-more-button-functionality-in-active-patient-chat-content",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2656275500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1041753000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click the Show More button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ShowMoreBotton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2063354600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I successfully display more actions for the chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.SuccessfullyDisplayMoreAction()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5808508400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "User Verify End chat session Functionality in Active Patient Chat Content",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-end-chat-session-functionality-in-active-patient-chat-content",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2934308600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1504620300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click the Ends Chat Session Button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.EndChatSession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3244723900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I successfully End chat session",
+            "match": {
+              "location": "ChatVideoCallViaZoom.SuccessfullyEndChat()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6300570800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "User Verify Chat Delete Functionality in Active Patient Chat Content",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-chat-delete-functionality-in-active-patient-chat-content",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2563960700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1650708500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click the Chat Delete button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ChatDelete()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3826283500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I successfully delete chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.SuccessfullyDeleteChat()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5955013300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "User Verify Send button in Chat Room",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-send-button-in-chat-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2736167900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5197267400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click the Send button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IClickTheSendButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2466967100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I successfully send a message",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ISuccesfullySendAMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      }
+    ],
+    "name": "Chat Video Call via Zoom",
+    "description": "  As a user\n  I want to access the chat menu page\n  So I can interact with active patient chats, perform actions, and conduct video calls via Zoom",
+    "id": "chat-video-call-via-zoom",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-ChatVideoCallViaZoom.feature",
+    "tags": [
+      {
+        "name": "@ChatVideoCallViaZoom",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

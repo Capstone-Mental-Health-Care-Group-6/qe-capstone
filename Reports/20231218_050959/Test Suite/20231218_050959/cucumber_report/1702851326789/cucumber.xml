@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="49.267344">
+<testcase classname="Landing Page User" name="Verify Home button on Navbar" time="16.638897">
+<system-out><![CDATA[Given I navigate to the EmphatiCare landing page............................passed
+When I verify button all the navigation hyperlinks..........................passed
+Then I should be redirected to the page according to the hyperlink..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Landing Page User" name="Verify Next and Previous icon in carousel on About Us page" time="32.628447">
+<system-out><![CDATA[Given I navigate to the EmphatiCare landing page............................passed
+When I click next and previous icons in the carousel........................passed
+Then I should successfully swipe through the content........................passed
+]]></system-out>
+</testcase>
+</testsuite>

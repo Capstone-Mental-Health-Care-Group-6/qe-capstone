@@ -71,7 +71,7 @@ class TransactionHistory {
 		WebUI.refresh()
 		WebUI.delay(2)
 
-		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'B-1702404844')
+		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'Q-1702746842')
 
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/td_B-1702404844 (1)'), 10)
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
@@ -80,18 +80,18 @@ class TransactionHistory {
 		WebUI.refresh()
 		WebUI.delay(2)
 
-		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'nurul fauziah')
+		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'Abdulloh Fahmi')
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/span_nurul fauziah'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/span_Abdulloh Fahmi'), 10)
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
 		WebUI.takeScreenshot()
 		WebUI.delay(2)
 		WebUI.refresh()
 		WebUI.delay(2)
 
-		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), '13')
+		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), '17')
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/span_13 Des 2023'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/span_17 Des 2023'), 10)
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
 		WebUI.takeScreenshot()
 		WebUI.delay(2)
@@ -107,35 +107,42 @@ class TransactionHistory {
 		//		WebUI.refresh()
 		//		WebUI.delay(2)
 
-		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), '270000')
+		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), '485000')
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/td_270000'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/td_485000'), 10)
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
 		WebUI.takeScreenshot()
 		WebUI.delay(2)
 		WebUI.refresh()
 		WebUI.delay(2)
 
-		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'bca')
+		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'qris')
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/a_bca'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/a_qris'), 10)
 		//WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
 		WebUI.takeScreenshot()
 		WebUI.delay(2)
 		WebUI.refresh()
 		WebUI.delay(2)
-	}
-
-	@When("I search for transaction history with no existing data")
-	def searchTransactionsNoData() {
-
+		
 		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'XXX')
-
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
-		WebUI.takeScreenshot()
-		WebUI.delay(2)
-		WebUI.refresh()
+		
+				WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
+				WebUI.takeScreenshot()
+				WebUI.delay(2)
+				WebUI.refresh()
 	}
+
+//	@When("I search for transaction history with no existing data")
+//	def searchTransactionsNoData() {
+//
+//		WebUI.setText(findTestObject('Object Repository/Dokter-TransactionHistory/input_Riwayat Transaksi_search__input'), 'XXX')
+//
+//		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-TransactionHistory/h2_Tidak dapat menemukan data'), 10)
+//		WebUI.takeScreenshot()
+//		WebUI.delay(2)
+//		WebUI.refresh()
+//	}
 
 	@When("I click filter data based on transaction ID")
 	def clickFilterData() {
@@ -156,13 +163,14 @@ class TransactionHistory {
 		WebUI.refresh()
 		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/svg_manual_p-icon p-paginator-icon'))
+		WebUI.click(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/svg_manual_p-icon p-paginator-icon'))
 	}
 
 	@When("I view the details of a transaction")
 	def clickDetailTransactions() {
 		WebUI.refresh()
 		WebUI.delay(2)
-		WebUI.click(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/a_bca'))
+		WebUI.click(findTestObject('Object Repository/Dokter-TransactionHistory/Page_EmphatiCare Doctor/a_qris'))
 		WebUI.delay(2)
 	}
 

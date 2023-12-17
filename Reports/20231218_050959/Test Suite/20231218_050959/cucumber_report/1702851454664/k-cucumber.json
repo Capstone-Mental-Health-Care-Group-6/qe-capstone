@@ -1,0 +1,178 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "ecb456e2-4152-4935-897c-601b98ea66af",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6098996900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login on the doctor\u0027s dashboard page",
+            "match": {
+              "location": "ProfilePengalaman.ILoginOnTheDoctorsDashboardPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "04715578-4d18-4772-aa59-87c0d8e0d036"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "ecb456e2-4152-4935-897c-601b98ea66af",
+        "line": 13,
+        "name": "User Verify Edit Experience",
+        "description": "",
+        "id": "pengalaman;user-verify-edit-experience",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4934500000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I navigate to the work experience section",
+            "match": {
+              "location": "ProfilePengalaman.ToTheWorkExperienceSection()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "fd04f9e2-1a4a-4353-a0d0-33d377837f79"
+          },
+          {
+            "result": {
+              "duration": 6441058500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I fill in the company name",
+            "match": {
+              "location": "ProfilePengalaman.IFillInTheCompanyName()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "c3b5a821-e29b-4266-b68f-74e501727147"
+          },
+          {
+            "result": {
+              "duration": 5043990200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the save changes button on the work experience",
+            "match": {
+              "location": "ProfilePengalaman.SaveChangesButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "1c941fc0-d0ef-4cf2-8e2a-8227cdb4f681"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProfilePengalaman"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "4cb9a55e-e0b5-4012-b576-20830beacdb4",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5657295700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login on the doctor\u0027s dashboard page",
+            "match": {
+              "location": "ProfilePengalaman.ILoginOnTheDoctorsDashboardPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "3211a98b-c9a5-4eaa-b1e4-429a11ba40a8"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "4cb9a55e-e0b5-4012-b576-20830beacdb4",
+        "line": 18,
+        "name": "User Verifies the Add Data Button on the Work Experience Page",
+        "description": "",
+        "id": "pengalaman;user-verifies-the-add-data-button-on-the-work-experience-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5121529900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to the work experience section",
+            "match": {
+              "location": "ProfilePengalaman.ToTheWorkExperienceSection()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "4f9ee672-d885-4827-b3fe-047fcf23a9fd"
+          },
+          {
+            "result": {
+              "duration": 1011299100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click the Add Data button",
+            "match": {
+              "location": "ProfilePengalaman.AddDataButton()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "66999c96-b6f2-4805-b913-3741f6765237"
+          },
+          {
+            "result": {
+              "duration": 3900577200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should have successfully added a new work experience field",
+            "match": {
+              "location": "ProfilePengalaman.SuccessfullyAddedNewWorkExperienceField()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "6a562e1b-e0ac-477d-ad34-7abc2f312d60"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProfilePengalaman"
+          }
+        ]
+      }
+    ],
+    "name": "Pengalaman",
+    "description": "  As a user\n  I want to access and edit my work experience on the doctor\u0027s dashboard\n  So I can update my professional history",
+    "id": "pengalaman",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-ProfilePengalaman.feature",
+    "tags": [
+      {
+        "name": "@ProfilePengalaman",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

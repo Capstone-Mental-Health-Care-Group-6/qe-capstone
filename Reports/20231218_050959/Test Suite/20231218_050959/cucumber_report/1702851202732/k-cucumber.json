@@ -1,0 +1,268 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "6d4fca0e-638f-42ce-b108-3773962792ac",
+        "line": 8,
+        "name": "Verify Links in the Sidebar Menu",
+        "description": "",
+        "id": "title-of-your-feature;verify-links-in-the-sidebar-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15617727600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I logged in and was on the dashboard page",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.navigateDashboardPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "f0331507-2644-44fe-b3ac-617113e261ac"
+          },
+          {
+            "result": {
+              "duration": 13718836300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click the sidebar menu",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.clickSidebarMenu()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "e8e87a7f-d258-4a51-8fbd-8a3113944cb2"
+          },
+          {
+            "result": {
+              "duration": 836291899,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should verify the functionality and correctness of the links",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.redirectFunctionalityLinks()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "a01494ca-3554-4e6b-afe3-7dd99d9247b0"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DashboardNotifikasi"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "3649e68a-a65c-41ef-8649-bb49b21b4b03",
+        "line": 14,
+        "name": "Verify Icons in the Navbar",
+        "description": "",
+        "id": "title-of-your-feature;verify-icons-in-the-navbar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15837669700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I logged in and was on the dashboard page",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.navigateDashboardPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "e5fbec6b-2821-44a9-ae96-833b5f5170a3"
+          },
+          {
+            "result": {
+              "duration": 5084360500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I check the icons in the navbar",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.clickIconNavbar()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "ea8a55bd-b1ad-44b0-8ffb-9239fe4ebcf7"
+          },
+          {
+            "result": {
+              "duration": 791043299,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should verify the visibility and correctness of the notification icons",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.verifyIconNotification()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "35d69383-ca0e-43f4-9ef3-ea27a8a8b300"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DashboardNotifikasi"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "677fcfa7-33fc-4b87-b15a-0c8091c32e5d",
+        "line": 33,
+        "name": "User Verifies Chat button",
+        "description": "",
+        "id": "title-of-your-feature;user-verifies-chat-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15613363900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I logged in and was on the dashboard page",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.navigateDashboardPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "8c85653a-1786-4066-a19d-952132e0c87d"
+          },
+          {
+            "result": {
+              "duration": 2868645799,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click the chatbot button",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.clickChatbotButton()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "983f8cba-e19d-48d1-8336-f2cb3b505b2e"
+          },
+          {
+            "result": {
+              "duration": 30154843300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I select and click the chat button",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.clickSelectChattButton()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "103e8ce7-4173-4e83-a9c0-7463b0fa2e32"
+          },
+          {
+            "result": {
+              "duration": 797272000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I should provide information for Chatbot",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.verifyInformationChatbot()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "3296af33-987a-44cc-915a-065c9b77496b"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DashboardNotifikasi"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "9269657f-59eb-4461-99bc-e02144100113",
+        "line": 39,
+        "name": "User Returns to the Dashboard Page from the Chatbot Page",
+        "description": "",
+        "id": "title-of-your-feature;user-returns-to-the-dashboard-page-from-the-chatbot-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15669044400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I logged in and was on the dashboard page",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.navigateDashboardPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "aa157e66-2536-4d59-a120-ab22885e84b9"
+          },
+          {
+            "result": {
+              "duration": 3430242101,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click the chatbot button",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.clickChatbotButton()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "eabbeeeb-4321-4210-8ed6-027003edf3d5"
+          },
+          {
+            "result": {
+              "duration": 2425878000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click the return button",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.clickReturnDashboardButton()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "549d9e23-1a04-490c-b225-a401fa8e34b4"
+          },
+          {
+            "result": {
+              "duration": 830581399,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should be redirected to the dashboard page",
+            "match": {
+              "location": "DashboardNotifikasiChatBot.redirectDashboard()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "b288b3c7-bd13-4ba4-a292-f7c1ea29c87b"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DashboardNotifikasi"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  As a user\n  I want to access my dashboard\n  So that I can view menu dashboard",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-DashboardNotifikasiChatBot.feature",
+    "tags": [
+      {
+        "name": "@DashboardNotifikasi",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

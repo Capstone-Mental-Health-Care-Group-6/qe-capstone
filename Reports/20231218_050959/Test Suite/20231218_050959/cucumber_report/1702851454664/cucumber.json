@@ -1,0 +1,166 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6098996900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login on the doctor\u0027s dashboard page",
+            "match": {
+              "location": "ProfilePengalaman.ILoginOnTheDoctorsDashboardPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "User Verify Edit Experience",
+        "description": "",
+        "id": "pengalaman;user-verify-edit-experience",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4934500000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I navigate to the work experience section",
+            "match": {
+              "location": "ProfilePengalaman.ToTheWorkExperienceSection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6441058500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I fill in the company name",
+            "match": {
+              "location": "ProfilePengalaman.IFillInTheCompanyName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5043990200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the save changes button on the work experience",
+            "match": {
+              "location": "ProfilePengalaman.SaveChangesButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProfilePengalaman"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5657295700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login on the doctor\u0027s dashboard page",
+            "match": {
+              "location": "ProfilePengalaman.ILoginOnTheDoctorsDashboardPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "User Verifies the Add Data Button on the Work Experience Page",
+        "description": "",
+        "id": "pengalaman;user-verifies-the-add-data-button-on-the-work-experience-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5121529900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to the work experience section",
+            "match": {
+              "location": "ProfilePengalaman.ToTheWorkExperienceSection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1011299100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click the Add Data button",
+            "match": {
+              "location": "ProfilePengalaman.AddDataButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3900577200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should have successfully added a new work experience field",
+            "match": {
+              "location": "ProfilePengalaman.SuccessfullyAddedNewWorkExperienceField()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProfilePengalaman"
+          }
+        ]
+      }
+    ],
+    "name": "Pengalaman",
+    "description": "  As a user\n  I want to access and edit my work experience on the doctor\u0027s dashboard\n  So I can update my professional history",
+    "id": "pengalaman",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-ProfilePengalaman.feature",
+    "tags": [
+      {
+        "name": "@ProfilePengalaman",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

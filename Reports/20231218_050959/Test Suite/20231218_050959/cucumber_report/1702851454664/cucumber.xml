@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="38.224246">
+<testcase classname="Pengalaman" name="User Verify Edit Experience" time="22.527825">
+<system-out><![CDATA[Given I login on the doctor's dashboard page................................passed
+When I navigate to the work experience section..............................passed
+And I fill in the company name..............................................passed
+Then I click the save changes button on the work experience.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pengalaman" name="User Verifies the Add Data Button on the Work Experience Page" time="15.696421">
+<system-out><![CDATA[Given I login on the doctor's dashboard page................................passed
+When I navigate to the work experience section..............................passed
+And I click the Add Data button.............................................passed
+Then I should have successfully added a new work experience field...........passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/main/div/section[2]/div[6]/a/div</value>
+         <value>//div[@id='root']/main/div/section[2]/div[7]/a/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>2e5e485f-99f0-41a9-a5b1-ef9584478cbf</webElementGuid>
+      <webElementGuid>afb4f0e4-f483-45fa-a308-c6914e753686</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>bg-white px-3 py-3 d-flex align-items-center justify-content-center</value>
-      <webElementGuid>46c3ef99-ad29-48d8-ae76-3e2f67b2fef1</webElementGuid>
+      <webElementGuid>753225fd-5f74-438c-b11f-2d6c91ef4319</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +38,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;wrapper__laporan__Mingguan bg-white mt-2&quot;]/div[@class=&quot;toogle__chatbot&quot;]/a[1]/div[@class=&quot;bg-white px-3 py-3 d-flex align-items-center justify-content-center&quot;]</value>
-      <webElementGuid>f9337e86-f304-4423-b08d-0be527123dcd</webElementGuid>
+      <webElementGuid>6de6153d-f39a-4edb-b46a-b75554e84c25</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/main/div/section[2]/div[6]/a/div</value>
-      <webElementGuid>2cefd42f-43c1-4343-95d5-dcc4b2cb9684</webElementGuid>
+      <value>//div[@id='root']/main/div/section[2]/div[7]/a/div</value>
+      <webElementGuid>6b5618db-60f5-49b4-bf78-fd405880eaf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,22 +54,22 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Lihat Detail'])[5]/following::div[7]</value>
-      <webElementGuid>2a2eb92f-39d1-4f66-a0f0-98dac4e2cfd2</webElementGuid>
+      <webElementGuid>d0644c6b-78f3-4af1-bd3a-85a2a8feede1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Video Call'])[3]/following::div[8]</value>
-      <webElementGuid>479d344b-fd80-49b6-856a-3acafb9f8350</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='viaLayanan 21'])[1]/following::div[8]</value>
+      <webElementGuid>f725aa5a-112a-447f-bb5b-41bcb0d67205</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[6]/a/div</value>
-      <webElementGuid>cb052a1b-f061-43e5-a4f9-65279e5ba3cf</webElementGuid>
+      <value>//div[7]/a/div</value>
+      <webElementGuid>a1ab2cf0-d7f3-49b6-8f70-8851c81c8f4c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

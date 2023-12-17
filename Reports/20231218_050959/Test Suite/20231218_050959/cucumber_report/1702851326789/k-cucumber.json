@@ -1,0 +1,152 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "52025a04-714f-492b-adfa-bd45c8eeb552",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3976763900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to the EmphatiCare landing page",
+            "match": {
+              "location": "LandingPageUser.navigatetotheEmpatiCarelandingpage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "5446e80f-94a6-46a3-a109-bd9b9705e8c5"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "52025a04-714f-492b-adfa-bd45c8eeb552",
+        "line": 11,
+        "name": "Verify Home button on Navbar",
+        "description": "",
+        "id": "landing-page-user;verify-home-button-on-navbar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11778643400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify button all the navigation hyperlinks",
+            "match": {
+              "location": "LandingPageUser.verifybuttonallthenavigation()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "066958cc-b4a2-4722-b4eb-0328aa8fb41d"
+          },
+          {
+            "result": {
+              "duration": 876730000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should be redirected to the page according to the hyperlink",
+            "match": {
+              "location": "LandingPageUser.redirectToPageAccordingToTheHyperlink()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "d852cb74-8270-4ec0-98ca-4e8dae1433da"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LandingPageUser"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "e54b9109-86f7-431c-baa5-5e21d1e32a12",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4467941400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to the EmphatiCare landing page",
+            "match": {
+              "location": "LandingPageUser.navigatetotheEmpatiCarelandingpage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "b580d0c5-1930-45a0-a313-2804dd6486c2"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "e54b9109-86f7-431c-baa5-5e21d1e32a12",
+        "line": 16,
+        "name": "Verify Next and Previous icon in carousel on About Us page",
+        "description": "",
+        "id": "landing-page-user;verify-next-and-previous-icon-in-carousel-on-about-us-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26491462900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click next and previous icons in the carousel",
+            "match": {
+              "location": "LandingPageUser.NextAndPreviousIcon()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "b5e73066-26b1-4c30-bd96-58be44f836ee"
+          },
+          {
+            "result": {
+              "duration": 1664325500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should successfully swipe through the content",
+            "match": {
+              "location": "LandingPageUser.successfullyswipe()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "9b35d72a-18d3-4456-a6af-b0ebc7975921"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LandingPageUser"
+          }
+        ]
+      }
+    ],
+    "name": "Landing Page User",
+    "description": "  As a user\n  I want to access the landing page user\n  So I can verify the various parts and features of EmphatiC treatment for mental health support",
+    "id": "landing-page-user",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/User-LandingPageUser.feature",
+    "tags": [
+      {
+        "name": "@LandingPageUser",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="78.028903">
+<testcase classname="Chat Video Call via Zoom" name="User Verify Chat Menu Page Display" time="12.744674">
+<system-out><![CDATA[Given I am logged in and on the chat menu page..............................passed
+When I open the chat menu page..............................................passed
+Then I should see the active patient chat display...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Chat Video Call via Zoom" name="User Verify Active Patient Chat Page View" time="10.628143">
+<system-out><![CDATA[Given I am logged in and on the chat menu page..............................passed
+When I click on an active patient chat......................................passed
+Then I should see the contents of the active patient chat...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Chat Video Call via Zoom" name="User Verify More Button Functionality in Active Patient Chat Content" time="10.447694">
+<system-out><![CDATA[Given I am logged in and on the chat menu page..............................passed
+When I click on an active patient chat......................................passed
+And I click the Show More button............................................passed
+Then I successfully display more actions for the chat.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Chat Video Call via Zoom" name="User Verify End chat session Functionality in Active Patient Chat Content" time="13.498759">
+<system-out><![CDATA[Given I am logged in and on the chat menu page..............................passed
+When I click on an active patient chat......................................passed
+And I click the Ends Chat Session Button....................................passed
+Then I successfully End chat session........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Chat Video Call via Zoom" name="User Verify Chat Delete Functionality in Active Patient Chat Content" time="14.348857">
+<system-out><![CDATA[Given I am logged in and on the chat menu page..............................passed
+When I click on an active patient chat......................................passed
+And I click the Chat Delete button..........................................passed
+Then I successfully delete chat.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Chat Video Call via Zoom" name="User Verify Send button in Chat Room" time="16.360776">
+<system-out><![CDATA[Given I am logged in and on the chat menu page..............................passed
+When I click on an active patient chat......................................passed
+And I click the Send button.................................................passed
+Then I successfully send a message..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

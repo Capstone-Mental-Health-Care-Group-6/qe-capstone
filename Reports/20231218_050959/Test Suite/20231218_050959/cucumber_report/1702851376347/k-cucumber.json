@@ -1,0 +1,464 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "9be21754-7d6b-4436-b6f9-82f2b8a63410",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8133842400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "e96d1938-2900-4250-b227-64cdbae78cd2"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "9be21754-7d6b-4436-b6f9-82f2b8a63410",
+        "line": 10,
+        "name": "User Verify Chat Menu Page Display",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-chat-menu-page-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2498815800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I open the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IOpenTheChatMenu()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "7847d7bf-a6d8-4dfc-88db-ace61a15b6a0"
+          },
+          {
+            "result": {
+              "duration": 2103722200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see the active patient chat display",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IShouldSeeTheActivePatientChatDisplay()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "0be9cddc-c188-4a44-84c0-770d7664c90e"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "3070c5bf-1542-4bbe-bbee-3c5dacb1a5a2",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5842445500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "8bebc92f-39ab-4baf-8f33-b436c6ad2a1f"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "3070c5bf-1542-4bbe-bbee-3c5dacb1a5a2",
+        "line": 14,
+        "name": "User Verify Active Patient Chat Page View",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-active-patient-chat-page-view",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2590259000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "b781c97d-2f94-4eb0-982d-4c7623b80685"
+          },
+          {
+            "result": {
+              "duration": 2188402800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see the contents of the active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ShouldSeeTheContentsOfTheActivePatientChata()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "3d8e78fd-8e78-4a40-a505-75f14adef1d1"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "e4a77571-7e43-48e2-bc3b-a401c30b5374",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4676250000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "0a50ad30-c0c1-4646-94d0-7b57b6413b8a"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "e4a77571-7e43-48e2-bc3b-a401c30b5374",
+        "line": 23,
+        "name": "User Verify More Button Functionality in Active Patient Chat Content",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-more-button-functionality-in-active-patient-chat-content",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2656275500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "a216119e-71c0-42c0-acf5-b206412e0a87"
+          },
+          {
+            "result": {
+              "duration": 1041753000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click the Show More button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ShowMoreBotton()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "49f8497d-54ea-4bd8-9be0-4c47cc66b054"
+          },
+          {
+            "result": {
+              "duration": 2063354600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I successfully display more actions for the chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.SuccessfullyDisplayMoreAction()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "f99caf13-e645-4cbd-812b-5a77aac58990"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "cfe20f8b-33e9-4354-808e-9c0eb293bfb2",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5808508400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "d7a78720-202e-4c76-b351-fe871b6e3259"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "cfe20f8b-33e9-4354-808e-9c0eb293bfb2",
+        "line": 28,
+        "name": "User Verify End chat session Functionality in Active Patient Chat Content",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-end-chat-session-functionality-in-active-patient-chat-content",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2934308600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "365dc3d8-7de5-4707-b2b8-9e3361d8ac2a"
+          },
+          {
+            "result": {
+              "duration": 1504620300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click the Ends Chat Session Button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.EndChatSession()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "09f91d8b-c886-45b1-a79a-236a307ca8f2"
+          },
+          {
+            "result": {
+              "duration": 3244723900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I successfully End chat session",
+            "match": {
+              "location": "ChatVideoCallViaZoom.SuccessfullyEndChat()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "03bd8d95-eafb-4a00-919f-aa130a7c0cd3"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "7b863ff5-7c4c-4e2c-bb84-aadc37a13362",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6300570800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "c8cae624-3287-4206-b8cd-3c9326037551"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "7b863ff5-7c4c-4e2c-bb84-aadc37a13362",
+        "line": 33,
+        "name": "User Verify Chat Delete Functionality in Active Patient Chat Content",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-chat-delete-functionality-in-active-patient-chat-content",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2563960700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "8f624bad-a577-4554-9ef0-b90fcf3a0bbf"
+          },
+          {
+            "result": {
+              "duration": 1650708500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click the Chat Delete button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ChatDelete()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "b3062ecb-4792-48e8-a62f-8657f2aab4a9"
+          },
+          {
+            "result": {
+              "duration": 3826283500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I successfully delete chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.SuccessfullyDeleteChat()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "63c090a5-6c78-481f-ac65-96eadcfe2b6b"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "28257464-8fb0-450d-a01c-4c0bd78e02d7",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5955013300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the chat menu page",
+            "match": {
+              "location": "ChatVideoCallViaZoom.LoggedInAndTheChatMenu()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "0a4edc40-7347-46af-9c77-b87829125cc0"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "28257464-8fb0-450d-a01c-4c0bd78e02d7",
+        "line": 39,
+        "name": "User Verify Send button in Chat Room",
+        "description": "",
+        "id": "chat-video-call-via-zoom;user-verify-send-button-in-chat-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2736167900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on an active patient chat",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IclickOnAnActivePatient()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "6b5a1251-e07d-42fc-b277-82b7932be52e"
+          },
+          {
+            "result": {
+              "duration": 5197267400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click the Send button",
+            "match": {
+              "location": "ChatVideoCallViaZoom.IClickTheSendButton()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "68ca7853-a87a-4c19-87b5-3b5cdfa0d597"
+          },
+          {
+            "result": {
+              "duration": 2466967100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I successfully send a message",
+            "match": {
+              "location": "ChatVideoCallViaZoom.ISuccesfullySendAMessage()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "64ebbabc-9a07-4d10-bac4-92392283a813"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ChatVideoCallViaZoom"
+          }
+        ]
+      }
+    ],
+    "name": "Chat Video Call via Zoom",
+    "description": "  As a user\n  I want to access the chat menu page\n  So I can interact with active patient chats, perform actions, and conduct video calls via Zoom",
+    "id": "chat-video-call-via-zoom",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-ChatVideoCallViaZoom.feature",
+    "tags": [
+      {
+        "name": "@ChatVideoCallViaZoom",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

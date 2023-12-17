@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="123.702051">
+<testcase classname="Title of your feature" name="Verify Links in the Sidebar Menu" time="30.182321">
+<system-out><![CDATA[Given I logged in and was on the dashboard page.............................passed
+When I click the sidebar menu...............................................passed
+Then I should verify the functionality and correctness of the links.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Verify Icons in the Navbar" time="21.718695">
+<system-out><![CDATA[Given I logged in and was on the dashboard page.............................passed
+When I check the icons in the navbar........................................passed
+Then I should verify the visibility and correctness of the notification icons.passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User Verifies Chat button" time="49.440188">
+<system-out><![CDATA[Given I logged in and was on the dashboard page.............................passed
+When I click the chatbot button.............................................passed
+And I select and click the chat button......................................passed
+Then I should provide information for Chatbot...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="User Returns to the Dashboard Page from the Chatbot Page" time="22.360847">
+<system-out><![CDATA[Given I logged in and was on the dashboard page.............................passed
+When I click the chatbot button.............................................passed
+And I click the return button...............................................passed
+Then I should be redirected to the dashboard page...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

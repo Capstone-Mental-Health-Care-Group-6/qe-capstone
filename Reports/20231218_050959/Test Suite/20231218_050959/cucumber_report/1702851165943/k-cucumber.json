@@ -1,0 +1,132 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "5212b959-2545-417c-a661-ec3b5576a688",
+        "line": 8,
+        "name": "Verify Home button on Navbar",
+        "description": "",
+        "id": "landing-page-dokter;verify-home-button-on-navbar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7065558299,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to EmphatiCare landing page",
+            "match": {
+              "location": "LandingPageDokter.navigateLandingPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "69e1b6c4-1701-47bd-9a1a-678949ad90f1"
+          },
+          {
+            "result": {
+              "duration": 17367838799,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify button and scroll all the navigation hyperlinks",
+            "match": {
+              "location": "LandingPageDokter.verifyButtonHyprelinks()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "05a8952f-fdad-4d77-95b2-8bd816586694"
+          },
+          {
+            "result": {
+              "duration": 819223900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be redirected to the correct navigation hyperlinks",
+            "match": {
+              "location": "LandingPageDokter.redirectNavigationHyperlinks()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "d737606b-6150-4acd-a2f3-2b65ba7e0804"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LandingPageDokter"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "70517349-4e61-4c97-acad-e740751364dc",
+        "line": 14,
+        "name": "Verify Register Now button",
+        "description": "",
+        "id": "landing-page-dokter;verify-register-now-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5921633301,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I navigate to EmphatiCare landing page",
+            "match": {
+              "location": "LandingPageDokter.navigateLandingPage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "b49f8ccf-955c-4e96-9a7c-bbede033ee68"
+          },
+          {
+            "result": {
+              "duration": 478383300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the register now button",
+            "match": {
+              "location": "LandingPageDokter.clickRegister()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "950e7eb6-0378-49ef-ab96-a986c172c0a3"
+          },
+          {
+            "result": {
+              "duration": 4801797700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should be redirected to the registration page",
+            "match": {
+              "location": "LandingPageDokter.redirectRegistration()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "421130fe-aca6-4b55-a77b-0c2cdd734856"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LandingPageDokter"
+          }
+        ]
+      }
+    ],
+    "name": "Landing Page Dokter",
+    "description": "  As a user\n  I want to access the landing page\n  So that I can register to become a counselor",
+    "id": "landing-page-dokter",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-LandingPageDokter.feature",
+    "tags": [
+      {
+        "name": "@LandingPageDokter",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

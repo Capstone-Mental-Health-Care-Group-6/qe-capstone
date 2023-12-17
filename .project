@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>C%%Users%laras%OneDrive%Documents%Studi Independen%Altera%Capstone Project%WebsiteTest%WebTest.prj</name>
+	<name>C%%Users%Administrator%Documents%qe-capstone%website%qe-capstone%WebTest.prj</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +17,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1702019380035</id>
+			<id>1702661837389</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +26,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1702019380048</id>
+			<id>1702661837400</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +35,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1702022543883</id>
+			<id>1702737600873</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,25 +44,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1702022543900</id>
-			<name></name>
-			<type>6</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1702041237183</id>
-			<name></name>
-			<type>10</type>
-			<matcher>
-				<id>org.eclipse.core.resources.regexFilterMatcher</id>
-				<arguments>.*\.svn$</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1702041237201</id>
+			<id>1702737600899</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

@@ -23,3 +23,5 @@ CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-LandingPageDokter.feat
 
 CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-DashboardNotifikasiChatBot.feature')
 
+CucumberKW.runFeatureFile('Include/features/Dokter/Dokter-TransactionHistory.feature')
+

@@ -658,3 +658,95 @@ Feature: Emphati Care
 #    Given I set the PUT endpoint for editing doctor experience by ID with an invalid endpoint
 #    When I send an HTTP PUT request for editing doctor experience by ID with an invalid endpoint
 #    Then I receive a valid data response for invalid endpoint editing doctor experience by ID with HTTP status code 404 Not Found
+
+  # ===========================MOBILE PATIENT===========================
+
+  # [Positive] GET All Patient
+  Scenario: User succes Get and See All Patient
+    Given I set the GET endpoint for Get all patient
+    When I send an HTTP GET request with a valid baseURL for get all patient
+    Then I receive a response status 200 OK get all patient
+
+  # [Positive] GET All Patient Empty Data
+  Scenario: User succes Get and See All Patient Empty Data
+    Given I set the GET endpoint for Get all patient Empty Data
+    When I send an HTTP GET request with a valid baseURL for get all patient empty data
+    Then I receive a response status 200 OK empty data patient
+
+  # [Negative] GET All Patient Error JWT
+  Scenario: User Get All Patient Error jwt invalid
+    Given I set the GET endpoint for Get all patient for error JWT
+    When I send an HTTP GET request with a valid baseURL for get all patient for error JWT
+    Then I receive a response status 401 Unauthorized for error JWT
+
+  # [Negative] GET All Patient Invalid Endpoint
+  Scenario: User Get All Patient Invalid Endpoint
+    Given I set the GET Invalid endpoint for Get all patient
+    When I send an HTTP GET request with a invalid baseURL for get all patient
+    Then I receive a response status 404 Not Found get all patient invalid endpoint
+
+  # [Positive] GET Patient By ID
+  Scenario: User succes Get and See Patient By ID
+    Given I set the GET endpoint for Patient By ID
+    When I send an HTTP GET request with a valid baseURL for get patient by ID
+    Then I receive a response status 200 OK get patient by ID
+
+    # [Negative] GET Patient By ID Error JWT
+  Scenario: User succes Get and See Patient By ID Empty Data
+    Given I set the GET endpoint for Patient By ID for error JWT
+    When I send an HTTP GET request with a valid baseURL for get patient by ID for error JWT
+    Then I receive a response status 401 Unauthorized for error JWT by ID Patient
+
+    # [Negative] GET Patient By ID Invalid Endpoint
+  Scenario: User Get Patient by ID Invalid Endpoint
+    Given I set the GET Invalid endpoint for Patient By ID
+    When I send an HTTP GET request with a valid baseURL for get all patient for Patient By ID
+    Then I receive a response status 404 Not Found for Patient By ID
+
+    # [Positive] PUT - Update Profile
+  Scenario: User updates profile successfully
+    Given I set the PUT endpoint for updating the user profile
+    When I send an HTTP PUT request with valid parameters and baseURL for updating the user profile
+    Then I receive a valid data response for updating the user profile with HTTP status code 200 OK
+
+# [Positive] PUT - Update Password
+  Scenario: User updates password successfully
+    Given I set the PUT endpoint for updating the user password
+    When I send an HTTP PUT request with valid parameters and baseURL for updating the user password
+    Then I receive a valid data response for updating the user password with HTTP status code 200 OK
+
+# [Positive] DELETE - Delete Profile
+  Scenario: User deletes profile successfully
+    Given I set the DELETE endpoint for deleting the user profile
+    When I send an HTTP DELETE request with valid baseURL for deleting the user profile
+    Then I receive a valid data response for deleting the user profile with HTTP status code 200 OK
+
+# [Positive] PUT - Update Status
+  Scenario: User updates status successfully
+    Given I set the PUT endpoint for updating the user status
+    When I send an HTTP PUT request with valid parameters and baseURL for updating the user status
+    Then I receive a valid data response for updating the user status with HTTP status code 200 OK
+
+    # [Negative] PUT - Update Profile Invalid Endpoint
+  Scenario: User attempts to update profile with an invalid endpoint
+    Given I set an invalid PUT endpoint for updating the user profile
+    When I send an HTTP PUT request with invalid baseURL
+    Then I receive an error response with HTTP status code 404 Not Found
+
+# [Negative] PUT - Update Password Invalid Endpoint
+  Scenario: User attempts to update password with an invalid endpoint
+    Given I set an invalid PUT endpoint for updating the user password
+    When I send an HTTP PUT request with invalid baseURL for updating the user password
+    Then I receive an error response with HTTP status code 404 Not Found for updating the user password
+
+# [Negative] DELETE - Delete Profile Invalid Endpoint
+  Scenario: User attempts to delete profile with an invalid endpoint
+    Given I set an invalid DELETE endpoint for deleting the user profile
+    When I send an HTTP DELETE request with invalid baseURL for deleting the user profile
+    Then I receive an error response with HTTP status code 404 Not Found for deleting the user profile
+
+# [Negative] PUT - Update Status Invalid Endpoint
+  Scenario: User attempts to update status with an invalid endpoint
+    Given I set an invalid PUT endpoint for updating the user status
+    When I send an HTTP PUT request with invalid baseURL for updating the user status
+    Then I receive an error response with HTTP status code 404 Not Found for updating the user status

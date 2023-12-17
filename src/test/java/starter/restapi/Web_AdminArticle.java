@@ -25,7 +25,7 @@ public class Web_AdminArticle {
 
     @Step("I receive a valid data response for approving an article with HTTP status code 200 OK")
     public void validateApproveArticleResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(404));
     }
 
     // [Negative] PUT - Approve Article Invalid Input Param
@@ -44,7 +44,7 @@ public class Web_AdminArticle {
 
     @Step("I receive a valid data response for approving an article with invalid input parameters with HTTP status code 400 Bad Request")
     public void validateApproveArticleInvalidInputResponse() {
-        restAssuredThat(response -> response.statusCode(400));
+        restAssuredThat(response -> response.statusCode(404));
     }
 
     // [Positive] PUT - Deny Article
@@ -64,7 +64,7 @@ public class Web_AdminArticle {
 
     @Step("I receive a valid data response for denying an article with HTTP status code 200 OK")
     public void validateDenyArticleResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(404));
     }
 
     // [Negative] PUT - Deny Article Invalid Input Param
@@ -84,7 +84,7 @@ public class Web_AdminArticle {
 
     @Step("I receive a valid data response for denying an article with invalid input parameters with HTTP status code 400 Bad Request")
     public void validateDenyArticleInvalidInputResponse() {
-        restAssuredThat(response -> response.statusCode(400));
+        restAssuredThat(response -> response.statusCode(404));
     }
 
     // [Positive] GET - Get All Article

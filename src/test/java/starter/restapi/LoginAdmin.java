@@ -25,7 +25,7 @@ public class LoginAdmin {
     public void sendAuthenticationEndpointForAdminLogin() {
         JSONObject requestBody = new JSONObject();
 
-        requestBody.put("email", "AdminAja2@gmail.com");
+        requestBody.put("email", "AdminAja3@gmail.com");
         requestBody.put("password", "password");
 
         SerenityRest

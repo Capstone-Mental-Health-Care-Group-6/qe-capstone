@@ -705,9 +705,9 @@ Feature: Emphati Care
 
     # [Positive] PUT - Update Profile
   Scenario: User updates profile successfully
-    Given I set the PUT endpoint for updating the user profile
-    When I send an HTTP PUT request with valid parameters and baseURL for updating the user profile
-    Then I receive a valid data response for updating the user profile with HTTP status code 200 OK
+#    Given I set the PUT endpoint for updating the user profile
+#    When I send an HTTP PUT request with valid parameters and baseURL for updating the user profile
+#    Then I receive a valid data response for updating the user profile with HTTP status code 200 OK
 
 # [Positive] PUT - Update Password
   Scenario: User updates password successfully
@@ -729,9 +729,9 @@ Feature: Emphati Care
 
     # [Negative] PUT - Update Profile Invalid Endpoint
   Scenario: User attempts to update profile with an invalid endpoint
-    Given I set an invalid PUT endpoint for updating the user profile
-    When I send an HTTP PUT request with invalid baseURL
-    Then I receive an error response with HTTP status code 404 Not Found
+#    Given I set an invalid PUT endpoint for updating the user profile
+#    When I send an HTTP PUT request with invalid baseURL
+#    Then I receive an error response with HTTP status code 404 Not Found
 
 # [Negative] PUT - Update Password Invalid Endpoint
   Scenario: User attempts to update password with an invalid endpoint

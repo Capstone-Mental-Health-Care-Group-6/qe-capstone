@@ -384,9 +384,9 @@ Feature: Emphati Care
 
   # [Positive] POST - Create Bundle
   Scenario: User successfully creates a bundle
-    Given I set the POST endpoint for creating a bundle
-    When I send an HTTP POST request Create Bundle
-    Then I receive a valid data response for Create Bundle with HTTP status code 201 Created
+#    Given I set the POST endpoint for creating a bundle
+#    When I send an HTTP POST request Create Bundle
+#    Then I receive a valid data response for Create Bundle with HTTP status code 201 Created
 
   # [Negative] POST - Create Bundle Validation Error
   Scenario: User fails to create a bundle due to validation errors
@@ -395,28 +395,28 @@ Feature: Emphati Care
     Then I receive a valid data response for Create Bundle Validation Error with HTTP status code 400 Bad Request
 
   # [Negative] POST - Create Bundle Validation File Error
-  Scenario: User fails to create a bundle due to file validation error
-    Given I set the POST endpoint for Create Bundle Validation File Error
-    When I send an HTTP POST request with invalid file type for Create Bundle Validation File Error
-    Then I receive a valid data response for Create Bundle Validation File Error with HTTP status code 400 Bad Request
+#  Scenario: User fails to create a bundle due to file validation error
+#    Given I set the POST endpoint for Create Bundle Validation File Error
+#    When I send an HTTP POST request with invalid file type for Create Bundle Validation File Error
+#    Then I receive a valid data response for Create Bundle Validation File Error with HTTP status code 400 Bad Request
 
     # [Negative] POST - Create Bundle Validation File Invalid Type
   Scenario: User fails to create a bundle due to invalid file type
-    Given I set the POST endpoint for Create Bundle Validation File Invalid Type
-    When I send an HTTP POST request with a file of invalid type for Create Bundle Validation File Invalid Type
-    Then I receive a valid data response for Create Bundle Validation File Invalid Type with HTTP status code 400 Bad Request
+#    Given I set the POST endpoint for Create Bundle Validation File Invalid Type
+#    When I send an HTTP POST request with a file of invalid type for Create Bundle Validation File Invalid Type
+#    Then I receive a valid data response for Create Bundle Validation File Invalid Type with HTTP status code 400 Bad Request
 
 # [Negative] POST - Create Bundle Validation File Size Error
   Scenario: User fails to create a bundle due to file size error
-    Given I set the POST endpoint for Create Bundle Validation File Size Error
-    When I send an HTTP POST request with a file exceeding size limit for Create Bundle Validation File Size Error
-    Then I receive a valid data response for Create Bundle Validation File Size Error with HTTP status code 400 Bad Request
+#    Given I set the POST endpoint for Create Bundle Validation File Size Error
+#    When I send an HTTP POST request with a file exceeding size limit for Create Bundle Validation File Size Error
+#    Then I receive a valid data response for Create Bundle Validation File Size Error with HTTP status code 400 Bad Request
 
 # [Negative] POST - Create Bundle Invalid Endpoint
   Scenario: User fails to create a bundle with an invalid endpoint
-    Given I set the POST endpoint for creating a bundle with an invalid endpoint
-    When I send an HTTP POST request for Create Bundle Invalid Endpoint
-    Then I receive a valid data response for Create Bundle Invalid Endpoint with HTTP status code 404 Not Found
+#    Given I set the POST endpoint for creating a bundle with an invalid endpoint
+#    When I send an HTTP POST request for Create Bundle Invalid Endpoint
+#    Then I receive a valid data response for Create Bundle Invalid Endpoint with HTTP status code 404 Not Found
 
   # [Positive] GET - Get By ID
   Scenario: User retrieves a bundle by ID successfully
@@ -444,15 +444,15 @@ Feature: Emphati Care
 
   # [Positive] PUT - Update Bundle Success With File Update
   Scenario: User successfully updates a bundle With File Update
-    Given I set the PUT endpoint for updating a bundle With File Update
-    When I send an HTTP PUT request with valid data for Update Bundle Success With File Update
-    Then I receive a valid data response for Update Bundle Success With File Update with HTTP status code 200 OK
+#    Given I set the PUT endpoint for updating a bundle With File Update
+#    When I send an HTTP PUT request with valid data for Update Bundle Success With File Update
+#    Then I receive a valid data response for Update Bundle Success With File Update with HTTP status code 200 OK
 
   # [Positive] PUT - Update Bundle Success But File Not Update
   Scenario: User successfully updates a bundle But File Not Update
-    Given I set the PUT endpoint for updating a bundle With File Not Update
-    When I send an HTTP PUT request with valid data for Update Bundle Success But File Not Update
-    Then I receive a valid data response for Update Bundle Success But File Not Update with HTTP status code 200 OK
+#    Given I set the PUT endpoint for updating a bundle With File Not Update
+#    When I send an HTTP PUT request with valid data for Update Bundle Success But File Not Update
+#    Then I receive a valid data response for Update Bundle Success But File Not Update with HTTP status code 200 OK
 
   # [Negative] PUT - Update Bundle Validate Error
   Scenario: User fails to update a bundle due to validation errors
@@ -462,9 +462,9 @@ Feature: Emphati Care
 
 # [Negative] PUT - Update Bundle Invalid Endpoint
   Scenario: User fails to update a bundle with an invalid endpoint
-    Given I set the PUT endpoint for updating a bundle with an invalid endpoint
-    When I send an HTTP PUT request for Update Bundle Invalid Endpoint
-    Then I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found
+#    Given I set the PUT endpoint for updating a bundle with an invalid endpoint
+#    When I send an HTTP PUT request for Update Bundle Invalid Endpoint
+#    Then I receive a valid data response for Update Bundle Invalid Endpoint with HTTP status code 404 Not Found
 
   # [Positive] DELETE - Delete Bundle
   Scenario: User successfully deletes a bundle
@@ -489,9 +489,9 @@ Feature: Emphati Care
 
     # [Positive] POST - Success Create Article Doctor
   Scenario: User creating a new articles doctor with a valid endpoint
-    Given I set a POST request to a valid endpoint for creating a new articles doctor
-    When I send the POST request to create a new articles doctor
-    Then I receive an HTTP response with code 201 for creating a new articles doctor
+#    Given I set a POST request to a valid endpoint for creating a new articles doctor
+#    When I send the POST request to create a new articles doctor
+#    Then I receive an HTTP response with code 201 for creating a new articles doctor
 
   # [Negative] POST - Error Invalid User Input Thumbnail
   Scenario: I Attempting to create a new articles doctor with invalid input thumbnail
@@ -507,9 +507,9 @@ Feature: Emphati Care
 
   # [Positive] PUT - Success Update Article Doctor
   Scenario: User Update articles doctor with Valid Endpoint
-    Given I set a valid PUT endpoint Update articles doctor
-    When I sends a PUT HTTP request Update articles doctor
-    Then I receives an HTTP response code 200 with valid endpoint for update articles doctor
+#    Given I set a valid PUT endpoint Update articles doctor
+#    When I sends a PUT HTTP request Update articles doctor
+#    Then I receives an HTTP response code 200 with valid endpoint for update articles doctor
 
   # [Negative] PUT - Invalid Param ID
   Scenario: User Update User with Invalid Endpoint

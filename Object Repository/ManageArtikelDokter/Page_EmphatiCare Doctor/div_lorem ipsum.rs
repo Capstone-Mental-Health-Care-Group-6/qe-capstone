@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_lorem ipsum</name>
+   <tag></tag>
+   <elementGuidId>8366b7b5-bc3d-428e-8a47-3852fc83eeb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.ql-editor</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='deksripsi-artikel']/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4a9a8b09-c500-438d-82ce-c0f45a176e6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ql-editor</value>
+      <webElementGuid>7ebf0f66-26ab-4e56-a84f-00f6a2233a88</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-gramm</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>f55a4698-fed4-4448-a342-e7ca12ca642b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>contenteditable</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>f8991723-4aa3-417f-90ac-78f60c253c72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>lorem ipsum</value>
+      <webElementGuid>4764a519-bf78-47c6-abc6-95cc406a6760</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;deksripsi-artikel&quot;)/div[@class=&quot;ql-container ql-snow&quot;]/div[@class=&quot;ql-editor&quot;]</value>
+      <webElementGuid>681c7af7-9626-4424-a8b6-490d96b41553</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='deksripsi-artikel']/div[2]/div</value>
+      <webElementGuid>ab68490a-5161-4c2c-a7f4-48261f4f223d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tambah Artikel'])[1]/following::div[10]</value>
+      <webElementGuid>2e3e3824-657c-4a9a-8d55-cdf8a726e789</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::div[11]</value>
+      <webElementGuid>3f7fb731-8dcf-46ee-9167-fef40c0111c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unggah Artikel'])[1]/preceding::div[4]</value>
+      <webElementGuid>189a7ad3-1fc6-4fd0-acf3-5adc4583d089</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan sebagai Draft'])[1]/preceding::div[6]</value>
+      <webElementGuid>c0a3cae9-312b-47d5-95e0-cb1c85c86ef1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div</value>
+      <webElementGuid>19c954f7-01b1-4b15-bf37-f5dd78fb61c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'lorem ipsum' or . = 'lorem ipsum')]</value>
+      <webElementGuid>53fc6e9f-599d-4bf0-a4f0-9cf4592fd0d0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

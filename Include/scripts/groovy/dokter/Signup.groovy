@@ -45,52 +45,55 @@ import cucumber.api.java.en.When
 
 
 class Signup {
-	//	@Given("the user is on the Sign Up page for Doctor")
-	//	def givenUserIsOnDoctorSignUpPage() {}
-	//
-	//	@When("the user fills in the email")
-	//	def whenUserFillsInEmail(String email) {
-	//		println email
-	//	}
-	//
-	//	@Then("the email field should be populated with the provided email")
-	//	def thenEmailFieldShouldBePopulated() {}
-	//
-	//	@When("the user fills in the password")
-	//	def whenUserFillsInPassword(String password) {
-	//		println password
-	//	}
-	//
-	//	@Then("the password field should be populated with the provided password")
-	//	def thenPasswordFieldShouldBePopulated() {}
-	//
-	//	@When("the user fills in the confirm password")
-	//	def whenUserFillsInConfirmPassword(String cpassword) {
-	//		println cpassword
-	//	}
-	//
-	//	@Then("the confirm password field should be populated with the provided confirm password")
-	//	def thenConfirmPasswordFieldShouldBePopulated() {}
-	//
-	//	@When("the user clicks the register button")
-	//	def whenUserClicksRegisterButton() {}
-	//
-	//	@Then("the registration process should be initiated")
-	//	def thenRegistrationProcessShouldBeInitiated() {
-	//	}
-	//
-	//	@When("the user empties the registration form")
-	//	def whenUseremptyregform() {}
-	//
-	//	@Then("the email field should be empty")
-	//	def theEmailEmpty() {
-	//	}
-	//
-	//	@And("the password field should be empty")
-	//	def passworempty() {
-	//	}
-	//
-	//	@And("the confirm password field should be empty")
-	//	def confirmpwempty() {
-	//	}
+	@Given("I am is on the Sign Up page Doctor")
+	def signuppage() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/register-dokter')
+		WebUI.maximizeWindow()
+	}
+	@When("I fills in the username, email, password, confirm password Doctors")
+	def filling() {
+		WebUI.setText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/input_Ingat saya_username'), 'doktor')
+		WebUI.setText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/input_Masukkan Email Anda_email'), 'testdoktor@gmail.com')
+		WebUI.setEncryptedText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/input_Password harus terdiri dari minimal 8_1e27b4'),
+				'KgnNhXmhf2aH/UqJ/9M4jA==')
+		WebUI.setEncryptedText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/input_Kata Sandi Tidak Sesuai_confirmPassword'),
+				'KgnNhXmhf2aH/UqJ/9M4jA==')
+	}
+	@And("I Click sign up button Doctor page")
+	def butnsign() {
+		WebUI.click(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/button_Daftar'))
+	}
+	@Then("I directed to dashboard Doctors page")
+  def godasboardP() {
+	WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
+	WebUI.closeBrowser()
+	}
+  
+  
+  	@Given("I am is on the Signing Up page Doctor")
+	  def sign() {
+		  WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/register-dokter')
+	  }
+	
+	@When("I emptying username, email, password, confirm password Doctors")
+	def emptying() {
+		WebUI.click(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Ingat saya_username'))
+		
+		WebUI.setText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Ingat saya_username'),
+			'')
+		
+		WebUI.setText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Masukkan Email Anda_email'),
+			'')
+		
+		WebUI.setEncryptedText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Password harus terdiri dari minimal 8_1e27b4'),
+			'9NLz+4tGZcQ=')
+		
+		WebUI.setEncryptedText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Kata Sandi Tidak Sesuai_confirmPassword'),
+			'9NLz+4tGZcQ=')
+	}
+	@Then("I should see error message")
+	def error() {
+		WebUI.closeBrowser()
+	}
 }

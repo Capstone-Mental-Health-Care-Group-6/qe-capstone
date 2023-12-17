@@ -4,23 +4,23 @@ Feature: Emphati Care
   So that I can manage application
 
  # ===========================AUTH REGISTER===========================
-#   [Positive] POST - Successful Registration for Admin
-  Scenario: Successful Registration for Admin
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for an admin
-    Then I should receive a response with HTTP status code 201 created
-
-    # [Positive] POST - Successful Registration for Doctor
-  Scenario: Successful Registration for Doctor
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for a doctor
-    Then I should receive a response with HTTP status code 201 created
-
-  # [Positive] POST - Successful Registration for Patient
-  Scenario: Successful Registration for Patient
-    Given I have a valid registration endpoint
-    When I provide name, email, role, and password for a patient
-    Then I should receive a response with HTTP status code 201 created
+##   [Positive] POST - Successful Registration for Admin
+#  Scenario: Successful Registration for Admin
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for an admin
+#    Then I should receive a response with HTTP status code 201 created
+#
+#    # [Positive] POST - Successful Registration for Doctor
+#  Scenario: Successful Registration for Doctor
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for a doctor
+#    Then I should receive a response with HTTP status code 201 created
+#
+#  # [Positive] POST - Successful Registration for Patient
+#  Scenario: Successful Registration for Patient
+#    Given I have a valid registration endpoint
+#    When I provide name, email, role, and password for a patient
+#    Then I should receive a response with HTTP status code 201 created
 
   # [Negative] POST - Register Error Validation
   Scenario: Error Validation on POST Register

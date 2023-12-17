@@ -22,8 +22,8 @@ public class Register {
 
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "admin");
-        reqBody.put("email", "AdminAja4@gmail.com");
-        reqBody.put("role", "admin");
+        reqBody.put("email", "AdminAja6@gmail.com");
+        reqBody.put("role", "Admin");
         reqBody.put("password", "admin");
 
 
@@ -35,9 +35,9 @@ public class Register {
     @Step("I provide name, email, role, and password for an admin")
     public void NameEmailRoleAndPasswordForAnDoctor() {
         JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "Doctor");
-        reqBody.put("email", "DoctorAja4@gmail.com");
-        reqBody.put("role", "Doctor");
+        reqBody.put("name", "Dokter");
+        reqBody.put("email", "DoctorAja6@gmail.com");
+        reqBody.put("role", "Dokter");
         reqBody.put("password", "password");
 
         SerenityRest
@@ -51,7 +51,7 @@ public class Register {
     public void NameEmailRoleAndPasswordForAnPatient() {
         JSONObject reqBody = new JSONObject();
         reqBody.put("name", "Patient");
-        reqBody.put("email", "Patient4@gmail.com");
+        reqBody.put("email", "Patient6@gmail.com");
         reqBody.put("role", "Patient");
         reqBody.put("password", "password");
 

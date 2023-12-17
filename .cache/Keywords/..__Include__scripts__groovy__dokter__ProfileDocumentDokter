@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "9EF87BE4ADB76D5CF3C72D1C353423F4",
+  "keywordFileContentHash": "1AC10F69D9C8D5810063DAE632F5F3DE",
   "keywordClasses": [
     {
       "name": "dokter.ProfileDocumentDokter",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

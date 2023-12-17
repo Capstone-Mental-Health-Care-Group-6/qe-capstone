@@ -45,48 +45,64 @@ import cucumber.api.java.en.When
 
 
 class ProfileDataAkademik {
-	@Given("the user is on the dashboard Data Akademik page")
+	@Given("I already logged in dashboard dokter")
 	def givenUserIsOnDashboardPage() {
-		// Add code to navigate to the dashboard page
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/login-dokter')
+		WebUI.maximizeWindow()
+		WebUI.delay(2)
+
+		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), 'Doctor6@gmail.com')
+		WebUI.delay(2)
+
+		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), 'password')
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/button_Masuk'))
+		WebUI.delay(2)
 	}
 
-	@When("the user clicks academic data")
-	def whenUserClicksAcademicData() {
-		// Add code to simulate clicking the academic data link
+	@When("I go to profile")
+	def goprofilew() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/img_lihat detail_iconNavbar'))
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/icon-profile'))
+	}
+	@And("I Click data academic")
+	def clickdaka() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/a_Data Akademik'))
 	}
 
-	@Then("the user should be on the academic data page")
-	def thenUserShouldBeOnAcademicDataPage() {
-		// Add verification code to ensure the user is on the academic data page
+	@And("I fill in the asal universitas, jenjang pendidikan, tahun masuk universitas, tahun tamat universitas")
+	def ifilldapge() {
+		WebUI.setText(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/input_Asal Universitas_asalUniversitas'), 'universitas')
+		WebUI.setText(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/input_Tahun Masuk Universitas_tahunMasuk'), '2020')
+		WebUI.setText(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/input_Jenjang Pendidikan_jenjangPendidikan'), 's1')
+		WebUI.setText(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/input_Tahun Tamat Universitas_tahunTamat'), '2024')
 	}
 
-	@When("the user fills in the university field")
-	def whenUserFillsInUniversityField() {
-		// Add code to fill in the university field
+	@And("I clicked the save changes button")
+	def svbtn() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/button_Simpan Perubahan'))
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/button_Simpan Perubahan'))
 	}
 
-	@And("the user fills in the major and level of education")
-	def whenUserFillsInMajorAndLevel() {
-		// Add code to fill in the major and level of education fields
+	@Then("I see pop up data succesfully saved")
+	def dtsuccesfullysave() {
+		
 	}
 
-	@And("the user fills in the doctor field")
-	def whenUserFillsInDoctorField() {
-		// Add code to fill in the doctor field
+	@And("I click the cancel button on the popup academic data")
+	def clickcancels() {
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/button_Simpan Perubahan'))
+		WebUI.click(findTestObject('Object Repository/Dokter-DataAkademikDokumen/Page_EmphatiCare Doctor/button_Batal'))
 	}
 
-	@And("the user fills in the year of entry and year of university graduation")
-	def whenUserFillsInYearOfEntryAndGraduation() {
-		// Add code to fill in the year of entry and year of university graduation fields
+	@Then("I successfully canceled changes and close the save changes popup")
+	def canclchgs() {
+		WebUI.takeScreenshot()
+		WebUI.closeBrowser()
+		
 	}
 
-	@And("the user clicks the save changes button data akademik")
-	def whenUserClicksSaveChangesButton() {
-		// Add code to simulate clicking the save changes button
-	}
-
-	@Then("the academic data should be successfully updated")
-	def thenAcademicDataShouldBeSuccessfullyUpdated() {
-		// Add verification code for successful update of academic data
-	}
+	
 }

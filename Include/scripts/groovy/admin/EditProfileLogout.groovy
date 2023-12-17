@@ -46,51 +46,51 @@ import cucumber.api.java.en.When
 
 class EditProfileLogout {
 
-    @Given("I am logged in")
-    def navigateLoginPage() {
-    }
+	@Given("I am logged in")
+	def navigateLoginPage() {
+	}
 
-    @When("I edit my profile with valid information and close the success pop-up")
-    def editProfileWithValidInfo() {
-    }
+	@When("I edit my profile with valid information and close the success pop-up")
+	def editProfileWithValidInfo() {
+	}
 
-    @Then("I should see a success message")
-    def successMessage() {
-    }
+	@Then("I should see a success message")
+	def successMessage() {
+	}
 
-    @When("I edit my profile with a blank name")
-    def editProfileWithBlankName() {
-    }
+	@When("I edit my profile with a blank name")
+	def editProfileWithBlankName() {
+	}
 
-    @Then("I should see an error message")
-    def errorMessage() {
-    }
+	@Then("I should see an error message")
+	def errorMessage() {
+	}
 
-    @When("I edit my profile with a blank email")
-    def editProfileWithBlankEmail() {
-    }
+	@When("I edit my profile with a blank email")
+	def editProfileWithBlankEmail() {
+	}
 
-    @When("I edit my profile with a blank old password")
-    def editProfileWithBlankOldPassword() {
-    }
+	@When("I edit my profile with a blank old password")
+	def editProfileWithBlankOldPassword() {
+	}
 
-    @When("I edit my profile with a blank new password")
-    def editProfileWithBlankNewPassword() {
-    }
+	@When("I edit my profile with a blank new password")
+	def editProfileWithBlankNewPassword() {
+	}
 
-    @When("I log out and confirm")
-    def logOutAndConfirm() {
-    }
+	@When("I log out and confirm")
+	def logOutAndConfirm() {
+	}
 
-    @Then("I should be successfully logged out")
-    def successfullyLoggedOut() {
-    }
+	@Then("I should be successfully logged out")
+	def successfullyLoggedOut() {
+	}
 
-    @When("I log out and cancel")
-    def logOutAndCancel() {
-    }
+	@When("I log out and cancel")
+	def logOutAndCancel() {
+	}
 
-    @Then("I should remain logged in")
-    def remainLoggedIn() {
-    }
+	@Then("I should remain logged in")
+	def remainLoggedIn() {
+	}
 }

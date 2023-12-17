@@ -45,73 +45,48 @@ import cucumber.api.java.en.When
 
 
 class ManagePencairanSaldo {
-	//	@Given("User is on the {string} page")
-	//	def userIsOnPage(pageName) {
-	//		// Code to navigate to the specified page
-	//	}
-	//
-	//	@When("User clicks the {string} button")
-	//	def userClickedButton(buttonName) {
-	//		// Code to click the specified button
-	//	}
-	//
-	//	@And("User chooses and clicks a withdrawal method")
-	//	def userChoosesAndClicksWithdrawalMethod() {
-	//		// Code to choose and click a withdrawal method
-	//	}
-	//
-	//	@And("User fills in the {string} and {string}")
-	//	def userFillsInFields(fieldName1, fieldName2) {
-	//		// Code to fill in the specified fields
-	//	}
-	//
-	//	@And("User chooses a nominal amount")
-	//	def userChoosesNominalAmount() {
-	//		// Code to choose a nominal amount
-	//	}
-	//
-	//	@And("User clicks the {string} button")
-	//	def userClicksButton(buttonName) {
-	//		// Code to click the specified button
-	//	}
-	//
-	//	@Then("User should successfully withdraw the funds")
-	//	def userShouldSuccessfullyWithdrawFunds() {
-	//		// Code to verify successful withdrawal
-	//	}
-	//
-	//	@Then("User should see an error message about the empty {string}")
-	//	def userSeeErrorMessageAboutEmptyField(fieldName) {
-	//		// Code to verify the error message for an empty field
-	//	}
-	//
-	//	@And("User clicks the {string} button")
-	//	def userClickingButton(buttonName) {
-	//		// Code to click the specified button
-	//	}
-	//
-	//	@Then("User should see an error message about the empty {string}")
-	//	def userShouldSeeErrorMessageAboutEmptyField(fieldName) {
-	//		// Code to verify the error message for an empty field
-	//	}
-	//
-	//	@And("User clicks the {string} button")
-	//	def userClicButton(buttonName) {
-	//		// Code to click the specified button
-	//	}
-	//
-	//	@Then("User should see an error message about the empty {string} and {string}")
-	//	def userShouldSeeErrorMessageAboutEmptyFields(fieldName1, fieldName2) {
-	//		// Code to verify the error message for empty fields
-	//	}
-	//
-	//	@And("User clicks the {string} button")
-	//	def userClikButton(buttonName) {
-	//		// Code to click the specified button
-	//	}
-	//
-	//	@Then("User should cancel the withdrawal process")
-	//	def userShouldCancelWithdrawalProcess() {
-	//		// Code to verify the cancellation of the withdrawal process
-	//	}
+	@Given("I Already login to manage withdraw")
+	def mngwdrw() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/login-dokter')
+		WebUI.maximizeWindow()
+		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), 'Doctor6@gmail.com')
+
+		WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), 'password')
+	}
+	@When("I clicked side button pencairan saldo")
+	def btnsld() {
+		WebUI.click(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/a_Pencairan Saldo'))
+	}
+	@Then("I succesfully go to manage withdraw page")
+	def mngwdrpg() {
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/saldo')	
+	}
+	
+	@When("I clicked button pencairan saldo")
+	def clickbtnps() {
+		WebUI.click(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/div_Tarik Saldo'))
+	}
+	
+	@Then("I  should see pop up form pencairan saldo")
+	def popupps() {
+//		WebUI.click(findTestObject('modal-body p-5 d-flex flex-column')	
+	}
+	
+	@And("I fill metode pembayaran metode, nama penerima namapenerima, nomor rekening norekening, nominal penarikan nominal")
+	def fillcairsld() {
+		WebUI.setText(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/input_Pencairan Saldo_namaPenerima'), 'yanti')
+		WebUI.setText(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/input_Pencairan Saldo_namaPenerima_1'), '02929202008')
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/select_Pilih Nominal PenarikanRp 50.000-,Rp_e97ad7'), 'Rp 50.000-,', true)
+	}
+	@And("I click cairkan dana button")
+	def cairbtnsld() {
+		WebUI.click(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/button_Cairkan Dana'))
+	}
+	@Then ("I should see pop up notification pencairan saldo di proses")
+	def popuroses() {
+		WebUI.click(findTestObject('Object Repository/Dokter-ManagePencairanSaldo/Page_EmphatiCare Doctor/div_selamat Pencairan Dana Telah Diproses'))
+		WebUI.takeScreenshot()
+		WebUI.closeBrowser()
+	}
 }

@@ -65,32 +65,32 @@ class Signup {
 		WebUI.click(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/button_Daftar'))
 	}
 	@Then("I directed to dashboard Doctors page")
-  def godasboardP() {
-	WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
-	WebUI.closeBrowser()
+	def godasboardP() {
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
+		WebUI.closeBrowser()
 	}
-  
-  
-  	@Given("I am is on the Signing Up page Doctor")
-	  def sign() {
-		  WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/register-dokter')
-	  }
-	
+
+
+	@Given("I am is on the Signing Up page Doctor")
+	def sign() {
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/register-dokter')
+	}
+
 	@When("I emptying username, email, password, confirm password Doctors")
 	def emptying() {
 		WebUI.click(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Ingat saya_username'))
-		
+
 		WebUI.setText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Ingat saya_username'),
-			'')
-		
+				'')
+
 		WebUI.setText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Masukkan Email Anda_email'),
-			'')
-		
+				'')
+
 		WebUI.setEncryptedText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Password harus terdiri dari minimal 8_1e27b4'),
-			'9NLz+4tGZcQ=')
-		
+				'9NLz+4tGZcQ=')
+
 		WebUI.setEncryptedText(findTestObject('Object Repository/SignUp/Page_EmphatiCare Doctor/Page_EmphatiCare Doctor/input_Kata Sandi Tidak Sesuai_confirmPassword'),
-			'9NLz+4tGZcQ=')
+				'9NLz+4tGZcQ=')
 	}
 	@Then("I should see error message")
 	def error() {

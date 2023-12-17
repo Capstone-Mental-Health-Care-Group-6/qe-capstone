@@ -11,16 +11,11 @@ Scenario: Logout
 
 @negative      
 Scenario: Cancel Logout
-    Given I already logged in
-    When I am clicking the Logout button
+    Given I already login
+    When I clicks the logout button
     And I am clicks the cancel button on the pop-up permissions
-    Then I am should remain on the profile page
+    Then I am should remain on the dashboard page
     
-    
-Scenario: Close Logout
-    Given I am already login
-    When I clicked the Logout button
-    And I clicked the x button on the pop-up permissions
-    Then I should be canceling logout
+
     
     

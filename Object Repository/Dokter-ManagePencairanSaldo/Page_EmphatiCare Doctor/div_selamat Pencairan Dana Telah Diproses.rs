@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_selamat Pencairan Dana Telah Diproses</name>
+   <tag></tag>
+   <elementGuidId>54d7b959-1064-411a-a0ac-87eeef489604</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-alert-saldo-diproses']/div/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>808e2bc3-12e8-4417-860b-7bce9f870b9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-body p-5 d-flex flex-column  align-items-center justify-content-center </value>
+      <webElementGuid>f688065d-81d3-4e1a-8362-ad4651f3a47f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>selamat Pencairan Dana Telah Diproses</value>
+      <webElementGuid>6e824caf-eed6-491e-b047-3bb33ec26fee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-alert-saldo-diproses&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered modal-md&quot;]/div[@class=&quot;modal-content rounded-4 p-3&quot;]/div[@class=&quot;modal-body p-5 d-flex flex-column  align-items-center justify-content-center&quot;]</value>
+      <webElementGuid>dd10ebeb-6b96-4c2d-98e5-12ce251e1c43</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-alert-saldo-diproses']/div/div/div[2]</value>
+      <webElementGuid>07da4855-829a-4b96-810a-4ced1402f160</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pending'])[2]/following::div[12]</value>
+      <webElementGuid>6c1d2797-ee49-46a6-b553-093fa02005fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp 200.000'])[6]/following::div[12]</value>
+      <webElementGuid>9f14618d-1ba1-4904-9134-9e96ecf10b0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pencairan Saldo'])[3]/preceding::div[1]</value>
+      <webElementGuid>2cb78b58-f3ef-458a-8b96-149e12d5e1d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div[2]/div/div/div/div[2]</value>
+      <webElementGuid>85792679-0a72-4bfe-8945-1997a6c1d19e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'selamat Pencairan Dana Telah Diproses' or . = 'selamat Pencairan Dana Telah Diproses')]</value>
+      <webElementGuid>0f41c025-015c-4391-b6ab-f249a578e795</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

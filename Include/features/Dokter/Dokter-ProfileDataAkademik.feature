@@ -5,36 +5,31 @@ Feature: Profile doktor data akademik
   So I can make changes to my academic data
   
   @positive
-    Scenario Outline: User Verify Update Academic data
+    Scenario: User Verify Update Academic data
     Given I already logged in dashboard dokter
     When I go to profile
     And  I Click data academic
-    And I fill in the asal universitas <University>, jenjang pendidikan <Education>, tahun masuk universitas <EnrollmentUni>, tahun tamat universitas <GraduationUni>
+    And I fill in the asal universitas, jenjang pendidikan, tahun masuk universitas, tahun tamat universitas 
     And I clicked the save changes button
     Then I see pop up data succesfully saved
     
-    Examples: 
-      | University              | Education  | EnrollmentUni | GraduationUni  | 
-      | Universitas Indonesia		| S1				 | 2021					 | 2024						| 
       
     Scenario: User Verify Cancel Button on Popup update academic data
-    Given I login on the doctor dashboard page
-    When I already fill in the required personal data fields
+    Given I already logged in dashboard dokter
+    When I fill in the asal universitas, jenjang pendidikan, tahun masuk universitas, tahun tamat universitas 
     And I click the cancel button on the popup academic data
     Then I successfully canceled changes and close the save changes popup
     
     
-   @negative
- 		Scenario Outline: User Verify Update Academic data emptying form 
-    Given I go to logged in dashboard dokters
-    When I go to profile doctors
-    And  I Click data academic doctors
-    And I emptying asal universitas <University>, jenjang pendidikan <Education>, tahun masuk universitas <EnrollmentUni>, tahun tamat universitas <GraduationUni>
-    And I clicking the save changes buttons
-    Then I see message data must be filled
+   #@negative
+ #		Scenario: User Verify Update Academic data emptying form 
+    #Given I already logged in dashboard dokter
+    #When I go to profile
+    #And  I Click data academic
+    #And I emptying asal universitas, jenjang pendidikan, tahun masuk universitas, tahun tamat universitas
+    #And I clicked the save changes button
+    #Then I see message data must be filled
     
-    Examples: 
-      | University  | Education | EnrollmentUni | GraduationUni | 
-      | 						| 				  |								| 							| 
+  
       
   

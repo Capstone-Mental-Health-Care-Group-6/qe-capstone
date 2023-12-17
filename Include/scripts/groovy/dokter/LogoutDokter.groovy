@@ -45,43 +45,47 @@ import cucumber.api.java.en.When
 
 
 class LogoutDokter {
-	@Given("the user clicks profile")
-	def givenUserClicksProfile() {
-		// Add code to simulate clicking the profile link
+	@Given("I already login")
+	def login() {
+	WebUI.openBrowser('')
+	WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/login-dokter')
+	WebUI.maximizeWindow()
+	WebUI.delay(2)
+	WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masukkan Email Anda_email'), 'Doctor6@gmail.com')
+	WebUI.delay(2)
+
+	WebUI.setText(findTestObject('Object Repository/Dokter-LoginDoctor/input_Masuk_password'), 'password')
+	WebUI.delay(2)
+
+	WebUI.click(findTestObject('Object Repository/Dokter-LoginDoctor/button_Masuk'))
+	WebUI.delay(2)
 	}
 
-	@When("the user clicks the Logout button")
+	@When("I clicks the logout button")
 	def whenUserClicksLogoutButton() {
-		// Add code to simulate clicking the Logout button
+		WebUI.click(findTestObject('Object Repository/Dokter-Logout/Page_EmphatiCare Doctor/button_Logout'))
 	}
 
-	@When("the user clicks the exit button on the pop-up permissions")
+	@And("I clicks the exit button on the pop-up permissions")
 	def whenUserClicksExitButton() {
-		// Add code to simulate clicking the exit button on the pop-up permissions
+		WebUI.click(findTestObject('Object Repository/Dokter-Logout/Page_EmphatiCare Doctor/div_KonfirmasiYakin ingin keluar dari halam_c1d389'))
+		WebUI.click(findTestObject('Object Repository/Dokter-Logout/Page_EmphatiCare Doctor/button_Keluar'))
 	}
 
-	@Then("the user should be logged out and redirected to the home page")
+	@Then("I should be logged out and redirected to the login page")
 	def thenUserShouldBeLoggedOut() {
-		// Add verification code for successful logout and redirection to the home page
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/login-dokter')
 	}
-
-	@When("the user clicks the cancel button on the pop-up permissions")
-	def whenUserClicksCancelButton() {
-		// Add code to simulate clicking the cancel button on the pop-up permissions
+	
+	@And("I am clicks the cancel button on the pop-up permissions")
+	def cancellogout() {
+		WebUI.click(findTestObject('Object Repository/Dokter-Logout/Page_EmphatiCare Doctor/div_KonfirmasiYakin ingin keluar dari halam_c1d389'))
+		WebUI.click(findTestObject('Object Repository/Dokter-Logout/Page_EmphatiCare Doctor/button_Tidak'))
+		
 	}
-
-	@Then("the user should remain on the profile page")
-	def thenUserShouldRemainOnProfilePage() {
-		// Add verification code to ensure the user remains on the profile page
-	}
-
-	@When("the user clicks the x button on the pop-up permissions")
-	def whenUserClicksXButton() {
-		// Add code to simulate clicking the "x" button on the pop-up permissions
-	}
-
-	@Then("the user should be canceling logout")
-	def thenUserShouldBeCancelingLogout() {
-		// Add verification code for the user canceling logout
+	@Then("I am should remain on the dashboard page")
+	def gtppage() {
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/dokter/dashboard')
+		
 	}
 }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Edit Artikel</name>
+   <tag></tag>
+   <elementGuidId>b27a684b-5b41-401d-858e-6a735184e495</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id=''])[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.bg-transparent.border-0.fw-semibold.btn-edit-artikel</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>976485b7-582c-4093-8e3d-887535c0b627</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>02c194a0-37e6-4fc7-8dfc-2cf26ea58737</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-transparent border-0 fw-semibold btn-edit-artikel</value>
+      <webElementGuid>0d5c6de2-a4e7-4cc2-8348-fa22dff1232b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit Artikel</value>
+      <webElementGuid>9547cf00-05aa-41c4-a2d9-7d03c9c74206</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;container rounded-2 py-3 artikel-background&quot;]/div[@class=&quot;table-customers p-datatable p-component p-datatable-selectable p-datatable-responsive-scroll&quot;]/div[@class=&quot;p-datatable-wrapper&quot;]/table[@class=&quot;p-datatable-table&quot;]/tbody[@class=&quot;p-datatable-tbody&quot;]/tr[@class=&quot;p-highlight p-selectable-row&quot;]/td[5]/div[@class=&quot;btn&quot;]/div[@class=&quot;dropdown-menu dropdown-menu-end px-3 menu-aksi-artikel show&quot;]/div[@class=&quot;bg-light rounded-3 my-2  dropdown-item&quot;]/div[1]/button[@class=&quot;bg-transparent border-0 fw-semibold btn-edit-artikel&quot;]</value>
+      <webElementGuid>cf45489d-d016-42ba-9102-eefcad1103c4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@id=''])[3]</value>
+      <webElementGuid>5aa48cba-2197-41cc-b870-89e830bf5686</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div[2]/div/table/tbody/tr/td[5]/div/div/div[2]/div/button</value>
+      <webElementGuid>e6fd6fb7-58db-4308-bb60-e88b224766a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lihat Artikel'])[1]/following::button[1]</value>
+      <webElementGuid>39f68017-88a2-46ef-9b7f-af0d7513dca8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pending'])[1]/following::button[3]</value>
+      <webElementGuid>ceebea48-5635-4287-a860-fac8367319e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hapus Artikel'])[1]/preceding::button[1]</value>
+      <webElementGuid>dff4d967-7282-420f-993c-b2615132e41e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Edit Artikel']/parent::*</value>
+      <webElementGuid>35ac7b44-4ae9-4a1e-ae7e-f9f9a9fcb6d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]/div/div/div[2]/div/button</value>
+      <webElementGuid>cc781a94-7341-4d76-8290-19e0a0c9513a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Edit Artikel' or . = 'Edit Artikel')]</value>
+      <webElementGuid>8f8f3b91-41f7-4525-9d23-903ed1e296e5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

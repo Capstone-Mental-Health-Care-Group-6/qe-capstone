@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_WEB-013_ManagePencairanSaldoDokter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d273abd6-c022-44dd-a799-32b188e4d631</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Lihat Artikel</name>
+   <tag></tag>
+   <elementGuidId>79ce3305-2070-4296-a068-9cded6f5b4fb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id=''])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.bg-transparent.border-0.fw-semibold.btn-lihat-artikel</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9f6ef769-eb99-4780-b4aa-1ae2f7050358</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>af41695e-b6ed-4d25-9cae-492eadda5256</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bg-transparent border-0 fw-semibold btn-lihat-artikel</value>
+      <webElementGuid>4052df3f-527a-4488-b781-ff23960e1076</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Lihat Artikel</value>
+      <webElementGuid>c814ae0c-06da-40c2-bda8-93c480413594</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;container rounded-2 py-3 artikel-background&quot;]/div[@class=&quot;table-customers p-datatable p-component p-datatable-selectable p-datatable-responsive-scroll&quot;]/div[@class=&quot;p-datatable-wrapper&quot;]/table[@class=&quot;p-datatable-table&quot;]/tbody[@class=&quot;p-datatable-tbody&quot;]/tr[@class=&quot;p-highlight p-selectable-row&quot;]/td[5]/div[@class=&quot;btn&quot;]/div[@class=&quot;dropdown-menu dropdown-menu-end px-3 menu-aksi-artikel show&quot;]/div[@class=&quot;bg-light rounded-3 my-2  dropdown-item div-lihat-artikel&quot;]/div[1]/button[@class=&quot;bg-transparent border-0 fw-semibold btn-lihat-artikel&quot;]</value>
+      <webElementGuid>92972b83-c24c-4ddb-9fa4-e13d5d64690f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@id=''])[2]</value>
+      <webElementGuid>50cae304-4b89-4947-be07-ea3e3dbe49fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div[2]/div/table/tbody/tr/td[5]/div/div/div/div/button</value>
+      <webElementGuid>3c0eb168-f526-4370-9aba-0810dca7f19b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pending'])[1]/following::button[2]</value>
+      <webElementGuid>36fd9eb4-e538-4b77-8d7f-82b10a7f0be9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='admin'])[1]/following::button[2]</value>
+      <webElementGuid>dfbb5759-d172-4dd1-bbbd-fe94c9649e71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Artikel'])[1]/preceding::button[1]</value>
+      <webElementGuid>6af747d9-e60d-4640-91fa-5c4cf37fc07b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hapus Artikel'])[1]/preceding::button[2]</value>
+      <webElementGuid>a08e7038-fadf-4f0d-9cd5-46eba2467ed9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Lihat Artikel']/parent::*</value>
+      <webElementGuid>d36a70d8-9ebf-452d-9bc0-56303df5003c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]/div/div/div/div/button</value>
+      <webElementGuid>1ab11323-68dc-41de-bb30-abee1571cacd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Lihat Artikel' or . = 'Lihat Artikel')]</value>
+      <webElementGuid>f2ea8631-5e61-4a09-9d2c-d8b227c9cc85</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

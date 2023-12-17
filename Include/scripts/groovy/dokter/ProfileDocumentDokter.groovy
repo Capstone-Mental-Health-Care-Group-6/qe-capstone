@@ -45,7 +45,7 @@ import cucumber.api.java.en.When
 
 
 class ProfileDocumentDokter {
-	@Given("the user is on the dashboard page")
+	@Given("I already loggin dashboard dokter")
 	def givenUserIsOnDashboardPage() {
 		// Add code to navigate to the dashboard page
 	}

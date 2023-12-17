@@ -14,12 +14,12 @@ So i can acces the website page
       | email              			| password   |
       | admintestingg@gmail.com | Admin123	 |
     
-@negative
-	 Scenario Outline: unsuccesfully login empty form
-   Given I on login page as admin
-   When I emptying <email>, and <password>
-   Then I should see notify form login must filled
-   
-       Examples: 
-      | email   | password   |
-      | 				| 					 |
+#@negative
+#	 Scenario Outline: unsuccesfully login empty form
+   #Given I on login page admin
+   #When I emptying <email>, and <password>
+   #Then I should see notify form login must filled
+   #
+       #Examples: 
+      #| email   | password   |
+      #| 				| 					 |

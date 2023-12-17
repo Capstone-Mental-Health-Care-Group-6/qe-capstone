@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Sukses</name>
+   <tag></tag>
+   <elementGuidId>dc92f37d-db72-41eb-b5ff-0f647ff9637b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/div/div[2]/div/div/table/tbody/tr/td[6]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.success-status</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b2aa411f-c64e-43c3-a3ea-2663a25860ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>success-status</value>
+      <webElementGuid>fdc56a7c-1b70-4b43-8e8c-b899df8233a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sukses</value>
+      <webElementGuid>a70b1ae3-3fdb-471c-b855-4f8ae7c95e76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;pencairan__saldo  bg-white rounded-2 px-2 py-2&quot;]/div[@class=&quot;mt-4 bg-white wrapper__table__saldo rounded-1&quot;]/div[@class=&quot;p-datatable-sm p-datatable p-component p-datatable-responsive-scroll&quot;]/div[@class=&quot;p-datatable-wrapper&quot;]/table[@class=&quot;p-datatable-table&quot;]/tbody[@class=&quot;p-datatable-tbody&quot;]/tr[@class=&quot;table-row-height&quot;]/td[6]/span[@class=&quot;success-status&quot;]</value>
+      <webElementGuid>fe9962ee-92e3-4c05-a69e-1ee75063c66a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div[2]/div/div/table/tbody/tr/td[6]/span</value>
+      <webElementGuid>43dccfe5-c47a-4f7f-b537-d0fc107ae825</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp 200.000'])[2]/following::span[1]</value>
+      <webElementGuid>0cf3c58c-180f-4ae7-9678-4a020921de54</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paket Premium'])[1]/following::span[1]</value>
+      <webElementGuid>f51b1c1e-9827-4776-85ee-b5caafb9bf26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CASDI9823HUAK'])[2]/preceding::span[1]</value>
+      <webElementGuid>81276a02-394c-49c5-8e25-e9e3fc39d958</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gwenchana'])[2]/preceding::span[1]</value>
+      <webElementGuid>e03b0d15-302b-44cf-be84-b0097b8c0c12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[6]/span</value>
+      <webElementGuid>9cb87faf-eb89-478c-8660-639334b9c6f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Sukses' or . = 'Sukses')]</value>
+      <webElementGuid>16ba0e8b-fead-4196-a9cd-033cc397d60a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

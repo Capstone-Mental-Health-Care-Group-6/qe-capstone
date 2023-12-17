@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B1132323868130FAB797AFEFC9D1947B",
+  "keywordFileContentHash": "F94AD60924F3215B4B1E59CEC5EFB8A9",
   "keywordClasses": [
     {
       "name": "dokter.ManageArtikel",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

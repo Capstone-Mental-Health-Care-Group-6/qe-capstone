@@ -709,19 +709,19 @@ Feature: Emphati Care
 #    When I send an HTTP PUT request with valid parameters and baseURL for updating the user profile
 #    Then I receive a valid data response for updating the user profile with HTTP status code 200 OK
 
-# [Positive] PUT - Update Password
+  # [Positive] PUT - Update Password
   Scenario: User updates password successfully
     Given I set the PUT endpoint for updating the user password
     When I send an HTTP PUT request with valid parameters and baseURL for updating the user password
     Then I receive a valid data response for updating the user password with HTTP status code 200 OK
 
-# [Positive] DELETE - Delete Profile
+  # [Positive] DELETE - Delete Profile
   Scenario: User deletes profile successfully
     Given I set the DELETE endpoint for deleting the user profile
     When I send an HTTP DELETE request with valid baseURL for deleting the user profile
     Then I receive a valid data response for deleting the user profile with HTTP status code 200 OK
 
-# [Positive] PUT - Update Status
+  # [Positive] PUT - Update Status
   Scenario: User updates status successfully
     Given I set the PUT endpoint for updating the user status
     When I send an HTTP PUT request with valid parameters and baseURL for updating the user status
@@ -733,20 +733,72 @@ Feature: Emphati Care
 #    When I send an HTTP PUT request with invalid baseURL
 #    Then I receive an error response with HTTP status code 404 Not Found
 
-# [Negative] PUT - Update Password Invalid Endpoint
+  # [Negative] PUT - Update Password Invalid Endpoint
   Scenario: User attempts to update password with an invalid endpoint
     Given I set an invalid PUT endpoint for updating the user password
     When I send an HTTP PUT request with invalid baseURL for updating the user password
     Then I receive an error response with HTTP status code 404 Not Found for updating the user password
 
-# [Negative] DELETE - Delete Profile Invalid Endpoint
+  # [Negative] DELETE - Delete Profile Invalid Endpoint
   Scenario: User attempts to delete profile with an invalid endpoint
     Given I set an invalid DELETE endpoint for deleting the user profile
     When I send an HTTP DELETE request with invalid baseURL for deleting the user profile
     Then I receive an error response with HTTP status code 404 Not Found for deleting the user profile
 
-# [Negative] PUT - Update Status Invalid Endpoint
+  # [Negative] PUT - Update Status Invalid Endpoint
   Scenario: User attempts to update status with an invalid endpoint
     Given I set an invalid PUT endpoint for updating the user status
     When I send an HTTP PUT request with invalid baseURL for updating the user status
     Then I receive an error response with HTTP status code 404 Not Found for updating the user status
+
+  # ===========================CHATBOT CS===========================
+
+  # [Positive] GET - All Chatbot
+  Scenario: User retrieves all chatbot messages successfully
+    Given I set the GET endpoint for retrieving all chatbot messages
+    When I send an HTTP GET request Chatbot
+    Then I receive a valid data response for get all chatbot with HTTP status code 200 OK
+
+  # [Positive] POST - Send Message
+  Scenario: User sends a message to chatbot successfully
+    Given I set the POST endpoint for sending a message to chatbot
+    When I send an HTTP POST request chatbot send message
+    Then I receive a valid data response for send message with HTTP status code 200 OK
+
+  # [Negative] GET - All Chatbot Invalid Endpoint
+  Scenario: User fails to retrieve all chatbot messages with an invalid endpoint
+    Given I set the GET endpoint for retrieving all chatbot messages with an invalid endpoint
+    When I send an HTTP GET request Chatbot Invalid Endpoint
+    Then I receive a valid data response for chatbot invalid endpoint with HTTP status code 404 Not Found
+
+  # [Negative] POST - Send Message Invalid Endpoint
+  Scenario: User fails to send a message to chatbot with an invalid endpoint
+    Given I set the POST endpoint for sending a message to chatbot with an invalid endpoint
+    When I send an HTTP POST request Chatbot Invalid Endpoint
+    Then I receive a valid data response for send message invalid endpoint with HTTP status code 404 Not Found
+
+    # ===========================CHATBOT CS===========================
+
+    # [Positive] GET - All Chatbot
+  Scenario: User retrieves all chatbot messages successfully
+    Given I set the GET endpoint for retrieving all chatbot messages
+    When I send an HTTP GET request Chatbot
+    Then I receive a valid data response for get all chatbot with HTTP status code 200 OK
+
+  # [Positive] POST - Send Message
+  Scenario: User sends a message to chatbot successfully
+    Given I set the POST endpoint for sending a message to chatbot
+    When I send an HTTP POST request chatbot send message
+    Then I receive a valid data response for send message with HTTP status code 200 OK
+
+  # [Negative] GET - All Chatbot Invalid Endpoint
+  Scenario: User fails to retrieve all chatbot messages with an invalid endpoint
+    Given I set the GET endpoint for retrieving all chatbot messages with an invalid endpoint
+    When I send an HTTP GET request Chatbot Invalid Endpoint
+    Then I receive a valid data response for chatbot invalid endpoint with HTTP status code 404 Not Found
+
+  # [Negative] POST - Send Message Invalid Endpoint
+  Scenario: User fails to send a message to chatbot with an invalid endpoint
+    Given I set the POST endpoint for sending a message to chatbot with an invalid endpoint
+    When I send an HTTP POST request Chatbot Invalid Endpoint
+    Then I receive a valid data response for send message invalid endpoint with HTTP status code 404 Not Found

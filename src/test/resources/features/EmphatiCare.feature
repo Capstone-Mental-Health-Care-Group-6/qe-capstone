@@ -127,3 +127,19 @@ Feature: Emphati Care
 #    Then I should receive a response with HTTP status code 400 OK and successful password update
 #    # Then I should receive a response with HTTP status code 200 OK and successful password update
     # Expected status code <200> but was <400>.
+
+  #  # ===================================LOGIN GOOGLE=================================
+
+  # [Positive] GET - Login Google Redirect to Callback
+  Scenario: I login google redirect to callback
+    Given I sets a GET request to a valid endpoint for login google endpoint
+    When I sends a GET request to the login google endpoint for redirection to callback
+    Then I should receive a response with HTTP status code 200 OK
+
+#  # ==============================LOGIN GOOGLE CALLBACK=============================
+#
+  # [Positive] GET - Login Google Redirect to Callback
+  Scenario: I login google redirect to callback
+    Given I sets a GET request to a valid endpoint for login google endpoint
+    When I sends a GET request to the login google endpoint for redirection to callback
+    Then I should receive a response with HTTP status code 200 OK

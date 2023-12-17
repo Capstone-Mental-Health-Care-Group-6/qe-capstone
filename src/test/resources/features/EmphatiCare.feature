@@ -161,3 +161,103 @@ Feature: Emphati Care
     Given I set a POST request to a invalid endpoint for the forget password verify endpoint
     When I send a POST request to the forget password verify endpoint with a missing token
     Then I should receive a response with HTTP status code 400 Bad Request indicating token not found
+
+# ===========================WEB ADMIN ARTICLE CATEGORY===========================
+
+ # [Positive] GET - Success Get All
+  Scenario: User Retrieving all articles categories with a valid endpoint
+    Given I set authentication endpoint to retrieve article categories
+    When I send an HTTP GET request to fetch articles categories using a valid endpoint
+    Then I should receive a valid HTTP response with status code 200 for articles categories
+
+  # [Positive] POST - Success Create
+  Scenario: I creating a new articles category with a valid endpoint
+    Given I set a POST request to a valid endpoint for creating a new articles category
+    When I send the POST request to create a new articles category
+    Then I receive an HTTP response with code 201 for creating a new articles category
+
+  # [Negative] POST - Input Error
+  Scenario: I Attempting to create a new article category with invalid input
+    Given I set a POST request with invalid input for creating a new articles category
+    When I send the POST request with invalid input for creating a new articles category
+    Then I receive an HTTP response with code 400 for creating a new articles category
+
+  # [Positive] GET - Success Get By ID
+  Scenario: User get articles category by ID using valid endpoint
+    Given I set a valid GET endpoint for articles category by ID
+    When I sends a GET HTTP request with a valid endpoint for articles category by ID
+    Then I receives a valid GET HTTP response with a status code of 200 for articles category by ID
+
+  # [Negative] GET - Invalid User Input
+  Scenario: User get articles category by ID using invalid user input
+    Given I set an valid GET endpoint for articles category by ID
+    When I sends a GET HTTP request with an invalid user input for articles category by ID
+    Then I receives a GET HTTP response with a status code of 400 for articles category by ID
+
+  # [Positive] PUT - Success Update
+  Scenario: User Update articles category with Valid Endpoint
+    Given I set a valid PUT endpoint Update Articles Category
+    When I sends a PUT HTTP request Update Articles Category
+    Then I receives an HTTP response code 405 with valid endpoint
+
+  # [Negative] PUT - Invalid Param ID
+  Scenario: User Update User with Invalid Endpoint
+    Given I set an valid PUT endpoint Update Articles Category with an invalid param ID
+    When I sends a PUT HTTP request Update Articles Category with an invalid param ID
+    Then I receives an HTTP response code 405 with invalid param ID
+
+  # [Negative] PUT - Invalid User Input
+  Scenario: User Update User with invalid user input
+    Given I set an valid PUT endpoint Update Articles Category with an invalid user input
+    When I sends a PUT HTTP request Update Articles Category with an invalid user input
+    Then I receives an HTTP response code 405 with invalid user input
+
+  # [Positive] DEL - Delete Success
+  Scenario: User Deleting an Articles Category with a valid endpoint
+    Given I set the DELETE endpoint to a valid endpoint
+    When I send a DELETE HTTP request with a valid endpoint
+    Then I receive a DELETE HTTP response with a status code of 204 for the valid endpoint
+
+  # [Negative] DEL - Delete Invalid Param ID
+  Scenario: User Deleting an Articles Category with an Invalid Param ID
+    Given I set the DELETE endpoint to an Invalid Param ID
+    When I send a DELETE HTTP request with an invalid param ID
+    Then I receive a DELETE HTTP response with a status code of 400 for the invalid param ID
+
+# ===========================WEB ADMIN WITHDRAW BALANCE===========================
+
+# [Positive] GET - Get All Data
+  Scenario: User Retrieving all data from balance disbursement with a valid endpoint
+    Given I set the authentication endpoint for Withdraw Balance Disbursement operations
+    When I send an HTTP GET request to fetch all data from Balance Disbursement
+    Then I should receive a valid HTTP response with status code 200 for all data from Balance Disbursement
+
+  # [Positive] PUT - Update Status Done
+  Scenario: User Updating status to Done for Withdraw Balance Disbursement
+    Given I sets a valid PUT endpoint Update status done all data from balance disbursement
+    When I send a PUT HTTP request to Update status to Done
+    Then I receive an HTTP response code 404 with a valid endpoint for updating status to Done
+
+  # [Negative] PUT - Update Status Pending
+  Scenario: User Updating status to Pending for Withdraw Balance Disbursement
+    Given I sets a valid PUT endpoint Update status pending all data from balance disbursement
+    When I send a PUT HTTP request to Update status to Pending
+    Then I receive an HTTP response code 404 with a valid endpoint for updating status to Pending
+
+  # [Negative] PUT - Update Failed Validation
+  Scenario: User Failed attempt to update status due to validation issues
+    Given I sets a valid PUT endpoint Update status failed validation all data from balance disbursement
+    When I send a PUT HTTP request with invalid data validation to Update status of Balance Disbursement
+    Then I receive an HTTP response code 404 due to invalid request format
+
+  # [Positive] GET - Get By ID Success
+  Scenario: User Retrieve All Balance Withdraw data by ID using a valid endpoint
+    Given I sets a valid GET endpoint for retrieving All Balance Withdraw data by ID
+    When I send a GET HTTP request with a valid ID for All Balance Withdraw
+    Then I receive a valid GET HTTP response with a status code of 404 for the All Balance Withdraw data by ID
+
+  # [Negative] GET - Get By ID Not Found
+  Scenario: User Retrieve All Balance Withdraw data by ID but not found
+    Given I sets a valid GET endpoint for retrieving All Balance Withdraw data by ID Not found
+    When I send a GET HTTP request with an invalid ID for All Balance Withdraw
+    Then I receive a GET HTTP response with a status code of 404 for the All Balance Withdraw data by ID

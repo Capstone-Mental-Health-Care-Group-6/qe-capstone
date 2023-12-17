@@ -1,12 +1,12 @@
-package starter.stepdefinitions;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import net.thucydides.core.annotations.Steps;
-import starter.restapi.Chat;
-
-public class ChatSteps {
+//package starter.stepdefinitions;
+//
+//import io.cucumber.java.en.Given;
+//import io.cucumber.java.en.Then;
+//import io.cucumber.java.en.When;
+//import net.thucydides.core.annotations.Steps;
+//import starter.restapi.Chat;
+//
+//public class ChatSteps {
 //    @Steps
 //    Chat chat;
 //
@@ -89,4 +89,4 @@ public class ChatSteps {
 //    public void validateDeleteChatRoomResponse() {
 //        chat.validateDeleteChatRoomResponse();
 //    }
-}
+//}

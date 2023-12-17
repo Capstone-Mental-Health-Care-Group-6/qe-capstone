@@ -1,20 +1,14 @@
 package starter.stepdefinitions;
 
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.rest.SerenityRest;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
-import starter.restapi.LoginAdmin;
 import starter.restapi.Mobile_Patient;
-import starter.restapi.Mobile_Patient_Auth_Login;
 
-import java.io.File;
+import java.util.Random;
 
-import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Mobile_PatientSteps {
     @Steps
@@ -141,12 +135,22 @@ public class Mobile_PatientSteps {
     @When("I send an HTTP PUT request with valid parameters and baseURL for updating the user profile")
     public void sendUpdateProfileRequest() {
         String namePatient = "nurul fauziah";
-        String emailPatient = "nurulfauziah1@gmail.com";
+        String emailPatient = "generateRandomEmail";
         String dateofBirth = "2000-09-11";
         String phoneNumber = "08795553348";
-        String avatarimgPath = "/EmpathiCare/thumbnail.jpg";
+        String avatarimgPath = "/EmpathiCare/thumbnail.png";
         mobilePatient.sendUpdateProfileRequest(namePatient, emailPatient, dateofBirth, phoneNumber, avatarimgPath);
     }
+
+//    private String generateRandomEmail() {
+//        String[] domains = {"gmail.com", "yahoo.com"};
+//        java.util.Random random = new Random();
+//
+//        String username = "user" + random.nextInt(1000); // You can customize the username format
+//        String domain = domains[random.nextInt(domains.length)];
+//
+//        return username + "@" + domain;
+//    }
 
     @Then("I receive a valid data response for updating the user profile with HTTP status code 200 OK")
     public void validateUpdateProfileResponse() {
@@ -161,7 +165,7 @@ public class Mobile_PatientSteps {
 
     @When("I send an HTTP PUT request with valid parameters and baseURL for updating the user password")
     public void sendUpdatePasswordRequest() {
-        String passwordPatient = "fauziah123";
+        String passwordPatient = "updateemail";
         mobilePatient.sendUpdatePasswordRequest(passwordPatient);
     }
 

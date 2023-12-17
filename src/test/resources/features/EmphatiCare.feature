@@ -806,7 +806,7 @@ Feature: Emphati Care
     Then I receive a response status 200 OK get all patient
 
   # [Positive] GET All Patient Empty Data
-  Scenario: User succes Get and See All Patient
+  Scenario: User succes Get and See All Patient Empty Data
     Given I set the GET endpoint for Get all patient Empty Data
     When I send an HTTP GET request with a valid baseURL for get all patient empty data
     Then I receive a response status 200 OK empty data patient
@@ -920,3 +920,135 @@ Feature: Emphati Care
 #    Given I set the DELETE endpoint for deleting chatroom
 #    When I sending HTTP DELETE request for deleting chatroom
 #    Then I receive a valid data response status 200 OK Deleting chatroom
+
+   # ===========================CHATBOT===========================
+
+  # [Positive] GET - All Chatbot
+  Scenario: User retrieves all chatbot messages successfully
+    Given I set the GET endpoint for retrieving all chat
+    When I send an HTTP GET request to Chatbot
+    Then I receive a valid data response with status 200 OK
+
+# [Positive] GET - All Chatbot with Null Data
+  Scenario: User retrieves all chatbot messages with null data successfully
+    Given I set the GET endpoint for retrieving all chat with null data
+    When I send an HTTP GET request to Chatbot with null data
+    Then I receive a valid data response with status 200 OK for GET with null data
+
+# [Positive] POST - Create Chatbot
+  Scenario: User sends a message to chatbot successfully
+    Given I set the POST endpoint for creating chatbot and messages
+    When I send an HTTP POST request to Chatbot for creating chatbot and messages
+    Then I receive a valid data response with status 201 for creating chatbot and messages
+
+# [Negative] GET - All Chatbot with Invalid Endpoint
+  Scenario: User fails to retrieve all chatbot messages with an invalid endpoint
+    Given I set the GET invalid endpoint for creating chatbot and messages
+    When I send an HTTP GET request to Chatbot with an invalid endpoint
+    Then I receive a valid data response with status 404 Not Found for GET chatbot
+
+# [Negative] POST - Create Chatbot with Invalid Endpoint
+  Scenario: User sends a message to chatbot unsuccessfully with an invalid endpoint
+    Given I set the POST invalid endpoint for creating chatbot and messages
+    When I send an HTTP POST request to Chatbot with an invalid endpoint
+    Then I receive a valid data response with status 404 Not Found for POST chatbot
+
+   # ===========================MidtransTrasaction===========================
+
+# POST - Make Transaction BCA
+  Scenario: User makes a successful BCA transaction
+    Given I set the POST endpoint for making a BCA transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a BCA transaction
+    Then I receive a valid data response for BCA transaction with HTTP status code 201 Created
+
+# POST - Make Transaction BNI
+  Scenario: User makes a successful BNI transaction
+    Given I set the POST endpoint for making a BNI transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a BNI transaction
+    Then I receive a valid data response for BNI transaction with HTTP status code 201 Created
+
+# POST - Make Transaction BRI
+  Scenario: User makes a successful BRI transaction
+    Given I set the POST endpoint for making a BRI transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a BRI transaction
+    Then I receive a valid data response for BRI transaction with HTTP status code 201 Created
+
+# POST - Make Transaction Gopay
+  Scenario: User makes a successful Gopay transaction
+    Given I set the POST endpoint for making a Gopay transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a Gopay transaction
+    Then I receive a valid data response for Gopay transaction with HTTP status code 201 Created
+
+# POST - Make Transaction Qris
+  Scenario: User makes a successful Qris transaction
+    Given I set the POST endpoint for making a Qris transaction
+    When I send an HTTP POST request with valid parameters and baseURL for making a Qris transaction
+    Then I receive a valid data response for Qris transaction with HTTP status code 201 Created
+
+# GET - Get All Transactions from User ID
+  Scenario: User retrieves all transactions for a specific user ID successfully
+    Given I set the GET endpoint for retrieving all transactions for a specific user ID
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving all transactions for a specific user ID
+    Then I receive a valid data response for retrieving all transactions mindtrans with HTTP status code 200 OK
+
+# GET - Get Filtered By Payment Type Transactions from User ID
+  Scenario: User retrieves transactions filtered by payment type for a specific user ID successfully
+    Given I set the GET endpoint for retrieving transactions filtered by payment type for a specific user ID
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving transactions filtered by payment type for a specific user ID
+    Then I receive a valid data response for retrieving transactions filtered by payment type with HTTP status code 200 OK
+
+# GET - Get All Transactions
+  Scenario: User retrieves all transactions successfully
+    Given I set the GET endpoint for retrieving all transactions mindtrans
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving all transactions
+    Then I receive a valid data response for retrieving all mindtrans transactions with HTTP status code 200 OK
+
+# GET - Get Sorted By Payment Type All Transactions
+  Scenario: User retrieves transactions sorted by payment type successfully
+    Given I set the GET endpoint for retrieving transactions sorted by payment type
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving transactions sorted by payment type
+    Then I receive a valid data response for retrieving transactions sorted by payment type with HTTP status code 200 OK
+
+# GET - Get Show Transaction Status By Midtrans ID
+  Scenario: User retrieves transaction status by Midtrans ID successfully
+    Given I set the GET endpoint for retrieving transaction status by Midtrans ID transaction
+    When I send an HTTP GET request with valid parameters and baseURL for retrieving transaction status by Midtrans ID
+    Then I receive a valid data response midtrans for retrieving transaction status by Midtrans ID with HTTP status code 200 OK
+
+# GET - Get invalid Endpoint
+  Scenario: User attempts to access an invalid endpoint
+    Given I set the GET endpoint for an invalid request midtrans transaction
+    When I send an HTTP GET request with an invalid baseURL for an invalid request midtrans
+    Then I receive an error response with HTTP status code 404 Not Found for an invalid request midtrans
+
+     # ===========================WEBSITE_DOKTER WITHDRAW BALANCE===========================
+
+    # [Positive] POST - Add Withdraw
+  Scenario: User adds a withdrawal successfully
+    Given I POST endpoint is set for adding a withdrawal for withdrawal successfully
+    When I HTTP POST request with valid parameters and baseURL is sent for adding a withdrawal for withdrawal successfully
+    Then I valid data response for the withdrawal addition is received with HTTP status code 201 Created
+
+# [Negative] POST - Failed Validate
+  Scenario: User attempts to add a withdrawal with failed validation
+    Given I POST endpoint is set for adding a withdrawal for failed validation
+    When I HTTP POST request with valid parameters and baseURL is sent for adding a withdrawal for failed validation
+    Then I error response for failed validation is received with HTTP status code 400 Bad Request  for failed validation
+
+# [Positive] POST - Balance Not Enough
+  Scenario: User attempts to add a withdrawal with insufficient balance
+    Given I POST endpoint is set for adding a withdrawal with insufficient balance
+    When I HTTP POST request with valid parameters and baseURL is sent for adding a withdrawal with insufficient balance
+    Then I valid data response indicating insufficient balance is received with HTTP status code 500 Internal Server Error
+
+# [Negative] POST - Invalid endpoint
+  Scenario: User attempts to add a withdrawal with an invalid endpoint
+    Given I POST endpoint is set to an invalid endpoint
+    When I HTTP POST request with valid parameters and baseURL is sent for adding a withdrawal
+    Then I error response for an invalid endpoint is received with HTTP status code 404 Not Found
+
+# [Positive] GET - Get All Withdraw
+  Scenario: User retrieves all withdrawal successfully
+    Given I GET endpoint is set for retrieving all withdrawals
+    When I HTTP GET request with valid parameters and baseURL is sent for retrieving all withdrawals
+    Then I valid data response for retrieving all withdrawals is received with HTTP status code 200 OK

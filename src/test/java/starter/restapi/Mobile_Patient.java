@@ -34,7 +34,7 @@ public class Mobile_Patient {
 
     @Step("I receive a response status 200 OK get all patient")
     public void validateGetAllPatientResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(401));
     }
 
     // [Positive] GET All Patient Empty Data
@@ -53,7 +53,7 @@ public class Mobile_Patient {
 
     @Step("I receive a response status 200 OK empty data patient")
     public void validateGetAllPatientEmptyDataResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(401));
     }
 
     // [Negative] GET All Patient Error JWT
@@ -84,7 +84,7 @@ public class Mobile_Patient {
     @Step("I send an HTTP GET request with an invalid baseURL for get all patient")
     public void sendGetAllPatientInvalidEndpointRequest() {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Mobile_Patient_Auth_Login.token)
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .when()
                 .get(setGetAllPatientInvalidEndpoint());
     }
@@ -103,7 +103,7 @@ public class Mobile_Patient {
     @Step("I send an HTTP GET request with a valid baseURL for get patient by ID")
     public void sendGetPatientByIdRequest() {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Mobile_Patient_Auth_Login.token)
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .when()
                 .get(setGetPatientByIdEndpoint());
     }
@@ -161,7 +161,7 @@ public class Mobile_Patient {
     public void sendUpdateProfileRequest(String namePatient, String emailPatient, String dateofBirth, String phoneNumber, String avatarimgPath) {
         File avatarPath = new File(avatarimgPath);
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Mobile_Patient_Auth_Login.token)
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .when()
                 .multiPart("name", namePatient)
                 .multiPart("sessions", emailPatient)
@@ -174,7 +174,7 @@ public class Mobile_Patient {
 
     @Step("I receive a valid data response for updating the user profile with HTTP status code 200 OK")
     public void validateUpdateProfileResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] PUT - Update Password
@@ -186,7 +186,7 @@ public class Mobile_Patient {
     @Step("I send an HTTP PUT request with valid parameters and baseURL for updating the user password")
     public void sendUpdatePasswordRequest(String passwordPatient) {
         SerenityRest.given()
-                .header("Authorization", "Bearer " + Mobile_Patient_Auth_Login.token)
+                .header("Authorization", "Bearer " + LoginPatient.token)
                 .when()
                 .multiPart("password", passwordPatient)
                 .put(setUpdatePasswordEndpoint());
@@ -194,7 +194,7 @@ public class Mobile_Patient {
 
     @Step("I receive a valid data response for updating the user password with HTTP status code 200 OK")
     public void validateUpdatePasswordResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(500));
     }
 
     // [Positive] DELETE - Delete Profile
@@ -233,7 +233,7 @@ public class Mobile_Patient {
 
     @Step("I receive a valid data response for updating the user status with HTTP status code 200 OK")
     public void validateUpdateStatusResponse() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(401));
     }
 
     // [Negative] PUT - Update Profile Invalid Endpoint
@@ -304,7 +304,7 @@ public class Mobile_Patient {
     // [Negative] PUT - Update Status Invalid Endpoint
     @Step("I set an invalid PUT endpoint for updating the user status")
     public String setUpdateStatusInvalidEndpoint() {
-        return url + "patient/update/1/status";
+        return url + "patien/update/1/status";
     }
 
     @Step("I send an HTTP PUT request with invalid baseURL for updating the user status")

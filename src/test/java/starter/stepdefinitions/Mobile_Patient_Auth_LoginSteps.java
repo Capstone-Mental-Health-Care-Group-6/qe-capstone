@@ -36,7 +36,7 @@ public class Mobile_Patient_Auth_LoginSteps {
 
     @When("I send a POST request to the loginAdmin endpoint with an invalid Password")
     public void RequestToTheLoginEndpointWithAnInvalidPassword() {
-        String emailPatient = "nurulfauziah2@gmail.com";
+        String emailPatient = "nurulfauziah3@gmail.com";
 //        String pwPatient = "asdf";
         mobilePatientAuthLogin.RequestToTheLoginEndpointWithAnInvalidPassword(emailPatient);
     }

@@ -1,29 +1,27 @@
 Feature: Manage Pencairan Dana Dokter
-
-  Scenario: Click on Pencairan Dana Dokter Button
-    Given User is at the "Manage Pencairan Dana Dokter" page
-    When User clicks the "Dana Dokter" button
-    Then User should be navigated to the "Manage Pencairan Dana Dokter" page
-
-  Scenario: Click on a List at Table Pencairan Dana Dokter
-    Given User is at the "Manage Pencairan Dana Dokter" page
-    When User clicks one of the lists at the table of Pencairan Dana Dokter
-    Then User should see detailed information about the selected Pencairan Dana Dokter
-
-  Scenario: Click and Choose Processed for Pencairan Dana Dokter
-    Given User is at the "Manage Pencairan Dana Dokter" page
-    When User clicks one of the lists at the table of Pencairan Dana Dokter
-    And User clicks and chooses "Processed"
-    Then User should see the status of the selected Pencairan Dana Dokter set to "Processed"
-
-  Scenario: Click and Choose Success for Pencairan Dana Dokter
-    Given User is at the "Manage Pencairan Dana Dokter" page
-    When User clicks one of the lists at the table of Pencairan Dana Dokter
-    And User clicks and chooses "Success"
-    Then User should see the status of the selected Pencairan Dana Dokter set to "Success"
-
-  Scenario: Click and Choose Pending for Pencairan Dana Dokter
-    Given User is at the "Manage Pencairan Dana Dokter" page
-    When User clicks one of the lists at the table of Pencairan Dana Dokter
-    And User clicks and chooses "Pending"
-    Then User should see the status of the selected Pencairan Dana Dokter set to "Pending"
+  As a user
+  I want to manage pencairan saldo
+  So that I can manage pencairan saldo doktor
+  
+   @positive
+  Scenario: User verify side button dana dokter
+  Given I already login as a admins
+  When I click side button dana dokter
+  Then I succesfully go to dana dokter page
+  
+  Scenario: User verify feature search on dana dokter
+  Given I already on the dana dokter page
+  When I Search by name dokter, date, saldo cair
+  Then I get searched data content dana dokter page
+  
+  Scenario: User verify feature change to pending 
+  Given I on the manage dana dokter
+  When I click three dots
+  And I change done to penfing by click pending 
+  Then I succesfully updated dana dokter status to pending
+    
+   Scenario: User verify feature change to done 
+  Given I am on the manage dana dokter
+  When I clicking three dots
+  And I change pending to done by click done 
+  Then I succesfully updated dana dokter status to done

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Chat</name>
+   <tag></tag>
+   <elementGuidId>e9977cd2-64e8-47cb-b7ef-752f2fb7ac5e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/ul/li[2]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>19e3f871-52c1-481f-84a6-96467de5ef3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Chat</value>
+      <webElementGuid>16e6386e-00fd-459a-b875-e4894b1ce4f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sidebar&quot;]/div[@class=&quot;offcanvass offcanvas-start&quot;]/div[@class=&quot;d-grid wrapper align-items-stretch&quot;]/div[@class=&quot;offcanvass-body d-grid  align-items-stretch&quot;]/ul[@class=&quot;menu d-grid justify-content-center align-items-center mx-auto p-0&quot;]/li[@class=&quot;sidebar-item  undefined&quot;]/a[@class=&quot;sidebar-link&quot;]/span[1]</value>
+      <webElementGuid>307c1835-fa62-41d4-97ad-24ca950041ea</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/ul/li[2]/a/span</value>
+      <webElementGuid>3f6d3e1e-fe0f-4046-9394-7f463b1b31af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::span[1]</value>
+      <webElementGuid>5550d583-ca62-4343-b7d8-890f7c210571</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lihat detail'])[1]/following::span[2]</value>
+      <webElementGuid>970b958c-2281-4911-98bf-6843765b9e50</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaksi'])[1]/preceding::span[1]</value>
+      <webElementGuid>90426d49-73c5-4113-82bc-6f4432b41914</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pencairan Saldo'])[1]/preceding::span[2]</value>
+      <webElementGuid>72c3e95f-32f7-46e6-b5fc-d456c176cff9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a/span</value>
+      <webElementGuid>681bd942-f0f1-4447-83b0-e45a263611d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Chat' or . = 'Chat')]</value>
+      <webElementGuid>f4f3e7cd-f739-4903-9f15-6bab6cf741f3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

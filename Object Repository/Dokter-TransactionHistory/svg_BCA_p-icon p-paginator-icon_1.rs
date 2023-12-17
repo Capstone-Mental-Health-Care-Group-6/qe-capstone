@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_BCA_p-icon p-paginator-icon_1</name>
+   <tag></tag>
+   <elementGuidId>f6d2632d-e28f-4b9e-b5cf-fbe9b7370cd4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='BCA'])[2]/following::*[name()='svg'][4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.p-paginator-last.p-paginator-element.p-link.p-disabled > svg.p-icon.p-paginator-icon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>a4647347-b819-4e7b-b2c6-61af9afc1d30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>14</value>
+      <webElementGuid>e3c9e731-5840-4cf0-bd6a-5650a15d8d3c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>14</value>
+      <webElementGuid>c43ad7db-3165-4429-b863-c13b9d987884</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 14 14</value>
+      <webElementGuid>35721f71-452e-464f-93ec-1ee7005a14a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>996e2606-76ed-4392-81c6-ddd8c90e0d2d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>8e6679a5-8686-4429-b634-f7d05906c33c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>p-icon p-paginator-icon</value>
+      <webElementGuid>44f6a813-80fd-4447-8269-e4a418a782c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>2fef993b-e80b-4aef-9fea-dcd580ca9a4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-pc-section</name>
+      <type>Main</type>
+      <value>lastpageicon</value>
+      <webElementGuid>832fe8fa-a50f-4983-9d13-dc6025f3addc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;section-transaksi&quot;]/div[@class=&quot;row table-transaksi&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;p-datatable-sm p-datatable p-component p-datatable-responsive-scroll&quot;]/div[@class=&quot;p-paginator-bottom p-paginator p-component&quot;]/button[@class=&quot;p-paginator-last p-paginator-element p-link p-disabled&quot;]/svg[@class=&quot;p-icon p-paginator-icon&quot;]</value>
+      <webElementGuid>6a35011d-1de3-4f59-8ad0-08f8ac4ba846</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCA'])[2]/following::*[name()='svg'][4]</value>
+      <webElementGuid>45818bfe-32a2-463f-b9e7-415529ad741e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp 220.000'])[2]/following::*[name()='svg'][4]</value>
+      <webElementGuid>642656d3-ac6c-4e70-8a62-dc8a21871bd9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

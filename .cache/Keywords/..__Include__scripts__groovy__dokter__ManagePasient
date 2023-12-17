@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "E772E5EA4CEFF46456349C8D9293544F",
+  "keywordClasses": [
+    {
+      "name": "dokter.ManagePasient",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

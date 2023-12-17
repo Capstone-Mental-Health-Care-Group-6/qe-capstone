@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Data ArtikelTambah Artikel</name>
+   <tag></tag>
+   <elementGuidId>7d5905b9-cece-45d7-941e-734f41e84d0b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>77696f12-6088-474f-9261-69936dfc098b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>d-flex align-items-center justify-content-between px-4 fw-semibold </value>
+      <webElementGuid>30895610-0d6b-4184-beec-265c229cf943</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Data ArtikelTambah Artikel</value>
+      <webElementGuid>3e197f68-dd74-4fa6-bb61-24d65e981d73</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/div[@class=&quot;container bg-light rounded-2 py-3&quot;]/div[@class=&quot;d-flex align-items-center justify-content-between px-4 fw-semibold&quot;]</value>
+      <webElementGuid>0ad01b72-3c3d-44b9-b702-bf722b8628be</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div/div</value>
+      <webElementGuid>7a24957b-34e4-407d-a3fc-b152f04ac319</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daftar Artikel'])[1]/following::div[2]</value>
+      <webElementGuid>8554dcd5-1c85-43e3-94bb-746f9fcd2d66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::div[3]</value>
+      <webElementGuid>9d9f7ae3-3d46-4dc2-b91f-5d82820e5cd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::div[6]</value>
+      <webElementGuid>eca89c2c-7aed-49de-aade-62de2ab289e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div/div</value>
+      <webElementGuid>acd154f5-eb1d-43a1-8dc5-444bfedc4905</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Data ArtikelTambah Artikel' or . = 'Data ArtikelTambah Artikel')]</value>
+      <webElementGuid>172ac144-13a4-4ba9-93f2-9f5d0d1a4bac</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

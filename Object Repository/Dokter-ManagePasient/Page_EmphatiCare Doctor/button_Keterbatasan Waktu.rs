@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Keterbatasan Waktu</name>
+   <tag></tag>
+   <elementGuidId>4313bb5e-34e7-4228-8d43-da31acf8f333</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id=''])[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.border-secondary-subtle.text-black.fw-medium</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9067fc98-38b5-4ff8-9e46-989d3cfd16cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9228b795-546a-4d83-9380-89efbd14ef95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn  border-secondary-subtle text-black fw-medium</value>
+      <webElementGuid>c355f203-38f9-4eba-8a7e-14e8bdcbc4a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Keterbatasan Waktu</value>
+      <webElementGuid>850c14f3-30c6-4f98-9a49-8b24fe898e03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-tolak-pasien&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered modal-lg&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;row row-cols-lg-2 row-cols-1 g-2&quot;]/div[@class=&quot;col-md-6 col-lg-4 col-12&quot;]/div[1]/button[@class=&quot;w-100 btn  border-secondary-subtle text-black fw-medium&quot;]</value>
+      <webElementGuid>3d5a0430-0e7f-4bc0-a11b-3debd5be3419</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@id=''])[4]</value>
+      <webElementGuid>c86b6fc0-ab43-4b9e-b2cb-12896c93e4ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-tolak-pasien']/div/div/div[2]/div[2]/div[2]/div/button</value>
+      <webElementGuid>0d232b54-3dd5-4cbf-b223-10056bdc1877</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Overbooking'])[1]/following::button[1]</value>
+      <webElementGuid>cfb84b4f-47a9-4bd7-a476-fe8d68ca6421</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Layanan Vidio Call'])[1]/following::button[3]</value>
+      <webElementGuid>ff1a060e-6a47-400d-8d1e-aa3626fdc94a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dokter Ada Kegiatan Mendadak'])[1]/preceding::button[1]</value>
+      <webElementGuid>4010d7ed-378f-4597-81ec-ae630235b2c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alasan Lain'])[1]/preceding::button[2]</value>
+      <webElementGuid>ee6df1bb-cb9e-4de5-ad4c-4038e5b107cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Keterbatasan Waktu']/parent::*</value>
+      <webElementGuid>ecdda847-57c7-4d55-a5fa-16830599e7ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/button</value>
+      <webElementGuid>9484b5d1-4537-4aa5-ac6e-250483936ad7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Keterbatasan Waktu' or . = 'Keterbatasan Waktu')]</value>
+      <webElementGuid>81b324bf-2e49-43c3-9700-db301ed78e35</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

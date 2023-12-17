@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Daftar Sekarang</name>
+   <tag></tag>
+   <elementGuidId>73e89da0-8fd6-4756-ab2f-cfee29df793e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn-daftarSekarang.bg-primary.text-white.rounded-pill.px-5.py-2.border.border-primary.fw-semibold.shadow-sm</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[5]/div/div/div/div/div/div/div[3]/a/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>8bfc0f4b-a6a4-47c9-9415-b228ab37566d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn-daftarSekarang bg-primary text-white rounded-pill px-5 py-2 border border-primary fw-semibold shadow-sm</value>
+      <webElementGuid>89df870f-b2cf-43c0-a60d-e3b222fcfea4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Daftar Sekarang</value>
+      <webElementGuid>bf8ff8da-cc0c-485f-9f49-03674d091bb3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;wrap&quot;]/div[@class=&quot;section&quot;]/div[@class=&quot;bg-section4&quot;]/div[@class=&quot;position-relative&quot;]/div[@class=&quot;container mx-auto&quot;]/div[@class=&quot;px-4&quot;]/div[@class=&quot;d-flex&quot;]/div[1]/div[@class=&quot;mt-5 aos-init aos-animate&quot;]/a[1]/button[@class=&quot;btn-daftarSekarang bg-primary text-white rounded-pill px-5 py-2 border border-primary fw-semibold shadow-sm&quot;]</value>
+      <webElementGuid>e42858a8-8c72-418b-a5d8-91204681633d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[5]/div/div/div/div/div/div/div[3]/a/button</value>
+      <webElementGuid>4db829d3-b528-4632-be85-fb77c66c15fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Layanan Kami'])[1]/preceding::button[4]</value>
+      <webElementGuid>96eae79c-66d7-4067-8d92-9a1d2defa5ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tentang Kami'])[1]/preceding::button[4]</value>
+      <webElementGuid>49ac064d-3a71-4936-8fbf-9d0b54e627ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Daftar Sekarang']/parent::*</value>
+      <webElementGuid>8f9b4f63-d701-4498-81b9-df4f97e4df36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/div/div/div/div/div[3]/a/button</value>
+      <webElementGuid>47a34f43-adb0-454c-b404-f51fd56d84b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Daftar Sekarang' or . = 'Daftar Sekarang')]</value>
+      <webElementGuid>5b0071c5-9b77-4f38-9e0f-00be8cf33349</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Masukkan Email Anda</name>
+   <tag></tag>
+   <elementGuidId>89dfe3bb-ad56-4ed5-924f-cccacf3bd420</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.text-start.text-danger</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/form/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>69412452-b720-4b39-ab1a-e1207e9157c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-start text-danger</value>
+      <webElementGuid>72f2ca87-cfe7-49da-8c5f-8e20d1bbdd69</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Masukkan Email Anda!</value>
+      <webElementGuid>a2729af4-2d0a-41f7-aeae-0adcc6517c67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;content&quot;]/div[@class=&quot;container col-lg-12&quot;]/form[@class=&quot;login-form-container col-lg&quot;]/div[@class=&quot;vstack gap-2&quot;]/span[@class=&quot;text-start text-danger&quot;]</value>
+      <webElementGuid>3b28382b-6de0-4c9b-baaf-7dffdb9e4676</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/form/div/span</value>
+      <webElementGuid>cada3ea6-1e31-4bba-b883-524ccb962b6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kata sandi kurang dari 8 karakter'])[1]/preceding::span[2]</value>
+      <webElementGuid>5b99d305-3865-4512-9918-14b586923eb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Masuk'])[1]/preceding::span[3]</value>
+      <webElementGuid>03e50d4b-829f-4b2d-b755-cdf38adaad05</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Masukkan Email Anda!']/parent::*</value>
+      <webElementGuid>948aeae9-8418-4592-9d10-e2de9857b5c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/span</value>
+      <webElementGuid>a8f1862f-4aba-4362-ae75-b2012f1ca2e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Masukkan Email Anda!' or . = 'Masukkan Email Anda!')]</value>
+      <webElementGuid>2c839ef0-67ec-4695-8c45-a9b13f6864e9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

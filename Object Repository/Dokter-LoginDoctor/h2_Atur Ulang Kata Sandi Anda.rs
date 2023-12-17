@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_Atur Ulang Kata Sandi Anda</name>
+   <tag></tag>
+   <elementGuidId>b2e0afc9-d45d-4c55-9e7b-1060e70aba02</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h2.textAdmin</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/h2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>a1f8326d-2c89-4300-9198-2289b58ec162</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>textAdmin</value>
+      <webElementGuid>ba5127be-38bf-4684-9789-f6e65f34f634</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Atur Ulang Kata Sandi Anda </value>
+      <webElementGuid>d74f0a88-18a9-442a-bd33-aaa07d7daeae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;content-center&quot;]/div[@class=&quot;awal&quot;]/h2[@class=&quot;textAdmin&quot;]</value>
+      <webElementGuid>7861939e-cdbf-4fb3-9261-e02b55fca051</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/h2</value>
+      <webElementGuid>4ef25cac-d208-435a-9dd2-d37032e864c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kirim link verifikasi'])[1]/preceding::h2[1]</value>
+      <webElementGuid>18cd8edf-7ae9-42dc-8662-3b50cd10c3b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Buat Akun Baru'])[1]/preceding::h2[1]</value>
+      <webElementGuid>ea5cc5a2-7fc8-46b8-82c6-7a08555b5912</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Atur Ulang Kata Sandi Anda']/parent::*</value>
+      <webElementGuid>60872f05-a292-46bb-af47-5f55efff2e07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h2</value>
+      <webElementGuid>0da5252e-4dc0-4524-9bfa-e9a3c6de7f7c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = ' Atur Ulang Kata Sandi Anda ' or . = ' Atur Ulang Kata Sandi Anda ')]</value>
+      <webElementGuid>379c3580-71f1-4344-a00a-e7a8a86af888</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

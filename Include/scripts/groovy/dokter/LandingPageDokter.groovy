@@ -45,21 +45,49 @@ import cucumber.api.java.en.When
 
 
 class LandingPageDokter {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+
+	@Given("I navigate to EmphatiCare landing page")
+	def navigateLandingPage() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://empathicare-dokter.vercel.app/')
+		WebUI.maximizeWindow()
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("I verify button and scroll all the navigation hyperlinks")
+	def verifyButtonHyprelinks() {
+		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/a_Home'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/a_Service'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/a_About Us'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/a_Register'))
+		WebUI.delay(3)
+		WebUI.takeScreenshot()
+
+		WebUI.scrollToPosition(0, 1000)
+
+		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/a_Gabung Sebagai Konselor'))
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@When("I click the register now button")
+	def clickRegister() {
+		//		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/button_Download Sekarang'))
+		//		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/Dokter-LandingPageDoctor/button_Daftar Sebagai Konselor'))
+	}
+
+	@Then("I should be redirected to the correct navigation hyperlinks")
+	def redirectNavigationHyperlinks() {
+		WebUI.closeBrowser()
+	}
+
+	@Then("I should be redirected to the registration page")
+	def redirectRegistration() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Dokter-LandingPageDoctor/button_Daftar'), 30, FailureHandling.STOP_ON_FAILURE)
+		WebUI.delay(3)
+		WebUI.takeScreenshot()
+
+		WebUI.closeBrowser()
 	}
 }

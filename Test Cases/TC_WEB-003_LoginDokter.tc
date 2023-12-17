@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_WEB-003_LoginDokter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0158217-df31-4f73-96c8-c1d2b2e9b995</testCaseGuid>
+</TestCaseEntity>

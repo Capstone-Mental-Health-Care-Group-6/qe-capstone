@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h5_Berakhir</name>
+   <tag></tag>
+   <elementGuidId>7f955b04-f64f-4e55-a773-00815619dfcd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/main/div/section/div/div[1]/div/div/h5[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h5:nth-of-type(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>93a99958-d5dc-4b72-bf90-c1fc9828dd4c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Berakhir</value>
+      <webElementGuid>b9b7fd20-4ea9-413c-8075-3438980e1d4c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;chat-page&quot;)/div[@class=&quot;row d-flex justify-content-between&quot;]/div[@class=&quot;col col-lg-5 col-sm-4&quot;]/div[@class=&quot;chat-box&quot;]/div[@class=&quot;d-flex justify-content-between filtering-session-chat&quot;]/h5[2]</value>
+      <webElementGuid>b9d844bc-5ebb-4817-a033-64f596a8d69f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='chat-page']/div/div/div/div/h5[2]</value>
+      <webElementGuid>085efa5b-7a45-456c-8217-66c77df7ae70</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pasien aktif'])[1]/following::h5[1]</value>
+      <webElementGuid>440cb2ae-41d8-46f4-a335-44fb6ed97cdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::h5[2]</value>
+      <webElementGuid>d00ed0c1-9012-4334-bd5f-78c43df5ce60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rojak'])[1]/preceding::h5[1]</value>
+      <webElementGuid>b2c4d846-9860-46e2-aa96-bf08eedc7fba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saya juga punya masalah hubungan...'])[1]/preceding::h5[2]</value>
+      <webElementGuid>589806a8-c8ab-4862-aade-bae67d02e6ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Berakhir']/parent::*</value>
+      <webElementGuid>7ab813d4-5d0b-4d19-8c4f-71072ec88ac2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h5[2]</value>
+      <webElementGuid>46b45455-335e-4711-a1be-e0d445230a9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[(text() = 'Berakhir' or . = 'Berakhir')]</value>
+      <webElementGuid>2efbb038-a7c7-4dac-b020-bb247caee2ea</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

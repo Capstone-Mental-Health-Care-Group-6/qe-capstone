@@ -4,35 +4,11 @@ Feature: Transaction History
   I want to see transaction history
   So that I can manage my history transaction
 
-  Scenario: User Searches Transaction History by Transaction ID
+#ID, Name, Date, Subscription Package, Price, Payment Method
+  Scenario: User Searches Transaction History
     Given I am on the transaction history page
-    When I search for transaction history by transaction ID
-    Then I should see relevant transaction records
-
-  Scenario: User Searches Transaction History by Patient's Name
-    Given I am on the transaction history page
-    When I search for transaction history by patient's name
-    Then I should see relevant transaction records
-
-  Scenario: User Searches Transaction History by Date
-    Given I am on the transaction history page
-    When I search for transaction history by date
-    Then I should see relevant transaction records
-
-  Scenario: User Searches Transaction History by Subscription Package
-    Given I am on the transaction history page
-    When I search for transaction history by subscription package
-    Then I should see relevant transaction records
-
-  Scenario: User Searches Transaction History by Price
-    Given I am on the transaction history page
-    When I search for transaction history by price
-    Then I should see relevant transaction records
-
-  Scenario: User Searches Transaction History by Payment Method
-    Given I am on the transaction history page
-    When I search for transaction history by payment method
-    Then I should see relevant transaction records
+    When I search for transaction history
+    Then I shoucld see relevant transaction records
 
   Scenario: User Searches Transaction History and No Data Exist
     Given I am on the transaction history page
@@ -41,7 +17,7 @@ Feature: Transaction History
 
   Scenario: User Wants to Filter Data Based on Transaction ID
     Given I am on the transaction history page
-    When I apply a filter to display data based on transaction ID
+    When I click filter data based on transaction ID
     Then I should see filtered transaction records
 
   Scenario: User Sees the Next Transaction Data
@@ -60,6 +36,6 @@ Feature: Transaction History
     Then I should see detailed information about the transaction
 
   Scenario: User Returns to the Transaction History Page from the Transaction Details Page
-    Given I am on the transaction details page
+    Given I am on the transaction history page
     When I navigate back to the transaction history page
     Then I should be on the transaction history page

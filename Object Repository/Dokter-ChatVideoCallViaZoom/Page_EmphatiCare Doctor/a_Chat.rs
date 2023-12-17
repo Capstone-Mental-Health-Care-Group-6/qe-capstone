@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Chat</name>
+   <tag></tag>
+   <elementGuidId>8fb42863-c1b5-4d64-b45f-5d64dd04ec94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/ul/li[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>18294b03-cf76-47a0-8380-8d8c83a48926</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sidebar-link</value>
+      <webElementGuid>6665f8cf-661a-48fc-b5a5-24f03b5bc78a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/dokter/chat</value>
+      <webElementGuid>7f90f43b-6fd9-4d2f-9300-d5e96ee81533</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Chat</value>
+      <webElementGuid>24046658-697a-4de6-b28e-8f0fe7347b63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sidebar&quot;]/div[@class=&quot;offcanvass offcanvas-start&quot;]/div[@class=&quot;d-grid wrapper align-items-stretch&quot;]/div[@class=&quot;offcanvass-body d-grid  align-items-stretch&quot;]/ul[@class=&quot;menu d-grid justify-content-center align-items-center mx-auto p-0&quot;]/li[@class=&quot;sidebar-item  undefined&quot;]/a[@class=&quot;sidebar-link&quot;]</value>
+      <webElementGuid>627b6101-9625-4ba5-906e-74affa7aeba5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/ul/li[2]/a</value>
+      <webElementGuid>aebf9a92-784d-40a2-846c-d0c601f9a91b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::a[1]</value>
+      <webElementGuid>2c472e53-38db-4a79-ad10-4ed2586edcce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lihat detail'])[1]/following::a[3]</value>
+      <webElementGuid>63315fe7-01e5-4d43-bdb4-92f6ae47650a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaksi'])[1]/preceding::a[1]</value>
+      <webElementGuid>a2d8c0eb-a577-4a83-95a0-7b158a5424b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/dokter/chat')]</value>
+      <webElementGuid>bb99d90e-c2f9-4ece-87df-92a558987af7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>50186576-481a-4731-8265-e35c01190df9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/dokter/chat' and (text() = ' Chat' or . = ' Chat')]</value>
+      <webElementGuid>2c5d731d-43ab-45a5-a8c6-e7a2c24f33cb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

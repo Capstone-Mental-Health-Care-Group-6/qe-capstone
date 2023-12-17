@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Nama Tracey DenesikJenis Kelamin Laki-L_a32157</name>
+   <tag></tag>
+   <elementGuidId>1a743420-2972-492e-9905-fe58eebf97f6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;modal-lihat-detail&quot;]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-lihat-detail > div.modal-dialog.modal-dialog-centered.modal-lg > div.modal-content</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6cb808fc-23ba-40ee-9cc8-8b82b5935a85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-content</value>
+      <webElementGuid>d0f40b1f-92ab-485c-b7f2-7f0b108ca9a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nama Tracey DenesikJenis Kelamin Laki-LakiKeluhan Trauma CintaVia Konsul ZoomTerimaTolak</value>
+      <webElementGuid>e7b266d6-6753-47cf-804b-d8da2ff9498a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-lihat-detail&quot;)/div[@class=&quot;modal-dialog modal-dialog-centered  modal-lg&quot;]/div[@class=&quot;modal-content&quot;]</value>
+      <webElementGuid>05b28a2a-714c-4708-bfe5-270fe1e3eae7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-lihat-detail']/div/div</value>
+      <webElementGuid>8c0dd739-acc6-4745-9a1c-f55ab1b9909b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Oke'])[1]/following::div[3]</value>
+      <webElementGuid>7f7b62b0-e12a-4e1f-8354-edca8d1345a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tolak'])[1]/following::div[12]</value>
+      <webElementGuid>2bae0a00-f946-4390-b7e4-13079d22ce5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div</value>
+      <webElementGuid>ec28cbd1-6162-483b-bfe7-8186460dcfb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Nama Tracey DenesikJenis Kelamin Laki-LakiKeluhan Trauma CintaVia Konsul ZoomTerimaTolak' or . = 'Nama Tracey DenesikJenis Kelamin Laki-LakiKeluhan Trauma CintaVia Konsul ZoomTerimaTolak')]</value>
+      <webElementGuid>090c4939-d641-4d5b-a2d6-18aa9d343d14</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

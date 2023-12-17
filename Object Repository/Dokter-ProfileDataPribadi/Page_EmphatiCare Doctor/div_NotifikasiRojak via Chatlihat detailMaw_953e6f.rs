@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_NotifikasiRojak via Chatlihat detailMaw_953e6f</name>
+   <tag></tag>
+   <elementGuidId>b5508ecc-88e7-40fc-8c9c-d51965ab63be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.d-flex.align-items-center.gap-2.pe-4</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//nav[@id='navbar']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>73280fc8-2f94-4b82-9c7e-9cf34700629e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>d-flex align-items-center gap-2 pe-4</value>
+      <webElementGuid>dc22f814-35d4-4f73-be3f-f4faf173b5e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>NotifikasiRojak via Chatlihat detailMawardioke dok akan segera saya terapkan metode iniPutri MaluSama-sama , saya senang bisa membantu Anda. kita......</value>
+      <webElementGuid>2944e259-53e9-4d05-94e4-280d17f50948</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbar&quot;)/div[@class=&quot;d-flex align-items-center gap-2 pe-4&quot;]</value>
+      <webElementGuid>de877da6-b99c-4a43-a9b0-1d300244c3b1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//nav[@id='navbar']/div</value>
+      <webElementGuid>54ccf62a-e073-4bee-9b62-8c25b1958a04</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//nav/div</value>
+      <webElementGuid>a8383c4b-3e2e-4006-b186-aa40e60cb1d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'NotifikasiRojak via Chatlihat detailMawardioke dok akan segera saya terapkan metode iniPutri MaluSama-sama , saya senang bisa membantu Anda. kita......' or . = 'NotifikasiRojak via Chatlihat detailMawardioke dok akan segera saya terapkan metode iniPutri MaluSama-sama , saya senang bisa membantu Anda. kita......')]</value>
+      <webElementGuid>84bdc2fc-18c3-4167-a38b-6df1de3a8f47</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

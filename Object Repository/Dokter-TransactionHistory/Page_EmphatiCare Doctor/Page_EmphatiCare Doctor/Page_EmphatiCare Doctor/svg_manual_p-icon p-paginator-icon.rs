@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_manual_p-icon p-paginator-icon</name>
+   <tag></tag>
+   <elementGuidId>d347bb8b-e3cb-4c45-a556-421fca6bb328</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='manual'])[4]/following::*[name()='svg'][3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.p-paginator-next.p-paginator-element.p-link > svg.p-icon.p-paginator-icon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>f21015ac-25e7-46bf-9022-00e916fb4974</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>14</value>
+      <webElementGuid>a658b41a-05da-4429-878b-5297696d45a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>14</value>
+      <webElementGuid>6b8c7b82-b777-4772-90ca-936612f8a89b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 14 14</value>
+      <webElementGuid>943e5f1b-cccd-4721-8edc-ce58e641b408</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>e3995fd2-7ed6-4d6b-a142-5c25bd240420</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>b0c5c346-98ea-44b7-a869-bc8abfb08561</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>p-icon p-paginator-icon</value>
+      <webElementGuid>635e4b0c-c356-410f-bd09-eda6a7d25fa8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>0e1a1f6a-385f-46e0-97f2-8c9e418b8cc1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-pc-section</name>
+      <type>Main</type>
+      <value>nextpageicon</value>
+      <webElementGuid>59733361-118b-4461-bfce-d8accd34f157</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;section-transaksi&quot;]/div[@class=&quot;row table-transaksi&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;p-datatable-sm p-datatable p-component p-datatable-responsive-scroll&quot;]/div[@class=&quot;p-paginator-bottom p-paginator p-component&quot;]/button[@class=&quot;p-paginator-next p-paginator-element p-link&quot;]/svg[@class=&quot;p-icon p-paginator-icon&quot;]</value>
+      <webElementGuid>b7e4a30b-5775-47f0-a1ab-d57825de7a33</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='manual'])[4]/following::*[name()='svg'][3]</value>
+      <webElementGuid>7ac0730f-4f6b-4e4c-bec6-0c3a22d4cac3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Paket Instan'])[4]/following::*[name()='svg'][3]</value>
+      <webElementGuid>dc3faa18-4e81-44cb-9737-50df188fd824</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::*[name()='svg'][3]</value>
+      <webElementGuid>7a7eaaa0-e3f7-4ba8-b63c-faddb66dae4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::*[name()='svg'][3]</value>
+      <webElementGuid>39d316f2-2770-4fd1-a674-49ba213e5c6c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

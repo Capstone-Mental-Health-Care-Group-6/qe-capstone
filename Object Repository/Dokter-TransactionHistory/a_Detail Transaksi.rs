@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Detail Transaksi</name>
+   <tag></tag>
+   <elementGuidId>d1fd8471-79c3-468c-93c1-91b67931e9b3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/section/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.text-decoration-none.d-flex.align-items-center.gap-3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>3b4e73ae-cca6-4c7f-b751-2e8ab42a9d83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-decoration-none d-flex align-items-center gap-3</value>
+      <webElementGuid>45cced10-6c7e-4c4f-bfe6-fc2e7e0867b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/dokter/transaksi</value>
+      <webElementGuid>aba077c7-6604-4360-9249-39591a62972c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Detail Transaksi </value>
+      <webElementGuid>fce02af2-53b6-43d9-acbd-cd2085d64418</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]/section[@class=&quot;header&quot;]/a[@class=&quot;text-decoration-none d-flex align-items-center gap-3&quot;]</value>
+      <webElementGuid>df74b86e-84a4-4a02-ae69-312ae7f4a205</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/section/a</value>
+      <webElementGuid>fd6396a8-30c7-4ef6-9512-b454a804c53c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::a[1]</value>
+      <webElementGuid>7df2188b-da82-498e-bf7d-729b5c22e055</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak'])[1]/following::a[1]</value>
+      <webElementGuid>5835b05c-fc84-431a-890a-2cee97c5bd71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bukti Transfer :'])[1]/preceding::a[1]</value>
+      <webElementGuid>24930026-640c-4778-b263-919c8da407db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/dokter/transaksi')])[2]</value>
+      <webElementGuid>39370d87-0ae0-47a5-9395-9f2e6aa7b166</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/a</value>
+      <webElementGuid>e7aadc5d-fbf9-4fa7-a718-8bbe5ba8dc02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/dokter/transaksi' and (text() = ' Detail Transaksi ' or . = ' Detail Transaksi ')]</value>
+      <webElementGuid>fd28823c-3f52-4a8b-beb9-061d20d109d6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

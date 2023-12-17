@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>verify delete chat -div_Pasien aktifBerakhirRojakSaya juga puny_7506d0</name>
+   <tag></tag>
+   <elementGuidId>f4bb5565-471c-4340-9948-6ea48cb490da</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.chat-box</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='chat-page']/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e184b015-aa19-4b05-876c-99e212c4c2b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>chat-box</value>
+      <webElementGuid>f34ccba3-3e49-4fff-9d6a-8040ef7e428a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pasien aktifBerakhirRojakSaya juga punya masalah hubungan... Mawardiaku selalu cemas Putribapak saya hamil </value>
+      <webElementGuid>01e78670-45f9-4843-98e3-71af7cc79be1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;chat-page&quot;)/div[@class=&quot;row d-flex justify-content-between&quot;]/div[@class=&quot;col col-lg-5 col-sm-4&quot;]/div[@class=&quot;chat-box&quot;]</value>
+      <webElementGuid>39172985-f9d0-4aae-bd9c-7c158bc03471</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='chat-page']/div/div/div</value>
+      <webElementGuid>9d60c7be-6fe5-45e1-b577-7c3fae34f366</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::div[4]</value>
+      <webElementGuid>73cdc58b-23fb-432c-a3af-7d9f77001d6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak'])[1]/following::div[4]</value>
+      <webElementGuid>1dd08d5e-6484-44f2-b994-db53f71f554b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div/div</value>
+      <webElementGuid>856df8e6-4068-45ba-87b8-c8f126abf459</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Pasien aktifBerakhirRojakSaya juga punya masalah hubungan... Mawardiaku selalu cemas Putribapak saya hamil ' or . = 'Pasien aktifBerakhirRojakSaya juga punya masalah hubungan... Mawardiaku selalu cemas Putribapak saya hamil ')]</value>
+      <webElementGuid>8b03f491-56a3-4f39-a644-11a798f0d662</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

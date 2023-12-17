@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_nama psikologPsikologEmpathi CareEdit P_b8c3f9</name>
+   <tag></tag>
+   <elementGuidId>e9fce792-b2a0-4811-87c6-c4834716861c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.p-3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>28f0e64a-66ef-4179-a12f-f8fbdfefc37a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>p-3</value>
+      <webElementGuid>c65085c3-2baa-45ad-86c8-d6171bae4bf5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>nama psikologPsikologEmpathi CareEdit ProfilData PribadiData AkademikDokumenPengalamanProfil SingkatData berhasil disimpan.</value>
+      <webElementGuid>9eb7a6c3-aceb-46df-bbb5-33ce783c116c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;main&quot;]/div[@class=&quot;p-3&quot;]</value>
+      <webElementGuid>d979cf59-d34e-4b93-9a3d-28f02d7880ba</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div</value>
+      <webElementGuid>be18e024-cd55-480e-ac41-cfa836dc6635</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::div[1]</value>
+      <webElementGuid>78c2c1bf-aade-4ee4-9d67-6ea7f99383cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak'])[1]/following::div[1]</value>
+      <webElementGuid>35830abd-8dfb-46fd-b80c-415a34ac7348</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div</value>
+      <webElementGuid>250a0d32-0384-4737-8ddb-ed636cdd4fd4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'nama psikologPsikologEmpathi CareEdit ProfilData PribadiData AkademikDokumenPengalamanProfil SingkatData berhasil disimpan.' or . = 'nama psikologPsikologEmpathi CareEdit ProfilData PribadiData AkademikDokumenPengalamanProfil SingkatData berhasil disimpan.')]</value>
+      <webElementGuid>48a36e20-493a-4703-9b79-d013863fe8d4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

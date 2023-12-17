@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Download Sekarang</name>
+   <tag></tag>
+   <elementGuidId>ee4bd714-c7c8-462d-909d-09564e178db2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.no-scroll-hover.btn-transparent.fw-bold.border.border-primary.text-primary.rounded-pill.my-3.px-4</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='submit']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>cde0c117-cc06-427c-b5fb-e39e4adae325</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn no-scroll-hover btn-transparent fw-bold border border-primary text-primary rounded-pill my-3 px-4</value>
+      <webElementGuid>6ea72bfd-3e5a-4788-97d5-cd3d1da7dd83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
+      <webElementGuid>155f561a-3592-48f4-9187-1f956995f857</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Download Sekarang</value>
+      <webElementGuid>15bbfe44-2ca4-4fe7-ba1b-522a08bbf327</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;offcanvasNavbar&quot;)/div[@class=&quot;offcanvas-body align-items-center&quot;]/button[@class=&quot;btn no-scroll-hover btn-transparent fw-bold border border-primary text-primary rounded-pill my-3 px-4&quot;]</value>
+      <webElementGuid>556935ea-f4ed-49d6-9094-3cd1a5432c07</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='submit']</value>
+      <webElementGuid>f151354a-9eda-4c27-a7c1-f375527a1308</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='offcanvasNavbar']/div[2]/button</value>
+      <webElementGuid>94546b0c-fc4a-4745-9029-afff15664d49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Register'])[1]/following::button[1]</value>
+      <webElementGuid>c761105e-68cb-41b0-b4c2-85aa833c14df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EmpathiCare'])[1]/following::button[2]</value>
+      <webElementGuid>a292f60e-e51b-4ee0-848c-1cb8051a0ae1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daftar Sebagai Konselor'])[1]/preceding::button[1]</value>
+      <webElementGuid>8cb59682-e95a-4b6d-8b60-ed8951f4005d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Download Sekarang']/parent::*</value>
+      <webElementGuid>f8baa7b3-8566-4ab3-a3d6-c829e685b63b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button</value>
+      <webElementGuid>2c737322-b319-4cd3-ac49-50d62da9f1d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'submit' and (text() = 'Download Sekarang' or . = 'Download Sekarang')]</value>
+      <webElementGuid>f17a293c-8f76-40fd-bd9f-7f76c79a4d69</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

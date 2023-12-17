@@ -1,0 +1,124 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Verify Home button on Navbar",
+        "description": "",
+        "id": "landing-page-dokter;verify-home-button-on-navbar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6819634100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to EmphatiCare landing page",
+            "match": {
+              "location": "LandingPageDokter.navigateLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17187357700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify button and scroll all the navigation hyperlinks",
+            "match": {
+              "location": "LandingPageDokter.verifyButtonHyprelinks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 940734400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be redirected to the correct navigation hyperlinks",
+            "match": {
+              "location": "LandingPageDokter.redirectNavigationHyperlinks()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LandingPageDokter"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verify Register Now button",
+        "description": "",
+        "id": "landing-page-dokter;verify-register-now-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6054304400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I navigate to EmphatiCare landing page",
+            "match": {
+              "location": "LandingPageDokter.navigateLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 504811000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the register now button",
+            "match": {
+              "location": "LandingPageDokter.clickRegister()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4930064000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should be redirected to the registration page",
+            "match": {
+              "location": "LandingPageDokter.redirectRegistration()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LandingPageDokter"
+          }
+        ]
+      }
+    ],
+    "name": "Landing Page Dokter",
+    "description": "  As a user\n  I want to access the landing page\n  So that I can register to become a counselor",
+    "id": "landing-page-dokter",
+    "keyword": "Feature",
+    "uri": "C:/Users/laras/OneDrive/Documents/Studi Independen/Altera/Capstone Project/WebsiteTest/Include/features/Dokter/Dokter-LandingPageDokter.feature",
+    "tags": [
+      {
+        "name": "@LandingPageDokter",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

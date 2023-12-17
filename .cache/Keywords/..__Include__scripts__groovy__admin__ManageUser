@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D28170D8416B932D1AD09083D025B5E1",
+  "keywordClasses": [
+    {
+      "name": "admin.ManageUser",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

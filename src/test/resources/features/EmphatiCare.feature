@@ -777,7 +777,7 @@ Feature: Emphati Care
     When I send an HTTP POST request Chatbot Invalid Endpoint
     Then I receive a valid data response for send message invalid endpoint with HTTP status code 404 Not Found
 
-    # ===========================CHATBOT CS===========================
+# ===========================CHATBOT CS===========================
 
     # [Positive] GET - All Chatbot
   Scenario: User retrieves all chatbot messages successfully

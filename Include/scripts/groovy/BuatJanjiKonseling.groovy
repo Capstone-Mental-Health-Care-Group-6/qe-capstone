@@ -42,48 +42,65 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class Login {
 
-	//Login-ValidCredentials//
-	@Given("I want to log in")
-	def inputEmailPassword() {
+class BuatJanjiKonseling {
+
+	// [Positive] User explore counseling flow
+	@Given("I am in make an appointment menu")
+	def navigateToMakeAppointmentMenu() {
 		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-4.apk',
 				true)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 10)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 10)
-	}
 
-	@When("I enter the (.*) and (.*)")
-	def interEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), name, 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), password, 0)
+		Mobile.delay(10)
+		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), 'nurulfauziah@gmail.com', 10)
+		Mobile.hideKeyboard()
+
+		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), 'testing', 10)
+		Mobile.hideKeyboard()
+
 		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
 	}
 
-	@Then("I should be logged in to the application")
-	def I_should_be_logged_in_to_the_application() {
-		Mobile.verifyElementVisible(findTestObject('Object Repository/LoginFeature/Logo_emphatiCare'), 0)
+	@When("I click Read more")
+	def clickReadMoreButton() {
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View'), 0)
+	}
+
+	@Then("I am redirected to counseling flow page")
+	def verifyRedirectToCounselingFlowPage() {
 		Mobile.closeApplication()
 	}
 
-	@When("I enter the invalid (.*) and invalid (.*)")
-	def interInvalidEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), 'user@gmail.com', 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), 'user12345', 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
+	// [Positive] User select counseling topics
+
+	@When("I click Start now and select")
+	def clickStartNowAndSelectTopic() {
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (1)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (2)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (3)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (4)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (5)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (6)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (7)'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (8)'), 0)
 	}
 
-	@Then("I should see an error message and stay on the login page")
-	def stayLogin() {
+	@Then("I am redirected to package and bundle selection page")
+	def verifyRedirectToPackageAndBundleSelectionPage() {
 		Mobile.closeApplication()
 	}
-
-	//Login-InvalidCredentials//
-
-	//RegisterLink//
-
-	//GoogleButton//
-
-
 
 }

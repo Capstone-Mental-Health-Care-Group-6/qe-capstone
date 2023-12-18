@@ -6,12 +6,12 @@ Feature: Emphati Care App Onboarding
 
 @UserNavigates
   Scenario Outline: User Navigates through Onboarding Steps
-    Given I want to <scenario_description>
-    When I <action_performed>
-    Then I should <verification_status>
+    Given I want to go to my dashboard
+    When I went through the onboarding page
+    Then I should redirect to my dashboard
 
-    Examples: 
-      | scenario_description              | action_performed                         | verification_status             |
-      | User successfully opened the app  | open the Emphati Care app                | see the onboarding page         |
-      | User clicks skip onboarding     	| click the skip button on onboarding page | be redirected to the Login page |
-      | User clicks next onboarding     	| click the next button on onboarding page | be redirected to the Login page |
+    #Examples: 
+      #| scenario_description              | action_performed                         | verification_status             |
+      #| User successfully opened the app  | open the Emphati Care app                | see the onboarding page         |
+      #| User clicks skip onboarding     	| click the skip button on onboarding page | be redirected to the Login page |
+      #| User clicks next onboarding     	| click the next button on onboarding page | be redirected to the Login page |

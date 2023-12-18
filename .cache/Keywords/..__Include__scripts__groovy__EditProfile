@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "4A231BAD4EC7B94480C92D74C324B174",
+  "keywordFileContentHash": "EA3170C7F046FB0264429464CE5035B0",
   "keywordClasses": [
     {
-      "name": "Login",
+      "name": "EditProfile",
       "keywordMethods": []
     }
   ],

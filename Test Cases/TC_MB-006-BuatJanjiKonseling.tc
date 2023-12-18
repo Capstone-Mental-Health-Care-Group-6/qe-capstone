@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>TC_MB-006-BuatJanjiKonseling</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0b0caeec-9155-4d96-89b8-fa504ae8d80c</testCaseGuid>
+   <testCaseGuid>efab7915-2771-472a-9045-54a94bc7143d</testCaseGuid>
 </TestCaseEntity>

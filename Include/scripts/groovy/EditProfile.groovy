@@ -43,13 +43,64 @@ import cucumber.api.java.en.When
 
 
 
-class Onboarding {
-	def wantToGoToDashboard() {
+class EditProfile {
+	// [Positive] User Edits Profile
+	@Given("on Edit Profile Page")
+	def navigateToEditProfilePage() {
 	}
 
-	def navigateThroughOnboardingPage() {
+	@When("select Edit Profile")
+	def selectEditProfileOption() {
 	}
 
-	def verifyRedirectToDashboard() {
+	@Then("receive successful data change notification")
+	def verifySuccessfulDataChangeNotification() {
 	}
+
+	// [Positive] User Changes Password
+	@Given("on Edit Profile Page")
+	def navigateToEditProfilePageForPasswordChange() {
+	}
+
+	@When("select Change Password")
+	def selectChangePasswordOption() {
+	}
+
+	@Then("receive successful password change notification")
+	def verifySuccessfulPasswordChangeNotification() {
+	}
+
+	// [Positive] User Views About Us
+	@Given("on Edit Profile Page")
+	def navigateToEditProfilePageForAboutUs() {
+	}
+
+	@When("I select About Us")
+	def selectAboutUsOption() {
+	}
+
+	@Then("I navigate to the correct page")
+	def verifyNavigationToCorrectPage() {
+	}
+
+	@When("I select Privacy")
+	def selectZ() {
+	}
+
+	@When("I select About Us")
+	def selectA() {
+	}
+
+	@When("I select Terms and Conditions")
+	def selectB() {
+	}
+
+	@When("I select Logout")
+	def selectC() {
+	}
+
+	@When("I select Delete Account")
+	def selectD() {
+	}
+
 }

@@ -53,3 +53,34 @@ Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widge
 
 Mobile.closeApplication()
 
+<<<<<<< HEAD
+Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
+
+Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)
+
+Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 0)
+
+Mobile.tap(findTestObject('LoginFeature/Link_Registered'), 0)
+
+Mobile.setText(findTestObject('Object Repository/RegisterFeature/field_email'), 'user@gmail.com', 0)
+
+Mobile.setText(findTestObject('Object Repository/RegisterFeature/field_password_register'), 'user12345', 0)
+
+Mobile.tap(findTestObject('Object Repository/RegisterFeature/Icon_eye_password_1'), 0)
+
+Mobile.setText(findTestObject('RegisterFeature/field_konfirmasi_password'), 'user12345', 0)
+
+Mobile.tap(findTestObject('Object Repository/RegisterFeature/Icon_eye_password_2'), 0)
+
+Mobile.tap(findTestObject('Object Repository/RegisterFeature/Button_register'), 0)
+
+Mobile.tap(findTestObject('Object Repository/RegisterFeature/CheckBox_Registed'), 0)
+
+Mobile.getText(findTestObject('Object Repository/RegisterFeature/Link_syarat_dan_ketentuan'), 0)
+
+Mobile.closeApplication()
+
+Mobile.verifyElementText(findTestObject('Object Repository/RegisterFeature/Alert email'), '')
+
+=======
+>>>>>>> 7ded8fe51544ef21114b9bac63c096249c1c8e18

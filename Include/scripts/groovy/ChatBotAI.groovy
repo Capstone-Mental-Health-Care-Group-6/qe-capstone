@@ -43,13 +43,45 @@ import cucumber.api.java.en.When
 
 
 
-class Onboarding {
-	def wantToGoToDashboard() {
+class ChatBotAI {
+	//	# [Positive] Chat AI Interaction
+	@Given("on HomePage, I click the robot icon")
+	def clickRobotIcon() {
 	}
 
-	def navigateThroughOnboardingPage() {
+	@When("I choose an option")
+	def chooseOption() {
 	}
 
-	def verifyRedirectToDashboard() {
+	@Then("I receive a reply from AI")
+	def verifyReplyFromAI() {
 	}
+
+	//	# [Positive] Empty State Chat AI
+	@Given("on HomePage, I click the robot icon")
+	def clickRobotIconForEmptyState() {
+	}
+
+	@When("I click Start Conversation, choose an option")
+	def startConversationWithOption() {
+	}
+
+	@Then("I successfully start a chat and receive a reply from AI")
+	def verifyChatStartAndReplyFromAI() {
+	}
+
+	//	# [Positive] Chatbot CS Interaction
+	@Given("on HomePage, I click the robot icon")
+	def clickRobotIconForCSInteraction() {
+	}
+
+	@When("I input a question, choose an option")
+	def inputQuestionAndChooseOption() {
+	}
+
+	@Then("I receive a reply from Customer Support")
+	def verifyReplyFromCustomerSupport() {
+	}
+
+
 }

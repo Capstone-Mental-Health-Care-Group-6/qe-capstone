@@ -20,10 +20,13 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
 
 // Onboarding - Anda mungkin perlu menambahkan wait atau pengecekan agar elemen terlihat sebelum melakukan aksi
 =======
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
@@ -31,6 +34,9 @@ Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen
 
 // Onboarding
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -49,6 +55,9 @@ Mobile.tap(findTestObject('RegisterFeature/field email register-android.widget.E
 Mobile.delay(1 // Tambahkan delay jika diperlukan
     )
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -65,8 +74,11 @@ Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widge
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // profile filling
 
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======

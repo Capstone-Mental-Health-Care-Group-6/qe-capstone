@@ -47,6 +47,10 @@ class Login {
 	//Login-ValidCredentials//
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	//Login-ValidCredentials//
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 	//Login-ValidCredentials//
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -69,6 +73,7 @@ class Login {
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
@@ -80,12 +85,17 @@ class Login {
 	}
 
 =======
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
 		Mobile.closeApplication()
 	}
 
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")

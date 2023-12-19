@@ -14,5 +14,35 @@ Feature: Forget Password Process
     Then I should have successfully created a new password
 
     Examples: 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      | email             | OTP  | confirm_password | confirm_password_verify |
+      | laras@example.com | 1221 | laras2           | laras2                  |
+=======
       | email              | OTP  | confirm_password | confirm_password_verify |
       | laras1@example.com | 1221 | laras2           | laras2                  |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
+=======
+      | email              | OTP  | confirm_password | confirm_password_verify |
+      | laras1@example.com | 1221 | laras2           | laras2                  |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
+=======
+      | email              | OTP  | confirm_password | confirm_password_verify |
+      | laras1@example.com | 1221 | laras2           | laras2                  |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
+=======
+      | email              | OTP  | confirm_password | confirm_password_verify |
+      | laras1@example.com | 1221 | laras2           | laras2                  |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
+=======
+      | email              | OTP  | confirm_password | confirm_password_verify |
+      | laras1@example.com | 1221 | laras2           | laras2                  |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
+=======
+      | email              | OTP  | confirm_password | confirm_password_verify |
+      | laras1@example.com | 1221 | laras2           | laras2                  |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82

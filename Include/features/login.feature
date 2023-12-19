@@ -13,7 +13,11 @@ Feature: Login Functionality
 
     Examples: 
       | email           | password |
+<<<<<<< HEAD
+
+=======
       | laras1@gmail.com | laras1   |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 
   @InvalidCredentials
   Scenario Outline: User Login with Invalid Credentials
@@ -23,6 +27,15 @@ Feature: Login Functionality
 
     Examples: 
       | email           | password        |
+<<<<<<< HEAD
+
+
+
+  #Scenario: User Clicks Register Link
+    #Given I want to log in
+    #When I click the register link
+    #Then I should be directed to the registration page
+=======
       | laras1@gmail.com | $(invalid pass) |
       | xxx             | laras1          |
       |                 |                 |
@@ -32,3 +45,4 @@ Feature: Login Functionality
     Given I want to log in
     When I click the register link
     Then I should be directed to the registration page
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82

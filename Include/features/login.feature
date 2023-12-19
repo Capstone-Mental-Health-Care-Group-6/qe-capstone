@@ -14,7 +14,11 @@ Feature: Login Functionality
     Examples: 
       | email           | password |
 <<<<<<< HEAD
+<<<<<<< HEAD
       | laras@gmail.com | laras1   |
+=======
+      | laras1@gmail.com | laras1   |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
       | laras1@gmail.com | laras1   |
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
@@ -28,7 +32,11 @@ Feature: Login Functionality
     Examples: 
       | email           | password        |
 <<<<<<< HEAD
+<<<<<<< HEAD
       | laras@gmail.com | $(invalid pass) |
+=======
+      | laras1@gmail.com | $(invalid pass) |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
       | laras1@gmail.com | $(invalid pass) |
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82

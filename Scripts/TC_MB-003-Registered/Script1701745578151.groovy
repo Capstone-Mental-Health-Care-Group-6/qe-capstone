@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
 
@@ -57,6 +58,8 @@ Mobile.closeApplication()
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 <<<<<<< HEAD
+=======
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)

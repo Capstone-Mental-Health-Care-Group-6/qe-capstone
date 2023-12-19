@@ -17,19 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
+Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
+    true)
 
 // Onboarding
 Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
 
-Mobile.tap(findTestObject('LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 0)
+Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), 'laras1@gmail.com', 0)
 
-Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 'laras1@gmail.com', 
-    0)
-
-Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (5)'), 'laras1', 0)
+Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), 'laras1', 0)
 
 Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
 

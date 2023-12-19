@@ -42,50 +42,60 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class Login {
 
-	//Login-ValidCredentials//
-	//Login-ValidCredentials//
-	@Given("I want to log in")
-	def inputEmailPassword() {
-		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
-    true)
-		Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 10)
-
-		Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 10)
+class Articles {
+	// Scenario: View Article Details
+	@Given("I am on the Home page menu")
+	def navigateToHomePageMenu() {
 	}
 
-	@When("I enter the (.*) and (.*)")
-	def interEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), name, 0)
-		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
+	@When("I tap on an article")
+	def tapOnArticle() {
 	}
 
-	@Then("I should be logged in to the application")
-	def I_should_be_logged_in_to_the_application() {
-		Mobile.closeApplication()
+	@Then("I enter the article details page")
+	def verifyEnterArticleDetailsPage() {
 	}
 
-	//Login-InvalidCredentials//
-	@When("I enter the invalid (.*) and invalid (.*)")
-	def interInvalidEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), name, 0)
-		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
+	// Scenario: Use Search Field
+	@Then("I successfully use the search field")
+	def verifySuccessfulSearch() {
 	}
 
-	@Then("I should see an error message and stay on the login page")
-	def stayLogin() {
-		Mobile.closeApplication()
+	// Scenario: Search with Invalid Keywords
+	@When("I search for keywords")
+	def searchForInvalidKeywords() {
 	}
 
-	//RegisterLink//
-	@When("I click the register link")
-	def clickRegisterLink() {
+	@Then("I don't find the expected search results")
+	def verifyInvalidSearchResults() {
 	}
 
-	@Then("I should be directed to the registration page")
-	def verifyRedirectToRegistrationPage() {
+	// Scenario: Navigate to Previous Page
+	@When("I tap the previous button")
+	def tapOnPreviousButton() {
 	}
+
+	@Then("I view the previous homepage from the article selection page")
+	def verifyReturnToPreviousHomepage() {
+	}
+
+	// Scenario: Use Keyword Category button
+	@When("I tap the button category button")
+	def tapOnKeywordCategoryButton() {
+	}
+
+	@Then("I successfully search for articles using keywords")
+	def verifySearchForArticlesWithKeywords() {
+	}
+
+	// Scenario: Return from Article Details
+	@When("I tap the previous button from article details")
+	def tapOnPreviousButtonFromArticleDetails() {
+	}
+
+	@Then("I return to the previous article selection page")
+	def verifyReturnToPreviousArticleSelectionPage() {
+	}
+
 }

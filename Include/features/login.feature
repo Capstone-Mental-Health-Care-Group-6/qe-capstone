@@ -13,7 +13,11 @@ Feature: Login Functionality
 
     Examples: 
       | email           | password |
+<<<<<<< HEAD
       | laras@gmail.com | laras1   |
+=======
+      | laras1@gmail.com | laras1   |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 
   @InvalidCredentials
   Scenario Outline: User Login with Invalid Credentials
@@ -23,7 +27,11 @@ Feature: Login Functionality
 
     Examples: 
       | email           | password        |
+<<<<<<< HEAD
       | laras@gmail.com | $(invalid pass) |
+=======
+      | laras1@gmail.com | $(invalid pass) |
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
       | xxx             | laras1          |
       |                 |                 |
 

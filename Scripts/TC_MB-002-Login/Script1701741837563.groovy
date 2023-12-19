@@ -26,7 +26,7 @@ Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on bo
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_login-android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 0)
+Mobile.hideKeyboard()
 
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 'laras1@gmail.com', 
     0)

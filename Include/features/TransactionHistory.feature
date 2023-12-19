@@ -5,108 +5,67 @@ Feature: Transaction History
 
   @transaction_history
   Scenario: View Transaction History
-    Given User launches the Emphatic Care mobile app
-    When User taps on the "History" menu
-    Then User successfully sees the transaction history display
+    Given I on dashboard menu
+    When I taps on the menu transaction history
+    Then I successfully sees the transaction history display
 
+  #include submit_button_feedback
   @provide_ratings_and_feedback
-  Scenario Outline: Provide Ratings and Feedback after Counseling
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User sees rating and feedback popups
-    When User provides ratings and feedback "<feedback>"
-    And User taps the "Detail" button
-    Then User successfully sends ratings and feedback
-
-    Examples: 
-    | feedback                              |
-    | highly recommend this psychologist!   |
+  Scenario: Provide Ratings and Feedback after Counseling
+    Given I navigate on transaction history menu
+    When I provides ratings and feedback
+    Then I successfully sends ratings and feedback
 
   @provide_ratings_and_blank_feedback
-  Scenario Outline: Provide Ratings with Blank Feedback after Counseling
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User sees rating and feedback popups
-    When User provides ratings with blank feedback "<feedback>"
-    And User taps the "Detail" button
-    Then User fails to submit ratings and feedback
-
-    Examples: 
-    | feedback |
-    |          |
+  Scenario: Provide Ratings with Blank Feedback after Counseling
+    Given I navigate on transaction history menu
+    When I provides ratings and feedback
+    Then I fails to submit ratings and feedback
 
   @cancel_feedback
   Scenario: Cancel Giving Ratings and Feedback
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    When User clicks the "x" button
-    Then User successfully cancels giving ratings and feedback
-
-  @submit_button_feedback
-  Scenario Outline: Verify "Submit" Button on Feedback and Ratings Popup
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User taps to the "Ratings" section
-    And User provides feedback "<feedback>"
-    When User taps the "send" button
-    Then User successfully sends ratings and feedback
-    
-    Examples: 
-    | feedback                              |
-    | highly recommend this psychologist!   |
+    Given I navigate on transaction history menu
+    When I clicks the X button
+    Then I successfully cancels giving ratings and feedback
 
   @details_button_order_history
-  Scenario: Verify "Details" Button on Order History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    When User taps the "Detail" button
-    Then User is redirected to the order details page
+  Scenario: Verify Details button on Order History
+    Given I navigate on transaction history menu
+    When I taps the Detail button
+    Then I is redirected to the order details page
 
   @give_a_rating_button_order_history
-  Scenario: Verify "Give a Rating" Button on Order History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    When User taps the "give a rating" button
-    Then User is redirected to the order details page
+  Scenario: Verify Give a Rating button on Order History
+    Given I navigate on transaction history menu
+    When I taps the give a rating button
+    Then I is redirected to the order details page
 
   @leave_a_review_button_order_history
-  Scenario: Verify "Leave a Review" Button on Order History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User taps the "give a rating" button
-    When User taps the "leave a review" button
-    Then User successfully sees the popup for giving ratings and feedback
+  Scenario: Verify Leave a Review button on Order History
+    Given I navigate on transaction history menu
+    When I taps the leave a review button
+    Then I successfully sees the popup for giving ratings and feedback
 
   @message_icon_order_history
   Scenario: Verify Message Icon on Order History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User taps the "detail" button
-    And User taps the "message" icon
-    Then User is redirected to the history chat rooms
+    Given I navigate on transaction history menu
+    When I taps the message icon
+    Then I is redirected to the history chat rooms
 
   @previous_icon_chat_history
-  Scenario: Verify "Previous" Icon on Chat History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User taps the "detail" button
-    And User taps the "message" icon
-    When User taps the "previous" icon
-    Then User successfully returns to the history page
+  Scenario: Verify Previous Icon on Chat History
+    Given I navigate on transaction history menu
+    When I taps the previous icon
+    Then I successfully returns to the history page
 
   @buy_again_button_order_history
-  Scenario: Verify "Buy Again" Button on Order History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User taps the "detail" button
-    And User taps the "buy again" button
-    Then User successfully returns to the Make an Appointment page
+  Scenario: Verify Buy Again button on Order History
+    Given I navigate on transaction history menu
+    When I taps the buy again button
+    Then I successfully returns to the Make an Appointment page
 
   @previous_icon_order_history
-  Scenario: Verify "Previous" Icon on Order History
-    Given User launches the Emphatic Care mobile app
-    And User taps on the "History" menu
-    And User taps the "detail" button
-    And User taps the "message" icon
-    And User taps the "previous" icon
-    Then User successfully returns to the order history page
+  Scenario: Verify Previous Icon on Order History
+    Given I navigate on transaction history menu
+    When I taps the previous icon on order
+    Then I successfully returns to the order history page

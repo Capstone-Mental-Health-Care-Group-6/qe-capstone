@@ -46,6 +46,10 @@ class Login {
 
 	//Login-ValidCredentials//
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	//Login-ValidCredentials//
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 	//Login-ValidCredentials//
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -64,6 +68,7 @@ class Login {
 		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
 	}
+<<<<<<< HEAD
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
@@ -74,6 +79,14 @@ class Login {
 		Mobile.closeApplication()
 	}
 
+=======
+
+	@Then("I should be logged in to the application")
+	def I_should_be_logged_in_to_the_application() {
+		Mobile.closeApplication()
+	}
+
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")
 	def interInvalidEmailPassword(String name, String password) {

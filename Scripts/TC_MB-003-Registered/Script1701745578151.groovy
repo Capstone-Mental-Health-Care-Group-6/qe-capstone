@@ -19,14 +19,20 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
 
 // Onboarding - Anda mungkin perlu menambahkan wait atau pengecekan agar elemen terlihat sebelum melakukan aksi
 =======
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
     true)
 
 // Onboarding
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
 
@@ -42,6 +48,9 @@ Mobile.tap(findTestObject('RegisterFeature/field email register-android.widget.E
 
 Mobile.delay(1 // Tambahkan delay jika diperlukan
     )
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 
 Mobile.setText(findTestObject('RegisterFeature/field email register-android.widget.EditText'), 'laras1@gmail.com', ConditionType.EQUALS)
@@ -55,8 +64,11 @@ Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widge
 Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widget.Button'), 0)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // profile filling
 
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 Mobile.closeApplication()

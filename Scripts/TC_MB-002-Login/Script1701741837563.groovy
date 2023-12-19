@@ -18,7 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-paling terbaru.apk', true)
+=======
+Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
+    true)
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
     true)
@@ -30,10 +35,16 @@ Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boardin
 Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 'laras1@gmail.com', 
     0)
 
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (5)'), 'laras1', 0)
+=======
+Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), 'laras1@gmail.com', 0)
+
+Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), 'laras1', 0)
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), 'laras1@gmail.com', 0)
 

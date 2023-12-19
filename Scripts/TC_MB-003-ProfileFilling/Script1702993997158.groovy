@@ -17,3 +17,48 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
+
+Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
+
+// Onboarding - Anda mungkin perlu menambahkan wait atau pengecekan agar elemen terlihat sebelum melakukan aksi
+Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_login-android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('LoginFeature-spy/link daftar-android.view.View'), 0)
+
+//register
+Mobile.setText(findTestObject('RegisterFeature/field email register-android.widget.EditText'), 'laras1@gmail.com', ConditionType.EQUALS)
+
+Mobile.setText(findTestObject('RegisterFeature/field password register-android.widget.EditText'), 'laras1A', 0)
+
+Mobile.setText(findTestObject('RegisterFeature/field confirm password register-android.widget.EditText'), 'laras1A', 0)
+
+Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widget.CheckBox'), 0)
+
+Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widget.Button'), 0)
+
+// profile filling
+Mobile.setText(findTestObject('ProfileFilling/profile filling-field nama-android.widget.EditText'), 'laras maharani', 0)
+
+Mobile.tap(findTestObject('ProfileFilling/profile filling-button selanjutnya-nama-android.widget.Button'), 0)
+
+Mobile.setText(findTestObject('ProfileFilling/profile filling-field no ponsel-android.widget.EditText'), '0895891937028', 
+    0)
+
+Mobile.tap(findTestObject('ProfileFilling/profile filling-icon kalender-tanggal lahir-android.view.View'), 0)
+
+Mobile.tap(findTestObject('ProfileFilling/profile filling-button selanjutnya-tanggal lahir-android.widget.Button'), 0)
+
+Mobile.tap(findTestObject('ProfileFilling/profile filling-button jenis kelamin-fimale-android.widget.CheckBox'), 0)
+
+Mobile.tap(findTestObject('ProfileFilling/profile filling-notification successfully-button OK-android.widget.Button'), 0)
+
+Mobile.verifyElementVisible(findTestObject('ProfileFilling/profile filling-notification successfully-android.view.View'), 
+    0)
+
+Mobile.verifyElementVisible(findTestObject('ProfileFilling/view login page android.widget.ImageView'), 0)
+

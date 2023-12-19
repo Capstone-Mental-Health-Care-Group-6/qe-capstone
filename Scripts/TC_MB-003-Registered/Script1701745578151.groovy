@@ -18,13 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
 
 // Onboarding - Anda mungkin perlu menambahkan wait atau pengecekan agar elemen terlihat sebelum melakukan aksi
@@ -36,20 +29,11 @@ Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_lo
 
 Mobile.tap(findTestObject('LoginFeature-spy/link daftar-android.view.View'), 0)
 
-// Tap field email
-Mobile.tap(findTestObject('RegisterFeature/field email register-android.widget.EditText'), 0)
-
-Mobile.delay(1 // Tambahkan delay jika diperlukan
-	)
+//register
 
 Mobile.setText(findTestObject('RegisterFeature/field email register-android.widget.EditText'), 'laras1@gmail.com', ConditionType.EQUALS)
 
-// Lakukan tindakan pada password dan elemen berikutnya seperti yang Anda lakukan sebelumnya
-Mobile.tap(findTestObject('RegisterFeature/field password register-android.widget.EditText'), 0)
-
 Mobile.setText(findTestObject('RegisterFeature/field password register-android.widget.EditText'), 'laras1A', 0)
-
-Mobile.tap(findTestObject('RegisterFeature/field confirm password register-android.widget.EditText'), 0)
 
 Mobile.setText(findTestObject('RegisterFeature/field confirm password register-android.widget.EditText'), 'laras1A', 0)
 
@@ -57,48 +41,7 @@ Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widge
 
 Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widget.Button'), 0)
 
-Mobile.closeApplication()
-
-=======
->>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
-<<<<<<< HEAD
-=======
->>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
-=======
->>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
-=======
->>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
-=======
->>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
-=======
->>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
-Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
-
-Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)
-
-Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 0)
-
-Mobile.tap(findTestObject('LoginFeature/Link_Registered'), 0)
-
-Mobile.setText(findTestObject('Object Repository/RegisterFeature/field_email'), 'user@gmail.com', 0)
-
-Mobile.setText(findTestObject('Object Repository/RegisterFeature/field_password_register'), 'user12345', 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/Icon_eye_password_1'), 0)
-
-Mobile.setText(findTestObject('RegisterFeature/field_konfirmasi_password'), 'user12345', 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/Icon_eye_password_2'), 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/Button_register'), 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/CheckBox_Registed'), 0)
-
-Mobile.getText(findTestObject('Object Repository/RegisterFeature/Link_syarat_dan_ketentuan'), 0)
+// profile filling
 
 Mobile.closeApplication()
 
-Mobile.verifyElementText(findTestObject('Object Repository/RegisterFeature/Alert email'), '')
-
-=======
->>>>>>> 7ded8fe51544ef21114b9bac63c096249c1c8e18

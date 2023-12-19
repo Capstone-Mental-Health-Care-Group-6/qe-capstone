@@ -24,12 +24,28 @@ Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boardin
 
 Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
 
+// login
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 'laras1@gmail.com', 
     0)
 
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (5)'), 'laras1', 0)
 
 Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('Homepage/home page - button buat janji - android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - button konseling  - android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - button menu profile - android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - icon notifikasi atau loceng-android.widget.Button'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - link lihat semua rekomendadi artikel-android.view.View'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - icon previous notification page-android.widget.Button'), 0)
+
+Mobile.tap(findTestObject('Homepage/home page - rekomendasi artikel kanan atas - android.widget.ImageView'), 0)
 

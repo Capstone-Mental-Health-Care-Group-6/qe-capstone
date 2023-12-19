@@ -48,6 +48,10 @@ class Login {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	//Login-ValidCredentials//
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 	//Login-ValidCredentials//
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -74,6 +78,7 @@ class Login {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
@@ -96,6 +101,14 @@ class Login {
 <<<<<<< HEAD
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
+
+	@Then("I should be logged in to the application")
+	def I_should_be_logged_in_to_the_application() {
+		Mobile.closeApplication()
+	}
+
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")

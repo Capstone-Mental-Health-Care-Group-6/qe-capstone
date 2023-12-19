@@ -48,29 +48,29 @@ class Login {
 	@Given("I want to log in with valid email and password")
 	def inputEmailPassword() {
 		Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/button_skips_onBoarding'), 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/button_next_onBoarding'), 0)
 	}
 
 	@When("I enter the (.*) and (.*)")
 	def interEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), 'user@gmail.com', 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), 'user12345', 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
+		Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/Field_email_login'), 'user@gmail.com', 0)
+		Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/Field_email_password'), 'user12345', 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/button_Login'), 0)
 	}
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
-		Mobile.verifyElementVisible(findTestObject('Object Repository/LoginFeature/Logo_emphatiCare'), 0)
+		Mobile.verifyElementVisible(findTestObject('Object Repository/LoginFeature-spy/Logo_emphatiCare'), 0)
 		Mobile.closeApplication()
 	}
 
 	//Login-InvalidCredentials//
-	
+
 	//RegisterLink//
-	
+
 	//GoogleButton//
-	
-	
-	
+
+
+
 }

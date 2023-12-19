@@ -5,4 +5,43 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e4700d89-bad8-4e51-9f04-7a792e22db6f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d35dd3c3-7cbe-453a-bee4-af407f6a9b4b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8bce573d-95fb-439a-97c7-19484c153596</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2147e104-32b4-4710-8922-cb6da9fc9819</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d35dd3c3-7cbe-453a-bee4-af407f6a9b4b</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8bce573d-95fb-439a-97c7-19484c153596</id>
+      <masked>false</masked>
+      <name>variable_0</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2147e104-32b4-4710-8922-cb6da9fc9819</id>
+      <masked>false</masked>
+      <name>variable_1</name>
+   </variable>
 </TestCaseEntity>

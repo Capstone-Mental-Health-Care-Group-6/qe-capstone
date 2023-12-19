@@ -17,31 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
-
-Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)
-
-Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 0)
-
-Mobile.tap(findTestObject('LoginFeature/Link_Registered'), 0)
-
-Mobile.setText(findTestObject('Object Repository/RegisterFeature/field_email'), 'user@gmail.com', 0)
-
-Mobile.setText(findTestObject('Object Repository/RegisterFeature/field_password_register'), 'user12345', 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/Icon_eye_password_1'), 0)
-
-Mobile.setText(findTestObject('RegisterFeature/field_konfirmasi_password'), 'user12345', 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/Icon_eye_password_2'), 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/Button_register'), 0)
-
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/CheckBox_Registed'), 0)
-
-Mobile.getText(findTestObject('Object Repository/RegisterFeature/Link_syarat_dan_ketentuan'), 0)
-
-Mobile.closeApplication()
-
-Mobile.verifyElementText(findTestObject('New Folder/Alert email'), '')
-

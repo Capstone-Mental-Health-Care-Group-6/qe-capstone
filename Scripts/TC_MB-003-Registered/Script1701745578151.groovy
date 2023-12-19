@@ -43,5 +43,5 @@ Mobile.getText(findTestObject('Object Repository/RegisterFeature/Link_syarat_dan
 
 Mobile.closeApplication()
 
-Mobile.verifyElementText(findTestObject('New Folder/Alert email'), '')
+Mobile.verifyElementText(findTestObject('Object Repository/RegisterFeature/Alert email'), '')
 

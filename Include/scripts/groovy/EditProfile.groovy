@@ -82,23 +82,23 @@ class EditProfile {
 	@Then("I navigate to the correct page")
 	def verifyNavigationToCorrectPage() {
 	}
-	
+
 	@When("I select Privacy")
 	def selectZ() {
 	}
-	
+
 	@When("I select About Us")
 	def selectA() {
 	}
-	
+
 	@When("I select Terms and Conditions")
 	def selectB() {
 	}
-	
+
 	@When("I select Logout")
 	def selectC() {
 	}
-	
+
 	@When("I select Delete Account")
 	def selectD() {
 	}

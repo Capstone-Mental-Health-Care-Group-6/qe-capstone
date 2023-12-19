@@ -68,8 +68,8 @@ class Login {
 
 	@When("I enter the invalid (.*) and invalid (.*)")
 	def interInvalidEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), 'user@gmail.com', 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), 'user12345', 0)
+		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), name, 0)
+		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), password, 0)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
 	}
 

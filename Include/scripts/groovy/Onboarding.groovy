@@ -46,10 +46,10 @@ import cucumber.api.java.en.When
 class Onboarding {
 	def wantToGoToDashboard() {
 	}
-	
+
 	def navigateThroughOnboardingPage() {
 	}
-	
+
 	def verifyRedirectToDashboard() {
 	}
 }

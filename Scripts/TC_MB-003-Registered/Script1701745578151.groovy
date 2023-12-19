@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+<<<<<<< HEAD
 Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 0)
@@ -45,3 +46,5 @@ Mobile.closeApplication()
 
 Mobile.verifyElementText(findTestObject('Object Repository/RegisterFeature/Alert email'), '')
 
+=======
+>>>>>>> 7ded8fe51544ef21114b9bac63c096249c1c8e18

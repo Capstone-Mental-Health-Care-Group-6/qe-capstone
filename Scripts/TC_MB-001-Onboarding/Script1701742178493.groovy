@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
+Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (1).apk', true)
 
-Mobile.tap(findTestObject('Onboarding/button_skip_onboarding'), 0)
+Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
 
-Mobile.tap(findTestObject('Onboarding/button_next_onboarding'), 0)
+Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Onboarding/logo_page_login'), 0)
+Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_login-android.widget.ImageView'), 0)
 
 Mobile.closeApplication()
 

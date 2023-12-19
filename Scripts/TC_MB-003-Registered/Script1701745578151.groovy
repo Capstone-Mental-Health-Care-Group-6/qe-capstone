@@ -22,10 +22,13 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
 
 // Onboarding - Anda mungkin perlu menambahkan wait atau pengecekan agar elemen terlihat sebelum melakukan aksi
 =======
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
@@ -39,6 +42,9 @@ Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -63,6 +69,9 @@ Mobile.delay(1 // Tambahkan delay jika diperlukan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
+=======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
@@ -85,8 +94,11 @@ Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widge
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // profile filling
 
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======
 >>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 =======

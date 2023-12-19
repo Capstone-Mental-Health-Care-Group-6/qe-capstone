@@ -58,10 +58,6 @@ class ChatBotAI {
 	}
 
 	//	# [Positive] Empty State Chat AI
-	@Given("on HomePage, I click the robot icon")
-	def clickRobotIconForEmptyState() {
-	}
-
 	@When("I click Start Conversation, choose an option")
 	def startConversationWithOption() {
 	}
@@ -71,10 +67,6 @@ class ChatBotAI {
 	}
 
 	//	# [Positive] Chatbot CS Interaction
-	@Given("on HomePage, I click the robot icon")
-	def clickRobotIconForCSInteraction() {
-	}
-
 	@When("I input a question, choose an option")
 	def inputQuestionAndChooseOption() {
 	}

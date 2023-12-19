@@ -47,7 +47,7 @@ class Login {
 	//Login-ValidCredentials//
 	@Given("I want to log in")
 	def inputEmailPassword() {
-		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-4.apk',
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk',
 				true)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 10)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 10)
@@ -83,7 +83,7 @@ class Login {
 	@When("I click the register link")
 	def clickRegisterLink() {
 	}
-	
+
 	@Then("I should be directed to the registration page")
 	def verifyRedirectToRegistrationPage() {
 	}

@@ -58,10 +58,6 @@ class EditProfile {
 	}
 
 	// [Positive] User Changes Password
-	@Given("on Edit Profile Page")
-	def navigateToEditProfilePageForPasswordChange() {
-	}
-
 	@When("select Change Password")
 	def selectChangePasswordOption() {
 	}
@@ -71,14 +67,6 @@ class EditProfile {
 	}
 
 	// [Positive] User Views About Us
-	@Given("on Edit Profile Page")
-	def navigateToEditProfilePageForAboutUs() {
-	}
-
-	@When("I select About Us")
-	def selectAboutUsOption() {
-	}
-
 	@Then("I navigate to the correct page")
 	def verifyNavigationToCorrectPage() {
 	}

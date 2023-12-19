@@ -43,37 +43,59 @@ import cucumber.api.java.en.When
 
 
 
-class ChatBotAI {
-	//	# [Positive] Chat AI Interaction
-	@Given("on HomePage, I click the robot icon")
-	def clickRobotIcon() {
+class Articles {
+	// Scenario: View Article Details
+	@Given("I am on the Home page menu")
+	def navigateToHomePageMenu() {
 	}
 
-	@When("I choose an option")
-	def chooseOption() {
+	@When("I tap on an article")
+	def tapOnArticle() {
 	}
 
-	@Then("I receive a reply from AI")
-	def verifyReplyFromAI() {
+	@Then("I enter the article details page")
+	def verifyEnterArticleDetailsPage() {
 	}
 
-	//	# [Positive] Empty State Chat AI
-	@When("I click Start Conversation, choose an option")
-	def startConversationWithOption() {
+	// Scenario: Use Search Field
+	@Then("I successfully use the search field")
+	def verifySuccessfulSearch() {
 	}
 
-	@Then("I successfully start a chat and receive a reply from AI")
-	def verifyChatStartAndReplyFromAI() {
+	// Scenario: Search with Invalid Keywords
+	@When("I search for keywords")
+	def searchForInvalidKeywords() {
 	}
 
-	//	# [Positive] Chatbot CS Interaction
-	@When("I input a question, choose an option")
-	def inputQuestionAndChooseOption() {
+	@Then("I don't find the expected search results")
+	def verifyInvalidSearchResults() {
 	}
 
-	@Then("I receive a reply from Customer Support")
-	def verifyReplyFromCustomerSupport() {
+	// Scenario: Navigate to Previous Page
+	@When("I tap the previous button")
+	def tapOnPreviousButton() {
 	}
 
+	@Then("I view the previous homepage from the article selection page")
+	def verifyReturnToPreviousHomepage() {
+	}
+
+	// Scenario: Use Keyword Category button
+	@When("I tap the button category button")
+	def tapOnKeywordCategoryButton() {
+	}
+
+	@Then("I successfully search for articles using keywords")
+	def verifySearchForArticlesWithKeywords() {
+	}
+
+	// Scenario: Return from Article Details
+	@When("I tap the previous button from article details")
+	def tapOnPreviousButtonFromArticleDetails() {
+	}
+
+	@Then("I return to the previous article selection page")
+	def verifyReturnToPreviousArticleSelectionPage() {
+	}
 
 }

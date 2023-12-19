@@ -45,33 +45,41 @@ import cucumber.api.java.en.When
 class Login {
 
 	//Login-ValidCredentials//
+<<<<<<< HEAD
+=======
+	//Login-ValidCredentials//
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 	@Given("I want to log in")
 	def inputEmailPassword() {
-		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-4.apk',
-				true)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_skips_onBoarding'), 10)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_next_onBoarding'), 10)
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
+    true)
+		Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 10)
+
+		Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 10)
 	}
 
 	@When("I enter the (.*) and (.*)")
 	def interEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), name, 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), password, 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
+		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), name, 0)
+		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
 	}
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
+<<<<<<< HEAD
 		Mobile.verifyElementVisible(findTestObject('Object Repository/LoginFeature/Logo_emphatiCare'), 0)
+=======
+>>>>>>> 395525bc990639c9ec81403abbef2960a43b8da5
 		Mobile.closeApplication()
 	}
 
 	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")
 	def interInvalidEmailPassword(String name, String password) {
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), name, 0)
-		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), password, 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
+		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), name, 0)
+		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
 	}
 
 	@Then("I should see an error message and stay on the login page")

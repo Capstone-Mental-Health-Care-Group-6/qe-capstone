@@ -60,12 +60,8 @@ class TransactionHistory {
 	// Scenario: Provide Ratings and Feedback after Counseling
 	@Given("I navigate on transaction history menu")
 	def navigateToTransactionHistoryMenuForFeedback() {
+		
 	}
-	
-	@When("I provides ratings and feedback")
-	def provideRatingsAndFeedback() {
-	}
-	
 	@Then("I successfully sends ratings and feedback")
 	def verifySuccessfulRatingsAndFeedbackSubmission() {
 	}
@@ -91,10 +87,6 @@ class TransactionHistory {
 	// Scenario: Verify Details button on Order History
 	@When("I taps the Detail button")
 	def tapOnDetailButtonForOrderHistory() {
-	}
-	
-	@Then("I is redirected to the order details page")
-	def verifyRedirectionToOrderDetailsPage() {
 	}
 	
 	// Scenario: Verify Give a Rating button on Order History

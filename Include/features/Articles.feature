@@ -3,54 +3,38 @@ Feature: Article Interaction
   I want to interact with articles
   So I can access and utilize articles effectively
 
-  @article_details
+  # [article_details]
   Scenario: View Article Details
-    Given User is on the articles page
-    When User taps on an article
-    Then User enters the article details page
+    Given I am on the Home page menu
+    When I tap on an article
+    Then I enter the article details page
 
-  @search_field
-  Scenario Outline: Use Search Field
-    Given User is on the articles page
-    When User searches for "<keywords>"
-    Then User successfully uses the search field
-    
-    Examples: 
-      | keywords |
-      | cemas    |
+  # [search_field]
+  Scenario: Use Search Field
+    Given I am on the Home page menu
+    When I search for keywords
+    Then I successfully use the search field
 
-  @invalid_keywords
-  Scenario Outline: Search with Invalid Keywords
-    Given User is on the articles page
-    When User searches for "<keywords>"
-    Then User doesn't find the expected search results
-    
-    Examples: 
-      | keywords          |
-      | Budidaya jeruk    |
-      | Budidaya apel     |
+  # [invalid_keywords]
+  Scenario: Search with Invalid Keywords
+    Given I am on the Home page menu
+    When I search for keywords
+    Then I don't find the expected search results
 
-  @navigate_previous_page
+  # [navigate_previous_page]
   Scenario: Navigate to Previous Page
-    Given User is on the articles page
-    When User taps the previous button
-    Then User views the previous homepage from the article selection page
+    Given I am on the Home page menu
+    When I tap the previous button
+    Then I view the previous homepage from the article selection page
 
-  @keyword_category_button
-  Scenario Outline: Use Keyword Category Button
-    Given User is on the articles page
-    When User taps the "<button>" category button
-    Then User successfully searches for articles using keywords
+  # [keyword_category_button]
+  Scenario: Use Keyword Category button
+    Given I am on the Home page menu
+    When I tap the button category button
+    Then I successfully search for articles using keywords
 
-    Examples: 
-      | button     |
-      | Semua      |
-      | Depresi    |
-      | Emosi      |
-      | Kecemasan  |
-
-  @return_from_article_details
+  # [return_from_article_details]
   Scenario: Return from Article Details
-    Given User is on the articles page
-    When User taps the previous button from article details
-    Then User returns to the previous article selection page
+    Given I am on the Home page menu
+    When I tap the previous button from article details
+    Then I return to the previous article selection page

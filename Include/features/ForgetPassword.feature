@@ -14,5 +14,5 @@ Feature: Forget Password Process
     Then I should have successfully created a new password
 
     Examples: 
-      | email             | OTP  | confirm_password | confirm_password_verify |
-      | laras@example.com | 1221 | laras2           | laras2                  |
+      | email              | OTP  | confirm_password | confirm_password_verify |
+      | laras1@example.com | 1221 | laras2           | laras2                  |

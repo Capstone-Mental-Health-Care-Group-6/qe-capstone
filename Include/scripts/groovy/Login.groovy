@@ -66,6 +66,7 @@ class Login {
 		Mobile.closeApplication()
 	}
 
+	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")
 	def interInvalidEmailPassword(String name, String password) {
 		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), name, 0)
@@ -78,12 +79,12 @@ class Login {
 		Mobile.closeApplication()
 	}
 
-	//Login-InvalidCredentials//
-
 	//RegisterLink//
-
-	//GoogleButton//
-
-
-
+	@When("I click the register link")
+	def clickRegisterLink() {
+	}
+	
+	@Then("I should be directed to the registration page")
+	def verifyRedirectToRegistrationPage() {
+	}
 }

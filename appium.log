@@ -105,3 +105,9 @@
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/session/2670d7a0-5650-499c-b16d-f3baf2a20d66/screenshot [39m[32m200[39m [90m1429 ms - 84154[39m
 [35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/2670d7a0-5650-499c-b16d-f3baf2a20d66[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session 2670d7a0-5650-499c-b16d-f3baf2a20d66 from our master session list
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/2670d7a0-5650-499c-b16d-f3baf2a20d66 [39m[32m200[39m [90m2739 ms - 14[39m
+[35m[HTTP][39m [90m[39m

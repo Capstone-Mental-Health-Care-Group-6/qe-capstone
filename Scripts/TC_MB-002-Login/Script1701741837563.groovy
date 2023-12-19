@@ -24,14 +24,10 @@ Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boardin
 
 Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_login-android.widget.ImageView'), 0)
-
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 0)
 
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (3)'), 'laras1@gmail.com', 
     0)
-
-Mobile.tap(findTestObject('LoginFeature-spy/try 1/try 2/android.widget.EditText (5)'), 0)
 
 Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.EditText (5)'), 'laras1', 0)
 

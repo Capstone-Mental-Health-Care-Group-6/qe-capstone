@@ -261,3 +261,23 @@
 [debug] [35m[Instrumentation][39m 
 [debug] [35m[Instrumentation][39m OK (1 test)
 [debug] [35m[Instrumentation][39m The process has exited with code 0
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/85cd217a-c2e3-489a-9743-eb74f5a19a75[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (85cd217a)][39m Calling AppiumDriver.deleteSession() with args: ["85cd217a-c2e3-489a-9743-eb74f5a19a75"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1702995420542 (21:17:00 GMT+0700 (Western Indonesia Time))
+[35m[Appium][39m Removing session 85cd217a-c2e3-489a-9743-eb74f5a19a75 from our master session list
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[debug] [35m[ADB][39m Running 'C:\Users\Anastasya\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.example.empathi_care'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Removing forwarded port socket connection: 61237 
+[debug] [35m[ADB][39m Running 'C:\Users\Anastasya\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:61237'
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[debug] [35m[ADB][39m Running 'C:\Users\Anastasya\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1702995420791 (21:17:00 GMT+0700 (Western Indonesia Time))
+[debug] [35m[W3C (85cd217a)][39m Received response: null
+[debug] [35m[W3C (85cd217a)][39m But deleting session, so not returning
+[debug] [35m[W3C (85cd217a)][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/85cd217a-c2e3-489a-9743-eb74f5a19a75 [39m[32m200[39m [90m251 ms - 14[39m
+[35m[HTTP][39m [90m[39m

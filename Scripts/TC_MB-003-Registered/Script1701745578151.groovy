@@ -21,6 +21,7 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (6).apk', true)
 
@@ -59,6 +60,8 @@ Mobile.closeApplication()
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 <<<<<<< HEAD
+=======
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======

@@ -51,10 +51,13 @@ class Login {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		Mobile.startApplication('C:\\javaproject\\Capstone - QE\\app-release-1 (1).apk', true)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/button_skips_onBoarding'), 0)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/button_next_onBoarding'), 0)
 =======
+=======
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
@@ -68,7 +71,10 @@ class Login {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d70c5ebc3550dcf4f6c8649d031ecf9fc11cf4d0
+=======
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
@@ -83,10 +89,13 @@ class Login {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/Field_email_login'), 'user@gmail.com', 0)
 		Mobile.setText(findTestObject('Object Repository/LoginFeature-spy/Field_email_password'), 'user12345', 0)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/button_Login'), 0)
 =======
+=======
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
@@ -106,6 +115,7 @@ class Login {
 	}
 
 	//Login-InvalidCredentials//
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -176,6 +186,21 @@ class Login {
 
 	//RegisterLink//
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
+=======
+	@When("I enter the invalid (.*) and invalid (.*)")
+	def interInvalidEmailPassword(String name, String password) {
+		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_login'), name, 0)
+		Mobile.setText(findTestObject('Object Repository/LoginFeature/Field_email_password'), password, 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature/button_Login'), 0)
+	}
+
+	@Then("I should see an error message and stay on the login page")
+	def stayLogin() {
+		Mobile.closeApplication()
+	}
+
+	//RegisterLink//
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 	@When("I click the register link")
 	def clickRegisterLink() {
 	}
@@ -186,7 +211,10 @@ class Login {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d70c5ebc3550dcf4f6c8649d031ecf9fc11cf4d0
+=======
+>>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======
 >>>>>>> 1c1bae5b2384b2d7e900ca7cabcd52ea8b49ca82
 =======

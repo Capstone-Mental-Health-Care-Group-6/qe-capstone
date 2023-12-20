@@ -17,8 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
+Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk', 
     true)
+
+Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.Button'), 0)
+
+Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.Button (1)'), 10)
+
+Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), 'laras1@gmail.com', 0)
+
+Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), 'laras1', 0)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/TestHomePage/android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.ImageView (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.ImageView (2)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.ImageView (3)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.ImageView (4)'), 0)
 
 Mobile.closeApplication()
 

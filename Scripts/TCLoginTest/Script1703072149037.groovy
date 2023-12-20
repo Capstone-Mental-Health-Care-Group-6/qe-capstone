@@ -17,18 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
+Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk', 
     true)
 
-Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
+Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
+Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button (1)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/testing/android.widget.EditText'), 'laras1@gmail.com', 0)
+Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (1)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/testing/android.widget.EditText (1)'), 'laras1', 0)
+Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/android.widget.EditText (2)'), 'laras1@gmail.com')
 
-Mobile.tap(findTestObject('Object Repository/testing/android.widget.Button'), 0)
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (3)'), 0)
+
+Mobile.sendKeys(findTestObject('LoginTestLaras/android.widget.EditText (4)'), 'laras1')
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+WebUI.delay(5)
 
 Mobile.closeApplication()
 

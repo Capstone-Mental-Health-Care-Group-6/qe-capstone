@@ -20,12 +20,5 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk', 
     true)
 
-
-Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_login-android.widget.ImageView'), 0)
-
 Mobile.closeApplication()
 

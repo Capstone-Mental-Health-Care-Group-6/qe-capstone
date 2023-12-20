@@ -48,97 +48,97 @@ class TransactionHistory {
 	@Given("I on dashboard menu")
 	def navigateToDashboardMenuForTransactionHistory() {
 	}
-	
+
 	@When("I taps on the menu transaction history")
 	def tapOnTransactionHistoryMenu() {
 	}
-	
+
 	@Then("I successfully sees the transaction history display")
 	def verifyTransactionHistoryDisplay() {
 	}
-	
+
 	// Scenario: Provide Ratings and Feedback after Counseling
 	@Given("I navigate on transaction history menu")
 	def navigateToTransactionHistoryMenuForFeedback() {
-		
+
 	}
 	@Then("I successfully sends ratings and feedback")
 	def verifySuccessfulRatingsAndFeedbackSubmission() {
 	}
-	
+
 	// Scenario: Provide Ratings with Blank Feedback after Counseling
 	@When("I provides ratings and feedback")
 	def provideRatingsAndBlankFeedback() {
 	}
-	
+
 	@Then("I fails to submit ratings and feedback")
 	def verifyFailedSubmissionOfRatingsAndBlankFeedback() {
 	}
-	
+
 	// Scenario: Cancel Giving Ratings and Feedback
 	@When("I clicks the X button")
 	def clickXButtonForCancelFeedback() {
 	}
-	
+
 	@Then("I successfully cancels giving ratings and feedback")
 	def verifySuccessfulCancellationOfFeedback() {
 	}
-	
+
 	// Scenario: Verify Details button on Order History
 	@When("I taps the Detail button")
 	def tapOnDetailButtonForOrderHistory() {
 	}
-	
+
 	// Scenario: Verify Give a Rating button on Order History
 	@When("I taps the give a rating button")
 	def tapOnGiveRatingButtonForOrderHistory() {
 	}
-	
+
 	@Then("I is redirected to the order details page")
 	def verifyRedirectionToOrderDetailsPageForRatingButton() {
 	}
-	
+
 	// Scenario: Verify Leave a Review button on Order History
 	@When("I taps the leave a review button")
 	def tapOnLeaveReviewButtonForOrderHistory() {
 	}
-	
+
 	@Then("I successfully sees the popup for giving ratings and feedback")
 	def verifyPopupForRatingAndFeedback() {
 	}
-	
+
 	// Scenario: Verify Message Icon on Order History
 	@When("I taps the message icon")
 	def tapOnMessageIconForOrderHistory() {
 	}
-	
+
 	@Then("I is redirected to the history chat rooms")
 	def verifyRedirectionToChatRoomsForMessageIcon() {
 	}
-	
+
 	// Scenario: Verify Previous Icon on Chat History
 	@When("I taps the previous icon")
 	def tapOnPreviousIconForChatHistory() {
 	}
-	
+
 	@Then("I successfully returns to the history page")
 	def verifyReturnToHistoryPageForChatHistoryIcon() {
 	}
-	
+
 	// Scenario: Verify Buy Again button on Order History
 	@When("I taps the buy again button")
 	def tapOnBuyAgainButtonForOrderHistory() {
 	}
-	
+
 	@Then("I successfully returns to the Make an Appointment page")
 	def verifyReturnToMakeAppointmentPageForBuyAgainButton() {
 	}
-	
+
 	// Scenario: Verify Previous Icon on Order History
 	@When("I taps the previous icon on order")
 	def tapOnPreviousIconForOrderHistory() {
 	}
-	
+
 	@Then("I successfully returns to the order history page")
 	def verifyReturnToOrderHistoryPageForPreviousIcon() {
 	}

@@ -21,7 +21,6 @@ Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-6.apk', tr
 
 Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
 
-// login
 Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
 
 Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
@@ -40,22 +39,5 @@ Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
 
 WebUI.delay(5)
 
-// homepage
-Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - button buat janji - android.widget.ImageView'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - button konseling  - android.widget.ImageView'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.ImageView'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - button menu profile - android.widget.ImageView'), 0)
-
-Mobile.tap(findTestObject('Homepage/notifikasi lonceng'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - link lihat semua rekomendadi artikel-android.view.View'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - icon previous notification page-android.widget.Button'), 0)
-
-Mobile.tap(findTestObject('Homepage/home page - rekomendasi artikel kanan atas - android.widget.ImageView'), 0)
+Mobile.closeApplication()
 

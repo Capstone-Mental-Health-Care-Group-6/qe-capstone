@@ -48,27 +48,27 @@ class BuatJanjiKonseling {
 	// [Positive] User explore counseling flow
 	@Given("I am in make an appointment menu")
 	def navigateToMakeAppointmentMenu() {
-		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk', 
-    true)
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
+				true)
 
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button'), 0)
-		
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button (1)'), 0)
-		
-		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (1)'), 0)
-		
-		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/android.widget.EditText (2)'), 'laras1@gmail.com')
-		
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+
 		Mobile.hideKeyboard()
-		
-		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (3)'), 0)
-		
-		Mobile.sendKeys(findTestObject('LoginTestLaras/android.widget.EditText (4)'), 'laras1')
-		
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+
 		Mobile.hideKeyboard()
-		
+
 		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
-		
+
 		WebUI.delay(5)
 	}
 
@@ -111,8 +111,6 @@ class BuatJanjiKonseling {
 	def verifyRedirectToPackageAndBundleSelectionPage() {
 		Mobile.closeApplication()
 	}
-<<<<<<< HEAD
-=======
 
 	// [I choose the instant bundle in the introductory package]
 	// @CounselingChoosePackage
@@ -211,6 +209,4 @@ class BuatJanjiKonseling {
 	@And("I select the file and confirm the payment")
 	def selectFileAndConfirmPayment() {
 	}
-
->>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
 }

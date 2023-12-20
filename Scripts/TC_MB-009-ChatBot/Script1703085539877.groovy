@@ -17,23 +17,37 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Administrator\\Documents\\MBKM\\clone\\app-release-5.apk', true)
+Mobile.startApplication('C:\\Users\\Administrator\\Documents\\MBKM\\clone\\app-release-6.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 'laras1@gmail.com', 0)
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (1)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText (1)'), 'laras1', 0)
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.EditText'), 0)
+
+Mobile.setText(findTestObject('Object Repository/Chatbott/android.widget.EditText'), 'laras1@gmail.com', 0)
+
+Mobile.sendKeys(findTestObject('Object Repository/Chatbott/android.widget.EditText (1)'), 'laras1')
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.EditText (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
+Mobile.sendKeys(findTestObject('Object Repository/Chatbott/android.widget.EditText (1)'), 'laras1')
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (2)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (3)'), 0)
 
 Mobile.closeApplication()
 

@@ -55,15 +55,19 @@ class ChatBotAI {
 		Mobile.hideKeyboard()
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
-		
 	}
 
 	@When("I choose an option")
 	def chooseOption() {
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (2)'), 0)	
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View'), 0)
 	}
 
 	@Then("I receive a reply from AI")
 	def verifyReplyFromAI() {
+		
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (3)'), 0)
 	}
 
 	//	# [Positive] Empty State Chat AI

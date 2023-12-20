@@ -28,18 +28,18 @@ Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on bo
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Onboarding/page_login-android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('LoginFeature-spy/link daftar-android.view.View'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 //register
-Mobile.setText(findTestObject('RegisterFeature/field email register-android.widget.EditText'), 'laras1@gmail.com', ConditionType.EQUALS)
+Mobile.setText(findTestObject('null'), 'laras1@gmail.com', ConditionType.EQUALS)
 
-Mobile.setText(findTestObject('RegisterFeature/field password register-android.widget.EditText'), 'laras1A', 0)
+Mobile.setText(findTestObject('null'), 'laras1A', 0)
 
-Mobile.setText(findTestObject('RegisterFeature/field confirm password register-android.widget.EditText'), 'laras1A', 0)
+Mobile.setText(findTestObject('null'), 'laras1A', 0)
 
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widget.CheckBox'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
-Mobile.tap(findTestObject('Object Repository/RegisterFeature/try 1/android.widget.Button'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 // profile filling
 Mobile.setText(findTestObject('ProfileFilling/profile filling-field nama-android.widget.EditText'), 'laras maharani', 0)

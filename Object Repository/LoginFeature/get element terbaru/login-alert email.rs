@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>button daftar-android.widget.Button</name>
+   <name>login-alert email</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -11,16 +11,16 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>android.widget.Button</value>
-      <webElementGuid>021c9c87-651d-4e74-9b9b-a0bb1548bc93</webElementGuid>
+      <value>android.view.View</value>
+      <webElementGuid>ebeabac9-144a-48b5-ae58-ba87543f93d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>6</value>
-      <webElementGuid>968f93ed-ce54-4a34-b3f5-71da044be348</webElementGuid>
+      <value>0</value>
+      <webElementGuid>53eaffc3-cab5-45a1-a110-3d048a5041de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,15 +28,15 @@
       <name>package</name>
       <type>Main</type>
       <value>com.example.empathi_care</value>
-      <webElementGuid>93026e32-f0aa-45c9-824c-11dc192fc710</webElementGuid>
+      <webElementGuid>c78ac936-66c5-40f6-9459-080281b9380a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>content-desc</name>
       <type>Main</type>
-      <value>Daftar</value>
-      <webElementGuid>53575546-1193-4c1c-b431-ebce0a01ed8f</webElementGuid>
+      <value>Email anda masih kosong</value>
+      <webElementGuid>14a9e355-c5f2-4fe1-922a-43b15cdbc219</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>74a46782-0ced-450a-9d89-d14d1e9d8e01</webElementGuid>
+      <webElementGuid>8a3f876b-c445-4740-8137-cc72829f1386</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,15 +52,15 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>9ba9a46d-78d1-4c01-864f-4c6807d7a0a1</webElementGuid>
+      <webElementGuid>92b56109-e584-488a-958f-99b49b8d33dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>clickable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>c704170a-8b0e-404b-8792-f5dce63945e2</webElementGuid>
+      <value>false</value>
+      <webElementGuid>fd970996-f731-4c0d-95c5-bcc3985112f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -68,7 +68,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>e5517ae3-e374-4fc9-8470-c90ebb994309</webElementGuid>
+      <webElementGuid>8025e0fc-67f4-4b17-8199-df4f641ba4e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -76,7 +76,7 @@
       <name>focusable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>3cbbbfe8-cb99-4b2c-89bd-63f594ca3d8b</webElementGuid>
+      <webElementGuid>9cee4d11-4db3-4d42-a748-c6f0ecd86789</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -84,7 +84,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6cb685c4-8515-48ff-949f-f48b5bdbde9b</webElementGuid>
+      <webElementGuid>e0e14d9d-3a5a-4382-8cd0-4315b37ba959</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -92,7 +92,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ace0538a-a37e-420f-ba5e-ee46c8b44cf8</webElementGuid>
+      <webElementGuid>3592ec5c-9c84-4ff6-8cc1-693be470d4c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -100,7 +100,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>70e866bb-622b-439b-b935-5cc2c4c3d5b7</webElementGuid>
+      <webElementGuid>37e47200-615c-4469-aff2-6573dbdbb6c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -108,7 +108,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>c188db40-8e87-44b7-90ea-efefb720985e</webElementGuid>
+      <webElementGuid>c73d8935-a8cd-4066-8ad2-7ecf9bd23397</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -116,7 +116,7 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>85378fac-6406-4ac8-b578-460804beced3</webElementGuid>
+      <webElementGuid>9ae67901-2dd2-451e-b5a3-ec5c286ad8a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -124,39 +124,39 @@
       <name>x</name>
       <type>Main</type>
       <value>70</value>
-      <webElementGuid>fc8c4685-6023-4dbb-8f95-c58c86f95181</webElementGuid>
+      <webElementGuid>f0d93323-7119-49d8-84a7-96f5fd091058</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>2336</value>
-      <webElementGuid>d693cb90-56dd-4117-9297-146c54c3cff1</webElementGuid>
+      <value>2011</value>
+      <webElementGuid>377a9ae8-09df-4e74-8336-36428a15fded</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>1295</value>
-      <webElementGuid>854c8ffa-58be-48f6-bb83-d4c2fd3e112c</webElementGuid>
+      <value>576</value>
+      <webElementGuid>c855930b-22fb-4118-9b74-2ece493abbb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>168</value>
-      <webElementGuid>9c847a04-1421-42ba-8789-5f82d093216d</webElementGuid>
+      <value>56</value>
+      <webElementGuid>a7250a1c-74ce-4252-939e-ce16c9eba8d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[70,2336][1365,2504]</value>
-      <webElementGuid>a5e1eec9-2132-4394-b6d1-4b117a45fc3c</webElementGuid>
+      <value>[70,2011][646,2067]</value>
+      <webElementGuid>9894f00b-4ad4-46de-a53d-dbd317a927f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -164,7 +164,7 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>7d91b803-ef27-4fc4-b3ef-b31975f0ec3d</webElementGuid>
+      <webElementGuid>c37b146b-79b4-43dd-a1d0-08bcad52c006</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -172,7 +172,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>2e5c2596-d460-4b45-849b-9b7738f6a035</webElementGuid>
+      <webElementGuid>71c2d857-ec9e-4f12-8542-90305bcb58c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -180,16 +180,16 @@
       <name>text</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>c4a8b3ac-228d-4063-96bf-ba08990417c6</webElementGuid>
+      <webElementGuid>29249541-1465-4a07-95d1-4b4f13c81dd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.ScrollView[1]/android.widget.Button[1]</value>
-      <webElementGuid>64684b9e-619a-42b1-87d6-d1dcdd91c24d</webElementGuid>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]/android.view.View[1]</value>
+      <webElementGuid>88435298-780d-4ca5-bf31-afa758c50c9c</webElementGuid>
    </webElementProperties>
-   <locator>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.ScrollView[1]/android.widget.Button[1]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
+   <locator>Email anda masih kosong</locator>
+   <locatorStrategy>ACCESSIBILITY</locatorStrategy>
 </MobileElementEntity>

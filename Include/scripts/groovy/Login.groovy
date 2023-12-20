@@ -45,7 +45,11 @@ import cucumber.api.java.en.When
 class Login {
 
 	//Login-ValidCredentials//
+<<<<<<< HEAD
+
+=======
 	//Login-ValidCredentials//
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 	@Given("I want to log in")
 	def inputEmailPassword() {
 		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', 
@@ -57,6 +61,13 @@ class Login {
 
 	@When("I enter the (.*) and (.*)")
 	def interEmailPassword(String name, String password) {
+<<<<<<< HEAD
+		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextEmail'), name, 0)
+		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextPW'), password, 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature/try 1/try 2/android.widget.Button'), 0)
+	}
+
+=======
 		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), name, 0)
 		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
@@ -66,13 +77,20 @@ class Login {
 	def I_should_be_logged_in_to_the_application() {
 		Mobile.closeApplication()
 	}
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 
 	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")
 	def interInvalidEmailPassword(String name, String password) {
+<<<<<<< HEAD
+		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextEmail'), name, 0)
+		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextPW'), password, 0)
+		Mobile.tap(findTestObject('Object Repository/LoginFeature/try 1/try 2/android.widget.Button'), 0)
+=======
 		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), name, 0)
 		Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), password, 0)
 		Mobile.tap(findTestObject('Object Repository/LoginFeature-spy/try 1/try 2/android.widget.Button'), 0)
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 	}
 
 	@Then("I should see an error message and stay on the login page")

@@ -94,24 +94,15 @@ Feature: User Signup Scenarios
     Then User goes directly to filling profile page
 
   @ProfileFilling
-  Scenario Outline: User verifies profile filling
-    Given User is not registered previously
-    When User opens the Sign Up login page
-    And User fills "<full name>" in full name field
-    And User clicks next button
-    And User fills "<phone number>" in phone number field
-    And User clicks next button
-    And User clicks "<calendar>" for the calendar icon
-    And User clicks next button
-    And User clicks "<male>" in the gender button
-    And User clicks "<female>" in the gender button
-    And User clicks finish button
-    And User clicks "Ok" in the profile filling notification button
-    Then User goes directly to the login page
-
-    Examples: 
-      | full name            | phone number  | calendar | male    | female  |
-      | Helen Dharani Jiffri | 0895192865783 | clicked  | clicked | clicked |
+  Scenario: User verifies profile filling
+    Given I want to profile filling
+    When I input profile fillling
+    And I fills <full name > in name field and click next button
+    And I fills <no phone> in no phone field and click next button
+    And I fills <birthday> in birthday field and click next button
+    And I click the gender button and click next button
+    And I click ok for succesfully profile filling
+    Then I should be logged in to the the login page
 
   @Positive-FunctionLogin
   Scenario: User verify the function of the Login link

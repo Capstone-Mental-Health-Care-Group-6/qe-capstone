@@ -47,48 +47,69 @@ class EditProfile {
 	// [Positive] User Edits Profile
 	@Given("on Edit Profile Page")
 	def navigateToEditProfilePage() {
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
+		Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 'laras1@gmail.com', 0)
+		Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText (1)'), 'laras1', 0)
+		Mobile.hideKeyboard()
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
 	}
 
 	@When("select Edit Profile")
 	def selectEditProfileOption() {
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.EditText'), 0)
+		Mobile.setText(findTestObject('Object Repository/EditProfile/android.widget.EditText'), 'qe cantik', 0)
+		Mobile.hideKeyboard()
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.CheckBox'), 0)
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.CheckBox (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.EditText (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.Button'), 0)		
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.EditText (2)'), 0)
+		Mobile.setText(findTestObject('Object Repository/EditProfile/android.widget.EditText (1)'), '082323884972', 0)
+		Mobile.hideKeyboard()
+		
 	}
 
 	@Then("receive successful data change notification")
 	def verifySuccessfulDataChangeNotification() {
+		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.Button (1)'), 0)
+		
+		Mobile.closeApplication()
 	}
 
-	// [Positive] User Changes Password
-	@When("select Change Password")
-	def selectChangePasswordOption() {
-	}
-
-	@Then("receive successful password change notification")
-	def verifySuccessfulPasswordChangeNotification() {
-	}
-
-	// [Positive] User Views About Us
-	@Then("I navigate to the correct page")
-	def verifyNavigationToCorrectPage() {
-	}
-
-	@When("I select Privacy")
-	def selectZ() {
-	}
-
-	@When("I select About Us")
-	def selectA() {
-	}
-
-	@When("I select Terms and Conditions")
-	def selectB() {
-	}
-
-	@When("I select Logout")
-	def selectC() {
-	}
-
-	@When("I select Delete Account")
-	def selectD() {
-	}
-
+//	// [Positive] User Changes Password
+//	@When("select Change Password")
+//	def selectChangePasswordOption() {
+//	}
+//
+//	@Then("receive successful password change notification")
+//	def verifySuccessfulPasswordChangeNotification() {
+//	}
+//
+//	// [Positive] User Views About Us
+//	@Then("I navigate to the correct page")
+//	def verifyNavigationToCorrectPage() {
+//	}
+//
+//	@When("I select Privacy")
+//	def selectZ() {
+//	}
+//
+//	@When("I select About Us")
+//	def selectA() {
+//	}
+//
+//	@When("I select Terms and Conditions")
+//	def selectB() {
+//	}
+//
+//	@When("I select Logout")
+//	def selectC() {
+//	}
+//
+//	@When("I select Delete Account")
+//	def selectD() {
+//	}
 }

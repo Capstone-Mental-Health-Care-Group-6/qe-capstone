@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>C%%Users%laras%OneDrive%Documents%Studi Independen%Altera%Capstone Project%MobileTest%MobileTest.prj</name>
+	<name>C%%Users%Administrator%Documents%qe-capstone%mobile%qe-capstone%MobileTest.prj</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +17,19 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
+			<id>1703081928638</id>
+=======
+<<<<<<< HEAD
+			<id>1703046749244</id>
+=======
+<<<<<<< HEAD
+			<id>1702997830541</id>
+=======
 			<id>1702997379407</id>
+>>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
+>>>>>>> 061217a142fd943588709c18abf3e88116ef7603
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +38,19 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703081930798</id>
+=======
+<<<<<<< HEAD
+			<id>1703046749251</id>
+=======
+<<<<<<< HEAD
+			<id>1702997830775</id>
+=======
 			<id>1702997379424</id>
+>>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
+>>>>>>> 061217a142fd943588709c18abf3e88116ef7603
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +59,19 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703091577760</id>
+=======
+<<<<<<< HEAD
+			<id>1703068144170</id>
+=======
+<<<<<<< HEAD
+			<id>1702999865660</id>
+=======
 			<id>1702999833200</id>
+>>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
+>>>>>>> 061217a142fd943588709c18abf3e88116ef7603
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,7 +80,17 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703091577821</id>
+=======
+<<<<<<< HEAD
+			<id>1703068144178</id>
+=======
+<<<<<<< HEAD
+			<id>1702999865714</id>
+=======
 			<id>1702999833214</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -53,7 +99,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703072079864</id>
+=======
 			<id>1703000494275</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -62,7 +112,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703072079876</id>
+=======
 			<id>1703000494314</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -71,7 +125,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703074267254</id>
+=======
 			<id>1703012103202</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -80,7 +138,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703074267259</id>
+=======
 			<id>1703012103221</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -89,7 +151,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703082568471</id>
+=======
 			<id>1702801682724</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -98,6 +164,9 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1703082568478</id>
+=======
 			<id>1702801682755</id>
 			<name></name>
 			<type>6</type>
@@ -117,6 +186,7 @@
 		</filter>
 		<filter>
 			<id>1702996890052</id>
+>>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -225,6 +295,8 @@
 		</filter>
 		<filter>
 			<id>1703080756913</id>
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
+>>>>>>> 061217a142fd943588709c18abf3e88116ef7603
 			<name></name>
 			<type>6</type>
 			<matcher>

@@ -1,5 +1,13 @@
 {
+<<<<<<< HEAD
+  "keywordFileContentHash": "F0105AF48465EF778006C63761E7644A",
+=======
+<<<<<<< HEAD
   "keywordFileContentHash": "2D4A75ED78E3BE263C274F6FDAACD3BE",
+=======
+  "keywordFileContentHash": "17F02DE3F6B19E7F8B6F1D8125A1D582",
+>>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
+>>>>>>> 061217a142fd943588709c18abf3e88116ef7603
   "keywordClasses": [
     {
       "name": "ChatBotAI",

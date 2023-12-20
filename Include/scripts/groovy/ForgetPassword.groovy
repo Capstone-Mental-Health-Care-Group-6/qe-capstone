@@ -47,21 +47,20 @@ class ForgetPassword {
 	@Given("User is on the Forgot Password page")
 	def navigateToForgotPasswordPage() {
 	}
-	
+
 	@When("I input the valid (.*)")
 	def inputValidEmail(email) {
 	}
-	
+
 	@And("I input valid code (.*)")
 	def inputValidOTP(OTP) {
 	}
-	
+
 	@And("I input valid new password (.*) and (.*)")
 	def inputValidNewPassword(confirm_password, confirm_password_verify) {
 	}
-	
+
 	@Then("I should have successfully created a new password")
 	def verifySuccessfulPasswordCreation() {
 	}
-	
 }

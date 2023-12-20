@@ -26,7 +26,7 @@ Feature: Login Functionality
       | laras1@gmail.com | $(invalid pass) |
       | xxx              | laras1          |
       |                  |                 |
-
+      
   #@RegisterLink
   #Scenario: User Clicks Register Link
     #Given I want to log in

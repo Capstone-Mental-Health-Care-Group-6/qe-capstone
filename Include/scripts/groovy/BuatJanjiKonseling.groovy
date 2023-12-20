@@ -49,6 +49,7 @@ class BuatJanjiKonseling {
 	def navigateToMakeAppointmentMenu() {
 		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
 				true)
+<<<<<<< HEAD
 
 		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button'), 0)
 
@@ -63,16 +64,35 @@ class BuatJanjiKonseling {
 		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (3)'), 0)
 
 		Mobile.sendKeys(findTestObject('LoginTestLaras/android.widget.EditText (4)'), 'laras1')
+=======
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 
 		Mobile.hideKeyboard()
 
 		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		
 		Mobile.delay(5)
 		
 		Mobile.tap(findTestObject('BuatJanji_PilihTopik/android.widget.ImageView-buatjanji'), 0)
 =======
+=======
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 
 		WebUI.delay(5)
 >>>>>>> 47cfce9f2e92f7bd72a1cb73febb4b32f6dfddbc
@@ -113,8 +133,16 @@ class BuatJanjiKonseling {
 		
 		Mobile.delay(2)
 	}
+<<<<<<< HEAD
 	<<<<<<< HEAD
 	=======
+=======
+
+	@Then("I am redirected to package and bundle selection page")
+	def verifyRedirectToPackageAndBundleSelectionPage() {
+		Mobile.closeApplication()
+	}
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 
 	// [I choose the instant bundle in the introductory package]
 	// @CounselingChoosePackage
@@ -261,6 +289,9 @@ class BuatJanjiKonseling {
 	@And("I select the file and confirm the payment")
 	def selectFileAndConfirmPayment() {
 	}
+<<<<<<< HEAD
 
 	>>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
+=======
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 }

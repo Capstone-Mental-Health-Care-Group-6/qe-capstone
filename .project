@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>C%%Users%Administrator%Documents%qe-capstone%mobile%qe-capstone%MobileTest.prj</name>
+=======
+	<name>C%%javaproject%clone capstone%mobile clone-test%qe-capstone%MobileTest.prj</name>
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 	<comment></comment>
 	<projects>
 	</projects>
@@ -18,6 +22,7 @@
 	<filteredResources>
 		<filter>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<id>1703081928638</id>
 =======
 <<<<<<< HEAD
@@ -30,6 +35,9 @@
 >>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
 >>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 >>>>>>> 061217a142fd943588709c18abf3e88116ef7603
+=======
+			<id>1703083952854</id>
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -38,6 +46,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<id>1703081930798</id>
 =======
@@ -51,6 +60,9 @@
 >>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
 >>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 >>>>>>> 061217a142fd943588709c18abf3e88116ef7603
+=======
+			<id>1703083952859</id>
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -59,6 +71,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<id>1703091577760</id>
 =======
@@ -72,6 +85,9 @@
 >>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
 >>>>>>> a2a16f7fd3c703e370d731335e85a459397eec56
 >>>>>>> 061217a142fd943588709c18abf3e88116ef7603
+=======
+			<id>1703092265710</id>
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -80,6 +96,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<id>1703091577821</id>
 =======
@@ -333,6 +350,9 @@
 		</filter>
 		<filter>
 			<id>1703093129645</id>
+=======
+			<id>1703092265722</id>
+>>>>>>> 66556c34bfb21a594bd9f80ad170654b65176745
 			<name></name>
 			<type>6</type>
 			<matcher>

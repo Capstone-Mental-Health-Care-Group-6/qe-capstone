@@ -17,20 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-paling terbaru.apk', true)
+Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-6.apk', true)
 
-// Onboarding
-Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 0)
+Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
 
 // login
-Mobile.setText(findTestObject('null'), 'laras1@gmail.com', 
-    0)
+Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
 
-Mobile.setText(findTestObject('null'), 'laras1', 0)
+Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
 
-Mobile.tap(findTestObject('null'), 0)
+Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+WebUI.delay(5)
+
+// homepage
 Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
 
 Mobile.tap(findTestObject('Homepage/home page - button buat janji - android.widget.ImageView'), 0)
@@ -41,7 +51,7 @@ Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.
 
 Mobile.tap(findTestObject('Homepage/home page - button menu profile - android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Homepage/home page - icon notifikasi atau loceng-android.widget.Button'), 0)
+Mobile.tap(findTestObject('Homepage/notifikasi lonceng'), 0)
 
 Mobile.tap(findTestObject('Homepage/home page - link lihat semua rekomendadi artikel-android.view.View'), 0)
 

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "DE3132367E39BBAD2CF813F5EBBC194E",
+  "keywordFileContentHash": "4996ECE6852000F4CD7494C7EA638CE1",
   "keywordClasses": [
     {
       "name": "BuatJanjiKonseling",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

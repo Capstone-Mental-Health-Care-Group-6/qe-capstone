@@ -102,5 +102,4 @@ class BuatJanjiKonseling {
 	def verifyRedirectToPackageAndBundleSelectionPage() {
 		Mobile.closeApplication()
 	}
-
 }

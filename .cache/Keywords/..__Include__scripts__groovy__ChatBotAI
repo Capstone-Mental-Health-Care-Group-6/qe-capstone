@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "2D4A75ED78E3BE263C274F6FDAACD3BE",
+  "keywordFileContentHash": "17F02DE3F6B19E7F8B6F1D8125A1D582",
   "keywordClasses": [
     {
       "name": "ChatBotAI",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

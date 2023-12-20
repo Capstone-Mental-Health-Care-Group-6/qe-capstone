@@ -17,7 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release (1).apk', true)
+Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk', 
+    true)
+
 
 Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 0)
 

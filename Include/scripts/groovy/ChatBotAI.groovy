@@ -47,6 +47,15 @@ class ChatBotAI {
 	//	# [Positive] Chat AI Interaction
 	@Given("on HomePage, I click the robot icon")
 	def clickRobotIcon() {
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
+		Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 'laras1@gmail.com', 0)
+		Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText (1)'), 'laras1', 0)
+		Mobile.hideKeyboard()
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
+		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
+		
 	}
 
 	@When("I choose an option")
@@ -74,6 +83,4 @@ class ChatBotAI {
 	@Then("I receive a reply from Customer Support")
 	def verifyReplyFromCustomerSupport() {
 	}
-
-
 }

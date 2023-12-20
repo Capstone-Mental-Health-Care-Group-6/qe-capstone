@@ -90,5 +90,4 @@ class EditProfile {
 	@When("I select Delete Account")
 	def selectD() {
 	}
-
 }

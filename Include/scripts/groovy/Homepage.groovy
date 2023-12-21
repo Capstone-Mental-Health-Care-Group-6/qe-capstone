@@ -49,6 +49,7 @@ class Homepage {
 	@Given("I launch the Emphatic Care mobile app")
 	def launchEmphaticCareApp() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-6.apk', true)
 
 		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
@@ -73,10 +74,13 @@ class Homepage {
 		WebUI.delay(5)
 =======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
+=======
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 	}
 
 	@When("I tap on the menu menu")
 	def tapOnDashboardMenu() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
 
@@ -96,16 +100,22 @@ class Homepage {
 //		Mobile.closeApplication()
 //	}
 =======
+=======
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 	}
 
 	@Then("I successfully access the page page")
 	def verifyAccessToDashboardPage() {
 	}
+<<<<<<< HEAD
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
+=======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 
 	// Scenario: User navigates the Emphatic Care home menu
 	@When("I tap on the home menu")
 	def tapOnHomeMenu() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
 	}
@@ -138,6 +148,8 @@ class Homepage {
 //		Mobile.closeApplication()
 //	}
 =======
+=======
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 	}
 
 	// Scenario: User navigates the Emphatic Care appointment menu
@@ -149,11 +161,15 @@ class Homepage {
 	@When("I tap on the counseling menu")
 	def tapOnCounselingMenu() {
 	}
+<<<<<<< HEAD
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
+=======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 
 	// Scenario: User navigates the Emphatic Care history menu
 	@When("I tap on the history menu")
 	def tapOnHistoryMenu() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.ImageView'), 0)
 	}
@@ -222,6 +238,8 @@ class Homepage {
 //		Mobile.closeApplication()
 //	}
 =======
+=======
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 	}
 
 	// Scenario: User navigates the Emphatic Care profile menu
@@ -243,5 +261,8 @@ class Homepage {
 	@When("I tap on the article link")
 	def tapOnArticleLink() {
 	}
+<<<<<<< HEAD
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
+=======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 }

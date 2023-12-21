@@ -49,6 +49,7 @@ class ChatBotAI {
 	def clickRobotIcon() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
@@ -59,6 +60,8 @@ class ChatBotAI {
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
 
 =======
+=======
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 =======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
@@ -86,6 +89,9 @@ class ChatBotAI {
 		//CLick AI icon
 		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View-iconchatbot'), 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
+=======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 =======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc

@@ -59,13 +59,13 @@ class ChatBotAI {
 
 	@When("I choose an option")
 	def chooseOption() {
-		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (2)'), 0)	
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (2)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View'), 0)
 	}
 
 	@Then("I receive a reply from AI")
 	def verifyReplyFromAI() {
-		
+
 		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View (1)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button (3)'), 0)
 	}
@@ -82,9 +82,16 @@ class ChatBotAI {
 	//	# [Positive] Chatbot CS Interaction
 	@When("I input a question, choose an option")
 	def inputQuestionAndChooseOption() {
+		Mobile.tap(findTestObject('Object Repository/ChatCS/android.widget.Button (2)'), 0)
+		
 	}
 
 	@Then("I receive a reply from Customer Support")
 	def verifyReplyFromCustomerSupport() {
+		Mobile.tap(findTestObject('Object Repository/ChatCS/android.widget.ImageView'), 0)
+		Mobile.tap(findTestObject('Object Repository/ChatCS/android.view.View'), 0)
+		Mobile.tap(findTestObject('Object Repository/ChatCS/android.view.View (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/ChatCS/android.view.View (2)'), 0)
+		Mobile.tap(findTestObject('Object Repository/ChatCS/android.widget.Button (3)'), 0)
 	}
 }

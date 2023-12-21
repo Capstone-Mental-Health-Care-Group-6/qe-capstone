@@ -47,6 +47,7 @@ class ChatBotAI {
 	//	# [Positive] Chat AI Interaction
 	@Given("on HomePage, I click the robot icon")
 	def clickRobotIcon() {
+<<<<<<< HEAD
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
@@ -56,31 +57,59 @@ class ChatBotAI {
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
 
+=======
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
+						true)
+		
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+		
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+		
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+		
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+		
+		Mobile.hideKeyboard()
+		
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+		
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+		
+		Mobile.hideKeyboard()
+		
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+		
+		Mobile.delay(5)
+		//CLick AI icon
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View-iconchatbot'), 0)
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 	}
 
 	@When("I choose an option")
 	def chooseOption() {
+		Mobile.delay(5)
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View-depresi'), 0)
+		Mobile.delay(10)
+
 	}
 
 	@Then("I receive a reply from AI")
 	def verifyReplyFromAI() {
+		Mobile.closeApplication()
 	}
 
-	//	# [Positive] Empty State Chat AI
-	@When("I click Start Conversation, choose an option")
+	//	# [Positive] return back to
+	@When("I click return back to homepage")
 	def startConversationWithOption() {
+		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button-returnback'), 0)
+
 	}
 
-	@Then("I successfully start a chat and receive a reply from AI")
+	@Then("I successfully back to homepage")
 	def verifyChatStartAndReplyFromAI() {
+		Mobile.delay(2)
+		Mobile.closeApplication()
 	}
 
-	//	# [Positive] Chatbot CS Interaction
-	@When("I input a question, choose an option")
-	def inputQuestionAndChooseOption() {
-	}
 
-	@Then("I receive a reply from Customer Support")
-	def verifyReplyFromCustomerSupport() {
-	}
 }

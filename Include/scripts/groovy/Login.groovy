@@ -47,46 +47,83 @@ class Login {
 	//Login-ValidCredentials//
 	@Given("I want to log in")
 	def inputEmailPassword() {
-		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-5.apk', true)
-		Mobile.tap(findTestObject('Object Repository/Onboarding/Button lewati_on boarding'), 10)
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
+				true)
 
-		Mobile.tap(findTestObject('Object Repository/Onboarding/button selanjutnya_on boarding'), 10)
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
 	}
 
 	@When("I enter the (.*) and (.*)")
 	def interEmailPassword(String name, String password) {
 
-		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextEmail'), name, 0)
-		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextPW'), password, 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/try 1/try 2/android.widget.Button'), 0)
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), name)
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), password)
+
+		Mobile.hideKeyboard()
+
 	}
 
 	@Then("I should be logged in to the application")
 	def I_should_be_logged_in_to_the_application() {
-		Mobile.closeApplication()
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+		Mobile.delay(2)
 	}
 
 	//Login-InvalidCredentials//
 	@When("I enter the invalid (.*) and invalid (.*)")
-	def interInvalidEmailPassword(String name, String password) {
+	def interInvalidEmailPassword(String email_user, String password_user) {
 
-		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextEmail'), name, 0)
-		Mobile.setText(findTestObject('LoginFeature/test/android.widget.EditTextPW'), password, 0)
-		Mobile.tap(findTestObject('Object Repository/LoginFeature/try 1/try 2/android.widget.Button'), 0)
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), email_user)
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), password_user)
+
+		Mobile.hideKeyboard()
 	}
 
 	@Then("I should see an error message and stay on the login page")
 	def stayLogin() {
-		Mobile.closeApplication()
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+		Mobile.delay(2)
 	}
 
 	//RegisterLink//
+	@Given("I want to verify register link")
+	def verifyRegisterLink() {
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
+				true)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+	}
+
 	@When("I click the register link")
 	def clickRegisterLink() {
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.view.View-registersfixup'), 0)
 	}
 
 	@Then("I should be directed to the registration page")
 	def verifyRedirectToRegistrationPage() {
+		//		Mobile.verifyElementVisible(findTestObject('Object Repository/LoginTestLaras/android.view.View (1)'), 0)
+		Mobile.delay(2)
+		Mobile.closeApplication()
 	}
 
 }

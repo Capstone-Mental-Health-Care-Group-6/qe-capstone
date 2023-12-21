@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "A2F801D1A58AC749B5AD8BF2CC2A965C",
+  "keywordFileContentHash": "888856C47C0DBD30F925D52293261797",
   "keywordClasses": [
     {
       "name": "EditProfile",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

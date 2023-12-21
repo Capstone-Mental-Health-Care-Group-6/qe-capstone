@@ -50,6 +50,7 @@ class ChatBotAI {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
@@ -60,6 +61,8 @@ class ChatBotAI {
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
 
 =======
+=======
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 =======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 =======
@@ -90,6 +93,9 @@ class ChatBotAI {
 		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View-iconchatbot'), 0)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
+=======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc
 =======
 >>>>>>> 74fcb2064ed930535376523b9988f4755aa4a2cc

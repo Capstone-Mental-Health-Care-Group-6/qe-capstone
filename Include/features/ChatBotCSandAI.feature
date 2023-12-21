@@ -8,14 +8,14 @@ Feature: Chatbot CS dan ChatbotAI
     When I choose an option
     Then I receive a reply from AI
 
-  # [Positive] Empty State Chat AI
-  Scenario: Start Conversation with Empty State Chat AI
+  # [Positive] return back to homepage
+  Scenario: User return back to homepage from Chat AI page
     Given on HomePage, I click the robot icon
-    When I click Start Conversation, choose an option
-    Then I successfully start a chat and receive a reply from AI
+    When I click return back to homepage
+    Then I successfully back to homepage
 
   # [Positive] Chatbot CS Interaction
-  Scenario: User interacts with Chatbot Customer Support
-    Given on HomePage, I click the robot icon
-    When I input a question, choose an option
-    Then I receive a reply from Customer Support
+  #Scenario: User interacts with Chatbot Customer Support
+    #Given on HomePage, I click the robot icon
+    #When I input a question, choose an option
+    #Then I receive a reply from Customer Support

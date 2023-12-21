@@ -17,11 +17,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-<<<<<<< HEAD
-			<id>1703145052470</id>
-=======
-			<id>1703125234465</id>
->>>>>>> 4f5431713db0070d34adb85bd8a099b47a6085a6
+			<id>1703147916781</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -30,10 +26,7 @@
 			</matcher>
 		</filter>
 		<filter>
-<<<<<<< HEAD
-			<id>1703145052946</id>
-=======
-			<id>1703125234481</id>
+			<id>1703147916794</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -42,7 +35,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1703147117867</id>
+			<id>1703152068313</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -51,8 +44,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1703147117885</id>
->>>>>>> 4f5431713db0070d34adb85bd8a099b47a6085a6
+			<id>1703152068341</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

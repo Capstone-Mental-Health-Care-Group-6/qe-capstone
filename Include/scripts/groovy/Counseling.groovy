@@ -43,61 +43,22 @@ import cucumber.api.java.en.When
 
 
 
-class ChatBotAI {
-	//	# [Positive] Chat AI Interaction
-	@Given("on HomePage, I click the robot icon")
-	def clickRobotIcon() {
-		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
-						true)
-		
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
-		
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
-		
-		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
-		
-		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
-		
-		Mobile.hideKeyboard()
-		
-		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
-		
-		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
-		
-		Mobile.hideKeyboard()
-		
-		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
-		
-		Mobile.delay(5)
-		//CLick AI icon
-		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View-iconchatbot'), 0)
+class Counseling {
+	/**
+	 * The step definitions below match with Katalon sample Gherkin steps
+	 */
+	@Given("I want to write a step with (.*)")
+	def I_want_to_write_a_step_with_name(String name) {
+		println name
 	}
 
-	@When("I choose an option")
-	def chooseOption() {
-		Mobile.delay(5)
-		Mobile.tap(findTestObject('Object Repository/Chatbott/android.view.View-depresi'), 0)
-		Mobile.delay(10)
-
+	@When("I check for the (\\d+) in step")
+	def I_check_for_the_value_in_step(int value) {
+		println value
 	}
 
-	@Then("I receive a reply from AI")
-	def verifyReplyFromAI() {
-		Mobile.closeApplication()
+	@Then("I verify the (.*) in step")
+	def I_verify_the_status_in_step(String status) {
+		println status
 	}
-
-	//	# [Positive] return back to
-	@When("I click return back to homepage")
-	def startConversationWithOption() {
-		Mobile.tap(findTestObject('Object Repository/Chatbott/android.widget.Button-returnback'), 0)
-
-	}
-
-	@Then("I successfully back to homepage")
-	def verifyChatStartAndReplyFromAI() {
-		Mobile.delay(2)
-		Mobile.closeApplication()
-	}
-
-
 }

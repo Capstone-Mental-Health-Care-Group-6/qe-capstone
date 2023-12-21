@@ -12,7 +12,6 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testdata.TestDataFactory
-import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -43,26 +42,11 @@ import cucumber.api.java.en.When
 
 
 class BuatJanjiKonseling {
-
 	// [Positive] User explore counseling flow
 	@Given("I am in make an appointment menu")
 	def navigateToMakeAppointmentMenu() {
 		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
 				true)
-
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button'), 0)
-
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button (1)'), 0)
-
-		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (1)'), 0)
-
-		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/android.widget.EditText (2)'), 'laras1@gmail.com')
-
-		Mobile.hideKeyboard()
-
-		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (3)'), 0)
-
-		Mobile.sendKeys(findTestObject('LoginTestLaras/android.widget.EditText (4)'), 'laras1')
 
 		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
 
@@ -82,16 +66,13 @@ class BuatJanjiKonseling {
 
 		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
 
-		Mobile.delay(5)
+		Mobile.delay(8)
 
-		Mobile.tap(findTestObject('BuatJanji_PilihTopik/android.widget.ImageView-buatjanji'), 0)
-
-		Mobile.delay(5)
 	}
 
 	@When("I click Read more")
 	def clickReadMoreButton() {
-		Mobile.tap(findTestObject('BuatJanji_PilihTopik/android.view.View-readmore'), 0)
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.view.View-readmore'), 0)
 
 		Mobile.delay(2)
 	}
@@ -102,15 +83,15 @@ class BuatJanjiKonseling {
 	def clickStartNowAndSelectTopic() {
 
 		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.Button-ButtonMulaiSekarang'), 0)
-		
+
 		Mobile.delay(2)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton'), 0)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (1)'), 0)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (2)'), 0)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (3)'), 0)
 
 		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.widget.Button-PilihTopikFix'), 0)
@@ -129,37 +110,37 @@ class BuatJanjiKonseling {
 	@Given("I am on the instant package and bundle select page")
 	def navigateToInstantPackageAndBundlePage() {
 		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
-					true)
-	
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
-		
-		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
-		
-		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
-		
-		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
-		
-		Mobile.hideKeyboard()
-		
-		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
-		
-		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
-		
-		Mobile.hideKeyboard()
-		
-		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
-		
-		Mobile.delay(9)
+				true)
 
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+		Mobile.delay(8)
+		
 		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.ImageView-MenuBuatJanji'), 0)
 
 		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.widget.Button-startnow'), 0)
-		
+
 		Mobile.delay(2)
 
 		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.RadioButton-ButtonKendaliEmosi'), 0)
 
-		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.widget.Button-PilihTopikFix'), 0)
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-pilihpktfix'), 0)
 
 		Mobile.delay(2)
 	}
@@ -224,7 +205,7 @@ class BuatJanjiKonseling {
 	//	# Scenario: Select Available Psychology Schedules
 	@And("I select and click available psychology schedules and start the chat")
 	def selectAndClickAvailablePsychologySchedulesAndStartChat() {
-//		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View-2jdwl'), 0)
+		//		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View-2jdwl'), 0)
 	}
 
 	//	# [I choose a manual and automatic payment method]
@@ -236,24 +217,24 @@ class BuatJanjiKonseling {
 	@And("I click the payment method using Gopay, complete the payment approval checklist, and click pay now")
 	def clickPaymentMethodUsingGopay() {
 		Mobile.delay(3)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-5startcht'), 0)
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View-6paymentgate'), 0)
-		
+
 		Mobile.scrollToText('Object Repository/BuatJanjiKonseling/android.view.View-6paymentgate', FailureHandling.STOP_ON_FAILURE)
 
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton-7gopay'), 0)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.CheckBox-8setuju'), 0)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-9byr'), 0)
-		
+
 		Mobile.delay(4)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-returns'), 0)
-		
+
 		Mobile.delay(3)
-		
+
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-13mulai'), 0)
 	}
 
@@ -293,4 +274,6 @@ class BuatJanjiKonseling {
 	@And("I select the file and confirm the payment")
 	def selectFileAndConfirmPayment() {
 	}
+
+	
 }

@@ -13,9 +13,3 @@ Feature: Chatbot CS dan ChatbotAI
     Given on HomePage, I click the robot icon
     When I click return back to homepage
     Then I successfully back to homepage
-
-  # [Positive] Chatbot CS Interaction
-  #Scenario: User interacts with Chatbot Customer Support
-    #Given on HomePage, I click the robot icon
-    #When I input a question, choose an option
-    #Then I receive a reply from Customer Support

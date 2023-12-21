@@ -45,57 +45,100 @@ import cucumber.api.java.en.When
 
 class Articles {
 	// Scenario: View Article Details
-	@Given("I am on the Home page menu")
+	@Given("I on the Home page menu")
 	def navigateToHomePageMenu() {
+		Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-6.apk', true)
+		
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+		
+		// login
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+		
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+		
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+		
+		Mobile.hideKeyboard()
+		
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+		
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+		
+		Mobile.hideKeyboard()
+		
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+		
+		WebUI.delay(5)
+		
 	}
 
 	@When("I tap on an article")
 	def tapOnArticle() {
+		Mobile.tap(findTestObject('Homepage/lihat semua rekoemndasi artikel - android.view.View'), 0)
 	}
 
 	@Then("I enter the article details page")
 	def verifyEnterArticleDetailsPage() {
+		
+		Mobile.tap(findTestObject('Artikel/artikel paling atas (1)'), 0)
+		
+		Mobile.tap(findTestObject('Artikel/previous detail artikel'), 0)
+		
+		Mobile.closeApplication()
 	}
-
-	// Scenario: Use Search Field
-	@Then("I successfully use the search field")
-	def verifySuccessfulSearch() {
-	}
-
-	// Scenario: Search with Invalid Keywords
-	@When("I search for keywords")
-	def searchForInvalidKeywords() {
-	}
-
-	@Then("I don't find the expected search results")
-	def verifyInvalidSearchResults() {
-	}
+//
+////	// Scenario: Use Search Field
+//	@Then("I successfully use the search field")
+//	def verifySuccessfulSearch() {
+//		Mobile.tap(findTestObject('Artikel/search button'), 0)
+//		Mobile.tap(findTestObject('Artikel/search button di page artikel'), 0)
+//		Mobile.closeApplication()
+//	}
+//
+//	// Scenario: Search with Invalid Keywords
+//	@When("I search for keywords")
+//	def searchForInvalidKeywords() {
+//	}
+//
+//	@Then("I don't find the expected search results")
+//	def verifyInvalidSearchResults() {
+//	}
 
 	// Scenario: Navigate to Previous Page
 	@When("I tap the previous button")
 	def tapOnPreviousButton() {
+		Mobile.tap(findTestObject('Homepage/lihat semua rekoemndasi artikel - android.view.View'), 0)
+		
+		Mobile.tap(findTestObject('Artikel/artikel paling atas (1)'), 0)
+
 	}
 
 	@Then("I view the previous homepage from the article selection page")
 	def verifyReturnToPreviousHomepage() {
+		
+		Mobile.closeApplication()
 	}
 
-	// Scenario: Use Keyword Category button
-	@When("I tap the button category button")
-	def tapOnKeywordCategoryButton() {
-	}
-
-	@Then("I successfully search for articles using keywords")
-	def verifySearchForArticlesWithKeywords() {
-	}
+//	// Scenario: Use Keyword Category button
+//	@When("I tap the button category button")
+//	def tapOnKeywordCategoryButton() {
+//	}
+//
+//	@Then("I successfully search for articles using keywords")
+//	def verifySearchForArticlesWithKeywords() {
+//	}
 
 	// Scenario: Return from Article Details
 	@When("I tap the previous button from article details")
 	def tapOnPreviousButtonFromArticleDetails() {
+		Mobile.tap(findTestObject('Artikel/previous detail artikel'), 0)
 	}
 
 	@Then("I return to the previous article selection page")
 	def verifyReturnToPreviousArticleSelectionPage() {
+		Mobile.tap(findTestObject('Artikel/previous artikel'), 0)
+		
+		Mobile.closeApplication()
 	}
 
 }

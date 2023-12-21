@@ -55,7 +55,7 @@ class ChatBotAI {
 		Mobile.hideKeyboard()
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
-		
+
 	}
 
 	@When("I choose an option")

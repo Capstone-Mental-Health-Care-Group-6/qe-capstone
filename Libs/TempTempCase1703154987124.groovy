@@ -1,5 +1,6 @@
 import com.kms.katalon.core.main.TestCaseMain
 import com.kms.katalon.core.logging.KeywordLogger
+import groovy.lang.MissingPropertyException
 import com.kms.katalon.core.testcase.TestCaseBinding
 import com.kms.katalon.core.driver.internal.DriverCleanerCollector
 import com.kms.katalon.core.model.FailureHandling
@@ -18,9 +19,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\ANASTA~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TC_MB-0003-Registered\\20231221_001142\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\ANASTA~1\\AppData\\Local\\Temp\\Katalon\\Include\\features\\SignUp.feature\\20231221_173627\\execution.properties')
 
 TestCaseMain.beforeStart()
-
-        TestCaseMain.runTestCase('Test Cases/TC_MB-0003-Registered', new TestCaseBinding('Test Cases/TC_MB-0003-Registered',[:]), FailureHandling.STOP_ON_FAILURE , false)
-    
+TestCaseMain.runFeatureFile('Include/features/SignUp.feature')

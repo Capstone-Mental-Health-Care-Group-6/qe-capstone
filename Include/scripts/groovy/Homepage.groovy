@@ -44,97 +44,155 @@ import cucumber.api.java.en.When
 
 
 class Homepage {
+	
 	// Scenario: User navigates the Emphatic Care
-  @Given("I launch the Emphatic Care mobile app")
-  def launchEmphaticCareApp() {
-  }
-  
-  @When("I tap on the menu menu")
-  def tapOnDashboardMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToDashboardPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care home menu
-  @When("I tap on the home menu")
-  def tapOnHomeMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToHomePage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care appointment menu
-  @When("I tap on the appointment menu")
-  def tapOnAppointmentMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToAppointmentPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care counseling menu
-  @When("I tap on the counseling menu")
-  def tapOnCounselingMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToCounselingPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care history menu
-  @When("I tap on the history menu")
-  def tapOnHistoryMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToHistoryPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care profile menu
-  @When("I tap on the profile menu")
-  def tapOnProfileMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToProfilePage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care notification menu
-  @When("I tap on the notification menu")
-  def tapOnNotificationMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToNotificationPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care chatbot menu
-  @When("I tap on the notification menu")
-  def tapOnChatbotMenu() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToChatbotPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care see all link
-  @When("I tap on the see all link")
-  def tapOnSeeAllLink() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToSeeAllPage() {
-  }
-  
-  // Scenario: User navigates the Emphatic Care article link
-  @When("I tap on the article link")
-  def tapOnArticleLink() {
-  }
-  
-  @Then("I successfully access the page page")
-  def verifyAccessToArticlePage() {
-  }
+	@Given("I launch the Emphatic Care mobile app")
+	def launchEmphaticCareApp() {
+		Mobile.startApplication('C:\\Users\\Anastasya\\Downloads\\app-release-6.apk', true)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		// login
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+		WebUI.delay(5)
+	}
+
+	@When("I tap on the menu menu")
+	def tapOnDashboardMenu() {
+		Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
+
+		Mobile.tap(findTestObject('Homepage/home page - button buat janji - android.widget.ImageView'), 0)
+
+		Mobile.tap(findTestObject('Homepage/home page - button konseling  - android.widget.ImageView'), 0)
+
+		Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.ImageView'), 0)
+
+		Mobile.tap(findTestObject('Homepage/home page - button menu profile - android.widget.ImageView'), 0)
+
+		Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToDashboardPage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care home menu
+	@When("I tap on the home menu")
+	def tapOnHomeMenu() {
+		Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToHomePage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care appointment menu
+	@When("I tap on the appointment menu")
+	def tapOnAppointmentMenu() {
+		Mobile.tap(findTestObject('Homepage/home page - button buat janji - android.widget.ImageView'), 0)
+
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToAppointmentPage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care counseling menu
+	@When("I tap on the counseling menu")
+	def tapOnCounselingMenu() {
+		Mobile.tap(findTestObject('Homepage/home page - button konseling  - android.widget.ImageView'), 0)
+	}
+//
+//	@Then("I successfully access the page page")
+//	def verifyAccessToCounselingPage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care history menu
+	@When("I tap on the history menu")
+	def tapOnHistoryMenu() {
+		Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.ImageView'), 0)
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToHistoryPage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care profile menu
+	@When("I tap on the profile menu")
+	def tapOnProfileMenu() {
+		Mobile.tap(findTestObject('Homepage/home page - button menu profile - android.widget.ImageView'), 0)
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToProfilePage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care notification menu
+	@When("I tap on the notification menu")
+	def tapOnNotificationMenu() {
+		Mobile.tap(findTestObject('Homepage/notifikasi lonceng'), 0)
+	}
+
+
+	@Then("I successfully access the page page")
+	def verifyAccessToNotificationPage() {
+		Mobile.closeApplication()
+	}
+
+	// Scenario: User navigates the Emphatic Care chatbot menu
+	@When("I tap on the chatbot menu")
+	def tapOnChatbotMenu() {
+		Mobile.tap(findTestObject('Homepage/chatbot icon - android.view.View'), 0)
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToChatbotPage() {
+//		Mobile.tap(findTestObject('Homepage/previous chatbot-android.widget.Button'), 0)
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care see all link
+	@When("I tap on the see all link")
+	def tapOnSeeAllLink() {
+		Mobile.tap(findTestObject('Homepage/lihat semua rekoemndasi artikel - android.view.View'), 0)
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToSeeAllPage() {
+//		Mobile.closeApplication()
+//	}
+
+	// Scenario: User navigates the Emphatic Care article link
+	@When("I tap on the article link")
+	def tapOnArticleLink() {
+		Mobile.tap(findTestObject('Homepage/ARTIKEL KIRI ATAS -android.widget.ImageView'), 0)
+
+	}
+
+//	@Then("I successfully access the page page")
+//	def verifyAccessToArticlePage() {
+//		Mobile.tap(findTestObject('Homepage/previous artikel'), 0)
+//		Mobile.closeApplication()
+//	}
 }

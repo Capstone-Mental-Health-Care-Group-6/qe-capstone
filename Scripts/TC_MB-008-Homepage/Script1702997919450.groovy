@@ -51,11 +51,21 @@ Mobile.tap(findTestObject('Homepage/home page - button riwayat - android.widget.
 
 Mobile.tap(findTestObject('Homepage/home page - button menu profile - android.widget.ImageView'), 0)
 
+Mobile.tap(findTestObject('Homepage/home page - button menu beranda - android.widget.ImageView'), 0)
+
 Mobile.tap(findTestObject('Homepage/notifikasi lonceng'), 0)
 
-Mobile.tap(findTestObject('Homepage/home page - link lihat semua rekomendadi artikel-android.view.View'), 0)
+Mobile.tap(findTestObject('Homepage/previous notification homepage-android.widget.Button'), 0)
 
-Mobile.tap(findTestObject('Homepage/home page - icon previous notification page-android.widget.Button'), 0)
+Mobile.tap(findTestObject('Homepage/chatbot icon - android.view.View'), 0)
 
-Mobile.tap(findTestObject('Homepage/home page - rekomendasi artikel kanan atas - android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Homepage/previous chatbot-android.widget.Button'), 0)
+
+Mobile.tap(findTestObject('Homepage/ARTIKEL KIRI ATAS -android.widget.ImageView'), 0)
+
+Mobile.tap(findTestObject('Homepage/previous artikel'), 0)
+
+Mobile.tap(findTestObject('Homepage/lihat semua rekoemndasi artikel - android.view.View'), 0)
+
+Mobile.closeApplication()
 

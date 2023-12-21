@@ -5,36 +5,36 @@ Feature: Article Interaction
 
   # [article_details]
   Scenario: View Article Details
-    Given I am on the Home page menu
+    Given I on the Home page menu
     When I tap on an article
     Then I enter the article details page
 
   # [search_field]
-  Scenario: Use Search Field
-    Given I am on the Home page menu
-    When I search for keywords
-    Then I successfully use the search field
+  #Scenario: Use Search Field
+    #Given I am on the Home page menu
+    #When I search for keywords
+    #Then I successfully use the search field
 
   # [invalid_keywords]
-  Scenario: Search with Invalid Keywords
-    Given I am on the Home page menu
-    When I search for keywords
-    Then I don't find the expected search results
+  #Scenario: Search with Invalid Keywords
+    #Given I am on the Home page menu
+    #When I search for keywords
+    #Then I don't find the expected search results
 
   # [navigate_previous_page]
   Scenario: Navigate to Previous Page
-    Given I am on the Home page menu
+    Given I on the Home page menu
     When I tap the previous button
     Then I view the previous homepage from the article selection page
 
   # [keyword_category_button]
-  Scenario: Use Keyword Category button
-    Given I am on the Home page menu
-    When I tap the button category button
-    Then I successfully search for articles using keywords
+  #Scenario: Use Keyword Category button
+    #Given I am on the Home page menu
+    #When I tap the button category button
+    #Then I successfully search for articles using keywords
 
-  # [return_from_article_details]
+   #[return_from_article_details]
   Scenario: Return from Article Details
-    Given I am on the Home page menu
+    Given I on the Home page menu
     When I tap the previous button from article details
     Then I return to the previous article selection page

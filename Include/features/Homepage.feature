@@ -40,7 +40,7 @@ Feature: Dashboard Functionality
 
   Scenario: User navigates the Emphatic Care chatbot menu
     Given I launch the Emphatic Care mobile app
-    When I tap on the notification menu
+    When I tap on the chatbot menu
     Then I successfully access the page page
 
   Scenario: User navigates the Emphatic Care see all link

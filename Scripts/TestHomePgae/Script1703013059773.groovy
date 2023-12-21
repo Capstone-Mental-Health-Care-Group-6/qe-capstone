@@ -24,9 +24,9 @@ Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.Button'
 
 Mobile.tap(findTestObject('Object Repository/TestHomePage/android.widget.Button (1)'), 10)
 
-Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextEmail'), 'laras1@gmail.com', 0)
+Mobile.setText(findTestObject('null'), 'laras1@gmail.com', 0)
 
-Mobile.setText(findTestObject('LoginFeature-spy/test/android.widget.EditTextPW'), 'laras1', 0)
+Mobile.setText(findTestObject('null'), 'laras1', 0)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/TestHomePage/android.widget.ImageView'), 0)
 

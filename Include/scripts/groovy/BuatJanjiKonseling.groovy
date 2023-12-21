@@ -42,7 +42,6 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-
 class BuatJanjiKonseling {
 
 	// [Positive] User explore counseling flow
@@ -65,68 +64,118 @@ class BuatJanjiKonseling {
 
 		Mobile.sendKeys(findTestObject('LoginTestLaras/android.widget.EditText (4)'), 'laras1')
 
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+
 		Mobile.hideKeyboard()
 
 		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
 
-		WebUI.delay(5)
+		Mobile.delay(5)
+
+		Mobile.tap(findTestObject('BuatJanji_PilihTopik/android.widget.ImageView-buatjanji'), 0)
+
+		Mobile.delay(5)
 	}
 
 	@When("I click Read more")
 	def clickReadMoreButton() {
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View'), 0)
-	}
+		Mobile.tap(findTestObject('BuatJanji_PilihTopik/android.view.View-readmore'), 0)
 
-	@Then("I am redirected to counseling flow page")
-	def verifyRedirectToCounselingFlowPage() {
-		Mobile.closeApplication()
+		Mobile.delay(2)
 	}
 
 	// [Positive] User select counseling topics
 
 	@When("I click Start now and select")
 	def clickStartNowAndSelectTopic() {
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button'), 0)
 
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.Button-ButtonMulaiSekarang'), 0)
+		
+		Mobile.delay(2)
+		
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton'), 0)
-
+		
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (1)'), 0)
-
+		
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (2)'), 0)
-
+		
 		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (3)'), 0)
 
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (4)'), 0)
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.widget.Button-PilihTopikFix'), 0)
 
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (5)'), 0)
-
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (6)'), 0)
-
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (7)'), 0)
-
-		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton (8)'), 0)
+		Mobile.delay(2)
 	}
 
 	@Then("I am redirected to package and bundle selection page")
 	def verifyRedirectToPackageAndBundleSelectionPage() {
 		Mobile.closeApplication()
 	}
-	<<<<<<< HEAD
-	=======
 
 	// [I choose the instant bundle in the introductory package]
 	// @CounselingChoosePackage
 	// Scenario: Choose Instant Bundle in Introductory Package
 	@Given("I am on the instant package and bundle select page")
 	def navigateToInstantPackageAndBundlePage() {
+		Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
+					true)
+	
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/next - android.widget.Button'), 0)
+		
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/selanjutnya - android.widget.Button (1)'), 0)
+		
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 1 - android.widget.EditText (1)'), 0)
+		
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/field email - android.widget.EditText (2)'), 'laras1@gmail.com')
+		
+		Mobile.hideKeyboard()
+		
+		Mobile.tap(findTestObject('LoginTestLaras/field tap 2 - android.widget.EditText (3)'), 0)
+		
+		Mobile.sendKeys(findTestObject('LoginTestLaras/field pw - android.widget.EditText (4)'), 'laras1')
+		
+		Mobile.hideKeyboard()
+		
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+		
+		Mobile.delay(9)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.ImageView-MenuBuatJanji'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.widget.Button-startnow'), 0)
+		
+		Mobile.delay(2)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.RadioButton-ButtonKendaliEmosi'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_PilihTopik/android.widget.Button-PilihTopikFix'), 0)
+
+		Mobile.delay(2)
 	}
 
 	@When("I click the instant package menu")
 	def clickInstantPackageMenu() {
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/pilihPaket/android.widget.ImageView'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/pilihPaket/android.widget.Button'), 0)
+
+		Mobile.delay(5)
 	}
 
 	@Then("I am directed to the correct page")
 	def verifyDirectedToCorrectPage() {
+		Mobile.closeApplication()
 	}
 
 	//	# [I choose the premium bundle in the introductory package]
@@ -134,24 +183,34 @@ class BuatJanjiKonseling {
 
 	@When("I click the premium package menu")
 	def clickPremiumPackageMenu() {
+		Mobile.delay(2)
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.view.View-PindahPremium'), 0)
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.view.View-paketprem'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.Button-PilihPaket'), 0)
+
+		Mobile.delay(2)
 	}
 
 	//	# [I return to the package and bundle selection page from the page select psychologist]
 	//	# Scenario: Return to Package and Bundle Selection Page
 	@And("I return to page package and bundle selection page")
 	def returnToPackageAndBundleSelectionPage() {
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.Button (5)'), 0)
 	}
 
 	//	# [I choose a psychologist to start the chat]
 	//	# Scenario: Choose Psychologist to Start the Chat
 	@And("I select and click start chat with doctor")
 	def selectAndClickStartChatWithDoctor() {
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-1start'), 0)
 	}
 
 	//	# [I return to the select psychologist page from the psychologist profile details page]
 	//	# Scenario: Return to Select Psychologist Page
 	@When("I click the button to return to the previous page")
 	def clickButtonToReturnToPreviousPage() {
+		Mobile.tap(findTestObject('Object Repository/BuatJanji_InstanKonseling/android.widget.Button (4)'), 0)
 	}
 
 	//	# [I choose psychologists to see other people's reviews]
@@ -165,6 +224,7 @@ class BuatJanjiKonseling {
 	//	# Scenario: Select Available Psychology Schedules
 	@And("I select and click available psychology schedules and start the chat")
 	def selectAndClickAvailablePsychologySchedulesAndStartChat() {
+//		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View-2jdwl'), 0)
 	}
 
 	//	# [I choose a manual and automatic payment method]
@@ -175,6 +235,26 @@ class BuatJanjiKonseling {
 
 	@And("I click the payment method using Gopay, complete the payment approval checklist, and click pay now")
 	def clickPaymentMethodUsingGopay() {
+		Mobile.delay(3)
+		
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-5startcht'), 0)
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.view.View-6paymentgate'), 0)
+		
+		Mobile.scrollToText('Object Repository/BuatJanjiKonseling/android.view.View-6paymentgate', FailureHandling.STOP_ON_FAILURE)
+
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.RadioButton-7gopay'), 0)
+		
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.CheckBox-8setuju'), 0)
+		
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-9byr'), 0)
+		
+		Mobile.delay(4)
+		
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-returns'), 0)
+		
+		Mobile.delay(3)
+		
+		Mobile.tap(findTestObject('Object Repository/BuatJanjiKonseling/android.widget.Button-13mulai'), 0)
 	}
 
 	//		# [I do not check payment approval]
@@ -201,8 +281,10 @@ class BuatJanjiKonseling {
 	def clickDropDownButtonForBankTransferPaymentInstructions() {
 	}
 
-	@Then("User successfully sees the payment instructions")
+	@Then("I successfully sees the payment instructions")
 	def verifyPaymentInstructions() {
+		Mobile.closeApplication()
+
 	}
 
 	//		# [I make payments manually by uploading proof of transfer]
@@ -211,6 +293,4 @@ class BuatJanjiKonseling {
 	@And("I select the file and confirm the payment")
 	def selectFileAndConfirmPayment() {
 	}
-
-	>>>>>>> 0b03099b915b281788af88b96a1a6d985e5e0180
 }

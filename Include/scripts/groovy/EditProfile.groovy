@@ -47,13 +47,30 @@ class EditProfile {
 	// [Positive] User Edits Profile
 	@Given("on Edit Profile Page")
 	def navigateToEditProfilePage() {
-		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button'), 0)
-		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (1)'), 0)
-		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 0)
-		Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText'), 'laras1@gmail.com', 0)
-		Mobile.setText(findTestObject('Object Repository/Chatbot/android.widget.EditText (1)'), 'laras1', 0)
+				Mobile.startApplication('C:\\Users\\laras\\OneDrive\\Documents\\Studi Independen\\Altera\\Capstone Project\\app-release-6.apk',
+		true)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button'), 0)
+
+		Mobile.tap(findTestObject('Object Repository/LoginTestLaras/android.widget.Button (1)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (1)'), 0)
+
+		Mobile.sendKeys(findTestObject('Object Repository/LoginTestLaras/android.widget.EditText (2)'), 'laras1@gmail.com')
+
 		Mobile.hideKeyboard()
-		Mobile.tap(findTestObject('Object Repository/Chatbot/android.widget.Button (2)'), 0)
+
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.EditText (3)'), 0)
+
+		Mobile.sendKeys(findTestObject('LoginTestLaras/android.widget.EditText (4)'), 'laras1')
+
+		Mobile.hideKeyboard()
+
+		Mobile.tap(findTestObject('LoginTestLaras/android.widget.Button-Login'), 0)
+
+		Mobile.delay(5)
+		
+		//tap menu profile
 		Mobile.tap(findTestObject('Object Repository/Chatbot/android.view.View'), 0)
 	}
 
@@ -69,6 +86,10 @@ class EditProfile {
 		Mobile.tap(findTestObject('Object Repository/EditProfile/android.widget.EditText (2)'), 0)
 		Mobile.setText(findTestObject('Object Repository/EditProfile/android.widget.EditText (1)'), '082323884972', 0)
 		Mobile.hideKeyboard()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f5431713db0070d34adb85bd8a099b47a6085a6
 	}
 
 	@Then("receive successful data change notification")

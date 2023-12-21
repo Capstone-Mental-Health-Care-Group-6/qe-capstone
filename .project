@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>C%%Users%Administrator%Documents%qe-capstone%mobile%qe-capstone%MobileTest.prj</name>
+	<name>C%%Users%laras%OneDrive%Documents%Studi Independen%Altera%Capstone Project%MobileTest%MobileTest.prj</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +17,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1703145052470</id>
+=======
+			<id>1703125234465</id>
+>>>>>>> 4f5431713db0070d34adb85bd8a099b47a6085a6
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +30,29 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1703145052946</id>
+=======
+			<id>1703125234481</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1703147117867</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1703147117885</id>
+>>>>>>> 4f5431713db0070d34adb85bd8a099b47a6085a6
 			<name></name>
 			<type>6</type>
 			<matcher>
